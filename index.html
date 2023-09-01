@@ -632,18 +632,6 @@
 
                         <div class="item active">
 
-                            <?php
-                            require('/home/u579951788/domains/dikakaryatech.com/public_html/blog/wp-blog-header.php');
-                            add_filter('the_author_posts_link', function ($link) {
-                                return str_replace('rel="author"', 'rel="author" class="blog-icons"', $link);
-                            });
-                            add_filter('the_tags', function ($tag) {
-                                return str_replace('rel="tag"', 'rel="tag" class="blog-icons"', $tag);
-                            });
-                            $args = array('posts_per_page' => 4);
-                            $posts = get_posts($args);
-                            foreach ($posts as $post) : setup_postdata($post); ?>
-
                                 <!--begin col-md-4 -->
                                 <div class="col-md-3">
 
@@ -653,8 +641,8 @@
                                         <!--begin popup image -->
                                         <div class="popup-wrapper">
                                             <div class="popup-gallery">
-                                                <a href="<?php the_permalink(); ?>" target="_blank">
-                                                    <?php the_post_thumbnail(); ?>
+                                                <a href="#" target="_blank">
+                                                    Thumbnail
                                                 </a>
                                             </div>
                                         </div>
@@ -664,14 +652,12 @@
                                         <div class="blog-item-inner">
 
                                             <h3 class="blog-title">
-                                                <a href="<?php the_permalink(); ?>" title="Permanent Link to <?php the_title_attribute(); ?>" target="_blank"><?php the_title(); ?></a>
+                                                <a href="#" title="Permanent Link to title" target="_blank">Title</a>
                                             </h3>
-                                            <i class="icon icon-user"></i> <?php the_author_posts_link(); ?>
+                                            <i class="icon icon-user"></i> Author
                                             <span class="blog-icons last">
-                                                <i class="icon icon-tags"></i> <?php the_tags('', '', ''); ?>
+                                                <i class="icon icon-tags"></i> Tags
                                             </span>
-                                            <?php the_excerpt(); ?>
-
                                         </div>
                                         <!--end blog-item-inner -->
 
@@ -680,9 +666,6 @@
 
                                 </div>
                                 <!--end col-md-4-->
-                            <?php
-                            endforeach;
-                            ?>
 
                         </div>
 
