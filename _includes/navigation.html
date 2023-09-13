@@ -1,0 +1,52 @@
+<!-- <nav>
+    
+</nav> -->
+
+<!-- Start Navigation -->
+<nav class="navbar navbar-default navbar-fixed dark no-background bootsnav on no-full">
+  <div class="container">
+    <!-- Start Atribute Navigation -->
+    <div class="attr-nav button theme circle">
+      <ul>
+        <li>
+          <a href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Atribute Navigation -->
+
+    <!-- Start Header Navigation -->
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#navbar-menu"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="{{"assets/img/logo-text.svg" | absolute_url }} " class="logo" alt="Dika Karya Tech" />
+      </a>
+    </div>
+    <!-- End Header Navigation -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+        {% for item in site.data.navigation %}
+          <li>
+            {% if item.link %}
+              <a class="smooth-menu" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
+            {% else %}
+              <a class="smooth-menu" href="#{{ item.name | downcase }}">{{ item.name }}</a>
+            {% endif %}
+          </li>
+
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+<!-- End Navigation -->

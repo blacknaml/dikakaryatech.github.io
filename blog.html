@@ -1,0 +1,87 @@
+---
+layout: default
+title: Blog
+---
+
+<!-- Start Breadcrumb 
+    ============================================= -->
+<div
+  class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
+  style="background-image: url(assets/img/2440x1578.png)"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Our Blog</h1>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Blog</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumb -->
+
+<!-- Start Blog 
+    ============================================= -->
+<div class="blog-area full-width bg-gray default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="blog-items">
+        {% for post in site.posts %}
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height">
+          <div class="item">
+            <div class="thumb">
+              <a href="{{ post.url }}">
+                <img src="{{ post.image }}" alt="Thumb" />
+              </a>
+              <div class="tags">
+                <a href="#">startup</a>
+                <a href="#">business</a>
+              </div>
+            </div>
+            <div class="info">
+              <h4>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h4>
+              <div class="meta">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fas fa-user"></i> {{ post.author }}</a>
+                  </li>
+                  <li><i class="fas fa-calendar-alt"></i> {{ post.date | date_to_string }}</li>
+                  <li>
+                    <a href="#"><i class="fas fa-comments"></i> 23</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                {{ post.excerpt }}
+              </p>
+              <div class="read-more">
+                <a href="{{ post.url }}" class="more-btn">Read More <i class="fas fa-angle-double-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        {% endfor %}
+        <div class="col-md-12 pagi-area">
+          <nav aria-label="navigation">
+            <ul class="pagination">
+              <li><a href="#">Previous</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Blog -->

@@ -1,0 +1,166 @@
+---
+layout: default
+---
+<!-- Start Breadcrumb 
+    ============================================= -->
+<div
+  class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
+  style="background-image: url({{ page.image | absolute_url }})"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ page.title }}</h1>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li class="active">Single</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumb -->
+
+<!-- Start Blog 
+  ============================================= -->
+<div id="blog" class="blog-area bg-gray full-width single default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="blog-items">
+        <div class="col-md-12">
+          <div class="item">
+            <div class="thumb">
+              <img src="{{ page.image | absolute_url }}" alt="Thumb" />
+              <div class="tags">
+                <a href="#">startup</a>
+                <a href="#">business</a>
+              </div>
+            </div>
+            <div class="info">
+              <h3>{{ page.title }}</h3>
+              <div class="meta">
+                <ul>
+                  <li>
+                    {% assign author = site.authors | where: 'short_name',
+                    page.author | first %} {% if author %} -
+                    <a href="{{ author.url }}"
+                      ><i class="fas fa-user"></i>{{ author.name }}</a
+                    >
+                    {% endif %}
+                  </li>
+                  <li>
+                    <i class="fas fa-calendar-alt"></i> {{ page.date |
+                    date_to_string }}
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-comments"></i> 23</a>
+                  </li>
+                </ul>
+              </div>
+              {{ content }}
+              <div class="post-tags">
+                <i class="fas fa-tags"></i>
+                <a href="#">Consulting</a>
+                <a href="#">Planing</a>
+                <a href="#">Business</a>
+                <a href="#">Fashion</a>
+              </div>
+              <div class="post-pagi-area">
+                <a href="#"><i class="fas fa-arrow-left"></i> Previus Post</a>
+                <a href="#">Next Post <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="comments-area">
+                <div class="comments-title">
+                  <h4>5 comments</h4>
+                  <div class="comments-list">
+                    <div class="commen-item">
+                      <div class="avatar">
+                        <img src="{{ "assets/img/100x100.png" | absolute_url }}" alt="Author" />
+                      </div>
+                      <div class="content">
+                        <h5>Among Danold</h5>
+                        <div class="comments-info">
+                          July 15, 2019
+                          <a href="#"><i class="fa fa-reply"></i>Reply</a>
+                        </div>
+                        <p>
+                          Frankness objection abilities the. As hastened oh
+                          produced prospect formerly up am. Placing forming nay
+                          looking old married few has. Margaret disposed add
+                          screened rendered six say his striking confined.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="commen-item reply">
+                      <div class="avatar">
+                        <img src="{{ "assets/img/100x100.png" | absolute_url }}" alt="Author" />
+                      </div>
+                      <div class="content">
+                        <h5>Spark Lee</h5>
+                        <div class="comments-info">
+                          July 15, 2019
+                          <a href="#"><i class="fa fa-reply"></i>Reply</a>
+                        </div>
+                        <p>
+                          frankness objection abilities the. As hastened oh
+                          produced prospect formerly up am. Placing forming nay
+                          looking old married few has. Margaret disposed add
+                          screened rendered six say his striking confined.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-form">
+                  <div class="title">
+                    <h4>Leave a comments</h4>
+                  </div>
+                  <form action="#" class="contact-comments">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <!-- Name -->
+                          <input
+                            name="name"
+                            class="form-control"
+                            placeholder="Name *"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <!-- Email -->
+                          <input
+                            name="email"
+                            class="form-control"
+                            placeholder="Email *"
+                            type="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group comments">
+                          <!-- Comment -->
+                          <textarea
+                            class="form-control"
+                            placeholder="Comment"
+                          ></textarea>
+                        </div>
+                        <div class="form-group full-width submit">
+                          <button type="submit">Post Comments</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Blog -->

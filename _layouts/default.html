@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dostart - Startup Landing Page" />
+
+    <!-- ========== Page Title ========== -->
+    <title>{{ page.title }}</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link
+      rel="shortcut icon"
+      href="{{ "assets/img/favicon.ico" | absolute_url }}"
+      type="image/x-icon"
+    />
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{{ "assets/css/bootstrap.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/font-awesome.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/flaticon-set.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/magnific-popup.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/owl.carousel.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/owl.theme.default.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/animate.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/bootsnav.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/style.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{ "assets/css/responsive.css" | absolute_url }}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+      rel="stylesheet"
+    />
+    {% feed_meta %} {% seo %}
+  </head>
+
+  <body>
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">{% include navigation.html %}</header>
+    <!-- End Header -->
+
+    <!-- Start Content
+    ============================================= -->
+    {{ content }} 
+    <!-- End Content -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    {% include footer.html %}
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{{ "assets/js/jquery-1.12.4.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/bootstrap.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/equal-height.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/jquery.appear.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/jquery.easing.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/jquery.magnific-popup.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/modernizr.custom.13711.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/owl.carousel.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/wow.min.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/count-to.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/bootsnav.js" | absolute_url }}"></script>
+    <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+  </body>
+</html>
