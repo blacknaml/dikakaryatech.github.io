@@ -56,7 +56,7 @@
 
     <!-- Header 
     ============================================= -->
-    <header id="home">{% include navigation.html %}</header>
+    <header id="home">{% if page.url == "/"  %} {% include navigation.html %} {% else %} {% include navigation-other.html %} {% endif %}</header>
     <!-- End Header -->
 
     <!-- Start Content

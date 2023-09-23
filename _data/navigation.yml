@@ -1,8 +1,5 @@
 - name: Home
 - name: About
 - name: Services
-- name: Pricing
+- name: Products
 - name: Team
-- name: Contact
-- name: Blog
-  link: /blog.html

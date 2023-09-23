@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: Dika Karya Tech Blog
 ---
 
 <!-- Start Breadcrumb 
@@ -49,19 +49,23 @@ title: Blog
               <div class="meta">
                 <ul>
                   <li>
-                    <a href="#"><i class="fas fa-user"></i> {{ post.author }}</a>
+                    <a href="#"
+                      ><i class="fas fa-user"></i> {{ post.author }}</a
+                    >
                   </li>
-                  <li><i class="fas fa-calendar-alt"></i> {{ post.date | date_to_string }}</li>
+                  <li>
+                    <i class="fas fa-calendar-alt"></i> {{ post.date |
+                    date_to_string }}
+                  </li>
                   <li>
                     <a href="#"><i class="fas fa-comments"></i> 23</a>
                   </li>
                 </ul>
               </div>
-              <p>
-                {{ post.excerpt }}
-              </p>
+              <p>{{ post.excerpt }}</p>
               <div class="read-more">
-                <a href="{{ post.url }}" class="more-btn">Read More <i class="fas fa-angle-double-right"></i
+                <a href="{{ post.url }}" class="more-btn"
+                  >Read More <i class="fas fa-angle-double-right"></i
                 ></a>
               </div>
             </div>
