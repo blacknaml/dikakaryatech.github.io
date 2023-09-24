@@ -3,6 +3,7 @@ layout: post
 title: "List of Open Files"
 author: jill
 image: assets/img/800x800.png
+categories: linux
 ---
 
 <em>lsof</em> adalah perintah untuk mengetahui program/software yang sedang mengakses file tertentu.
