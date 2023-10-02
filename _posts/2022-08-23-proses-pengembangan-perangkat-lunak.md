@@ -33,3 +33,22 @@ Dalam pengembangan waterfall, biasanya terdapat beberapa bentuk alih fungsi form
 sebelumnya. Selama proses coding, sesuatu mungkin terjadi dan menuntut anda untuk kembali melihat analisis dan desain. Anda tidak bisa berasumsi 
 bahwa seluruh desain sudah selesai pada saat coding dimulai. Tidak dapat dielakkan, anda harus kembali melihat ke keputusan analisis dan desain 
 dalam fase-fase sebelumnya. Meskipun demikian, aktivitas ini merupakan pengecualian dan harus diminimalkan sebanyak mungkin.
+
+Dalam iterasi, anda biasanya mendapati beberapa bentuk kegiatan eksplorasi sebelum iterasi-iterasi sebenarnya dimulai. Setidaknya, kegiatan ini akan 
+memberi gambaran tingkat tinggi tentang persyaratan: setidaknya cukup untuk memecah persyaratan menjadi iterasi-iterasi yang akan mengikuti. Beberapa 
+keputusan desain tingkat tinggi bisa saja muncul selama eksplorasi. Di samping itu, meskipun setiap iterasi akan membuat perangkat lunak yang terintegrasi 
+dengan produksi, iterasi sering tidak langsung mengena tujuan tersebut dan membutuhkan masa stabilisasi untuk menghilangkan bugs terakhir. Juga, beberapa 
+aktivitas, seperti pelatihan untuk pengguna, ditunda sampai selesai.
+
+Anda bisas aja tidak menempatkan sistem pada produksi di akhir setiap iterasi, tetapi sistem tersebut harus mempunyai kualitas produksi. Meskipun demikian, 
+acapkali anda dapat menempatkan sistem dalam produksi dalam interval tertentu. Hal ini bagus karena anda mendapatkan nilai dari sistem lebih dini dan anda 
+mendapatkan umpan balik yang lebih berkualitas. Dalam situasi ini, anda sering mendapati sebuah proyek dengan rilis yang bermacam-macam dan masing-masing 
+dipecah menjadi beberapa iterasi. 
+
+Pengembangan iteratis dikenal dengan berbagai macam nama: *incremental*, *spiral*, *evolutionary*, dan *jacuzzi spring to mind*. Orang-orang membuat perbedaan 
+diantara mereka, tetapi pembedaan tersebut tidak disetujui secara luas dan tidak sepenting pembedaan antara dikotomi iteratif dan waterfall.
+
+Anda dapat juga menggunakan pendekatan campuran. McConnel menjelaskan tentang siklus hidup pengiriman bertingkat dimana analisis dan desain dilakukan terlebih 
+dahulu dengan cara waterfall, yang kemudian coding dan testing dilakukan dengan iterasi. Contohnya sebuah proyek memiliki 4 bulan masa analisis dan desain kemudian 
+disusul oleh 4 iterasi 2 bulanan untuk membangun sistem tersebut.
+
