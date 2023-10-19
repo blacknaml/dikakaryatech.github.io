@@ -11,7 +11,7 @@ categories: software development
 Karena *env var* atau *environment variable* merupakan variabel seperti pada umumnya, maka kita bisa 
 melakukan operasi seperti mengubah nilainya atau mengamblin nilainya.
 
-Mendefinisikan konfigurasi di env var banyak manfaatnya, beberapa adalah:
+Mendefinisikan konfigurasi di env var banyak manfaatnya, diantaranya adalah:
   1. Didukung secara *native* oleh semua sistem operasi.
   2. Sudah sangat umum diterapkan dibanyak aplikasi dan platform.
   3. *Straightforward* dan tidak tergantung ke file tertentu.
