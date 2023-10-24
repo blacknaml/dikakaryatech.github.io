@@ -6,9 +6,6 @@ date:   2023-10-10 14:33:47 +0700
 image: assets/img/800x800.png
 categories: software development
 ---
-
-##Cross-Origin Resource Sharing
-
 *Cross-Origin Resource Sharing* (CORS) adalah mekanisme untuk memberi tahu web browser, apakah 
 sebuah request yang di-dispatch dari aplikasi web domain lain atau origin lain, ke aplikasi web kita 
 itu diperbolehkan atau tidak. Jika aplikasi kita tidak mengijinkan maka akan terjadi error, dan request 
