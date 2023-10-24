@@ -18,6 +18,6 @@ kemudian di back-end dilakukan pengecekan apakah csrf yang dikirim valid atau ti
 Token CSRF sendiri merupakan sebuah random string yang dibuat saat halaman form muncul. Biasanya di setiap 
 request POST, token tersebut disisipkan sebagai header, form data atau query string.
 
-Lebih detailnya silakan merujuk ke [csrf-docs]
+Lebih detailnya silakan merujuk ke [crsf-docs]
 
 [crsf-docs]: https://en.wikipedia.org/wiki/Cross-site_request_forgery
