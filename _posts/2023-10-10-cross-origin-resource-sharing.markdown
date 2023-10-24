@@ -19,11 +19,11 @@ aturan CORS.
 Konfigurasi CORS dilakukan di response header aplikasi web. Penerapannya di semua bahasa pemrograman 
 yang web-based adalah sama, yaitu dengan memanipulasi response header-nya. Berikut adalah list header 
 yang bisa digunakan untuk konfigurasi CORS:
-- Access-Control-Allow-Origin
-- Access-Control-Allow-Methods
-- Access-Control-Allow-Headers
-- Access-Control-Allow-Credentials
-- Access-Control-Max-Age
+  - Access-Control-Allow-Origin
+  - Access-Control-Allow-Methods
+  - Access-Control-Allow-Headers
+  - Access-Control-Allow-Credentials
+  - Access-Control-Max-Age
 
 Konfigurasi CORS berada di sisi server, di aplikasi web tujuan request. Contohnya, aplikasi kita di lokal 
 dan akan mengambil data dari google.com, maka konfigurasi CORS berada di google.com; Jika terjadi error 
