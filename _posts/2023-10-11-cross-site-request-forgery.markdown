@@ -3,7 +3,7 @@ layout: post
 title:  "Cross-Site Request Forgery"
 author: jill
 date:   2023-10-11 08:37:47 +0700
-image: assets/img/800x800.png
+image: assets/img/construction-site-1500x1000.jpg
 categories: software development
 ---
 *Cross-Site Request Forgery* (CSRF) adalah salah satu tehnik hacking yang dilakukan dengan cara 
