@@ -2,7 +2,7 @@
 layout: post
 title: "List of Open Files"
 author: jill
-image: assets/img/800x800.png
+image: assets/img/woods-1500x800.jpg
 categories: linux
 ---
 
