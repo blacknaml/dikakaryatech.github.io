@@ -9,10 +9,8 @@ tags: protocol server
 ---
 ### HTTP/2
 *HTTP/2* adalah versi terbaru protokol HTTP, dikembangkan dari protokol [SPDY][spdy] yang 
-diinisiasi oleh Google.
-
-Protokol ini sekarang sudah kompatibel dengan banyak web browser diantaranya: Chrome, Opera, 
-Firefox 9, IE 11, Safari, Silk, dan Edge.
+diinisiasi oleh Google. Protokol ini sekarang sudah kompatibel dengan banyak web browser 
+diantaranya: Chrome, Opera, Firefox 9, IE 11, Safari, Silk, dan Edge.
 
 ![HTTP/2 Connection](https://dikakaryatech.com/assets/img/http2-connection.png "HTTP/2 Connection")
 
