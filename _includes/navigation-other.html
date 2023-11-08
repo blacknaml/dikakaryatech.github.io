@@ -9,7 +9,7 @@
     <div class="attr-nav button theme circle">
       <ul>
         <li>
-          <a href="#">Login</a>
+          <a href="{{ "index.html" | absolute_url }}#contact">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -37,9 +37,13 @@
         {% for item in site.data.navigation %}
           <li>
             {% if item.link %}
-              <a class="smooth-menu" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
+              <a class="smooth-menu" target="_blank" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
             {% else %}
-              <a class="smooth-menu" href="index.html#{{ item.name | downcase }}">{{ item.name }}</a>
+              {% if page.url == "/" %}
+                <a class="smooth-menu" href="index.html#{{ item.name | downcase }}">{{ item.name }}</a>
+              {% else %}
+                <a class="smooth-menu" href="{{ "index.html" | absolute_url }}#{{ item.name | downcase }}">{{ item.name }}</a>
+              {% endif %}    
             {% endif %}
           </li>
 
