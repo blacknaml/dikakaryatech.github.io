@@ -2,7 +2,7 @@
 layout: post
 title: "Proses Pengembangan Perangkat Lunak"
 author: jill
-image: assets/img/programmer professional illustration 1500x1000.jpg
+image: assets/img/programmer-professional-illustration.webp
 categories: software development
 tags: software-engineering development
 ---

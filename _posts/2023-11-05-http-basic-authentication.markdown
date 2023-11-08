@@ -3,7 +3,7 @@ layout: post
 title: "HTTP Basic Authentication"
 author: debi
 date: 2023-11-05 14:33:53 +0700
-image: assets/img/privacy-security-data-protection.jpg
+image: assets/img/privacy-security-data-protection.webp
 categories: software development
 tags: secure rfc
 ---

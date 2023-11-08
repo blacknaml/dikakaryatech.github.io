@@ -3,7 +3,7 @@ layout: post
 title:  "HTTP Compression"
 author: jill
 date:   2023-10-21 08:37:47 +0700
-image: assets/img/construction-workers-are-installing-steel.jpg
+image: assets/img/construction-workers-are-installing-steel.webp
 categories: software development
 tags: protocol server
 ---

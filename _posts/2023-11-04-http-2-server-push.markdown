@@ -3,7 +3,7 @@ layout: post
 title:  "HTTP/2 dan HTTP/2 Server Push"
 author: debi
 date: 2023-11-04 13:31:43 +0700
-image: assets/img/utp-cable-engineer.jpg
+image: assets/img/utp-cable-engineer.webp
 categories: software development
 tags: protocol server
 ---
