@@ -34,7 +34,7 @@
                   <li>
                     <a href="#"><i class="fas fa-user"></i> {{ post.author }}</a>
                   </li>
-                  <li><i class="fas fa-calendar-alt"></i> 12 Nov, 2019</li>
+                  <li><i class="fas fa-calendar-alt"></i> {{ post.date | date_to_string }}</li>
                   <li>
                     <a href="#"><i class="fas fa-comments"></i> 23</a>
                   </li>
