@@ -7,7 +7,7 @@ title: Dika Karya Tech Blog
     ============================================= -->
 <div
   class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
-  style="background-image: url(assets/img/blogs.jpg)"
+  style="background-image: url({{ "assets/img/blogs.jpg" | absolute_url }})"
 >
   <div class="container">
     <div class="row">
@@ -29,13 +29,13 @@ title: Dika Karya Tech Blog
   <div class="container">
     <div class="row">
       <div class="blog-items">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <!-- Single Item -->
         <div class="col-md-4 col-sm-6 equal-height">
           <div class="item">
             <div class="thumb">
               <a href="{{ post.url }}">
-                <img src="{{ post.image }}" alt="{{ post.title }}" />
+                <img src="{{ post.image | absolute_url }}" alt="{{ post.title }}" />
               </a>
               <div class="tags">
                 {% for tag in post.tags %}
@@ -74,17 +74,27 @@ title: Dika Karya Tech Blog
         </div>
         <!-- End Single Item -->
         {% endfor %}
+
+        <!-- Pagination links -->
         <div class="col-md-12 pagi-area">
           <nav aria-label="navigation">
             <ul class="pagination">
+              {% if paginator.previous_page %}
+              <li class="active"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+              {% else %}
               <li><a href="#">Previous</a></li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
+              {% endif %}
+              <li>
+                <a href="#">Page: {{ paginator.page }} of {{ paginator.total_pages }}</a>
+              </li>
+              {% if paginator.next_page %}
+              <li class="active"><a href="{{ paginator.next_page_path }}">Next</a></li>
+              {% else %}
               <li><a href="#">Next</a></li>
+              {% endif %}
             </ul>
           </nav>
-        </div>
+        </div>        
       </div>
     </div>
   </div>

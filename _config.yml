@@ -29,6 +29,10 @@ domain: "dikakaryatech.com"
 url: "https://dikakaryatech.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  blacknaml
 
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
 collections:
   authors:
     output: true
@@ -54,6 +58,7 @@ defaults:
 
 # Build settings
 plugins:
+  - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
