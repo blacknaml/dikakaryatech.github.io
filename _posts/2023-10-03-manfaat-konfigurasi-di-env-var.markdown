@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Manfaat Konfigurasi di-env var"
+title: "Manfaat Konfigurasi di-env var"
 author: jill
-date:   2023-10-03 03:23:53 +0700
+date: 2023-10-03 03:23:53 +0700
 image: assets/img/system-developers-analyzing-code-1500x800.jpg
 categories: software development
 tags: programming development
