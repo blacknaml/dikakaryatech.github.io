@@ -67,8 +67,12 @@ layout: default
                 {% endfor %}
               </div>
               <div class="post-pagi-area">
-                <a href="#"><i class="fas fa-arrow-left"></i> Previus Post</a>
-                <a href="#">Next Post <i class="fas fa-arrow-right"></i></a>
+                {% if page.previous.url %}
+                <a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> Previus Post</a>
+                {% endif %}
+                {% if page.next.url %}
+                <a href="{{page.next.url}}">Next Post <i class="fas fa-arrow-right"></i></a>
+                {% endif %}
               </div>
               <div class="comments-area">
                 <div class="comments-title">
