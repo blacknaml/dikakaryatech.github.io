@@ -33,8 +33,9 @@ layout: default
             <div class="thumb">
               <img src="{{ page.image | absolute_url }}" alt="Thumb" />
               <div class="tags">
-                <a href="#">startup</a>
-                <a href="#">business</a>
+                {% for tag in page.tags %}
+                <a href="#">{{ tag }}</a>
+                {% endfor %}
               </div>
             </div>
             <div class="info">
