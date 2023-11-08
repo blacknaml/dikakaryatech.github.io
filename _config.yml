@@ -21,9 +21,10 @@
 title: Dika Karya Tech
 email: debi@dikakaryatech.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Dika Karya Tech, is a trusted consulting team 
+  that is ready to provide software solutions, information technology, 
+  and data communication for efficiency, up-to-date 
+  and development of your company's business.
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: "dikakaryatech.com"
 url: "https://dikakaryatech.com" # the base hostname & protocol for your site, e.g. http://example.com
