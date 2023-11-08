@@ -5,6 +5,7 @@ author: jill
 date:   2023-11-01 11:11:11 +0700
 image: assets/img/secure-connection.jpg
 categories: software development
+tags: protocol server
 ---
 ### SSL
 *SSL, Secure Sockets Layer* adalah standar untuk pengamanan komunikasi melalui internet. 

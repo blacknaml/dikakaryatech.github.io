@@ -61,10 +61,9 @@ layout: default
               {{ content }}
               <div class="post-tags">
                 <i class="fas fa-tags"></i>
-                <a href="#">Consulting</a>
-                <a href="#">Planing</a>
-                <a href="#">Business</a>
-                <a href="#">Fashion</a>
+                {% for tag in page.tags %}
+                <a href="#">{{ tag }}</a>
+                {% endfor %}
               </div>
               <div class="post-pagi-area">
                 <a href="#"><i class="fas fa-arrow-left"></i> Previus Post</a>

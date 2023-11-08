@@ -4,6 +4,7 @@ title: "List of Open Files"
 author: jill
 image: assets/img/woods-1500x800.jpg
 categories: linux
+tags: script programming
 ---
 
 <em>lsof</em> adalah perintah untuk mengetahui program/software yang sedang mengakses file tertentu.

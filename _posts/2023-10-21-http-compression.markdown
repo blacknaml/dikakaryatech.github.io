@@ -5,6 +5,7 @@ author: jill
 date:   2023-10-21 08:37:47 +0700
 image: assets/img/construction-workers-are-installing-steel.jpg
 categories: software development
+tags: protocol server
 ---
 *HTTP Compression* adalah teknik kompresi data pada HTTP response, agar 
 ukuran/size output menjadi lebih kecil adan response time lebih cepat.
