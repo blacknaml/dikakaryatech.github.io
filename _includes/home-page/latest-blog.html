@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="blog-items blog-carousel owl-carousel owl-theme">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:6 %}
           <!--  Single Item -->
           <div class="item">
             <div class="thumb">
