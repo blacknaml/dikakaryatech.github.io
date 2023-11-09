@@ -352,6 +352,11 @@ input {
   padding-bottom: 180px;
 }
 
+.padding-s {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .carousel-shadow {
   padding-bottom: 70px;
 }
