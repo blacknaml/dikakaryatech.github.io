@@ -64,6 +64,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-tagging-related_posts
 
 # Exclude from processing.
 # The following items will not be processed, by default.

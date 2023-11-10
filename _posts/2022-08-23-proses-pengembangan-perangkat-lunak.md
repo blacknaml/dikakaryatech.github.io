@@ -5,6 +5,7 @@ author: jill
 image: assets/img/programmer-professional-illustration.webp
 categories: software development
 tags: software-engineering development
+related_post: related-posts.html
 ---
 
 Salah satu perbedaan pendapat tentang proses pengembangan adalah antara waterfall dan iteratif. Kedua istilah tersebut sering disalah
@@ -53,3 +54,6 @@ Anda dapat juga menggunakan pendekatan campuran. McConnel menjelaskan tentang si
 dahulu dengan cara waterfall, yang kemudian coding dan testing dilakukan dengan iterasi. Contohnya sebuah proyek memiliki 4 bulan masa analisis dan desain kemudian 
 disusul oleh 4 iterasi 2 bulanan untuk membangun sistem tersebut.
 
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

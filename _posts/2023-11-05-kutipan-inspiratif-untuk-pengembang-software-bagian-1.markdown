@@ -6,6 +6,7 @@ date: 2023-11-05 16:03:53 +0700
 image: assets/img/lamp-book-quotes.webp
 categories: software development
 tags: quotes
+related_post: related-posts.html
 ---
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap 
 bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan 
@@ -109,3 +110,6 @@ Andrew Clark, Andrew Singer, Andy Hunt, Achibald Putt, Arthur C. Clarke, Atli Bj
 
 > "If you don’t hear any complaints from users, they are not using the software – or your support email is broken."
 
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}
