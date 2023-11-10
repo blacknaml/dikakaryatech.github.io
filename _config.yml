@@ -29,6 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 domain: "dikakaryatech.com"
 url: "https://dikakaryatech.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  blacknaml
+permalink: none
 
 # Pagination
 paginate: 6
