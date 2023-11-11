@@ -910,7 +910,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav .navbar-brand {
-    padding: 20px 15px;
+    padding: 25px 5px;
   }
 
   nav.navbar.bootsnav.sticked .navbar-brand {
@@ -1544,7 +1544,7 @@ nav.navbar.bootsnav {
   }
 
   .navbar-brand > img {
-    height: 30px !important;
+    height: 33px !important;
   }
 
   nav.navbar.bootsnav.navbar-transparent.pad-top {
@@ -2151,7 +2151,7 @@ nav.navbar.bootsnav {
 
 .navbar-brand>img {
   display: initial;
-  height: 47px;
+  height: 43px;
 }
 
 .attr-nav > ul > li {

@@ -1,15 +1,12 @@
-<!-- <nav>
-    
-</nav> -->
-
 <!-- Start Navigation -->
-<nav class="navbar navbar-default navbar-fixed dark no-background bootsnav on no-full">
+<!-- <nav class="navbar navbar-default navbar-fixed dark no-background bootsnav on no-full"> -->
+<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full">
   <div class="container">
     <!-- Start Atribute Navigation -->
     <div class="attr-nav button theme circle">
       <ul>
         <li>
-          <a href="#contact">Contact Us</a>
+          <a href="#contact">Kontak</a>
         </li>
       </ul>
     </div>
@@ -26,7 +23,8 @@
         <i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand" href="{{ "" | absolute_url}}">
-        <img src="{{"assets/img/logo-text.svg" | absolute_url }} " class="logo" alt="Dika Karya Tech | Trusted Software Developer" />
+        <img src="{{"assets/img/logo-light.svg" | absolute_url }}" class="logo logo-display" alt="Dika Karya Tech | Trusted Software Developer">
+        <img src="{{"assets/img/logo.svg" | absolute_url }}" class="logo logo-scrolled" alt="Dika Karya Tech | Trusted Software Developer">
       </a>
     </div>
     <!-- End Header Navigation -->
@@ -39,7 +37,7 @@
             {% if item.link %}
               <a class="smooth-menu" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
             {% else %}
-              <a class="smooth-menu" href="#{{ item.name | downcase }}">{{ item.name }}</a>
+              <a class="smooth-menu" href="#{{ item.tagar | downcase }}">{{ item.name }}</a>
             {% endif %}
           </li>
 

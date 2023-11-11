@@ -1,0 +1,15 @@
+languages:
+  en:
+    value: English
+    slug: en
+  id:
+    value: Indonesia
+    slug: id
+
+back:
+  en: Back To Home
+  id: Kembali Ke Beranda
+
+home:
+  en: Home
+  id: Beranda

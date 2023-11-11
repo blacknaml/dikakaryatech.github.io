@@ -1,6 +1,12 @@
-- name: Home
-- name: About
-- name: Services
-- name: Products
+- name: Beranda
+  tagar: home
+- name: Tentang Kami
+  tagar: tentang-kami
+- name: Layanan
+  tagar: layanan
+- name: Produk
+  tagar: produk
 - name: Portfolio
+  tagar: portfolio
 - name: Testimonial
+  tagar: testimonial

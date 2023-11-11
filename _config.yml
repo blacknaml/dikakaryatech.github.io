@@ -29,7 +29,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 domain: "dikakaryatech.com"
 url: "https://dikakaryatech.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  blacknaml
-permalink: none
+
+default_language: 'en'
+fallback_page: 'stories'
+#permalink: none
 
 # Pagination
 paginate: 6
@@ -48,10 +51,20 @@ defaults:
       layout: "author"
   -
     scope:
-      path: ""
+      path: "_posts/en"
       type: "posts"
     values: 
       layout: "post"
+      permalink: "en/:title"
+      language: en
+  -
+    scope:
+      path: "_posts/id"
+      type: "posts"
+    values: 
+      layout: "post"
+      permalink: "id/:title"
+      language: id
   -
     scope:
       path: ""
