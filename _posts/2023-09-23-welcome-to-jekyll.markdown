@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 author: jill
 date:   2023-09-23 09:20:53 +0700
-image: assets/img/laptop-computer-1500x1000.webp
+image: /assets/img/laptop-computer-1500x1000.webp
 categories: jekyll
 tags: programming 
 ---

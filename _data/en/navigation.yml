@@ -1,6 +1,12 @@
 - name: Home
+  tagar: home
 - name: About
+  tagar: about
 - name: Services
+  tagar: services
 - name: Products
+  tagar: products
 - name: Portfolio
+  tagar: portfolio
 - name: Testimonial
+  tagar: testimonial

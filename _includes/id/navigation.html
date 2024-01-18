@@ -14,17 +14,14 @@
 
     <!-- Start Header Navigation -->
     <div class="navbar-header">
-      <button
-        type="button"
-        class="navbar-toggle"
-        data-toggle="collapse"
-        data-target="#navbar-menu"
-      >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
         <i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand" href="{{ "" | absolute_url}}">
-        <img src="{{"assets/img/logo-light.svg" | absolute_url }}" class="logo logo-display" alt="Dika Karya Tech | Trusted Software Developer">
-        <img src="{{"assets/img/logo.svg" | absolute_url }}" class="logo logo-scrolled" alt="Dika Karya Tech | Trusted Software Developer">
+        <img src="{{"assets/img/logo-light.svg" | absolute_url }}" class="logo logo-display"
+          alt="Dika Karya Tech | Trusted Software Developer">
+        <img src="{{"assets/img/logo.svg" | absolute_url }}" class="logo logo-scrolled"
+          alt="Dika Karya Tech | Trusted Software Developer">
       </a>
     </div>
     <!-- End Header Navigation -->
@@ -33,15 +30,17 @@
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
         {% for item in site.data.navigation %}
-          <li>
-            {% if item.link %}
-              <a class="smooth-menu" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
-            {% else %}
-              <a class="smooth-menu" href="#{{ item.tagar | downcase }}">{{ item.name }}</a>
-            {% endif %}
-          </li>
-
+        <li>
+          {% if item.link %}
+          <a class="smooth-menu" target="_blank" href="{{ item.link }}">{{ item.name }}</a>
+          {% else %}
+          <a class="smooth-menu" href="#{{ item.tagar | downcase }}">{{ item.name }}</a>
+          {% endif %}
+        </li>
         {% endfor %}
+        <li style="padding: 30px 0 !important;">
+          <a class="btn btn-secondary nav-link" role="button" style="border: 1px solid #fff !important; border-radius: 30px; padding: 5px 5px !important;" href="/en/index.html">en</a>
+        </li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->

@@ -3,7 +3,7 @@ layout: post
 title:  "Cross-Origin Resource Sharing"
 author: jill
 date:   2023-10-10 14:33:47 +0700
-image: assets/img/html-system-websites-concept-1500x1000.webp
+image: /assets/img/html-system-websites-concept-1500x1000.webp
 categories: software development
 tags: protocol server
 ---

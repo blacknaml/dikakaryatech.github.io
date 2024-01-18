@@ -1,0 +1,58 @@
+<!-- <nav>
+    
+</nav> -->
+
+<!-- Start Navigation -->
+<nav class="navbar navbar-default navbar-sticky bootsnav on no-full">
+  <div class="container">
+    <!-- Start Atribute Navigation -->
+    <div class="attr-nav button theme circle">
+      <ul>
+        <li>
+          <a href="{{ "index.html" | absolute_url }}#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Atribute Navigation -->
+
+    <!-- Start Header Navigation -->
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#navbar-menu"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="{{ "" | absolute_url }}">
+        <img src="{{"assets/img/logo.svg" | absolute_url }} " class="logo" alt="Dika Karya Tech | Trusted Software Developer Company" />
+      </a>
+    </div>
+    <!-- End Header Navigation -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+        {% for item in site.data.en.navigation %}
+          <li>
+            {% if item.link %}
+              <a class="smooth-menu" target="_blank" href="en/{{ item.link | absolute_url }}">{{ item.name }}</a>
+            {% else %}
+              {% if page.url == "/" %}
+                <a class="smooth-menu" href="en/index.html#{{ item.tagar | downcase }}">{{ item.name }}</a>
+              {% else %}
+                <a class="smooth-menu" href="{{ "en/index.html" | absolute_url }}#{{ item.tagar | downcase }}">{{ item.name }}</a>
+              {% endif %}    
+            {% endif %}
+          </li>
+        {% endfor %}
+        <li style="padding: 27px 0 !important;">
+          <a class="btn btn-secondary nav-link" role="button" style="border: 1px solid #e7e7e7 !important; border-radius: 30px; padding: 5px 10px !important;" href="{{ "index.html" | absolute_url }}">id</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+<!-- End Navigation -->

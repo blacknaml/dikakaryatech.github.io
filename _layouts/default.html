@@ -59,7 +59,11 @@
 
     <!-- Header 
     ============================================= -->
-    <header id="home">{% if page.url == "/"  %} {% include navigation.html %} {% else %} {% include navigation-other.html %} {% endif %}</header>
+    {% if page.language == "en" %}
+    <header id="home">{% if page.url == "/"  %} {% include en/navigation.html %} {% else %} {% include en/navigation-other.html %} {% endif %}</header>
+    {% else %}
+    <header id="home">{% if page.url == "/"  %} {% include id/navigation.html %} {% else %} {% include id/navigation-other.html %} {% endif %}</header>
+    {% endif %}
     <!-- End Header -->
 
     <!-- Start Content
@@ -69,7 +73,12 @@
 
     <!-- Start Footer 
     ============================================= -->
-    {% include footer.html %}
+    {% if page.language == "en" %}
+      {% include en/footer.html %}
+    {% else %}
+      {% include id/footer.html %}
+    {% endif %}
+
     <!-- End Footer -->
 
     <!-- jQuery Frameworks

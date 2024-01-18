@@ -3,7 +3,7 @@ layout: post
 title: "Cross-Site Request Forgery"
 author: jill
 date: 2023-10-11 08:37:47 +0700
-image: assets/img/construction-site-1500x1000.webp
+image: /assets/img/construction-site-1500x1000.webp
 categories: software development
 tags: protocol server
 related_post: related-posts.html

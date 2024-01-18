@@ -3,7 +3,7 @@ layout: post
 title: "Server Sent Events (SSE)"
 author: debi
 date: 2023-11-07 09:49:39 +0700
-image: assets/img/event-laptop.webp
+image: /assets/img/event-laptop.webp
 categories: software development
 tags: protocol software-development backend
 related_post: related-posts.html
