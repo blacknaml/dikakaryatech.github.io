@@ -34,7 +34,7 @@
           {% if item.link %}
           <a class="smooth-menu" target="_blank" href="en/{{ item.link }}">{{ item.name }}</a>
           {% else %}
-          <a class="smooth-menu" href="en/index.html#{{ item.tagar | downcase }}">{{ item.name }}</a>
+          <a class="smooth-menu" href="en/#{{ item.tagar | downcase }}">{{ item.name }}</a>
           {% endif %}
         </li>
         {% endfor %}
