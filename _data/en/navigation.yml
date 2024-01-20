@@ -1,6 +1,6 @@
 - name: Home
   tagar: home
-- name: About
+- name: About Us
   tagar: about
 - name: Services
   tagar: services

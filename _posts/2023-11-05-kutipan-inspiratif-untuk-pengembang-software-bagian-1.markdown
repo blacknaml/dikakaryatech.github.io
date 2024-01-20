@@ -7,6 +7,7 @@ image: /assets/img/lamp-book-quotes.webp
 categories: software development
 tags: quotes
 related_post: related-posts.html
+language: id
 ---
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap 
 bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan 

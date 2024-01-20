@@ -2,10 +2,11 @@
 layout: post
 title: "Proses Pengembangan Perangkat Lunak"
 author: jill
-image: /assets/img/programmer-professional-illustration.webp | absolute_url
+image: /assets/img/programmer-professional-illustration.webp
 categories: software development
 tags: software-engineering development
 related_post: related-posts.html
+language: id
 ---
 
 Salah satu perbedaan pendapat tentang proses pengembangan adalah antara waterfall dan iteratif. Kedua istilah tersebut sering disalah

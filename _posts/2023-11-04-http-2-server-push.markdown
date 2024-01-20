@@ -6,6 +6,7 @@ date: 2023-11-04 13:31:43 +0700
 image: /assets/img/utp-cable-engineer.webp
 categories: software development
 tags: protocol server
+language: id
 ---
 ### HTTP/2
 *HTTP/2* adalah versi terbaru protokol HTTP, dikembangkan dari protokol [SPDY][spdy] yang 

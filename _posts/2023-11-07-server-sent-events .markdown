@@ -1,5 +1,6 @@
 ---
 layout: post
+language: id
 title: "Server Sent Events (SSE)"
 author: debi
 date: 2023-11-07 09:49:39 +0700

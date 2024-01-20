@@ -3,14 +3,12 @@ layout: default
 title: Dika Karya Tech - Blog
 tagline: Dika Karya Tech share knowledge and experience.
 description: Blog of Dika Karya Tech. We share knowledge about experience in software engineering, development and deployment.
+language: id
 ---
 
 <!-- Start Breadcrumb 
     ============================================= -->
-<div
-  class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
-  style="background-image: url({{ "assets/img/blogs.webp" | absolute_url }})"
->
+<div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image: url({{"/assets/img/blogs.webp"}})">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -52,22 +50,16 @@ description: Blog of Dika Karya Tech. We share knowledge about experience in sof
               <div class="meta">
                 <ul>
                   <li>
-                    <a href="#"
-                      ><i class="fas fa-user"></i> {{ post.author }}</a
-                    >
+                    <a href="#"><i class="fas fa-user"></i> {{ post.author }}</a>
                   </li>
                   <li>
-                    <i class="fas fa-calendar-alt"></i> {{ post.date |
-                    date_to_string }}
-                  </li>
-                  <!-- <li><a href="#"><i class="fas fa-comments"></i> 23</a></li> -->
+                    <i class="fas fa-calendar-alt"></i> {{ post.date | date_to_string }}
+                  </li>                  
                 </ul>
               </div>
               <p>{{ post.excerpt }}</p>
               <div class="read-more">
-                <a href="{{ post.url }}" class="more-btn"
-                  >Read More <i class="fas fa-angle-double-right"></i
-                ></a>
+                <a href="{{ post.url }}" class="more-btn">Read More <i class="fas fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
@@ -94,7 +86,7 @@ description: Blog of Dika Karya Tech. We share knowledge about experience in sof
               {% endif %}
             </ul>
           </nav>
-        </div>        
+        </div>
       </div>
     </div>
   </div>

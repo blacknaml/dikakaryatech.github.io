@@ -1,15 +1,35 @@
 ---
-layout: default
+layout: single
 title: Bloging Staff 
+tagline: Dika Karya Tech is a trusted consulting team that is ready to provide software solutions, information technology, and data communication for efficiency, up-to-date and development of your company's business.
+description: Dika Karya Tech develop Software, create Server and deploy Innovation.
 language: id
 ---
-<h1>Staff</h1>
-<ul>
-    {% for author in site.authors %}
-      <li>
-        <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-        <h3>{{ author.position }}</h3>
-        <p>{{ author.content | markdownify }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+<section id="intro" class="default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="item">
+                    <div class="heading">
+                        <h1>Intro</h1>
+                        <div class="alert alert-info">
+                            <strong>Note:</strong> This is <strong>not a WordPress theme</strong>, and it wont install like a WordPress theme, <strong>this is a HTML5 template</strong> (static website).
+                        </div>
+                    </div>
+                    <p>
+                      <h1>Staff</h1>
+                      <ul>
+                          {% for author in site.authors %}
+                            <li>
+                              <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+                              <h3>{{ author.position }}</h3>
+                              <p>{{ author.content | markdownify }}</p>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

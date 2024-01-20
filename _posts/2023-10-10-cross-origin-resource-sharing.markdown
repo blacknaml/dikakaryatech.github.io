@@ -6,6 +6,7 @@ date:   2023-10-10 14:33:47 +0700
 image: /assets/img/html-system-websites-concept-1500x1000.webp
 categories: software development
 tags: protocol server
+language: id
 ---
 *Cross-Origin Resource Sharing* (CORS) adalah mekanisme untuk memberi tahu web browser, apakah 
 sebuah request yang di-dispatch dari aplikasi web domain lain atau origin lain, ke aplikasi web kita 

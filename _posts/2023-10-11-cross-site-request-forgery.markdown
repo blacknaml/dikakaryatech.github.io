@@ -7,6 +7,7 @@ image: /assets/img/construction-site-1500x1000.webp
 categories: software development
 tags: protocol server
 related_post: related-posts.html
+language: id
 ---
 
 _Cross-Site Request Forgery_ (CSRF) adalah salah satu tehnik hacking yang dilakukan dengan cara

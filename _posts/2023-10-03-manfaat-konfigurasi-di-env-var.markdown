@@ -6,6 +6,7 @@ date: 2023-10-03 03:23:53 +0700
 image: /assets/img/system-developers-analyzing-code-1500x800.webp
 categories: software development
 tags: programming development
+language: id
 ---
 
 *Environment variable* merupakan variabel yang berada di lapisan *runtime* sistem operasi.

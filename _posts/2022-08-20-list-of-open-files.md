@@ -5,6 +5,7 @@ author: jill
 image: /assets/img/woods-1500x800.webp
 categories: linux
 tags: script programming
+language: id
 ---
 
 <em>lsof</em> adalah perintah untuk mengetahui program/software yang sedang mengakses file tertentu.
