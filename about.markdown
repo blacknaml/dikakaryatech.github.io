@@ -1,18 +1,23 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: single
+title: Tentang Dika Karya Tech
+tagline: Dika Karya Tech is a trusted consulting team that is ready to provide software solutions, information technology, and data communication for efficiency, up-to-date and development of your company's business.
+description: Dika Karya Tech develop Software, create Server and deploy Innovation.
+language: id
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<section id="intro" class="default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="item">
+                    <div class="heading">
+                        <h1>Intro</h1>
+                    </div>
+                    <p>
+                        <strong>Dika Karya Tech</strong> is a trusted consulting team that is ready to provide software solutions, information technology, and data communication for efficiency, up-to-date and development of your company's business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
