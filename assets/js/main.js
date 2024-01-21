@@ -265,7 +265,7 @@
             # Clients Carousel
          ===============================================*/
         $('.clients-items').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 20,
             nav: false,
             navText: [
@@ -276,13 +276,13 @@
             autoplay: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 3
                 },
                 600: {
-                    items: 2
+                    items: 5
                 },
                 1000: {
-                    items: 3
+                    items: 11
                 }
             }
         });
