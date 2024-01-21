@@ -168,9 +168,10 @@
             # Our Offer Carousel
          ===============================================*/
         $('.our-offer-carousel').owlCarousel({
-            loop: false,
-            margin: 30,
+            loop: true,
+            margin: 20,
             nav: false,
+            autoHeight: true,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
                 "<i class='fa fa-angle-right'></i>"
@@ -185,7 +186,7 @@
                     items: 2
                 },
                 1000: {
-                    items: 3
+                    items: 4
                 }
             }
         });
@@ -195,8 +196,8 @@
             # Blog Carousel
          ===============================================*/
         $('.blog-carousel').owlCarousel({
-            loop: false,
-            margin: 30,
+            loop: true,
+            margin: 20,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
