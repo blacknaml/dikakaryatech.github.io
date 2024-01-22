@@ -167,6 +167,7 @@ Untuk bagian-2 bisa dibaca di [sini]({% post_url 2023-11-05-kutipan-inspiratif-u
 > 
 > "By writing in a clear and consistent style, your programs become easier to read."
 
+Semoga artikel menginspirasi para pembacanya.
 
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
