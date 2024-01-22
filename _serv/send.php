@@ -39,7 +39,7 @@ if (trim($name) == '') {
 }
 
 $comments = stripslashes($comments);
-$comments = "Email: {$email}<br/>Name: {$name}<br/>Phone: {$phone}<br/><hr/>Message:<hr/>{$comments}<br/>";
+$comments = "<html><head></head><body><p>Email: {$email}<br/>Name: {$name}<br/>Phone: {$phone}<br/><hr/>Message:{$comments}<br/><hr/></p></body></html>";
 
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -53,6 +53,7 @@ $mail->setFrom('info@dikakaryatech.com', 'Dika Karya Tech');
 $mail->addReplyTo('info@dikakaryatech.com', 'Dika Karya Tech');
 $mail->addAddress('debipraharadika@gmail.com', 'Debi Prahra Dika');
 $mail->Subject = "Let's talk about your idea";
+$mail->isHTML(true);
 $mail->Body = $comments;
 //$mail->msgHTML(file_get_contents('message.html'), __DIR__);
 //$mail->addAttachment('test.txt');

@@ -301,12 +301,7 @@
         /* ==================================================
             Contact Form Field Reset
          ===============================================*/
-        $('.contact-form').on('submit', function () {
-            /* $('.contact-form').find('input,textarea').each(function(i){
-                $(this).val('');
-            }); */
-        });
-
+        $('.contact-form').on('submit', function () {/* $('.contact-form').find('input,textarea').each(function(i){$(this).val('');}); */});
 
         /* ==================================================
             Contact Form Validations
@@ -334,6 +329,9 @@
                                 $(this).remove()
                             });
                             $('#submit').removeAttr('disabled');
+                            $('.contact-form').find('input,textarea').each(function(i){
+                                $(this).val('');
+                            });
                         }
                     );
                 });
