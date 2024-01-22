@@ -8,6 +8,7 @@ image: /assets/img/code-on-monitor.webp
 categories: other
 tags: opensource
 related_post: related-posts.html
+excerpt: "Open Source Software atau Perangkat lunak sumber terbuka adalah jenis perangkat lunak yang kode sumber-nya terbuka untuk dipelajari, diubah, ditingkatkan dan disebarluaskan."
 ---
 *Open Source Software* atau Perangkat lunak sumber terbuka adalah jenis perangkat lunak yang kode sumber-nya terbuka untuk dipelajari, 
 diubah, ditingkatkan dan disebarluaskan. Karena sifat ini, umumnya pengembangannya dilakukan oleh satu paguyuban terbuka yang bertujuan 
