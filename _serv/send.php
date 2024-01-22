@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+
 require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -20,31 +22,28 @@ $phone = $_POST['phone'];
 $comments = $_POST['comments'];
 
 if (trim($name) == '') {
-    echo '<div class="alert alert-error">You must enter your name.</div>';
+    echo '<div class="alert alert-error">Anda harus mengetikan nama anda.</div>';
     exit();
 } else if (trim($email) == '') {
-    echo '<div class="alert alert-error">You must enter email address.</div>';
+    echo '<div class="alert alert-error">Anda harus mengetikan alamat email anda.</div>';
     exit();
 } else if (!isEmail($email)) {
-    echo '<div class="alert alert-error">You must enter a valid email address.</div>';
+    echo '<div class="alert alert-error">Alamat email tidak valid.</div>';
     exit();
 } else if (trim($phone) == '') {
-    echo '<div class="alert alert-error">Please fill all fields!</div>';
+    echo '<div class="alert alert-error">Anda harus mengetikan nomer telpon/HP anda!</div>';
     exit();
 } else if (trim($comments) == '') {
-    echo '<div class="alert alert-error">You must enter your comments</div>';
+    echo '<div class="alert alert-error">Penting bagi kami mengetahui apa kebutuhan, ide dan pertanyaan anda.</div>';
     exit();
 }
 
-if (get_magic_quotes_gpc()) {
-    $comments = stripslashes($comments);
-}
-
+$comments = stripslashes($comments);
 $comments = "Email: {$email}<br/>Name: {$name}<br/>Phone: {$phone}<br/><hr/>Message:<hr/>{$comments}<br/>";
 
 $mail = new PHPMailer;
 $mail->isSMTP();
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = false;
 $mail->Host = 'mail.masuk.email';
 $mail->Port = 587;
 $mail->SMTPAuth = true;
@@ -60,7 +59,7 @@ $mail->Body = $comments;
 if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo "<div class='alert alert-success'>";
+    echo "<br/><div class='alert alert-success'>";
     echo "<h3>Email telah terkirim.</h3>";
     echo "<p>Terima kasih <strong>$name</strong>, pesan anda akan segera kami respon.</p>";
     echo "</div>";

@@ -5,10 +5,10 @@
     Version         : 1.3
     
 * ================================================================= */
-(function($) {
+(function ($) {
     "use strict";
 
-    $(document).on('ready', function() {
+    $(document).on('ready', function () {
 
 
         /* ==================================================
@@ -27,8 +27,8 @@
         /* ==================================================
             # Tooltip Init
         ===============================================*/
-        $('[data-toggle="tooltip"]').tooltip(); 
-        
+        $('[data-toggle="tooltip"]').tooltip();
+
 
         /* ==================================================
             # Smooth Scroll
@@ -37,7 +37,7 @@
             target: ".navbar-collapse",
             offset: 200
         });
-        $('a.smooth-menu').on('click', function(event) {
+        $('a.smooth-menu').on('click', function (event) {
             var $anchor = $(this);
             var headerH = '75';
             $('html, body').stop().animate({
@@ -50,11 +50,11 @@
         /* ==================================================
             # Equal Height Init
         ===============================================*/
-        $(window).on('resize', function() {
+        $(window).on('resize', function () {
             $(".equal-height").equalHeights();
         });
 
-        $(".equal-height").equalHeights().find("img, iframe, object").on('load', function() {
+        $(".equal-height").equalHeights().find("img, iframe, object").on('load', function () {
             $(".equal-height").equalHeights();
         });
 
@@ -62,7 +62,7 @@
             # Fun Factor Init
         ===============================================*/
         $('.timer').countTo();
-        $('.fun-fact').appear(function() {
+        $('.fun-fact').appear(function () {
             $('.timer').countTo();
         }, {
             accY: -100
@@ -93,12 +93,12 @@
             fixedContentPos: false
         });
 
-        $('.magnific-mix-gallery').each(function() {
+        $('.magnific-mix-gallery').each(function () {
             var $container = $(this);
             var $imageLinks = $container.find('.item');
 
             var items = [];
-            $imageLinks.each(function() {
+            $imageLinks.each(function () {
                 var $item = $(this);
                 var type = 'image';
                 if ($item.hasClass('magnific-iframe')) {
@@ -122,7 +122,7 @@
                 },
                 type: 'image',
                 callbacks: {
-                    beforeOpen: function() {
+                    beforeOpen: function () {
                         var index = $imageLinks.index(this.st.el);
                         if (-1 !== index) {
                             this.goTo(index);
@@ -292,7 +292,7 @@
         /* ==================================================
             Preloader Init
          ===============================================*/
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             // Animate loader off screen
             $(".se-pre-con").fadeOut("slow");;
         });
@@ -301,41 +301,36 @@
         /* ==================================================
             Contact Form Field Reset
          ===============================================*/
-        $('.contact-form').on('submit',function(){
-            $('.contact-form').find('input,textarea').each(function(i){
+        $('.contact-form').on('submit', function () {
+            /* $('.contact-form').find('input,textarea').each(function(i){
                 $(this).val('');
-            });
+            }); */
         });
 
 
         /* ==================================================
             Contact Form Validations
         ================================================== */
-        $('.contact-form').each(function() {
+        $('.contact-form').each(function () {
             var formInstance = $(this);
-            formInstance.submit(function() {
+            formInstance.submit(function () {
 
                 var action = $(this).attr('action');
+                
+                //console.info($('#name').val());
 
-                $("#message").slideUp(750, function() {
+                $("#message").slideUp(750, function () {
                     $('#message').hide();
 
                     $('#submit')
                         .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
                         .attr('disabled', 'disabled');
-                    
-                    console.info($('#name').val());
 
-                    $.post(action, {
-                            name: $('#name').val(),
-                            email: $('#email').val(),
-                            phone: $('#phone').val(),
-                            comments: $('#comments').val()
-                        },
-                        function(data) {
+                    $.post(action, formInstance.serialize(),
+                        function (data) {
                             document.getElementById('message').innerHTML = data;
                             $('#message').slideDown('slow');
-                            $('.contact-form img.loader').fadeOut('slow', function() {
+                            $('.contact-form img.loader').fadeOut('slow', function () {
                                 $(this).remove()
                             });
                             $('#submit').removeAttr('disabled');
