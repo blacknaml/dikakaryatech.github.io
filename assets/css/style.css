@@ -523,6 +523,58 @@ input {
   color: #ffffff;
 }
 
+/* button primary */
+.btn-primary {
+  background-color: #00acff;
+  color: #ffffff !important;
+  border: 2px solid #00acff;
+}
+
+.btn-primary.border {
+  background-color: transparent;
+  color: #00acff !important;
+  border: 2px solid #00acff;
+}
+
+.btn-primary.border:hover {
+  background-color: #00acff;
+  color: #ffffff !important;
+  border: 2px solid #00acff;
+}
+
+.btn-primary.effect:hover,
+.btn-primary.effect:focus {
+  background: #00acff none repeat scroll 0 0;
+  border: 2px solid #00acff;
+  color: #ffffff;
+}
+
+/* button success */
+.btn-success {
+  background-color: #25d366;
+  color: #ffffff !important;
+  border: 2px solid #25d366;
+}
+
+.btn-success.border {
+  background-color: transparent;
+  color: #25d366 !important;
+  border: 2px solid #25d366;
+}
+
+.btn-success.border:hover {
+  background-color: #25d366;
+  color: #ffffff !important;
+  border: 2px solid #25d366;
+}
+
+.btn-success.effect:hover,
+.btn-success.effect:focus {
+  background: #25d366 none repeat scroll 0 0;
+  border: 2px solid #25d366;
+  color: #ffffff;
+}
+
 .btn.btn-sm-lm {
   font-size: 12px;
   padding: 4px 35px;
