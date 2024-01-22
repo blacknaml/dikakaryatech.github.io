@@ -19,6 +19,7 @@ Daniel M. Berry, Daniel Hillis, Danny Thorpe, Dave Parnas, Dave Thomas, David He
 Dennis Ritchie, Donald Knuth, Donald Norman, Donald G. Reinertsen, Doug Linder, Douglas Adams, Douglas Crockford
 
 Untuk bagian-1 bisa dibaca di [sini]({% post_url 2023-11-05-kutipan-inspiratif-untuk-pengembang-software-bagian-1 %})
+
 Untuk bagian-2 bisa dibaca di [sini]({% post_url 2023-11-15-kutipan-inspiratif-untuk-pengembang-software-bagian-2 %})
 
 **Cem Kaner – James Bach – Bret Pettichord** (*Co-authors of the book “Lessons Learned in Software Testing” (2002), which brings an innovative perspective to the assumptions about software testing*)
