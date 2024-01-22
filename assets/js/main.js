@@ -323,6 +323,8 @@
                     $('#submit')
                         .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
                         .attr('disabled', 'disabled');
+                    
+                    console.info($('#name').val());
 
                     $.post(action, {
                             name: $('#name').val(),
