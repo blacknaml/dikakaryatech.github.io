@@ -17,6 +17,7 @@ Pada bagian-2 ini akan diambil dari: Betsy Beyer, Bill Gates, Bram Cohen, Brian 
 Bjarne Stroustrup, Bob Frankston, Boris Beizer, Butler Lampson.
 
 Untuk bagian-1 bisa dibaca di [sini]({% post_url 2023-11-05-kutipan-inspiratif-untuk-pengembang-software-bagian-1 %})
+Untuk bagian-3 bisa dibaca di [sini]({% post_url 2023-11-05-kutipan-inspiratif-untuk-pengembang-software-bagian-3 %})
 
 **Betsy Beyer** (*Technical author at Google*)
 

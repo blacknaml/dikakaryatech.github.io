@@ -17,6 +17,9 @@ Pada bagian-1 ini akan diambil dari: Aaron Levie, Akshat Paul, Alan Cooper, Alan
 Alan Turing, Albert Einstein, Alex Engelberg, Aldous Huxley, Alistair Cockburn, Amir Ghahrai, 
 Andrew Clark, Andrew Singer, Andy Hunt, Achibald Putt, Arthur C. Clarke, Atli Bjorgvin Oddson.
 
+Untuk bagian-2 bisa dibaca di [sini]({% post_url 2023-11-05-kutipan-inspiratif-untuk-pengembang-software-bagian-2 %})
+Untuk bagian-3 bisa dibaca di [sini]({% post_url 2023-11-05-kutipan-inspiratif-untuk-pengembang-software-bagian-3 %})
+
 **Aaron Levie** (*An American entrepreneur, co-founder and CEO of a corporate cloud company*)
 
 > "Start with something simple and small, then expand over time. If people call it a ‘toy’ you’re definitely onto something."
