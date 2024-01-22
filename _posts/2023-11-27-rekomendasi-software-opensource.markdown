@@ -39,26 +39,26 @@ Dicantumkan berdasarkan tujuan:
 - [Builder][builder]{:target="_blank"}: Builder adalah IDE baru untuk GNOME yang berfokus untuk menghadirkan kekuatan platform GNOME kepada lebih banyak pengembang dibandingkan sebelumnya. (GPL)
 
 ### Text Editor
-- [Visual Studio Code][vscode]: Visual Studio Code (VS Code) merupakan sebuah teks editor ringan dan handal dibuat oleh Microsoft untuk sistem operasi multiplatform, yang artinya aplikasi VS Code dapat digunakan di sistem operasi Linuk, Mac dan Windows. (MIT)
+- [Visual Studio Code][vscode]{:target="_blank"}: Visual Studio Code (VS Code) merupakan sebuah teks editor ringan dan handal dibuat oleh Microsoft untuk sistem operasi multiplatform, yang artinya aplikasi VS Code dapat digunakan di sistem operasi Linuk, Mac dan Windows. (MIT)
 - [Vim][vim]{:target="_blank"}: Vim adalah editor teks yang sangat dapat dikonfigurasi yang dibuat untuk memungkinkan pengeditan teks yang efisien. (GPL)
-- [Brackets][brackets]{:target="_blank"}: Brackets adalah editor teks modern yang ringan namun kuat. Kami memadukan alat visual ke dalam editor sehingga Anda mendapatkan bantuan yang tepat saat Anda menginginkannya. Dengan fitur dan ekstensi baru yang dirilis setiap 3-4 minggu, rasanya seperti mendapatkan hadiah sepanjang tahun. (MIT)
+- [Brackets][brackets]{:target="_blank"}: Brackets adalah editor teks modern yang ringan namun kuat. Kami memadukan alat visual ke dalam editor sehingga Anda mendapatkan bantuan yang tepat saat Anda menginginkannya. Dengan fitur dan ekstensi baru yang dirilis setiap 3-4 minggu. (MIT)
 
 ### Version Control dalam Pengembangan Software
 - [Git][git]{:target="_blank"}: Git adalah sistem kontrol versi terdistribusi sumber terbuka dan gratis yang dirancang untuk menangani segala hal mulai dari proyek kecil hingga proyek sangat besar dengan kecepatan dan efisiensi. Git mudah dipelajari dan memiliki ukuran yang kecil dengan kinerja yang sangat cepat. (GPL)
 
 ### Issue Tracking dalam Pengembangan Software
-- [Mantis BT][mantis-bt]{:target="_blank"}: MantisBT adalah sistem pelacakan bug berbasis web yang populer dan gratis. Itu ditulis dalam PHP dan bekerja dengan database MySQL, MS SQL, dan PostgreSQL serta server web. (GPL)
+- [Mantis BT][mantis-bt]{:target="_blank"}: MantisBT adalah sistem pelacakan bug berbasis web yang populer dan gratis. Ditulis dalam PHP dan bekerja dengan database MySQL, MS SQL, dan PostgreSQL serta server web. (GPL)
 - [Bugzilla][bugzilla]{:target="_blank"}: Bugzilla adalah perangkat lunak server yang dirancang untuk membantu Anda mengelola pengembangan perangkat lunak. (MPL)
 
 ### Programming Tools dalam Pengembangan Software
 - [BuildBot][buildbot]{:target="_blank"}: BuildBot adalah sistem untuk mengotomatiskan siklus kompilasi/pengujian yang diperlukan oleh sebagian besar proyek perangkat lunak untuk memvalidasi perubahan kode. (GPL)
-- [Docker][docker]{:target="_blank"}: Docker Engine is an open source containerization technology for building and containerizing your applications. (Apache)
-- [Vagrant][vagrant]{:target="_blank"}: Vagrant menyediakan format kerangka kerja dan konfigurasi untuk membuat dan mengelola lingkungan pengembangan portabel yang lengkap. Lingkungan pengembangan ini dapat hidup di komputer Anda atau di cloud, dan portabel antara Windows, Mac OS X, dan Linux. (MIT)
-- [Boostnote][boostnote]{:target="_blank"}: Boostnote adalah aplikasi pencatatan untuk pemrogram yang berfokus pada penurunan harga, cuplikan, dan kemampuan penyesuaian. Edit kode dan wiki Anda dari mana saja. (GPL)
+- [Docker][docker]{:target="_blank"}: Docker Engine adalah teknologi kontainerisasi open source untuk membangun dan memuat aplikasi Anda. (Apache)
+- [Vagrant][vagrant]{:target="_blank"}: Vagrant menyediakan format kerangka kerja dan konfigurasi untuk membuat dan mengelola lingkungan pengembangan portabel yang lengkap. Lingkungan pengembangan ini dapat berjalan di komputer atau di cloud, dan portabel untuk Windows, Mac OS X, dan Linux. (MIT)
+- [Boostnote][boostnote]{:target="_blank"}: Boostnote adalah aplikasi pencatatan untuk pemrogram yang berfokus pada markdown, snippets, dan kemampuan penyesuaian. Edit kode dan wiki Anda dari mana saja. (GPL)
 
 ### Software Blog
 - [Wordpress][wordpress]{:target="_blank"}: WordPress adalah platform penerbitan canggih dengan fokus pada estetika, standar web, dan kegunaan. (GPL)
-- [Jekyll][jekyll]{:target="_blank"}: Jekyll is an open source static site generator. (MIT)
+- [Jekyll][jekyll]{:target="_blank"}: Jekyll adalah generator situs statis open source. (MIT)
 
 ### Telephony Platform
 - [Asterisk][asterisk]{:target="_blank"}: Asterisk adalah mesin dan tool kit telepon open source terkemuka di dunia. (GPL)
@@ -69,11 +69,11 @@ Dicantumkan berdasarkan tujuan:
 - [Tailwind][tailwind]{:target="_blank"}: Tailwind sangat modern, dan memanfaatkan semua fitur CSS terbaru dan terhebat untuk membuat pengalaman pengembang senyaman mungkin. (MIT)
 
 #### Go Lang
-- [Echo][echo]{:target="_blank"}: Kerangka kerja web Go yang berkinerja tinggi, dapat diperluas, dan minimalis. (MIT)
+- [Echo][echo]{:target="_blank"}: Kerangka kerja web Go yang berkinerja tinggi, dapat diskalabilitas, dan minimalis. (MIT)
 
 #### JavaScript 
 - [jQuery][jquery]{:target="_blank"}: jQuery adalah Pustaka JavaScript yang cepat dan ringkas yang menyederhanakan penjelajahan dokumen HTML, penanganan peristiwa, animasi, dan interaksi Ajax untuk pengembangan web yang cepat. (MIT)
-- [React][react]{:target="_blank"}: React menjanjikan pemrogram sebuah model di mana subkomponen tidak dapat secara langsung mempengaruhi komponen yang melingkupinya; pembaruan dokumen HTML yang efisien ketika data berubah; dan pemisahan yang bersih antar komponen pada aplikasi satu halaman modern. (BSD)
+- [React][react]{:target="_blank"}: Pustaka React menjanjikan pemrogram sebuah model di mana subkomponen tidak dapat secara langsung mempengaruhi komponen yang melingkupinya; pembaruan dokumen HTML yang efisien ketika data berubah; dan pemisahan yang bersih antar komponen pada aplikasi satu halaman modern. (BSD)
 
 #### PHP
 - [Codeigniter][codeigniter]{:target="_blank"}:CodeIgniter adalah Kerangka Aplikasi Web open source yang membantu Anda menulis program PHP yang keren. (OSL)
@@ -81,7 +81,7 @@ Dicantumkan berdasarkan tujuan:
 
 ### NoSQL Database
 - [MongoDB][mongodb]{:target="_blank"}: MongoDB adalah database berorientasi dokumen yang scalable, berkinerja tinggi, open source. Basis datanya berorientasi pada dokumen sehingga mengelola kumpulan dokumen mirip JSON. (AGPL)
-- [Redis][redis]{:target="_blank"}: Redis adalah penyimpanan nilai kunci tingkat lanjut yang bersumber terbuka, berlisensi BSD. Ini sering disebut sebagai server struktur data karena kunci dapat berisi string, hash, daftar, kumpulan, dan kumpulan yang diurutkan. (BSD)
+- [Redis][redis]{:target="_blank"}: Redis adalah penyimpanan key-value tingkat lanjut yang bersumber terbuka, berlisensi BSD. Ini sering disebut sebagai server struktur data karena kunci dapat berisi string, hash, lists, sets, dan sorted-sets. (BSD)
 
 ### Relational Database
 - [MariaDB][mariadb]{:target="_blank"}: MariaDB adalah cabang database MySQL yang dikembangkan komunitas yang menggunakan mesin Maria secara default. (GPL)
@@ -90,7 +90,7 @@ Dicantumkan berdasarkan tujuan:
 - [SQLite][sqlite]{:target="_blank"}: SQLite adalah perpustakaan perangkat lunak yang mengimplementasikan mesin database SQL transaksional yang mandiri, tanpa server, tanpa konfigurasi. (Public Domain)
 
 ### Database Management
-- [MySQL Workbench][mysqlworkbench]{:target="_blank"}: Tentang MySQL Workbench MySQL Workbench adalah alat desain database visual lintas platform yang dikembangkan oleh MySQL. MySQL Workbench tersedia sebagai alat GUI asli di Windows, Linux dan OS X dalam berbagai edisi. (GPL)
+- [MySQL Workbench][mysqlworkbench]{:target="_blank"}: MySQL Workbench MySQL Workbench adalah alat desain database visual lintas platform yang dikembangkan oleh MySQL. MySQL Workbench tersedia sebagai alat GUI asli di Windows, Linux dan OS X dalam berbagai edisi. (GPL)
 - [pgAdmin][pgadmin]{:target="_blank"}: pgAdmin adalah platform administrasi dan pengembangan Open Source paling populer dan kaya fitur untuk PostgreSQL. (BSD)
 - [phpMyAdmin][phpmyadmin]{:target="_blank"}: phpMyAdmin adalah alat yang ditulis dalam PHP yang dimaksudkan untuk menangani administrasi MySQL dengan menggunakan browser Web. Itu dapat melakukan berbagai tugas seperti membuat, memodifikasi atau menghapus database, mengeksekusi pernyataan SQL atau mengelola pengguna dan izin. (GPL)
 
@@ -102,7 +102,7 @@ Dicantumkan berdasarkan tujuan:
 - [Odoo][odoo]{:target="_blank"}: Odoo menawarkan rangkaian lengkap aplikasi bisnis yang sesuai dengan kebutuhan perusahaan besar, namun dibuat untuk memberdayakan perusahaan kecil agar dapat mengadopsinya dengan cepat dan mudah melalui pengalaman pengguna yang lancar dan ramah. (AGPL)
 
 ### Ticketing System dalam CRM
-- [OTRS][otrs]{:target="_blank"}: OTRS adalah Sistem Permintaan Tiket Open source (juga dikenal sebagai sistem tiket bermasalah) dengan banyak fitur untuk mengelola panggilan telepon dan email pelanggan. (GPL)
+- [OTRS][otrs]{:target="_blank"}: OTRS adalah Sistem Permintaan Tiket Open source (juga dikenal sebagai trouble ticket system) dengan banyak fitur untuk mengelola panggilan telepon dan email pelanggan. (GPL)
 
 ### Software Akuntansi
 - [GNUCash][gnucash]{:target="_blank"}: GnuCash adalah perangkat lunak akuntansi keuangan pribadi dan usaha kecil, berlisensi bebas di bawah GNU GPL. (GPL)
@@ -124,7 +124,7 @@ Dicantumkan berdasarkan tujuan:
 - [Vesta][vesta]{:target="_blank"}: Vesta adalah panel kontrol hosting sumber terbuka dengan antarmuka yang bersih dan fokus serta teknologi terbaru yang sangat inovatif. Semua fungsi inti gratis. (GPL)
 
 ### Remote Desktop
-- [RustDesk][rustdesk]{:target="_blank"}: Perangkat lunak desktop jarak jauh, ditulis dalam Rust. Berfungsi di luar kotak, tidak diperlukan konfigurasi. Alternatif bagus untuk TeamViewer dan AnyDesk! Anda memiliki kendali penuh atas data Anda, tanpa mengkhawatirkan keamanan. Anda dapat menggunakan server rendezvous/relay kami, atau hosting mandiri, atau menulis server rendezvous/relay Anda sendiri. (GPL)
+- [RustDesk][rustdesk]{:target="_blank"}: Perangkat lunak remote desktop jarak jauh, ditulis dalam Rust. Berfungsi di luar kotak, tidak diperlukan konfigurasi. Alternatif bagus untuk TeamViewer dan AnyDesk! Anda memiliki kendali penuh atas data Anda, tanpa mengkhawatirkan keamanan. Anda dapat menggunakan server rendezvous/relay kami, atau hosting mandiri, atau menulis server rendezvous/relay Anda sendiri. (GPL)
 
 ### SSH Client
 - [PuTTY][putty]{:target="_blank"}: Putty adalah emulator terminal sumber terbuka dan gratis, konsol serial, dan aplikasi transfer file jaringan. Ini mendukung beberapa protokol jaringan, termasuk SCP, SSH, Telnet, rlogin, dan koneksi soket mentah. (MIT)
