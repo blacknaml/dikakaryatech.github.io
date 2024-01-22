@@ -1,6 +1,6 @@
 <!-- Start Pricing Area
     ============================================= -->
-<div id="produk" class="pricing-area default-padding-top">
+<div id="produk" class="work-list-area default-padding">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -11,133 +11,201 @@
       </div>
     </div>
     <div class="row">
-      <div class="pricing pricing-simple text-center">
-        <div class="col-md-3">
-          <div class="pricing-item active">
-            <ul>
-              <li class="icon">
-                <i class="flaticon-quality-badge"></i>
-              </li>
-              <li class="pricing-header">
-                <h4>SIDIK</h4>
-                <h2><sup>Rp.</sup>33<sub> juta</sub></h2>
-              </li>
-              <li>SIM Diklat Rumah Sakit</li>
-              <li>Web-based</li>
-              <li>Landing Page</li>
-              <li>
-                Web Aplikasi Diklat
-                <span
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Web Aplikasi untuk Manajemen Pelatihan In / Out House internal Karyawan Perusahaan."
-                  ><i class="fas fa-info-circle"></i
-                ></span>
-              </li>
-              <li>
-                Web Aplikasi Kordik
-                <span
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Web Aplikasi untuk Manajemen PKL, Magang, dan Data awal dari Instansi luar Perusahaan."
-                  ><i class="fas fa-info-circle"></i
-                ></span>
-              </li>
-              <li>
-                Web Aplikasi KEP
-                <span
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Web Aplikasi untuk Manajemen Penelitian dari Instansi luar Perusahaan."
-                  ><i class="fas fa-info-circle"></i
-                ></span>
-              </li>
-              <li>
-                Bisa Kontrak Maintenance dan Update Fitur
-              </li>
-              <li class="footer">
-                <a class="btn btn-theme effect border btn-sm" href="/produk.html">Lebih Detail</a>
-              </li>
-            </ul>
+      <div class="col-md-12 overview-items">
+        <!-- Tab Nav -->
+        <div class="tab-navigation text-center">
+          <ul class="nav nav-pills">
+            <li class="active">
+              <a data-toggle="tab" href="#simapro" aria-expanded="false">
+                <i class="flaticon-quality-badge"></i> SIMAPRO
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#sidik" aria-expanded="true">
+                <i class="flaticon-quality-badge"></i> SIDIK
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#sipt30" aria-expanded="false">
+                <i class="flaticon-start"></i> SIP-T30
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#pbxs20" aria-expanded="false">
+                <i class="flaticon-start"></i> PBX S20
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Tab Nav -->
+        <!-- Start Tab Content -->
+        <div class="row">
+          <div class="tab-content">
+            <!-- Start Single Item -->
+            <div id="sidik" class="tab-pane fade">
+              <div class="col-md-6 thumb">
+                <img src="/assets/images/products/sim-diklat.webp" alt="Aplikasi Web SIM Diklat Kordik KEP Rumah Sakit">
+              </div>
+              <div class="col-md-6 info">
+                <h3>SIM Diklat Rumah Sakit SIDIK</h3>
+                <p>
+                  SIDIK adalah aplikasi yang mengintegrasikan proses perencanaan, penyelenggaraan, pengevaluasian dan
+                  pendokumentasian kegiatan Pendidikan
+                  dan Pelatihan berbasis teknologi informasi dan komunikasi.
+                </p>
+                <p>
+                  Aplikasi ini untuk membantu panitia pelaksana diklat untuk mempermudah
+                  proses pendataan peserta diklat khususnya saat proses registrasi peserta, serta dapat memudahkan
+                  proses pelaporan diklat.
+                </p>
+                <p>
+                  SIDIK merupakan alat bantu untuk mengelola data kepegawaian menjadi bahan informasi. Dimana setiap
+                  pegawai yang pernah ikut diklat agar dapat terdata di
+                  aplikasi tersebut agar jangan sampai yang ikut Diklat hanya orang atau pegawai itu-itu saja. Tujuan
+                  dari SIDIK sebagai alat bantu untuk mempersiapkan peserta diklat dan data alumni.
+                </p>
+                <ul>
+                  <li>
+                    <h4>Berbasis Web</h4>
+                    Cukup menggunakan web browser di komputer atau smart phone.
+                  </li>
+                  <li>
+                    <h4>Landing Page</h4>
+                    Bisa digunakan untuk halaman publik untuk informasi umum departemen Diklat.
+                  </li>
+                  <li>
+                    <h4>Kategori Kordik, KEP, dan Diklit</h4>
+                    Manajemen Pelatihan In / Out House internal Karyawan Perusahaan (Diklit), Manajemen PKL, Magang, dan
+                    Data awal dari Instansi luar Perusahaan (Kordik),
+                    Manajemen Penelitian dari Instansi luar Perusahaan (KEP)
+                  </li>
+                </ul>
+                <div class="footer">
+                  <a href="product/sidik.html" class="btn circle btn-theme effect border btn-md">Selengkapnya</a>
+                </div>
+                {% include id/kontak-button.html product="Aplikasi Web SIM Diklat Kordik KEP Rumah Sakit"
+                page="product/sidik.html" %}
+              </div>
+            </div>
+            <!-- End Single Item -->
+
+            <!-- Start Single Item -->
+            <div id="simapro" class="tab-pane active fade in">
+              <div class="col-md-6 thumb">
+                <img src="assets/images/products/simapro.webp"
+                  alt="Aplikasi Web Sistem Informasi Manajemen Proyek SIMAPRO">
+              </div>
+              <div class="col-md-6 info">
+                <h3>Sistem Informasi Manajemen Proyek SIMAPRO</h3>
+                <p>
+                  SIMAPRO adalah software aplikasi berbasis web yang berfungsi untuk mencatat proyek, barang, customer
+                  dan suplier.
+                  Sehingga proyek, inventori barang dan data customer bisa dipantau secara mudah melalui komputer atau
+                  smartphone
+                </p>
+                <p>
+                  SIMAPRO menggunakan sistem approval bertingkat, dan memiliki beberapa kelompok user yaitu Admin,
+                  Direksi, Purchasing, Accounting dan PimPro.
+                </p>
+                <ul>
+                  <li>
+                    <h4>Berbasis Web</h4>
+                    Cukup menggunakan web browser di komputer atau smart phone.
+                  </li>
+                  <li>
+                    <h4>Landing Page</h4>
+                    Bisa digunakan untuk halaman publik untuk informasi umum departemen Diklat.
+                  </li>
+                  <li>
+                    <h4>Analisa PIECES</h4>
+                    metode analisis yang terdiri dari 6 indikator penilaian yaitu Performance, Information, Economy,
+                    Control, Eficiency, dan Service.
+                    Analisis ini merupakan cara untuk mengidentifikasi dan memecahkan permasalahan yang terjadi pada
+                    suatu sistem yang berjalan.
+                  </li>
+                </ul>
+                <div class="footer">
+                  <a href="product/simapro.html" class="btn circle btn-theme effect border btn-md">Selengkapnya</a>
+                </div>
+                {% include id/kontak-button.html product="Aplikasi Web Sistem Informasi Manajemen Proyek SIMAPRO"
+                page="product/simapro.html" %}
+              </div>
+            </div>
+            <!-- End Single Item -->
+
+            <!-- Start Single Item -->
+            <div id="sipt30" class="tab-pane fade">
+              <div class="col-md-6 thumb">
+                <img src="assets/images/products/SIP-T30.webp" alt="IP Phone Yealink SIP-T30">
+              </div>
+              <div class="col-md-6 info">
+                <h3>Yealink SIP-T30</h3>
+                <p>
+                  SIP Phone (1 SIP, non POE)<br />
+                  132x64 (2.3"), HD Voice, 10/100 Dual-LAN, 1 SIP Account
+                </p>
+                <ul>
+                  <li>
+                    <h4>Superior HD Audio untuk komunikasi lebih baik</h4>
+                    Menyediakan komunikasi bebas gangguan dengan teknologi Smart Noise Filtering terkemuka di industri,
+                    yang memberikan kualitas suara yang sangat baik tanpa suara asing dan memungkinkan percakapan yang
+                    lancar.
+                  </li>
+                  <li>
+                    <h4>Desain Klasik yang Praktis</h4>
+                    Desain ergonomis memungkinkan pengalaman pengoperasian yang lebih mudah dan ramah bagi pengguna.
+                  </li>
+                  <li>
+                    <h4>Kinerja yang kuat</h4>
+                    Mampu memperluas lebih banyak layanan untuk berbagai tuntutan bisnis.
+                  </li>
+                </ul>
+                <div class="footer">
+                  <a href="product/sip-t30.html" class="btn circle btn-theme effect border btn-md">Selengkapnya</a>
+                </div>
+                {% include id/kontak-button.html product="Yealink SIP-T30" page="product/sip-t30.html" %}
+              </div>
+            </div>
+            <!-- End Single Item -->
+
+            <!-- Start Single Item -->
+            <div id="pbxs20" class="tab-pane fade">
+              <div class="col-md-6 thumb">
+                <img src="assets/images/products/yeastar-pbx-s20.webp" alt="Yeastar PBX S20 IP-PBX for SMB/SOHO">
+              </div>
+              <div class="col-md-6 info">
+                <h3>Yeastar PBX S20 IP-PBX for SMB/SOHO</h3>
+                <p>
+                  Incl: 20 Users SIP, 20 SIP Trunks, 10 Concurrent Calls, Auto-Recording, 4 Analog Ports (need FXO/FXS
+                  Module)
+                </p>
+                <ul>
+                  <li>
+                    <h4>Sistem telepon usaha kecil entry-level kompak mudah digunakan, andal, dan kaya fitur</h4>
+                  </li>
+                  <li>
+                    <h4>Mudah digunakan</h4>
+                  </li>
+                  <li>
+                    <h4>Desain modular yang fleksibel</h4>
+                    Siap dikombinasikan dengan 2 slot onboard-module untk kustom FXS, FXO, ISDN BRI, dan GSM/3G/4G.
+                  </li>
+                  <li>
+                    <h4>Manajemen jarak jauh yang handal</h4>
+                    Platform yang sangat aman untuk memantau dan mengelola sistem PBX Anda dari jarak jauh dan terpusat.
+                  </li>
+                </ul>
+                <div class="footer">
+                  <a href="product/pbx-s20.html" class="btn circle btn-theme effect border btn-md">Selengkapnya</a>
+                </div>
+                {% include id/kontak-button.html product="Yeastar PBX S20" page="product/pbx-s20.html" %}
+              </div>
+            </div>
+            <!-- End Single Item -->
+
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="pricing-item active">
-            <ul>
-              <li class="icon">
-                <i class="flaticon-quality-badge"></i>
-              </li>
-              <li class="pricing-header">
-                <h4>SISAN</h4>
-                <h2><sup>Rp.</sup>19<sub> juta</sub></h2>
-              </li>
-              <li>SIM Pemberkasan</li>
-              <li>Web based</li>
-              <li>Landing Page</li>
-              <li>Custom sesuai kebutuhan</li>
-              <li>Berkas terenkripsi</li>
-              <li>Berkas terkompresi</li>
-              <li>Bisa Kontrak Maintenance</li>
-              <li>Bisa Custom</li>
-              <li class="footer">
-                <a class="btn btn-theme effect border btn-sm" href="/produk.html">Lebih Detail</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="pricing-item active">
-            <ul>
-              <li class="icon">
-                <i class="flaticon-quality-badge"></i>
-              </li>
-              <li class="pricing-header">
-                <h4>SIMAPRO</h4>
-                <h2><sup>Rp.</sup>17<sub> juta</sub></h2>
-              </li>
-              <li>Sistem Informasi Manajemen Proyek </li>
-              <li>Web based</li>
-              <li>Landing Page</li>
-              <li>Analisa PIECES
-                <span
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title=" PIECES (Performance, Information, Economy, Control, Eficiency and Service)"
-                  ><i class="fas fa-info-circle"></i
-                ></span>
-              </li>
-              <li>Proposal Tender Otomatis</li>
-              <li>Bisa Kontrak Maintenance</li>
-              <li>Bisa Custom</li>
-              <li class="footer">
-                <a class="btn btn-theme effect border btn-sm" href="/produk.html">Lebih Detail</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="pricing-item active">
-            <ul>
-              <li class="icon">
-                <i class="flaticon-start"></i>
-              </li>
-              <li class="pricing-header">
-                <h4>Yealink SIP-T30</h4>
-                <h2><sup>Rp.</sup>650<sub> ribu</sub></h2>
-              </li>
-              <li>SIP Phone</li>
-              <li>1 SIP Account</li>
-              <li>Non PoE</li>
-              <li>Screen 2.3"</li>
-              <li>HD Voice</li>
-              <li>10/100 Dual LAN</li>
-              <li>Documetation</li>
-              <li class="footer">
-                <a class="btn btn-theme effect border btn-sm" href="/produk.html">Lebih Detail</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <!-- End Tab Content -->
       </div>
     </div>
   </div>

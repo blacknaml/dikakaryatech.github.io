@@ -523,6 +523,32 @@ input {
   color: #ffffff;
 }
 
+/* btn-theme-reverse */
+.btn-theme-reverse {
+  background-color: #ff5a6e;
+  color: #ffffff !important;
+  border: 2px solid #ff5a6e;
+}
+
+.btn-theme-reverse.border {
+  background-color: transparent;
+  color: #ff5a6e !important;
+  border: 2px solid #ff5a6e;
+}
+
+.btn-theme-reverse.border:hover {
+  background-color: #ff5a6e;
+  color: #ffffff !important;
+  border: 2px solid #ff5a6e;
+}
+
+.btn-theme-reverse.effect:hover,
+.btn-theme-reverse.effect:focus {
+  background: #ff5a6e none repeat scroll 0 0;
+  border: 2px solid #ff5a6e;
+  color: #ffffff;
+}
+
 /* button primary */
 .btn-primary {
   background-color: #00acff;
@@ -619,6 +645,14 @@ input {
 
 .less-margin {
   margin: 0;
+}
+.splitter
+{
+  display: block;
+  height: 1px;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 209 211 / var(--tw-bg-opacity));
 }
 
 header {
@@ -1507,6 +1541,13 @@ body,
 .carousel-shadow .owl-stage-outer {
   margin: -15px -15px 0;
   padding: 15px;
+}
+
+.we-offer-area .fixed-shape {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
 }
 
 .we-offer-area .our-offer-carousel .owl-dots .owl-dot span {
