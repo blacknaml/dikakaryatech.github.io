@@ -68,7 +68,7 @@ Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita 
 |  | **Grand Total**  | | | | **155.000.000** |
 {: .table .table-bordered }
 
-Dari metode Cycle Distribution kita mendapatkan estimasi waktu 6,66 = 7 bulan, jumlah orang dalam tim sebanyak 14 orang dan biaya sebesar Rp. 155 Juta.
+Dari metode Cycle Distribution kita mendapatkan estimasi waktu 6,66 = **7 bulan**, jumlah orang dalam tim sebanyak **14 orang** dan biaya sebesar **Rp. 155 Juta**.
 
 ### Function Point FP
 Pendekatan *Function Point* (FP) adalah teknik estimasi yang bisa digunakan untuk memperkirakan ukuran sistem, effort yang diperlukan, dan waktu yang dibutuhkan proyek. FP memerlukan pengetahuan rinci 
