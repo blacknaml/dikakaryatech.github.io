@@ -48,6 +48,7 @@ Misalkan suatu proyek memerlukan waktu empat bulan dalam tahap perencanaan, maka
 
 Contoh perhitungan, saat fase planning tim membutuhkan waktu 1 bulan dengan 2 orang maka dapat di-estimasi seperti pada tabel di bawah. Estimasi waktu total yang didapat adalah 6,66 bulan dengan 14 orang.
 
+<div class="table-responsive" markdown="1">
 |     | Planning | Analysis | Design | Impelementation |
 | --- | :---: | :---: |  :---: |  :---: | 
 | Effort Distribution| 15% | 20% | 35% | 30%|
@@ -56,9 +57,11 @@ Contoh perhitungan, saat fase planning tim membutuhkan waktu 1 bulan dengan 2 or
 | Rumus | Waktu dan orang | 0.2 * (Planning/0.15) | 0.35 * (Planning/0.15) | 0.3 * (Planning/0.15) |
 | --- | --- | --- |  --- |  --- | 
 {: .table .table-bordered }
+</div>
 
 Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di atas akan didapatkan Estimasi Biaya Proyek Software sebesar **Rp. 155 Juta**.
 
+<div class="table-responsive" markdown="1">
 | | Fase | Month | Person | Cost | Total |
 | --- | --- | :---: |  :---: |  ---: |  ---: | 
 | 1 | Planning | 1 | 2 | 5.000.000 | 10.000.000 |
@@ -67,6 +70,7 @@ Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita 
 | 4 | Implementation | 2 | 4 | 5.000.000 | 40.000.000 |
 |  | **Grand Total**  | | | | **155.000.000** |
 {: .table .table-bordered }
+</div>
 
 Dari metode Cycle Distribution kita mendapatkan estimasi waktu 6,66 = **7 bulan**, jumlah orang dalam tim sebanyak **14 orang** dan biaya sebesar **Rp. 155 Juta**.
 
@@ -89,6 +93,7 @@ untuk menentukan TUFP (*Total Unadjusted Function Points*) dari proyek dengan me
 
 Dengan menggunakan tabel complexity seperti gambar di atas, maka akan dapat dihitung angka TUFP. Masukan berapa jumlah complexity untuk Low, Medium dan High per-bagian, misal, dalam planning proyek ditemukan ada 6 "Inputs" dengan rincian: 3 kompleksitas Low (hanya entri input text-field), 2 kompleksitas Medium (parsing dari file csv), dan 1 kompleksitas High (scraping data dari website WallMart). Masukan semua angka parameter planning ke tabel Complexity, maka didapatkan angka **TUFP 338**. Selanjut melangkah ke langkah Estimate effort required.
 
+<div class="table-responsive" markdown="1">
 | Description | Total Number | Low | Medium | High | Total |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Inputs** | 6 | 3 x 3 | 2 x 4  | 1 x 6 | **23** |
@@ -98,6 +103,7 @@ Dengan menggunakan tabel complexity seperti gambar di atas, maka akan dapat dihi
 | **Program Interfaces (UI)** | 3 | 1 x 5 | 0 x 7 | 2 x 10 | **25** |
 | **TUFP** ||||| **338** |
 {: .table .table-bordered }
+</div>
 
 #### Langkah kedua, Estimate effort required, 
 untuk menentukan PC (*Processing Complexity*) dari proyek dengan menggunakan pedoman tabel PC di bawah. 
@@ -107,6 +113,7 @@ untuk menentukan PC (*Processing Complexity*) dari proyek dengan menggunakan ped
 
 Dengan menggunakan tabel PC di atas akan didapatkan angka total PC. Masukan angka sesuai parameternya, contoh, planning proyek ini memiliki tingkat Data Communication yang rumit / tinggi maka masukan angka 3 (rumit), Distributed functions sedang (2), dan Online data entry sedang (2) juga. Angka skala dari 0 (tidak ada) s/d 3 (rumit). Setelah semua parameter dimasukan akan didapatkan total **PC = 7**. Selanjutnya melangkah ke langkah Estimate time required.
 
+<div class="table-responsive" markdown="1">
 | Parameter | Scale |
 | :---: | :---: |
 | **Data Communications** | **3** |
@@ -125,6 +132,7 @@ Dengan menggunakan tabel PC di atas akan didapatkan angka total PC. Masukan angk
 | Extensibility| 0 |
 | **Total Processing Complexity (PC)** | **7** |
 {: .table .table-bordered }
+</div>
 
 #### Langkah ketiga, Estimate time required, 
 untuk menentukan TAFP (*Total Adjusted Function Points*) dari proyek adalah dengan menggunakan rumus TAFP. Sebelum masuk ke TAFP kita harus mengetahui standar dari **APC factor** (Adjusted Project Complexity) yaitu:
@@ -196,6 +204,7 @@ Dari sini kita sudah mendapatkan estimasi waktu selama 7.156 bulan.
 
 Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standar Industri untuk Sistem Aplikasi Umum** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software sebesar **Rp. 175 Juta**.
 
+<div class="table-responsive" markdown="1">
 | | Fase | Month | Person | Cost | Total |
 | --- | --- | :---: |  :---: |  ---: |  ---: | 
 | 1 | Planning | 1 | 3 | 5.000.000 | 15.000.000 |
@@ -204,6 +213,7 @@ Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita 
 | 4 | Implementation | 2 | 5 | 5.000.000 | 50.000.000 |
 |  | **Grand Total**  | | | | **175.000.000** |
 {: .table .table-bordered }
+</div>
 
 Dari metode **Function Points** kita mendapatkan estimasi waktu **7.15 bulan**, jumlah orang dalam tim sebanyak **18 orang** dan biaya sebesar **Rp. 175 Juta**.
 
