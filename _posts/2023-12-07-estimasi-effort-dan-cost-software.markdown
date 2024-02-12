@@ -389,7 +389,17 @@ Jika dalam sehari bekerja 8 jam dan selama 22 hari per bulan (hari Sabtu - Mingg
 >
 > TIMEHighRisk = 3.0 x 11.3^1/3 =  **6.2** bulan
 
-Dari sini kita sudah mendapatkan estimasi waktu normal selama 5.61 bulan atau high risk 6.2 bulan dan jumlah normal orang 8.07 orang atau high risk 11.3 orang.
+Dari sini kita sudah mendapatkan estimasi waktu normal selama 5.61 bulan atau high risk 6.2 bulan dan jumlah normal orang 8.07 orang atau high risk 11.3 orang. Sebagai perbandingan jika menghitung UCP dengan software EA maka hasilnya tidak jauh berbeda. Gambar di bawah adalah hasil perhitungan normal dan high risk.
+
+Perhitungan normal menggunakan software use case diagram
+
+{: .text-center }
+![Perhitungan Normal](/assets/img/ucp-normal.webp "Perhitungan Normal"){: .img-thumbnail }
+
+Perhitungan High risk menggunakan software use case diagram
+
+{: .text-center }
+![Perhitungan High risk](/assets/img/ucp-high-risk.webp "Perhitungan High risk"){: .img-thumbnail }
 
 Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standart Effort Distribution** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 65 juta** dan High Risk sebesar **Rp. 85 juta**.
 
