@@ -45,12 +45,12 @@ layout: default
                   <li>
                     {% assign author = site.authors | where: 'short_name',
                     page.author | first %} {% if author %} -
-                    <a href="{{ author.url }}"
-                      ><i class="fas fa-user"></i>{{ author.name }}</a
-                    >
+                    <a href="{{ author.url }}" style="color: #333333 !important;">
+                      <i class="fas fa-user"></i>{{ author.name }}
+                    </a>
                     {% endif %}
                   </li>
-                  <li>
+                  <li style="color: #333333 !important;">
                     <i class="fas fa-calendar-alt"></i> {{ page.date |
                     date_to_string }}
                   </li>
