@@ -391,15 +391,32 @@ Jika dalam sehari bekerja 8 jam dan selama 22 hari per bulan (hari Sabtu - Mingg
 
 Dari sini kita sudah mendapatkan estimasi waktu normal selama 7.51 bulan atau high risk 8.39 bulan dan jumlah normal orang 16.13 orang atau high risk 22.59 orang.
 
-Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standar Industri untuk Sistem Aplikasi Umum** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 605.681.500** dan High Risk sebesar **Rp. 947.650.500**.
+Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standart Effort Distribution** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 180 juta** dan High Risk sebesar **Rp. 270 juta**.
 
+Perhitungan Estimasi Waktu Normal dengan Month 7.51 bulan dan Person 16.13 orang.
 <div class="table-responsive" markdown="1">
-| Kategori | Month | Person | Cost | Total |
-| --- | --- | :---: |  :---: |  ---: |
-| Normal | 7.51 | 16.13 | 5.000.000 | 605.681.500 |
-| High Risk | 8.39 | 22.59 | 5.000.000 | 947.650.500 |
+| | Fase | Month | Person | Cost | Total |
+| --- | --- | :---: |  :---: |  ---: |  ---: | 
+| 1 | Planning | 1 | 3 | 5.000.000 | 15.000.000 |
+| 2 | Analysis | 2 | 3 | 5.000.000 | 25.000.000 |
+| 3 | Design | 3 | 6 | 5.000.000 | 90.000.000 |
+| 4 | Implementation | 2 | 5 | 5.000.000 | 50.000.000 |
+|  | **Grand Total**  | | | | **180.000.000** |
 {: .table .table-bordered }
 </div>
+
+Perhitungan Estimasi Waktu High Risk dengan Month 8.39 bulan dan Person 22.59 orang.
+<div class="table-responsive" markdown="1">
+| | Fase | Month | Person | Cost | Total |
+| --- | --- | :---: |  :---: |  ---: |  ---: | 
+| 1 | Planning | 1 | 3 | 5.000.000 | 15.000.000 |
+| 2 | Analysis | 2 | 6 | 5.000.000 | 30.000.000 |
+| 3 | Design | 3 | 8 | 5.000.000 | 120.000.000 |
+| 4 | Implementation | 3 | 7 | 5.000.000 | 105.000.000 |
+|  | **Grand Total**  | | | | **270.000.000** |
+{: .table .table-bordered }
+</div>
+
 
 ### Scrum Based Methods
 
