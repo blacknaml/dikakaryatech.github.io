@@ -360,6 +360,28 @@ Sehingga,
 > UCP = 94 + 29.5 + 18.5 = **142**
 
 
+Ada 2 factor PHM (Person Hours Month) yaitu Normal dengan nilai 20 dan High Risk dengan nilai 28. Biasanya akan kami hitung keduanya, dan akan diputuskan apakah proyek tersebut masuk kategori Normal atau High Risk. Nilai PHM ini dipakai untuk mencari nilai Effort in Person Hours (PH) dengan rumus:
+```
+PH = UCP * PHM
+```
+Selanjutnya hitung juga Effort in Person Month (PM) dengan rumus:
+```
+PM = PH / jam_kerja_perhari / jumlah_hari_kerja_perbulan
+```
+
+Jika dalam sehari bekerja 8 jam dan selama 22 hari per bulan (hari Sabtu - Minggu libur), akan didapat nilai PM Normal dan High Risk :
+
+> Telah terhitung UCP = **142**, maka
+> 
+> PHNormal = 20 * 142 = **2840**
+>
+> PMNormal = 2840/8/22 = **16.13**
+>
+> PHHighRisk = 28 * 142 = **3976**
+>
+> PMHighRisk = 3976/8/22 = **22.59**
+
+
 
 ### Scrum Based Methods
 
