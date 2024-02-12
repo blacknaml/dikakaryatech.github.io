@@ -293,6 +293,72 @@ Pada contoh UCD Sistem perpustakaan didapatkan nilai UUCP = **94**
 {: .table .table-bordered }
 </div>
 
+Selanjutnya menghitung TCF (*Technical Complexity Factors*) dengan rumus:
+```
+TCF = 0.6 + (0.01 * TFactor)
+```
+
+Untuk menghitung TCF dibutuhkan pengali TFactor, TFactor didapatkan dari table Technical Factors for System and Weights di bawah. Dan beri nilai setiap faktor dari 0 hingga 5. Nilai 0 berarti bahwa faktor tersebut tidak relevan untuk proyek ini; 5 berarti itu penting. Sekarang, kalikan peringkat setiap faktor dengan bobotnya berdasarkan tabel. Terakhir, jumlahkan semua angka ini untuk mendapatkan total TFactors.
+
+{: .text-center }
+![Table Technical Factors for System and Weights](/assets/img/technical-factors-for-system-and-weights.webp "Table Technical Factors for System and Weights"){: .img-thumbnail }
+
+Hasil Perhitungan total TCFactor:
+<div class="table-responsive" markdown="1">
+| Factor Numbers | Weight | Ass Value | Total  | Reason |
+| :---: | :---: | :---: | ---: | --- |
+| T1 | 2 | 0 | 0 | Tidak ada rencana sistem terdistribusi untuk rilis awal. |
+| T2 | 1 | 3 | 3 | Kecepatan akan bergantung pada kemampuan operator. |
+| T3 | 1 | 5 | 5 | Sangat membutuhkan efisiensi |
+| T4 | 1 | 1 | 1 | Pemrosesan mudah |
+| T5 | 1 | 0 | 0 | Rilis awal belum ada pertimbangan pengembangan cabang |
+| T6 | 0.5 | 0 | 0 | Berbasis web tidak perlu instalasi |
+| T7 | 0.5 | 5 | 2.5 | Harus mudah dipakai oleh pengguna awam komputer |
+| T8 | 2 | 0 | 0 | Sudah portable | 
+| T9 | 1 | 3 | 3 | Harus mudah dilakukan penyesuaian |
+| T10 | 1 | 5 | 5 | Karena multiuser, proses harus bisa concurrent |
+| T11 | 1 | 5 | 5 | Keamanan adalah utama |
+| T12 | 1 | 5 | 5 | Belum ada pertimbangan |
+| T13 | 1 | 0 | 0 | Karena mudah seharusnya tanpa training |
+| **Total** | | | **29.5** | |
+{: .table .table-bordered }
+</div>
+
+Selanjutnya menghitung ECF (*Environmental Complexity Factors*) dengan rumus:
+```
+ECF = 1.4 + (-0.03 * EFactor)
+```
+Sekarang pertimbangkan tingkat pengalaman orang-orang di proyek tersebut. Ini disebut Environmental Factor (EF). Untuk menghitung EF, lihat Tabel di bawah dan beri peringkat setiap faktor dari 0 sampai 5. Untuk faktor F1 sampai F4, 0 berarti tidak ada pengalaman dalam bidang tersebut, 5 berarti ahli, 3 berarti rata-rata. Untuk F5, 0 berarti tidak ada motivasi untuk proyek tersebut, 5 berarti motivasi tinggi, 3 berarti rata-rata. Untuk F6, 0 berarti persyaratan sangat tidak stabil, 5 berarti persyaratan tidak berubah, 3 berarti rata-rata. Untuk F7, 0 berarti tidak ada staf teknis paruh waktu, 5 berarti semua staf teknis paruh waktu, 3 berarti rata-rata. Untuk F8, 0 berarti bahasa pemrograman mudah digunakan, 5 berarti bahasa pemrograman sangat sulit, 3 berarti rata-rata.
+
+{: .text-center }
+![Table Environmental Factors for Team and Weights](/assets/img/environmental-factors-for-team-and-weights.webp "Table Environmental Factors for Team and Weights"){: .img-thumbnail }
+
+Hasil Perhitungan total EFactor:
+<div class="table-responsive" markdown="1">
+| Factor Numbers | Weight | Ass Value | Total  | Reason |
+| :---: | :---: | :---: | ---: | --- |
+| F1 | 1.5 | 1 | 1.5 | Sebagaian besar tidak familiar, karena proyek pertama perpustakaan |
+| F2 | 0,5 | 1 | 0.5 | Jumlah programmer belum terkondisikan |
+| F3 | 1 | 1 | 1 | Jumlah programmer belum terkondisikan |
+| F4 | 0.5 | 5 | 2.5 | Kemampuan analis mumpuni |
+| F5 | 1 | 5 | 5 | Tim sangat antusias |
+| F6 | 2 | 5 | 10 | Kami tidak berekspetasi tentang perubahan |
+| F7 | -1 | 0 | 0 | Tidak ada part-timer |
+| F8 | -1 | 2 | -2 | Kami melirik PHP | 
+| **Total** | | | **18.5** | |
+{: .table .table-bordered }
+</div>
+
+Selanjutnya menghitung UCP (*Adjusted Use Case Points*) dengan rumus:
+```
+UCP = UUCP + TCF + ECF
+```
+Sehingga,
+
+> Telah terhitung untuk UUCP = **94**, TCF = **29.5**, dan ECF = **18.5**, maka
+>
+> UCP = 94 + 29.5 + 18.5 = **142**
+
 
 
 ### Scrum Based Methods
