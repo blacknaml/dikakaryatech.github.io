@@ -44,7 +44,7 @@ layout: default
                 <ul>
                   <li>
                     {% assign author = site.authors | where: 'short_name',
-                    page.author | first %} {% if author %} -
+                    page.author | first %} {% if author %}
                     <a href="{{ author.url }}" style="color: #333333 !important;">
                       <i class="fas fa-user"></i>{{ author.name }}
                     </a>

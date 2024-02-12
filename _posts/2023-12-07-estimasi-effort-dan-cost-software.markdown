@@ -86,12 +86,12 @@ Konsep ini dikembangkan oleh Allen Albrecht IBM pada tahun 1979 dan banyak dipak
 Dari gambar di atas ada 3 langkah FP yaitu *Estimate system size*, *Estiimate effort required*, dan *Estimate time required*. 
 
 #### Langkah pertama, Estimate system size, 
-untuk menentukan TUFP (*Total Unadjusted Function Points*) dari proyek dengan menggunakan pedoman tabel Complexity di bawah. 
+untuk menentukan TUFP (*Total Unadjusted Function Points*) dari proyek adalah dengan menggunakan pedoman tabel Complexity di bawah. 
 
 {: .text-center }
 ![Tabel Complexity](/assets/img/tufp.webp "Tabel Complexity"){: .img-thumbnail }
 
-Dengan menggunakan tabel complexity seperti gambar di atas, maka akan dapat dihitung angka TUFP. Masukan berapa jumlah complexity untuk Low, Medium dan High per-bagian, misal, dalam planning proyek ditemukan ada 6 "Inputs" dengan rincian: 3 kompleksitas Low (hanya entri input text-field), 2 kompleksitas Medium (parsing dari file csv), dan 1 kompleksitas High (scraping data dari website WallMart). Masukan semua angka parameter planning ke tabel Complexity, maka didapatkan angka **TUFP 338**. Selanjut melangkah ke langkah Estimate effort required.
+Dengan menggunakan tabel complexity di atas, bisa dihitung nilai TUFP. Masukkan berapa jumlah complexity untuk Low, Medium dan High per-bagian, misal, dalam planning proyek ditemukan ada 6 "Inputs" dengan rincian: 3 kompleksitas Low (hanya entri input text-field), 2 kompleksitas Medium (parsing dari file csv), dan 1 kompleksitas High (scraping data dari website WallMart). Masukkan semua angka parameter planning ke tabel Complexity, maka didapatkan angka **TUFP 338**. Selanjut melangkah ke langkah Estimate effort required.
 
 <div class="table-responsive" markdown="1">
 | Description | Total Number | Low | Medium | High | Total |
@@ -111,7 +111,7 @@ untuk menentukan PC (*Processing Complexity*) dari proyek dengan menggunakan ped
 {: .text-center }
 ![Processing Complexity](/assets/img/processing-complexity.webp "Processing Complexity"){: .img-thumbnail }
 
-Dengan menggunakan tabel PC di atas akan didapatkan angka total PC. Masukan angka sesuai parameternya, contoh, planning proyek ini memiliki tingkat Data Communication yang rumit / tinggi maka masukan angka 3 (rumit), Distributed functions sedang (2), dan Online data entry sedang (2) juga. Angka skala dari 0 (tidak ada) s/d 3 (rumit). Setelah semua parameter dimasukan akan didapatkan total **PC = 7**. Selanjutnya melangkah ke langkah Estimate time required.
+Dengan menggunakan tabel PC di atas akan didapatkan angka total PC. Masukkan angka sesuai parameternya, contoh, planning proyek ini memiliki tingkat Data Communication yang rumit / tinggi maka masukkan angka 3 (rumit), Distributed functions sedang (2), dan Online data entry sedang (2) juga. Angka skala dari 0 (tidak ada) s/d 3 (rumit). Setelah semua parameter masak maka didapatkan total **PC = 7**. Selanjutnya melangkah ke langkah Estimate time required.
 
 <div class="table-responsive" markdown="1">
 | Parameter | Scale |
