@@ -401,7 +401,7 @@ Perhitungan High risk menggunakan software use case diagram
 {: .text-center }
 ![Perhitungan High risk](/assets/img/ucp-high-risk.webp "Perhitungan High risk"){: .img-thumbnail }
 
-Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standart Effort Distribution** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 65 juta** dan High Risk sebesar **Rp. 85 juta**.
+Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standart Effort Distribution** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 75 juta** dan High Risk sebesar **Rp. 90 juta**.
 
 Perhitungan Estimasi Waktu Normal dengan Month 5.61 bulan dan Person 8.07 orang.
 <div class="table-responsive" markdown="1">
@@ -409,9 +409,9 @@ Perhitungan Estimasi Waktu Normal dengan Month 5.61 bulan dan Person 8.07 orang.
 | --- | --- | :---: |  :---: |  ---: |  ---: | 
 | 1 | Planning | 1 | 1 | 5.000.000 | 5.000.000 |
 | 2 | Analysis | 1 | 2 | 5.000.000 | 10.000.000 |
-| 3 | Design | 2 | 3 | 5.000.000 | 25.000.000 |
-| 4 | Implementation | 2 | 3 | 5.000.000 | 25.000.000 |
-|  | **Grand Total**  | | | | **65.000.000** |
+| 3 | Design | 2 | 3 | 5.000.000 | 30.000.000 |
+| 4 | Implementation | 2 | 3 | 5.000.000 | 30.000.000 |
+|  | **Grand Total**  | | | | **75.000.000** |
 {: .table .table-bordered }
 </div>
 
@@ -422,8 +422,8 @@ Perhitungan Estimasi Waktu High Risk dengan Month 6.2 bulan dan Person 11.03 ora
 | 1 | Planning | 1 | 2 | 5.000.000 | 10.000.000 |
 | 2 | Analysis | 1 | 2 | 5.000.000 | 10.000.000 |
 | 3 | Design | 2 | 4 | 5.000.000 | 40.000.000 |
-| 4 | Implementation | 2 | 37 | 5.000.000 | 25.000.000 |
-|  | **Grand Total**  | | | | **85.000.000** |
+| 4 | Implementation | 2 | 3 | 5.000.000 | 30.000.000 |
+|  | **Grand Total**  | | | | **90.000.000** |
 {: .table .table-bordered }
 </div>
 
