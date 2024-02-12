@@ -389,7 +389,17 @@ Jika dalam sehari bekerja 8 jam dan selama 22 hari per bulan (hari Sabtu - Mingg
 >
 > TIMEHighRisk = 3.0 x 22.59^1/3 =  **8.39** bulan
 
+Dari sini kita sudah mendapatkan estimasi waktu normal selama 7.51 bulan atau high risk 8.39 bulan dan jumlah normal orang 16.13 orang atau high risk 22.59 orang.
 
+Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standar Industri untuk Sistem Aplikasi Umum** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 605.681.500** dan High Risk sebesar **Rp. 947.650.500**.
+
+<div class="table-responsive" markdown="1">
+| Kategori | Month | Person | Cost | Total |
+| --- | --- | :---: |  :---: |  ---: |
+| Normal | 7.51 | 16.13 | 5.000.000 | 605.681.500 |
+| High Risk | 8.39 | 22.59 | 5.000.000 | 947.650.500 |
+{: .table .table-bordered }
+</div>
 
 ### Scrum Based Methods
 
