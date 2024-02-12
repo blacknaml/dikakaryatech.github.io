@@ -1,15 +1,52 @@
 ---
 layout: default
+title: Blog Author Dika Karya Tech
+tagline: Dika Karya Tech adalah perusahaan Pengembang Software Custom di Sidoarjo.
+description: Dika Karya Tech menghadirkan layanan Pengembangan Aplikasi Custom, Jasa Konsultan IT, Jasa Integrasi IPPBX, dan Otomasi proses Integrator sistem.
+language: id
 ---
-<h1>{{ page.name }}</h1>
-<h2>{{ page.position }}</h2>
+<!-- Start Breadcrumb 
+    ============================================= -->
+<div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image: url({{ "/assets/img/type-nature.webp" }})">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Kita tidak menulis untuk dipahami</h1>
+        <h2>tetapi untuk memahami</h2>
+        <ul class="breadcrumb">
+          <li><a href="{{ "" | absolute_url }}">Home</a></li>
+          <li class="active">Author</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumb -->
 
-{{ content }}
-
-<h2>Posts</h2>
-<ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
-  {% for post in filtered_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<!-- Start About 
+    ============================================= -->
+<div id="about" class="about-area bg-gray default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 promo-video">
+        <img src="/assets/img/pen.webp" alt="{{ page.name }}">
+      </div>
+      <div class="col-md-7 default info">
+        <h4>{{ page.position }}</h4>
+        <h2>{{ page.name }}</h2>
+        <p>
+          {{ content }}
+        </p>
+        <ul>
+          {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+          {% for post in filtered_posts %}
+          <li>
+            <h5><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></h5>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End About -->
