@@ -351,13 +351,13 @@ Hasil Perhitungan total EFactor:
 
 Selanjutnya menghitung UCP (*Adjusted Use Case Points*) dengan rumus:
 ```
-UCP = UUCP + TCF + ECF
+UCP = UUCP x TCF x ECF
 ```
 Sehingga,
 
-> Telah terhitung untuk UUCP = **94**, TCF = **29.5**, dan ECF = **18.5**, maka
+> Telah terhitung untuk UUCP = **94**, TCF = 0.6 + (0.01 x 29.5) = **0.895**, dan ECF = 1.4 + (-0.03 x 18.5) = **0.845**, maka
 >
-> UCP = 94 + 29.5 + 18.5 = **142**
+> UCP = 94 x 0.895 x 0.845 = **71.08**
 
 
 Ada 2 factor PHM (Person Hours Month) yaitu Normal dengan nilai 20 dan High Risk dengan nilai 28. Biasanya akan kami hitung keduanya, dan akan diputuskan apakah proyek tersebut masuk kategori Normal atau High Risk. Nilai PHM ini dipakai untuk mencari nilai Effort in Person Hours (PH) dengan rumus:
@@ -375,45 +375,45 @@ TIME = 3.0 x PM^1/3
 
 Jika dalam sehari bekerja 8 jam dan selama 22 hari per bulan (hari Sabtu - Minggu libur), akan didapat nilai PM Normal dan High Risk :
 
-> Telah terhitung UCP = **142**, maka
+> Telah terhitung UCP = **71.08**, maka
 > 
-> PHNormal = 20 x 142 = **2840** PH
+> PHNormal = 71.08 x 20 = **1421.79** PH
 >
-> PMNormal = 2840/8/22 = **16.13** PM
+> PMNormal = 1421.79/8/22 = **8.07** PM
 >
-> TIMENormal = 3.0 x 16.13^1/3 =  **7.51** bulan
+> TIMENormal = 3.0 x 8.07^1/3 =  **5.61** bulan
 >
-> PHHighRisk = 28 * 142 = **3976** PH
+> PHHighRisk = 71.08 x 28 = **1990.51** PH
 >
-> PMHighRisk = 3976/8/22 = **22.59** PM
+> PMHighRisk = 1990.51/8/22 = **11.3** PM
 >
-> TIMEHighRisk = 3.0 x 22.59^1/3 =  **8.39** bulan
+> TIMEHighRisk = 3.0 x 11.3^1/3 =  **6.2** bulan
 
-Dari sini kita sudah mendapatkan estimasi waktu normal selama 7.51 bulan atau high risk 8.39 bulan dan jumlah normal orang 16.13 orang atau high risk 22.59 orang.
+Dari sini kita sudah mendapatkan estimasi waktu normal selama 5.61 bulan atau high risk 6.2 bulan dan jumlah normal orang 8.07 orang atau high risk 11.3 orang.
 
-Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standart Effort Distribution** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 180 juta** dan High Risk sebesar **Rp. 270 juta**.
+Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita menggunakan gaji yang sama untuk tim yaitu Rp. 5.000.000 / month / man. Perhitungan estimasi biaya masih menggunakan **Persentase Standart Effort Distribution** yaitu planning 15%, analysis 20%, design 35%, dan implementation 30%. Untuk data gaji yang real ada banyak referensi diantaranya PersolKelly, Jobstreet Salary Guide, Indonesia Salary Guide, dan [Pedoman Standar Minimal Inkindo][inkindo]. Maka dari perhitungan tabel di bawah akan didapatkan Estimasi Biaya Proyek Software Normal sebesar **Rp. 65 juta** dan High Risk sebesar **Rp. 85 juta**.
 
-Perhitungan Estimasi Waktu Normal dengan Month 7.51 bulan dan Person 16.13 orang.
+Perhitungan Estimasi Waktu Normal dengan Month 5.61 bulan dan Person 8.07 orang.
 <div class="table-responsive" markdown="1">
 | | Fase | Month | Person | Cost | Total |
 | --- | --- | :---: |  :---: |  ---: |  ---: | 
-| 1 | Planning | 1 | 3 | 5.000.000 | 15.000.000 |
-| 2 | Analysis | 2 | 3 | 5.000.000 | 25.000.000 |
-| 3 | Design | 3 | 6 | 5.000.000 | 90.000.000 |
-| 4 | Implementation | 2 | 5 | 5.000.000 | 50.000.000 |
-|  | **Grand Total**  | | | | **180.000.000** |
+| 1 | Planning | 1 | 1 | 5.000.000 | 5.000.000 |
+| 2 | Analysis | 1 | 2 | 5.000.000 | 10.000.000 |
+| 3 | Design | 2 | 3 | 5.000.000 | 25.000.000 |
+| 4 | Implementation | 2 | 3 | 5.000.000 | 25.000.000 |
+|  | **Grand Total**  | | | | **65.000.000** |
 {: .table .table-bordered }
 </div>
 
-Perhitungan Estimasi Waktu High Risk dengan Month 8.39 bulan dan Person 22.59 orang.
+Perhitungan Estimasi Waktu High Risk dengan Month 6.2 bulan dan Person 11.03 orang.
 <div class="table-responsive" markdown="1">
 | | Fase | Month | Person | Cost | Total |
 | --- | --- | :---: |  :---: |  ---: |  ---: | 
-| 1 | Planning | 1 | 3 | 5.000.000 | 15.000.000 |
-| 2 | Analysis | 2 | 6 | 5.000.000 | 30.000.000 |
-| 3 | Design | 3 | 8 | 5.000.000 | 120.000.000 |
-| 4 | Implementation | 3 | 7 | 5.000.000 | 105.000.000 |
-|  | **Grand Total**  | | | | **270.000.000** |
+| 1 | Planning | 1 | 2 | 5.000.000 | 10.000.000 |
+| 2 | Analysis | 1 | 2 | 5.000.000 | 10.000.000 |
+| 3 | Design | 2 | 4 | 5.000.000 | 40.000.000 |
+| 4 | Implementation | 2 | 37 | 5.000.000 | 25.000.000 |
+|  | **Grand Total**  | | | | **85.000.000** |
 {: .table .table-bordered }
 </div>
 
