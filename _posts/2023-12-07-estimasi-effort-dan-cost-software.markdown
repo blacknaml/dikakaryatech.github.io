@@ -54,7 +54,7 @@ Contoh perhitungan, saat fase planning tim membutuhkan waktu 1 bulan dengan 2 or
 | Effort Distribution| 15% | 20% | 35% | 30%|
 | Waktu | 1 bulan | 1.33 bulan | 2.33 bulan | 2 bulan |
 | Person | 2 orang | 2.6 = 3 orang | 4.6 = 5 orang | 4 orang |
-| Rumus | Waktu dan orang | 0.2 * (Planning/0.15) | 0.35 * (Planning/0.15) | 0.3 * (Planning/0.15) |
+| Rumus | Waktu dan orang | 0.2 x (Planning/0.15) | 0.35 x (Planning/0.15) | 0.3 x (Planning/0.15) |
 | --- | --- | --- |  --- |  --- | 
 {: .table .table-bordered }
 </div>
@@ -147,7 +147,7 @@ APC = APC factor + (PC / 100)
 ```
 Rumus TAFP adalah
 ```
-TAFP = TUFP * APC
+TAFP = TUFP x APC
 ```
 
 Misalkan proyek kita termasuk kategori *Simple Systems*, maka kita gunakan APC factor 0.65.
@@ -158,7 +158,7 @@ Misalkan proyek kita termasuk kategori *Simple Systems*, maka kita gunakan APC f
 > 
 > APC = 0.65 + (7 / 100) = **0.72**
 >
-> TAFP = 338 * 0.72 = **243**
+> TAFP = 338 x 0.72 = **243**
 
 Selanjutnya kita menentukan bahasa pemrograman apa yang akan dipakai, misalkan menggunakan PHP dan metrik  LOC/TAFP nya adalah **53.33**. Gambar di bawah berisikan daftar metrik untuk bahasa-bahasa pemrograman lainnya.
 
@@ -167,25 +167,25 @@ Selanjutnya kita menentukan bahasa pemrograman apa yang akan dipakai, misalkan m
 
 Selanjutnya kita menghitung LOC (*Lines of Codes*) dengan rumus: 
 ```
-LOC = TAFP * LOC/TAFP
+LOC = TAFP x LOC/TAFP
 ```
 
 Sehingga, 
 
 > LOC/TAFP untuk bahasa pemrograman PHP = **53.33**, dan TAFP = **243**, maka
 >
-> LOC = 243 * 53.33 = 12959.19 = **12959**
+> LOC = 243 x 53.33 = 12959.19 = **12959**
 
 
 #### Estimasi Effort
 untuk menghitung estimasi effort menggunakan rumus:
 ```
-Effort = 1.4 * (LOC/1000)
+Effort = 1.4 x (LOC/1000)
 ```
 
 Sehingga,
 
-> Effort = 1.4 * (12959/1000) = **18.1426 Person Months**
+> Effort = 1.4 x (12959/1000) = **18.1426 Person Months**
 >
 
 Dari sini kita sudah mendapatkan estimasi effort sebesar 18.14 person months.
@@ -193,11 +193,11 @@ Dari sini kita sudah mendapatkan estimasi effort sebesar 18.14 person months.
 #### Estimasi Waktu
 untuk menghitung estimasi waktu menggunakan rumus:
 ```
-Time (months) = 3.0 * Effort^1/3
+Time (months) = 3.0 x Effort^1/3
 ```
 
 Sehingga,
-> Time = 3.0 * 18.1426^1/3 =  **7.15 bulan**
+> Time = 3.0 x 18.1426^1/3 =  **7.15 bulan**
 >
 
 Dari sini kita sudah mendapatkan estimasi waktu selama 7.156 bulan.
@@ -295,7 +295,7 @@ Pada contoh UCD Sistem perpustakaan didapatkan nilai UUCP = **94**
 
 Selanjutnya menghitung TCF (*Technical Complexity Factors*) dengan rumus:
 ```
-TCF = 0.6 + (0.01 * TFactor)
+TCF = 0.6 + (0.01 x TFactor)
 ```
 
 Untuk menghitung TCF dibutuhkan pengali TFactor, TFactor didapatkan dari table Technical Factors for System and Weights di bawah. Dan beri nilai setiap faktor dari 0 hingga 5. Nilai 0 berarti bahwa faktor tersebut tidak relevan untuk proyek ini; 5 berarti itu penting. Sekarang, kalikan peringkat setiap faktor dengan bobotnya berdasarkan tabel. Terakhir, jumlahkan semua angka ini untuk mendapatkan total TFactors.
@@ -326,7 +326,7 @@ Hasil Perhitungan total TCFactor:
 
 Selanjutnya menghitung ECF (*Environmental Complexity Factors*) dengan rumus:
 ```
-ECF = 1.4 + (-0.03 * EFactor)
+ECF = 1.4 + (-0.03 x EFactor)
 ```
 Sekarang pertimbangkan tingkat pengalaman orang-orang di proyek tersebut. Ini disebut Environmental Factor (EF). Untuk menghitung EF, lihat Tabel di bawah dan beri peringkat setiap faktor dari 0 sampai 5. Untuk faktor F1 sampai F4, 0 berarti tidak ada pengalaman dalam bidang tersebut, 5 berarti ahli, 3 berarti rata-rata. Untuk F5, 0 berarti tidak ada motivasi untuk proyek tersebut, 5 berarti motivasi tinggi, 3 berarti rata-rata. Untuk F6, 0 berarti persyaratan sangat tidak stabil, 5 berarti persyaratan tidak berubah, 3 berarti rata-rata. Untuk F7, 0 berarti tidak ada staf teknis paruh waktu, 5 berarti semua staf teknis paruh waktu, 3 berarti rata-rata. Untuk F8, 0 berarti bahasa pemrograman mudah digunakan, 5 berarti bahasa pemrograman sangat sulit, 3 berarti rata-rata.
 
@@ -362,24 +362,32 @@ Sehingga,
 
 Ada 2 factor PHM (Person Hours Month) yaitu Normal dengan nilai 20 dan High Risk dengan nilai 28. Biasanya akan kami hitung keduanya, dan akan diputuskan apakah proyek tersebut masuk kategori Normal atau High Risk. Nilai PHM ini dipakai untuk mencari nilai Effort in Person Hours (PH) dengan rumus:
 ```
-PH = UCP * PHM
+PH = UCP x PHM
 ```
 Selanjutnya hitung juga Effort in Person Month (PM) dengan rumus:
 ```
 PM = PH / jam_kerja_perhari / jumlah_hari_kerja_perbulan
+```
+Selanjutnya Estimasi Waktu bisa dihitung dengan rumus:
+```
+TIME = 3.0 x PM^1/3
 ```
 
 Jika dalam sehari bekerja 8 jam dan selama 22 hari per bulan (hari Sabtu - Minggu libur), akan didapat nilai PM Normal dan High Risk :
 
 > Telah terhitung UCP = **142**, maka
 > 
-> PHNormal = 20 * 142 = **2840**
+> PHNormal = 20 x 142 = **2840** PH
 >
-> PMNormal = 2840/8/22 = **16.13**
+> PMNormal = 2840/8/22 = **16.13** PM
 >
-> PHHighRisk = 28 * 142 = **3976**
+> TIMENormal = 3.0 x 16.13^1/3 =  **7.51** bulan
 >
-> PMHighRisk = 3976/8/22 = **22.59**
+> PHHighRisk = 28 * 142 = **3976** PH
+>
+> PMHighRisk = 3976/8/22 = **22.59** PM
+>
+> TIMEHighRisk = 3.0 x 22.59^1/3 =  **8.39** bulan
 
 
 
