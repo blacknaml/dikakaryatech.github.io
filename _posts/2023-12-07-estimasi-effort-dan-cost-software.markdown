@@ -419,7 +419,11 @@ Perhitungan Estimasi Waktu High Risk dengan Month 8.39 bulan dan Person 22.59 or
 
 
 ### Scrum Based Methods
-
+Ada empat metode yang termasuk kategori Scrum Based Methods:
+- Use Case Points (UCP)
+- Planning Poker (PP)
+- Points Per Story (PPS)
+- Velocity Calculations (VC)
 
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
