@@ -218,12 +218,85 @@ Selanjutnya kita hitung biaya / cost / budget untuk proyek tersebut: misal kita 
 Dari metode **Function Points** kita mendapatkan estimasi waktu **7.15 bulan**, jumlah orang dalam tim sebanyak **18 orang** dan biaya sebesar **Rp. 175 Juta**.
 
 ### Use Case Points UCP
-### Scrum Based Methods
+*Use case* digunakan secara luas sebagai metode untuk menggambarkan kebutuhan di tingkat pelanggan atau ranah bisnis yang menyiratkan fitur dan fungsi perangkat lunak. Sepertinya masuk akal untuk menggunakan use case sebagai ukuran  normalisasi seperti pada LOC atau FP. Seperti FP, use case didefinisikan pada awal proses perangkat lunak, yang memungkinkan digunakan dalam pembuatan estimasi di fase planning sebelum dimulainya fase analysis, design dan implementation. 
+
+Use case menggambarkan secara tidak langsung fungsi dan fitur yang terlihat oleh pengguna yang merupakan kebutuhan dasar bagi sistem. Use case bersifat independen dari bahasa pemrograman. Selain itu, jumlah use case berbanding lurus dengan ukuran aplikasi di LOC dan banyaknya test case yang harus dirancang untuk melaksanakan pengujian terhadap keseluruhan aplikasi / perangkat lunak.
+
+Para peneliti menyarankan penggunaan UCP (*use case points*) sebagai metode untuk memperkirakan effort / usaha dari suatu proyek. UCP adalah fungsi dari jumlah aktor dan transaksi model-model use case, dan hampir sama dengan FP dalam beberapa hal.
+
+Pada tahun 1993 Gustav Karner dari Objectory AB, yang kemudian diakuisisi oleh Rational Software Corporation, meneliti cara mengestimasi suatu proyek berdasarkan use case. Karyanya merupakan modifikasi dari penelitian Albrecht tentang function point. Hasilnya cukup menjanjikan. Kami menyertakan metode estimasinya di sini untuk anda gunakan sebagai titik awal dalam menentukan jumlah pekerjaan untuk proyek Anda. 
+
+Use case diagram bisa dibuat menggunakan UML tools, ada banyak UML tools baik yang open source dan propeitary, diantaranya Modelio, yEd Graph Editor, MS Visio, dan Sparx EA. Kami Dika Karya Tech menggunakan Sparx EA untuk kebutuhan *System Analysis and Design*, *Software Architecture* dan *Enterprise Architecture*.
 
 {: .text-center }
-![Tabel Matrik FP/LOC](/assets/img/Loc-TAFP-1.webp "Tabel Matrik FP/LOC"){: .img-thumbnail }
-![Tabel Matrik FP/LOC](/assets/img/Loc-TAFP-2.webp "Tabel Matrik FP/LOC"){: .img-thumbnail }
-![Tabel Matrik FP/LOC](/assets/img/Loc-TAFP-3.webp "Tabel Matrik FP/LOC"){: .img-thumbnail }
+![Case/Transaction dan Actor](/assets/img/use-case-actor.webp "Case/Transaction dan Actor"){: .img-thumbnail }
+
+Hal yang penting saat membuat use case diagram adalah parameter *Actor Weighting Factor*/*Unadjusted Actor Weighting* (UAW) dan *Transaction-Based Weighting Factor*/*Unadjusted Use Case Weighting*(UUCW), ada 3 nilai yaitu *Easy* (Simple), *Medium* (Average) dan *Difficult* (Complex). Tabel di bawah bisa digunakan untuk referensi menentukan UAW dan UUCW.
+
+**UAW**
+<div class="table-responsive" markdown="1">
+| Actor Type | Description | Weighting Factor |
+| --- | --- | :---: |
+| Easy | External System with well-defined API | 1 |
+| Medium | External System using a protocol-based interface, e.g, HTTP, TCP/IP, SQL | 2 |
+| Difficult | Human | 3 |
+{: .table .table-bordered }
+</div>
+**UUCW**
+<div class="table-responsive" markdown="1">
+| Actor Type | Description | Weighting Factor |
+| --- | --- | :---: |
+| Easy | 1-3 transactions | 5 |
+| Medium | 4-7 transactions | 10 |
+| Difficult | more than 7 transactions | 15 |
+{: .table .table-bordered }
+</div>
+
+Kita akan menggunakan contoh Use Case Diagram kami untuk Sistem Perpustakaan, gambar UCD ada di bawah:
+
+{: .text-center }
+![UCD Sistem Perpustakaan](/assets/img/UCD-Web-Aplikasi-Sistem-Perpustakaan.webp "UCD Sistem Perpustakaan"){: .img-thumbnail }
+
+Selanjutnya menghitung UUCP (*Unadjusted Use Case Points*) dengan rumus:
+```
+UUCP = UAW + UUCW
+```
+
+Untuk memberikan bobot UAW dan UUCW di software EA adalah dengan cara klik Case atau Actor, kemudian lihat pada panel Properties, kemudian klik Project dan pilih Complexity sesuai dengan bobotnya. Ingat untuk bobot bisa melihat di tabel UAW dan tabel UUCW di atas.
+
+{: .text-center }
+![Cara memberikan bobot UAW dan UUCW](/assets/img/uaw-uucw.webp "Cara memberikan bobot UAW dan UUCW"){: .img-thumbnail }
+
+Pada contoh UCD Sistem perpustakaan didapatkan nilai UUCP = **94**
+<div class="table-responsive" markdown="1">
+| Actor/UC |  Weighting Factor |
+| --- | :---: |
+| Pengguna | 3 |
+| Pustakawan | 3 |
+| Sistem Open Library | 2 |
+| Email Provider | 1 |
+| Meminjam Buku | 5 |
+| Mengembalikan Buku | 5 |
+| Mengelola Data Profile | 5 |
+| Mencari Buku | 5 |
+| Membooking buku | 5 |
+| Memperpanjang masa pinjaman buku | 5 |
+| Membayar denda | 10 |
+| Memodifikasi data profile | 5 |
+| Melist histori pinjaman buku | 10 |
+| Menyetujui permintaan perpanjangan buku | 5 |
+| Menginput kondisi buku yang dikembalikan | 5 |
+| Membuat laporan | 10 |
+| Mencetak laporan peminjaman | 5 |
+| Mengirim laporan melalui email | 5 |
+| **Total** | **94** |
+{: .table .table-bordered }
+</div>
+
+
+
+### Scrum Based Methods
+
 
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
