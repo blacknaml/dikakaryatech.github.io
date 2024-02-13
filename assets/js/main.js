@@ -288,6 +288,33 @@
             }
         });
 
+        /* ==================================================
+            # Showcase Carousel
+         ===============================================*/
+         $('.showcase-items').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            autoHeight: true,
+            navText: [
+                "<i class='fa fa-angle-left'></i>",
+                "<i class='fa fa-angle-right'></i>"
+            ],
+            dots: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+
 
         /* ==================================================
             Preloader Init

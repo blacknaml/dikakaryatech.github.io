@@ -3632,6 +3632,42 @@ blockquote {
   right: -25px;
 }
 
+.companies-area .showcase-items img {
+  width: auto;
+  margin: auto;
+}
+
+.companies-area .showcase-items .single-item a {
+  display: inline-block;
+}
+
+
+.companies-area .showcase-items .owl-nav {
+  margin: 0;
+}
+
+
+.companies-area .showcase-items .owl-nav .owl-prev,
+.companies-area .showcase-items .owl-nav .owl-next {
+  background: transparent none repeat scroll 0 0;
+  color: #ffffff;
+  font-size: 30px;
+  height: 35px;
+  left: -25px;
+  line-height: 35px;
+  margin-top: -18px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 35px;
+}
+
+.companies-area .showcase-items .owl-nav .owl-next {
+  left: auto;
+  right: -25px;
+}
+
 .companies-area .info h2,
 .companies-area .info h3,
 .companies-area .info h4 {
