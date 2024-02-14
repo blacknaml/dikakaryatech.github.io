@@ -1,7 +1,7 @@
 ---
 short_name: debi
 name: Debi Prahara Dika
-position: Programmer
+position: Author
 ---
 I have been eating fruit since I was a baby.<br>
 I practise what I post.<br>
