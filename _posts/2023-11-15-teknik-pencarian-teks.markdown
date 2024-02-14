@@ -59,7 +59,7 @@ Pencarian dengan jaringan semantik / semantic network berarti pencarian dokumen 
 
 Ada dua jenis semantic search yaitu
 - Semantic search dengan hasil berupa navigasi, navigasi ini bisa berupa link.
-- Semantic search dengan dokumen secara penuh.
+- Semantic search dengan hasil berupa dokumen secara penuh.
 
 Proses semantic search membutuhkan pemodelan yang dapat digunakan ulang. Bentuk pemodelan yang mendukung antara lain *weighted tree similarity*, *ontologi*, dan *weighted directed acrylic graph*. Sebelum dilakukan pemodelan data harus dilakukan pemrosesan dokumen berupa tokenisasi, *stopword filltration*, dan *stemming*.
 
