@@ -36,11 +36,38 @@ Hasil penelitian menunjukkan bahwa pencarian teks penuh memiliki kinerja *recall
 Pencarian berdasarkan konten bisa dibagi menjadi *string matching*, *metadata search*, dan *semantic search*.
 
 #### String Matching
-String matching adalah proses pencarian semua kemunculan query yang kemudian disebut *pattern* kedalam string yang lebih panjang (teks).
+String matching adalah proses pencarian semua kemunculan query yang kemudian disebut *pattern* kedalam string yang lebih panjang (teks). String Marching dibagi menjadi dua yaitu *exact matching* dan *heuristic* / *statistical matching*.
+
+##### Exact Matching
+Exact matching digunakan untuk menemukan pattern yang berasal dari suatu teks. Contohnya, pencarian kata "pelajar" dalam kalimat "saya seorang pelajar" atau "saya seorang siswa". Sistem akan memberikan hasil bahwa kalimat pertama mengandung kata "pelajar", sedangkan kalimat kedua tidak, meskupan kenyataannya pelajar dan siswa adalah kata yang bersinonim. Algoritma exact matching diklasifikasi menjadi tiga bagian menurut arah pencariannya, yaitu 
+- Arah pembacaan dari kiri ke kanan, algoritma yang termasuk kategori ini adalah *Brute Force*, *Morris* dan *Pratt*.
+- Arah pembacaan dari kanan ke kiri, algoritma yang termasuk kategori ini adalah *Boyer* dan *Moore*.
+- Arah pembacaan yang ditentukan pemrogram, algoritma yang termasuk kategori ini adalah *Colussi* dan *Crochemcore-Perrin*.
+
+##### Heuristic Matching
+Heuristic matching adalah teknik yang digunakan untuk menghubungkan dua data terpisah ketika exact matching tidak mampu mengatasi karena ada pembatasan pada data yang tersedia. Heuristic matching dapat dilakukan dengan perhitungan distance antara pattern dengan teks. Contoh heuristic matching berdasarkan distance adalah *string based technique*, *token-based distance*, dan *path-comparisson*. 
 
 #### Metadata Search
+Metadata adalah data dari data. Metadata adalah sekumpulan kata yang terstruktut dan teroganisasi dengan logika AND dan OR. Pada metode ini operasi pembandingan kata sedikit dibandingkan pencarian full-text. Tiap-tiap artikel di-indeks dengan dibuat metadatanya. Pencarian dengan metadata adalah tipe pencarian artikel dengan menelusuri metadata suatu dokumen. Pada metode ini operasi pembandingan kata lebih sedikit dibandingkan pencarian teks penuh. Metadata berfungsi sebagai katalog dari sekumpulan dokumen. 
 
 #### Semantic Search
+Semantic adalah ilmu tentang makna kata dan kalimat; pengetahuan mengenai seluk beluk dan pergeseran arti kata; bagian struktur bahasa yang berhubungan dengan makna ungkapan atau struktur makna suatu wicara. Semantic network adalah sebuah jaringan yang mewakili hubungan antar konsep. Semantic network biasa digunakan sebagai bentuk representasi pengetahuan. Semantic network berupa grafik berarah atau tidak yang terdiri dari simpul dan garis. Simpul mewakili konsep.
+
+Contoh semantic network adalah WordNet, yakni sebuah baris data leksikal Bahasa Inggris. WordNet mengelompokkan kata ke dalam kumpulan sinonim (synset). Hubungan semantik yang dibentuk dalam WordNet, yaitu meronim, hiponim, hipernim, antonim, dan sinonim.
+
+Pencarian dengan jaringan semantik / semantic network berarti pencarian dokumen berdasarkan kata kunci penelusuran dan makna yang terkait dengan kata kunci tersebut. Pencarian semantik berusaha untuk meningkatkan akurasi pencarian dengan memahami maksud pencari dan makna kontekstual istilah seperti yang ditampilkan dalam data pencarian. Dengan kata lain, semantic search adalah pencarian suatu konten berdasarkan konteks yang tepat. Konten adalah teks tertulis sedangkan konteks adalah kondisi keberadaan teks tersebut. Tujuan semantic search adalah mencari konten yang sesuai dengan konteks yang diinginkan pengguna.
+
+Ada dua jenis semantic search yaitu
+- Semantic search dengan hasil berupa navigasi, navigasi ini bisa berupa link.
+- Semantic search dengan dokumen secara penuh.
+
+Proses semantic search membutuhkan pemodelan yang dapat digunakan ulang. Bentuk pemodelan yang mendukung antara lain *weighted tree similarity*, *ontologi*, dan *weighted directed acrylic graph*. Sebelum dilakukan pemodelan data harus dilakukan pemrosesan dokumen berupa tokenisasi, *stopword filltration*, dan *stemming*.
+
+### Pengukuran Kemiripan
+Beberapa metode-metode yang bisa digunakan untuk mengukur kemiripan dua kata, dua kalimat dan dua dokumen, antara lain.
+
+#### Language Based Matching (LBM)
+#### Vector Space Matching (SVM)
 
 
 {% if page.related_post %}
