@@ -4,7 +4,7 @@ language: en
 title: "Operations Teams"
 author: jill
 date: 2023-12-08 09:20:53 +0700
-image: /assets/img/ipod.webp
+image: /assets/img/the-office-building.webp
 categories: software development
 tags: ops
 ---
