@@ -6,6 +6,7 @@ date: 2023-11-05 14:33:53 +0700
 image: /assets/img/privacy-security-data-protection.webp
 categories: software development
 tags: secure rfc
+related_post: related-posts.html
 language: id
 ---
 *HTTP Basic Auth* adalah salah satu tehnik otentikasi http request. Metode ini membutuhkan informasi 

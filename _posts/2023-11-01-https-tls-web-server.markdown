@@ -6,6 +6,7 @@ date:   2023-11-01 11:11:11 +0700
 image: /assets/img/secure-connection.webp
 categories: software development
 tags: protocol server
+related_post: related-posts.html
 language: id
 ---
 ### SSL

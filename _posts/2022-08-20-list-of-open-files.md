@@ -5,6 +5,7 @@ author: jill
 image: /assets/img/woods-1500x800.webp
 categories: linux
 tags: script programming
+related_post: related-posts.html
 language: id
 ---
 

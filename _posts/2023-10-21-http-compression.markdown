@@ -6,6 +6,7 @@ date:   2023-10-21 08:37:47 +0700
 image: /assets/img/construction-workers-are-installing-steel.webp
 categories: software development
 tags: protocol server
+related_post: related-posts.html
 language: id
 ---
 *HTTP Compression* adalah teknik kompresi data pada HTTP response, agar 
