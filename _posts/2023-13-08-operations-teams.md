@@ -6,7 +6,7 @@ author: jill
 date: 2023-12-08 09:20:53 +0700
 image: /assets/img/the-office-building.webp
 categories: software development
-tags: ops
+tags: ops server
 ---
 *Operations Team* / Tim Ops sangat penting untuk menjaga sistem perangkat lunak berjalan dengan lancar. Meskipun beberapa aspek operasi dapat dan harus diotomatisasi, manusialah yang harus mengatur otomatisasi tersebut terlebih dahulu dan memastikannya berfungsi dengan benar. Telah disarankan bahwa, 
 
