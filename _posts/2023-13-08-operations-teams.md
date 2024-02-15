@@ -1,6 +1,6 @@
 ---
 layout: post
-language: en
+language: id
 title: "Operations Teams"
 author: jill
 date: 2023-12-08 09:20:53 +0700
@@ -13,7 +13,7 @@ tags: ops server
 
 > Good operations can often work around the limitations of bad (or incomplete) software, but good software cannot run reliably with bad operations.
 > 
-> Pengoperasian yang baik sering kali dapat mengatasi keterbatasan perangkat lunak yang buruk (atau tidak lengkap), namun perangkat lunak yang baik tidak dapat berjalan dengan andal dengan pengoperasian yang buruk.
+> Pengoperasian yang benar sering kali dapat mengatasi keterbatasan perangkat lunak yang buruk (atau tidak lengkap), namun perangkat lunak yang bagus tidak dapat berjalan dengan andal dengan pengoperasian yang buruk.
 
 
 Operations team yang baik biasanya bertanggung jawab untuk hal-hal berikut:
