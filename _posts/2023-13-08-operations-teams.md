@@ -33,7 +33,7 @@ Pengoperasian yang bagus membuat tugas-tugas rutin menjadi lebih mudah, memungki
 - Menghindari ketergantungan pada masing-masing server/mesin (memungkinkan server/mesin dihentikan untuk pemeliharaan sementara sistem secara keseluruhan terus berjalan tanpa gangguan)
 - Menyediakan dokumentasi yang bagus dan *operational model* yang mudah dipahami
 - Memberikan perilaku default yang baik, namun juga memberikan kebebasan kepada administrator untuk mengganti default bila diperlukan
-- Mampu memulikan diri-sendiri (*Self-Healing Sytem*), namun juga memberi kontrol manual kepada administrator atas status sistem bila diperlukan
+- Mampu memulikan diri-sendiri (*Self-Healing System*), namun juga memberi kontrol manual kepada administrator atas status sistem bila diperlukan
 - Bisa menunjukkan perilaku yang dapat diprediksi, sehingga meminimalkan kejutan
 
 Sumber bacaan lebih lanjut [On Designing and Deploying Internet-Scale Services][hamilton]{:target="_blank"}.
