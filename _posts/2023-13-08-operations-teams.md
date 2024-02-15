@@ -28,7 +28,7 @@ Operations team yang baik biasanya bertanggung jawab untuk hal-hal berikut:
 - Melakukan transfer pengetahuan tentang sistem, bahkan ketika individu tim datang dan pergi
 
 Pengoperasian yang bagus membuat tugas-tugas rutin menjadi lebih mudah, memungkinkan operations team fokus pada aktivitas yang bernilai tinggi. Maka perangkat lunak sistem-data harus bisa melakukan hal-hal yang mempermudah tugas rutin mereka, diantaranya: 
-- Memberikan visibilitas terhadap *runtime behavior* and internal sistem, dengan monitoring yang bagus
+- Memberikan visibilitas terhadap *runtime behavior* dan sistem internal, dengan monitoring yang bagus
 - Memberikan support untuk otomatisasi dan integrasi dengan alat yang standart
 - Menghindari ketergantungan pada masing-masing server/mesin (memungkinkan server/mesin dihentikan untuk pemeliharaan sementara sistem secara keseluruhan terus berjalan tanpa gangguan)
 - Menyediakan dokumentasi yang bagus dan *operational model* yang mudah dipahami
