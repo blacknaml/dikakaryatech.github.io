@@ -36,7 +36,7 @@ Pengoperasian yang bagus membuat tugas-tugas rutin menjadi lebih mudah, memungki
 - Mampu memulikan diri-sendiri (*Self-Healing Sytem*), namun juga memberi kontrol manual kepada administrator atas status sistem bila diperlukan
 - Bisa menunjukkan perilaku yang dapat diprediksi, sehingga meminimalkan kejutan
 
-Sumber bacaan lebih lanjut [On Designing and Deploying Internet-Scale Services][hamilton].
+Sumber bacaan lebih lanjut [On Designing and Deploying Internet-Scale Services][hamilton]{:target="_blank"}.
 
 [hamilton]: https://www.usenix.org/legacy/events/lisa07/tech/full_papers/hamilton/hamilton.pdf
  
