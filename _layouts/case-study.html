@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<!-- Start Breadcrumb 
+    ============================================= -->
+<div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image: url({{ page.image | absolute_url }})">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ page.title }}</h1>
+        <ul class="breadcrumb">
+          <li><a href="{{ "" | absolute_url }}">Home</a></li>
+          <li><a href="{{ "studi-kasus" | absolute_url }}">Case Studies</a></li>
+          <li class="active">Article</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumb -->
+
+<!-- Start Blog 
+  ============================================= -->
+<div id="blog" class="blog-area bg-gray full-width single padding-s">
+  <div class="container">
+    <div class="row">
+      <div class="blog-items">
+        <div class="col-md-12">
+          <div class="item">
+            
+            <div class="info">
+              <h2>{{ page.title }}</h2>
+              <div class="meta"></div>
+              {{ content }}
+              <div class="post-tags">
+                <i class="fas fa-tags"></i>
+                {% for tag in page.tags %}
+                <a href="#">{{ tag }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Blog -->
