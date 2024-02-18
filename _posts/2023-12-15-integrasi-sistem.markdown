@@ -4,7 +4,7 @@ language: id
 title: "Integrasi Sistem"
 author: debi
 date: 2023-12-15 15:28:55 +0700
-image: /assets/img/code-on-monitor.webp
+image: /assets/img/handle-puzzle.webp
 categories: software development
 tags: system-integrator system-architect
 related_post: related-posts.html
