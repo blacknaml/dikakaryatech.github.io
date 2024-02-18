@@ -36,9 +36,9 @@ Integrasi vertikal merupakan metode yang diintegrasikan menurut fungsinya dengan
 #### Integrasi Horizontal
 Integrasi horizontal disebut juga sebagai Enterprise Service Bus (ESB). Metode ini melibatkan pembuatan sub-sistem khusus yang berfungsi untuk menghubungkan dengan sub-sistem lainnya. Integrasi ini harus melibatkan pembuatan aplikasi custom yang memungkinkan membuat koneksi terprogram antara berbagai aplikasi lainnya.
 
-#### Format Data Umum
-Metode ini digunakan untuk memastikan integrasi yang andal, akurat, dan efektif. Format data umum digunakan untuk melakukan konversi data yang menggunakan format umum menjadi format yang lebih spesifik.
-
 #### Point to Point Integration
 Metode ini disebut juga dengan Star Integration atau Spagheti Integration, adalah proses mengintegrasikan sistem dengan cara menghubungkan satu sub-sistem ke semua sub-sub sistem lainnya. Sebuah fungsi bisnis yang diimplementasikan dalam sebuah sub-sistem akan di-broadcast ke semua sub-sub sistem lain yang bergantung pada fungsi bisnis tersebut agar dapat digunakan sebagaimana mestinya.
+
+#### Hub-and-spoke
+Model hub-and-spoke adalah integration architecture yang lebih canggih untuk mengatasi masalah point-to-point dan membantu menghindari star/spaghetti mess. Koneksi antar seluruh subsistem ditangani oleh central hub (message broker), sehingga tidak berkomunikasi satu sama lain secara langsung. Hub berfungsi sebagai message-oriented middleware dengan mesin integrasi terpusat untuk menerjemahkan operasi ke dalam satu canonical language dan mengarahkan pesan ke tujuan yang tepat. Adapter yang menghubungkan hub ke subsistem dikelola secara individual.
 
