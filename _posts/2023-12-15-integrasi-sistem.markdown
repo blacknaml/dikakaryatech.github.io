@@ -27,7 +27,7 @@ Tujuan integrasi ini adalah menghubungkan sistem dari dua perusahaan atau lebih.
 #### 4. Third-party System Integrator
 Tujuan integrasi ini adalah untuk memperluas fungsionalitas sistem yang sudah ada di perusahaan. Jenis integrasi ini menjadi pilihan bagi setiap bisnis yang membutuhkan fungsionalitas baru tetapi tidak bisa mengembangkan perangkat lunak khusus.
 
-### Metodologi Integrator Sistem
+### Metodologi Integrasi Sistem
 Terdapat empat metodologi integrasi yang umum dilakukan di perusahaan, yaitu:
 
 #### Integrasi Vertikal
@@ -39,8 +39,14 @@ Integrasi vertikal merupakan metode yang diintegrasikan menurut fungsinya dengan
 #### Integrasi Horizontal
 Integrasi horizontal disebut juga sebagai Enterprise Service Bus (ESB). Metode ini melibatkan pembuatan sub-sistem khusus yang berfungsi untuk menghubungkan dengan sub-sistem lainnya. Integrasi ini harus melibatkan pembuatan aplikasi custom yang memungkinkan membuat koneksi terprogram antara berbagai aplikasi lainnya.
 
+{: .text-center }
+![Horizontal System Integration](/assets/img/horizontal-system-integration.webp "Horizontal System Integration"){: .img-thumbnail }
+
 #### Point to Point Integration
 Metode ini disebut juga dengan Star Integration atau Spagheti Integration, adalah proses mengintegrasikan sistem dengan cara menghubungkan satu sub-sistem ke semua sub-sub sistem lainnya. Sebuah fungsi bisnis yang diimplementasikan dalam sebuah sub-sistem akan di-broadcast ke semua sub-sub sistem lain yang bergantung pada fungsi bisnis tersebut agar dapat digunakan sebagaimana mestinya.
+
+{: .text-center }
+![Point to Point System Integration](/assets/img/point-to-point-system-integration.webp "Point to Point System Integration"){: .img-thumbnail }
 
 #### Hub-and-spoke
 Model hub-and-spoke adalah integration architecture yang lebih canggih untuk mengatasi masalah point-to-point dan membantu menghindari star/spaghetti mess. Koneksi antar seluruh subsistem ditangani oleh central hub (message broker), sehingga tidak berkomunikasi satu sama lain secara langsung. Hub berfungsi sebagai message-oriented middleware dengan mesin integrasi terpusat untuk menerjemahkan operasi ke dalam satu canonical language dan mengarahkan pesan ke tujuan yang tepat. Adapter yang menghubungkan hub ke subsistem dikelola secara individual.
