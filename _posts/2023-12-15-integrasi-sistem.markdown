@@ -18,6 +18,9 @@ Keuntungan ini merupakan alasan yang kuat untuk mengutamakan (mengunggulkan) sis
 #### 1. Legacy System Integrator
 Tujuan integrasi ini adalah untuk menggabungkan aplikasi modern ke dalam sistem lama perusahaan yang sudah ada. Masih banyak perusahaan yang menggunakan perangkat lunak lama untuk menjalankan bisnisnya.
 
+{: .text-center }
+![Legacy System Integrator](/assets/img/legacy-system-integrator.webp "Legacy System Integrator"){: .img-thumbnail }
+
 #### 2. Enterprise Application Integrator (EAI)
 Tujuan integrasi ini adalah untuk menyatukan berbagai sub-sistem menjadi sebuah lingkungan bisnis. Saat perusahaan sedang berkembang pada umumnya masih menggunakan banyak aplikasi untuk menunjang pekerjaan perusahaan mereka.  EAI bisa membuat semua fungsi sistem ke dalam satu rantai bisnis dan mengotomasikan pertukaran data secara real time diantara aplikasi yang berbeda.
 
