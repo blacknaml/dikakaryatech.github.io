@@ -21,7 +21,7 @@ Tujuan integrasi ini adalah untuk menggabungkan aplikasi modern ke dalam sistem 
 #### 2. Enterprise Application Integrator (EAI)
 Tujuan integrasi ini adalah untuk menyatukan berbagai sub-sistem menjadi sebuah lingkungan bisnis. Saat perusahaan sedang berkembang pada umumnya masih menggunakan banyak aplikasi untuk menunjang pekerjaan perusahaan mereka.  EAI bisa membuat semua fungsi sistem ke dalam satu rantai bisnis dan mengotomasikan pertukaran data secara real time diantara aplikasi yang berbeda.
 
-#### 3. B2B Integration
+#### 3. B2B Integrator
 Tujuan integrasi ini adalah menghubungkan sistem dari dua perusahaan atau lebih. Integrasi ini lebih mengarah kepada kerjasama dan perdagangan yang lebih efisien.
 
 #### 4. Third-party System Integrator
