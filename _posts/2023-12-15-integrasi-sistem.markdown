@@ -30,13 +30,13 @@ Tujuan integrasi ini adalah untuk memperluas fungsionalitas sistem yang sudah ad
 ### Metodologi Integrasi Sistem
 Terdapat empat metodologi integrasi yang umum dilakukan di perusahaan, yaitu:
 
-#### Integrasi Vertikal
+#### Vertical Integration
 Integrasi vertikal merupakan metode yang diintegrasikan menurut fungsinya dengan membuat entitas yang fungsional. Metode adalah metode yang paling sederhana karena hanya melibatkan beberapa vendor, mitra, dan developer untuk menjalankan fungsi bisnis. 
 
 {: .text-center }
 ![Vertical System Integration](/assets/img/vertical-system-integration.webp "Vertical System Integration"){: .img-thumbnail }
 
-#### Integrasi Horizontal
+#### Horizontal Integration
 Integrasi horizontal disebut juga sebagai Enterprise Service Bus (ESB). Metode ini melibatkan pembuatan sub-sistem khusus yang berfungsi untuk menghubungkan dengan sub-sistem lainnya. Integrasi ini harus melibatkan pembuatan aplikasi custom yang memungkinkan membuat koneksi terprogram antara berbagai aplikasi lainnya.
 
 {: .text-center }
