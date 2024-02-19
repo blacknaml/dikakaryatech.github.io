@@ -30,6 +30,9 @@ Tujuan integrasi ini adalah untuk menyatukan berbagai sub-sistem menjadi sebuah 
 #### 3. B2B Integrator
 Tujuan integrasi ini adalah menghubungkan sistem dari dua perusahaan atau lebih. Integrasi ini lebih mengarah kepada kerjasama dan perdagangan yang lebih efisien.
 
+{: .text-center }
+![B2B Integrator](/assets/img/b2b.webp "B2B Integrator"){: .img-thumbnail }
+
 #### 4. Third-party System Integrator
 Tujuan integrasi ini adalah untuk memperluas fungsionalitas sistem yang sudah ada di perusahaan. Jenis integrasi ini menjadi pilihan bagi setiap bisnis yang membutuhkan fungsionalitas baru tetapi tidak bisa mengembangkan perangkat lunak khusus.
 
