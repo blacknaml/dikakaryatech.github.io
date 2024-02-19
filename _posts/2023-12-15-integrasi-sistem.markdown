@@ -36,6 +36,9 @@ Tujuan integrasi ini adalah menghubungkan sistem dari dua perusahaan atau lebih.
 #### 4. Third-party System Integrator
 Tujuan integrasi ini adalah untuk memperluas fungsionalitas sistem yang sudah ada di perusahaan. Jenis integrasi ini menjadi pilihan bagi setiap bisnis yang membutuhkan fungsionalitas baru tetapi tidak bisa mengembangkan perangkat lunak khusus.
 
+{: .text-center }
+![Third-party System Integrator](/assets/img/third-party-integrator.webp "Third-party System Integrator"){: .img-thumbnail }
+
 ### Metodologi Integrasi Sistem
 Terdapat empat metodologi integrasi yang umum dilakukan di perusahaan, yaitu:
 
