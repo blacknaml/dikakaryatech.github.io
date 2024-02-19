@@ -51,6 +51,9 @@ Metode ini disebut juga dengan Star Integration atau Spagheti Integration, adala
 #### Hub-and-spoke
 Model hub-and-spoke adalah integration architecture yang lebih canggih untuk mengatasi masalah point-to-point dan membantu menghindari star/spaghetti mess. Koneksi antar seluruh subsistem ditangani oleh central hub (message broker), sehingga tidak berkomunikasi satu sama lain secara langsung. Hub berfungsi sebagai message-oriented middleware dengan mesin integrasi terpusat untuk menerjemahkan operasi ke dalam satu canonical language dan mengarahkan pesan ke tujuan yang tepat. Adapter yang menghubungkan hub ke subsistem dikelola secara individual.
 
+{: .text-center }
+![Hub-and-Spoke System Integration](/assets/img/spoke-hub-system-integration.webp "Hub-and-Spoke System Integration"){: .img-thumbnail }
+
 #### Common Data Format
 Integrasi ini menggunakan shared file dalam pertukaran informasi antar sub-sistem.
 
