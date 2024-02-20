@@ -8,7 +8,7 @@ image: /assets/img/handle-puzzle.webp
 categories: software development
 tags: system-integrator system-architect
 related_post: related-posts.html
-excerpt: "Integrator sistem adalah merupakan sebuah rangkaian proses menghubungkan beberapa sistem komputerisasi dan software aplikasi, baik secara fungsional dan fisik. Sistem integrasi akan menggabungkan komponen-komponen sub sistem dan menjamin fungsi-fungsi dari sub sistem tersebut sebagai satu kesatuan."
+excerpt: "Integrasi sistem adalah merupakan sebuah rangkaian proses menghubungkan beberapa sistem komputerisasi dan software aplikasi, baik secara fungsional dan fisik. Sistem integrasi akan menggabungkan komponen-komponen sub sistem dan menjamin fungsi-fungsi dari sub sistem tersebut sebagai satu kesatuan."
 ---
 Integrasi sistem adalah sebuah rangkaian proses menghubungkan beberapa sistem komputerisasi dan software aplikasi, baik secara fungsional dan fisik. Sistem integrasi akan menggabungkan komponen-komponen sub sistem dan menjamin fungsi-fungsi dari sub sistem tersebut sebagai satu kesatuan. Keuntungan dari integrasi sistem ini adalah membaiknya suatu arus informasi dalam sebuah organisasi. Suatu pelaporan biasanya memang memerlukan waktu, namun demikian akan semakin banyak informasi yang relevan dalam kegiatan manajerial yang dapat diperoleh bila diperlukan.
 
