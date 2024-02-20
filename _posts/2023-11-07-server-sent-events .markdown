@@ -47,8 +47,8 @@ SSE memiliki beberapa keterbatas berikut:
 ### Praktek dengan PHP
 ### Praktek dengan GoLang
 
+[sse]: https://html.spec.whatwg.org/multipage/server-sent-events.html
+
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
 {% endif %}
-
-[sse]: https://html.spec.whatwg.org/multipage/server-sent-events.html

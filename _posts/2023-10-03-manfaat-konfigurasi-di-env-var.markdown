@@ -26,3 +26,7 @@ jenis kasus, terutama pada *microservice*, aplikasi/servis yang terdistribusi, d
 yang manajemennya ter-automatisasi.
 
 Memang kalau dari sisi *readability* tidak sebaik dibandingkan dengan jsom atau yaml.
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

@@ -29,3 +29,7 @@ Lebih detailnya silakan merujuk ke [CSRF docs][crsf-docs]
 {% endif %}
 
 [crsf-docs]: https://en.wikipedia.org/wiki/Cross-site_request_forgery
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

@@ -21,3 +21,6 @@ Article Source: [Free Website Content][free-website-content]
 [voip-ref]: http://www.tech-faq.com/voip.shtml
 [free-website-content]: http://www.ArticleGeek.com
 
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

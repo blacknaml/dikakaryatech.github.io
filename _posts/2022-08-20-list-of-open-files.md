@@ -34,3 +34,6 @@ fuser -v /var/cahce/debconf/config.dat
 </code>
 </pre>
 
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

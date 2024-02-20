@@ -35,3 +35,7 @@ back-end tetap di-compress, maka akan muncul error dibrowser *ERR_CONTENT_DECODI
 
 Untuk informasi CORS silakan membaca di [CORS]({% post_url 2023-10-10-cross-origin-resource-sharing %}) 
 dan HTTPS/TLS di [HTTPS/TLS]({% post_url 2023-11-01-https-tls-web-server %}).
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

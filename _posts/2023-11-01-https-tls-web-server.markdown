@@ -47,3 +47,7 @@ pengamanan komunikasi melalui internet. Data atau informasi yang dikomunikasikan
 menggunakan **TLS**.
 
 [rapidsslonline-com]: https://rapidsslonline.com
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

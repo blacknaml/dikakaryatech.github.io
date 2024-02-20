@@ -36,3 +36,7 @@ base64encode("someusername:somepassword")
 ```
 
 [rfc7617]: https://tools.ietf.org/html/rfc7617
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

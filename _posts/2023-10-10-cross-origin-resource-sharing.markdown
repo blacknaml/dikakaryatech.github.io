@@ -32,3 +32,7 @@ Konfigurasi CORS berada di sisi server, di aplikasi web tujuan request. Contohny
 dan akan mengambil data dari google.com, maka konfigurasi CORS berada di google.com; Jika terjadi error 
 CORS maka tidak ada lagi yang bisa dilakukan, karena CORS aplikasi tujuan dikontrol oleh orang-orang yang 
 berada di google.com.
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

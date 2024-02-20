@@ -39,3 +39,7 @@ server untuk mendapatkan data yang sudah dipush oleh server itu sendiri. HTTP/2 
 pengganti dari websocket. Websocket digunakan untuk komunikasi bidirectional antara server dan klien.
 
 [spdy]: https://tools.ietf.org/html/draft-mbelshe-httpbis-spdy-00
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

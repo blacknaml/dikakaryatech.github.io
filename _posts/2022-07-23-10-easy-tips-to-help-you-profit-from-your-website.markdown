@@ -24,3 +24,7 @@ Hundreds of thousands of webmasters across the world make money online with thei
 
 Author Bio
 Joshua Watson is the author and webmaster for both 
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

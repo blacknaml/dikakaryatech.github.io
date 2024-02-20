@@ -23,4 +23,7 @@ To market this path-breaking mp3 / mp4 player, they needed a suitable futuristic
 To enable customers to access songs of their choice, Apple opened up an online media store The iTunes Store on 29 April 2003, where individual songs could be downloaded at prices less than a U.S. dollar per song. The purchased songs can be played only on iPods. Subsequent versions of this iPod (mp3 / mp4 player) also featured video capabilities, and thus iTunes Store started selling short videos from 12 October 2005. From 12 September 2006, full-length movies were also available at the iTunes Store.
 
 iPods have come a long way from their inception, and now the latest fifth generation iPods possess multimedia capabilities and are available in both Mac OS and Windows OS versions. Usually, if a new iPod is plugged into a Mac OS computer, then the hard disk of this mp3 / mp4 player is formatted as per the HFS+ file format, and if it plugged into a Windows OS computer, it is formatted as per the FAT32 file format. From being a digital music player, the iPod has now transformed into a digital media player. 
- 
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}
