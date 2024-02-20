@@ -41,3 +41,7 @@ Sumber bacaan lebih lanjut [On Designing and Deploying Internet-Scale Services][
 
 [hamilton]: https://www.usenix.org/legacy/events/lisa07/tech/full_papers/hamilton/hamilton.pdf
  
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}

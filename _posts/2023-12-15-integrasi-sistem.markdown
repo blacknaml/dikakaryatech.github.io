@@ -71,3 +71,9 @@ Integrasi ini menggunakan shared file dalam pertukaran informasi antar sub-siste
 
 {: .text-center }
 ![Common Data Format System Integration](/assets/img/common-data-system-integration.webp "Common Data Format System Integration"){: .img-thumbnail }
+
+
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}
