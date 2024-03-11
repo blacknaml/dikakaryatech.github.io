@@ -1,75 +1,139 @@
----
-layout: default
----
-<!-- Start Breadcrumb 
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+{%- assign snippets = site.data.snippets %}
+
+<head>
+  <!-- ========== Meta Tags ========== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  {% feed_meta %}
+  {% seo %}
+
+  <!-- ========== Favicon Icon ========== -->
+  <link rel="shortcut icon" href="{{ "assets/img/favicon.ico" | absolute_url }}" type="image/x-icon" />
+
+  <!-- ========== Start Stylesheet ========== -->
+  <link href="{{ "assets/css/bootstrap.min.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/font-awesome.min.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/flaticon-set.min.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/magnific-popup.min.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/owl.carousel.min.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/owl.theme.default.min.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/animate.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/bootsnav.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/style.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/responsive.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/prism.css" | absolute_url }}" rel="stylesheet" />
+  <link href="{{ "assets/css/lang-flags.css" | absolute_url}}" rel="stylesheet" />
+  <!-- ========== End Stylesheet ========== -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- ========== Google Fonts ========== -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" />
+
+  <style>
+    .lang-icon {
+      background-image: url({{"/assets/images/lang-flags.png"}});
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader Start -->
+  <div class="se-pre-con"></div>
+  <!-- Preloader Ends -->
+
+  <!-- Header 
     ============================================= -->
-<div
-  class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
-  style="background-image: url({{ page.image | absolute_url }})"
->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>{{ page.title }}</h1>
-        <ul class="breadcrumb">
-          <li><a href="{{ "" | absolute_url }}">Home</a></li>
-          <li><a href="{{ "blog" | absolute_url }}">Blog</a></li>
-          <li class="active">Post</li>
-        </ul>
+  {% if page.language == "en" %}
+  <header id="home">{% if page.url == "/" %} {% include en/navigation.html %} {% else %} {% include
+    en/navigation-other.html %} {% endif %}</header>
+  {% else %}
+  <header id="home">{% if page.url == "/" %} {% include id/navigation.html %} {% else %} {% include
+    id/navigation-other.html %} {% endif %}</header>
+  {% endif %}
+  <!-- End Header -->
+
+  <!-- Start Content
+    ============================================= -->
+
+  <!-- Start Breadcrumb 
+    ============================================= -->
+  <div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light"
+    style="background-image: url({{ page.image | absolute_url }})">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{ page.title }}</h1>
+          <ul class="breadcrumb">
+            <li><a href="{{ "" | absolute_url }}">Home</a></li>
+            <li><a href="{{ " blog" | absolute_url }}">Blog</a></li>
+            <li class="active">Post</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- End Breadcrumb -->
+  <!-- End Breadcrumb -->
 
-<!-- Start Blog 
+  <!-- Start Blog 
   ============================================= -->
-<div id="blog" class="blog-area bg-gray full-width single default-padding">
-  <div class="container">
-    <div class="row">
-      <div class="blog-items">
-        <div class="col-md-12">
-          <div class="item">
-            <div class="thumb">
-              <img src="{{ page.image | absolute_url }}" alt="{{ page.title }}" />
-              <div class="tags">
-                {% for tag in page.tags %}
-                <a href="#">{{ tag }}</a>
-                {% endfor %}
+  <div id="blog" class="blog-area bg-gray full-width single default-padding">
+    <div class="container">
+      <div class="row">
+        <div class="blog-items">
+          <div class="col-md-12">
+            <div class="item">
+              <div class="thumb">
+                <img src="{{ page.image | absolute_url }}" alt="{{ page.title }}" />
+                <div class="tags">
+                  {% for tag in page.tags %}
+                  <a href="#">{{ tag }}</a>
+                  {% endfor %}
+                </div>
               </div>
-            </div>
-            <div class="info">
-              <h2>{{ page.title }}</h2>
-              <div class="meta">
-                <ul>
-                  <li>
-                    {% assign author = site.authors | where: 'short_name',
-                    page.author | first %} {% if author %}
-                    <a href="{{ author.url }}" style="color: #333333 !important;">
-                      <i class="fas fa-user"></i>{{ author.name }}
-                    </a>
-                    {% endif %}
-                  </li>
-                  <li style="color: #333333 !important;">
-                    <i class="fas fa-calendar-alt"></i> {{ page.date |
-                    date_to_string }}
-                  </li>
-                </ul>
-              </div>
-              {{ content }}
-              <div class="post-tags">
-                <i class="fas fa-tags"></i>
-                {% for tag in page.tags %}
-                <a href="#">{{ tag }}</a>
-                {% endfor %}
-              </div>
-              <div class="post-pagi-area">
-                {% if page.previous.url %}
-                <a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> Previous Post</a>
-                {% endif %}
-                {% if page.next.url %}
-                <a href="{{page.next.url}}">Next Post <i class="fas fa-arrow-right"></i></a>
-                {% endif %}
+              <div class="info">
+                <h2>{{ page.title }}</h2>
+                <div class="meta">
+                  <ul>
+                    <li>
+                      {% assign author = site.authors | where: 'short_name',
+                      page.author | first %} {% if author %}
+                      <a href="{{ author.url }}" style="color: #333333 !important;">
+                        <i class="fas fa-user"></i>{{ author.name }}
+                      </a>
+                      {% endif %}
+                    </li>
+                    <li style="color: #333333 !important;">
+                      <i class="fas fa-calendar-alt"></i> {{ page.date |
+                      date_to_string }}
+                    </li>
+                  </ul>
+                </div>
+                {{ content }}
+                <div class="post-tags">
+                  <i class="fas fa-tags"></i>
+                  {% for tag in page.tags %}
+                  <a href="#">{{ tag }}</a>
+                  {% endfor %}
+                </div>
+                <div class="post-pagi-area">
+                  {% if page.previous.url %}
+                  <a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> Previous Post</a>
+                  {% endif %}
+                  {% if page.next.url %}
+                  <a href="{{page.next.url}}">Next Post <i class="fas fa-arrow-right"></i></a>
+                  {% endif %}
+                </div>
               </div>
             </div>
           </div>
@@ -77,5 +141,46 @@ layout: default
       </div>
     </div>
   </div>
-</div>
-<!-- End Blog -->
+  <!-- End Blog -->
+  <!-- End Content -->
+
+  <!-- Start Footer 
+    ============================================= -->
+  {% if page.language == "en" %}
+  {% include en/footer.html %}
+  {% else %}
+  {% include id/footer.html %}
+  {% endif %}
+
+  <!-- End Footer -->
+
+  <!-- jQuery Frameworks
+    ============================================= -->
+  <script src="{{ "assets/js/jquery-1.12.4.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/bootstrap.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/equal-height.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/jquery.appear.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/jquery.easing.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/jquery.magnific-popup.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/modernizr.custom.13711.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/owl.carousel.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/wow.min.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/count-to.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/bootsnav.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/prism.js" | absolute_url }}"></script>
+  <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-25Q5X0NN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-25Q5X0NN12');
+  </script>
+</body>
+
+</html>
