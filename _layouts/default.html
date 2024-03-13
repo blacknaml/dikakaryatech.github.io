@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Dika Karya Tech | {% if page.language == "en" %} {{ "Trusted Software Development Company" }} {% else %} {{ "Tim konsultan IT dan Software Custom di Sidoarjo. Kami adalah mitra teknis untuk membangun produk aplikasi web-based dan mobile." }} {% endif %}" />
+    {% feed_meta %} 
+    {% seo %}
 
     <!-- ========== Page Title ========== -->
     <title>{{ page.title }}</title>
@@ -49,9 +51,6 @@
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
       rel="stylesheet"
     />    
-    {% feed_meta %} 
-    {% seo %}
-
     <style>
       .lang-icon { background-image: url({{"/assets/images/lang-flags.png"}}); }
     </style>
