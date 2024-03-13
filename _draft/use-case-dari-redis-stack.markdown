@@ -30,6 +30,8 @@ Redis Stack sering dianggap sebagai pisau Swiss Army dalam memecahkan berbagai m
 
 **Let’s go through each of these in turn.**
 
+
+
 ### Caching
 
 Kecepatan dan fleksibilitas adalah salah satu fitur yang menjadikan Redis menjadi cache paling populer di dunia. Sebagai data store in-memory, dengan fitur tambahan seperti data persistence, high availability, dan skalabilitas, Redis bisa bertahan dari kegagalan masif, failover replika, dan bisa menggunakan cluster. Redis juga mudah di-setup dan di-maintain, serta mandiri: apa yang kita butuhkan untuk layer caching sudah lengkap dalam satu paket.
