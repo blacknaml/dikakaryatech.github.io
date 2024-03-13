@@ -80,6 +80,7 @@ Vulnerability adalah keadaan yang menyebabkan potensi serangan terhadap sebuah s
 
 
 
+
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
 {% endif %}
