@@ -13,6 +13,7 @@ excerpt: "Redis Stack bisa digunakan untuk banyak skenario yang berbeda. Secara 
 Redis Stack bisa digunakan untuk banyak skenario yang berbeda. Secara tradisional Redis digunakan sebagai in-memory real-time cache (cache real-time dalam memori) dan sebagai penyimpanan sesi (session store), atau sebagai penimpanan leaderboards atau message broker. Redis Stack diturunkan dari Redis OSS yang sudah lama kita kenal, sehingga bisa menjadi solusi untuk banyak masalah yang muncul. 
 
 Redis Stack sering dianggap sebagai pisau Swiss Army dalam memecahkan berbagai masalah. Beberapa penggunaan klasik dari Redis yang membuatnya populer, antara lain:
+
 > **Caching**
 >
 > **Session store**
@@ -29,8 +30,6 @@ Redis Stack sering dianggap sebagai pisau Swiss Army dalam memecahkan berbagai m
 >
 
 **Let’s go through each of these in turn.**
-
-
 
 ### Caching
 
@@ -68,6 +67,10 @@ Protokol HTTP adalah stateless yaitu setiap permintaan bersifat independen dan t
 4. ID acak ini dikirimkan ke klien / web browser dan disimpan dalam cookie.
 5. Web browser melampirkan cookie ke setiap permintaan berikutnya.
 6. Server mengidentifikasi pengguna lama yang kembali dengan cara dari ID yang disimpan dalam cookie.
+
+Server, dengan mengelola data sesi yang terkait dengan pengguna, bisa mengambil preferensi pengguna, seperti item yang ditambahkan ke keranjang belanja (terlepas dari apakah pengguna telah mengautentikasi ke website). Informasi sesi disimpan dalam memori di server aplikasi:
+
+
 
 ### Rate Limiter
 
