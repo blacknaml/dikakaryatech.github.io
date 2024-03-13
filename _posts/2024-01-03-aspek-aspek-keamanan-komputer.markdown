@@ -79,6 +79,7 @@ Vulnerability adalah keadaan yang menyebabkan potensi serangan terhadap sebuah s
 *Script Kiddies* adalah mereka yang sedang berusaha untuk menjadi *hacker*. Namun, karena biasanya script kiddies masih dalam tahap belajar atau mungkin malas dengan memrogram sendiri, biasanya mereka mencari script-script penjebol password dari internet, kemudian melakukan copy paste dan menjalankannya untuk menyerang mesin orang lain.
 
 
+
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
 {% endif %}
