@@ -109,6 +109,10 @@ label {
   max-width: 100%;
 }
 
+figure {
+  margin: 5px !important;
+}
+
 a,
 .btn,
 button {
@@ -646,8 +650,8 @@ input {
 .less-margin {
   margin: 0;
 }
-.splitter
-{
+
+.splitter {
   display: block;
   height: 1px;
   width: 100%;
@@ -2926,7 +2930,8 @@ body,
 
 .blog-area .info h2,
 .blog-area .info h3,
-.blog-area .info h4 {
+.blog-area .info h4, 
+.blog-area .info h5 {
   font-weight: 600;
   line-height: 1.4;
   text-transform: capitalize;
@@ -2998,11 +3003,11 @@ blockquote {
 
 .blog-items .item .info ul {
   list-style-type: disc !important;
-  padding: 1px 20px 20px 5px;
+  padding: 1px 20px 20px 25px;
 }
 
 .blog-items .item .info ol {
-  padding: 1px 20px 20px 10px;
+  padding: 1px 20px 20px 25px;
 }
 
 /* Pagination */
@@ -4218,4 +4223,43 @@ footer.color-yellow .footer-bottom p a {
   z-index: 999999;
   background: url(../img/preloader.gif) center no-repeat #fff;
   text-align: center;
+}
+
+/* TOC */
+.toc__list:before {
+  /* content: "Table Of Contents"; 
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 9px !important;*/
+}
+
+.toc__list {
+  border: 2px solid #eee;
+  border-radius: 4px;
+  line-height: 2.7rem;
+  font-weight: bold;
+  padding-top: 15px !important;
+  padding-left: 25px !important;
+  margin-bottom: 35px;
+}
+
+.toc__sublist li {
+  padding-left: 1.25rem;
+}
+
+.toc-h2:first-child {
+  margin-top: 1rem;
+}
+
+.toc-h3::marker {
+  margin-left: 25px !important;
+}
+
+#toc a {
+  color: #BE185D;
+  text-decoration: underline;
+}
+
+#toc a:hover {
+  color: #9D174D;
 }

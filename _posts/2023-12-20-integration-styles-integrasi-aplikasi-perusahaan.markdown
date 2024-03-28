@@ -1,6 +1,7 @@
 ---
 layout: post
 language: id
+toc: true
 title: "Integration Styles pada Integrasi Aplikasi di Perusahaan"
 author: debi
 date: 2023-12-20 08:38:35 +0700

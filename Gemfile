@@ -22,6 +22,8 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-paginate'
   gem 'jekyll-tagging-related_posts'
+  gem 'jekyll-figure'
+  gem 'jekyll-toc'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

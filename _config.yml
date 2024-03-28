@@ -78,7 +78,19 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-tagging-related_posts
+  - jekyll-toc
+  - jekyll-figure
 
+jekyll-figure:
+  paragraphs: false
+
+toc:
+  min_level: 1
+  max_level: 4
+  list_class: toc
+  list_class: toc__list
+  sublist_class: toc__sublist
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

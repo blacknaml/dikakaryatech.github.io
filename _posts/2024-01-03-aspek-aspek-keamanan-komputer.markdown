@@ -8,6 +8,7 @@ categories: software development
 tags: server keamanan-data
 related_post: related-posts.html
 language: id
+toc: true
 excerpt: "Inti dari keamanan komputer adalah melindungi komputer dan jaringannya dengan tujuan mengamankan informasi yang berada di dalamnya. Keamanan komputer sendiri meliputi beberapa aspek, yaitu privacy, integrity, authentication, availability, dan confidentiality."
 ---
 Inti dari keamanan komputer adalah melindungi komputer dan jaringannya dengan tujuan mengamankan informasi yang berada di dalamnya. Keamanan komputer sendiri meliputi beberapa aspek, yaitu privacy, integrity, authentication, availability, dan confidentiality.

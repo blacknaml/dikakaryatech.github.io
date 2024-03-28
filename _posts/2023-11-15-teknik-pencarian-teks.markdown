@@ -8,6 +8,7 @@ categories: software development
 tags: scraping data-minning
 related_post: related-posts.html
 language: id
+toc: true
 ---
 
 Beberapa teknik pencarian telah dikembangkan, antara lain pencarian teks penuh, pencarian dengan metadata, dan pencarian dengan jaringan semantik.

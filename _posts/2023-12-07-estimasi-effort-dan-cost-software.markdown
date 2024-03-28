@@ -1,6 +1,7 @@
 ---
 layout: post
 language: id
+toc: true
 title: "Metode Estimasi Biaya dan Effort Perangkat Lunak"
 author: debi
 date: 2023-12-07 08:37:33 +0700
