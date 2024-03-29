@@ -124,6 +124,8 @@ Kita dapat membuat penghitung Redis key untuk setiap menit per pengguna. Setiap 
 
 Nama key bisa berupa kombinasi identitas pengguna dan menit waktu saat ini. Identitas pengguna dapat dinyatakan sebagai pengidentifikasi sesi, atau sebagai pengidentifikasi API-KEY. Jadi, jika kami memutuskan untuk tetap mengontrol permintaan pengidentifikasi API-KEY yang ditentukan, kami akan memberi nama kunci tersebut {API-KEY}:{MINUTE}. Karena kita selalu kehabisan masa berlaku kuncinya, kita hanya perlu mencatat menitnya; ketika jam bergulir dari 59 ke 00, kita dapat yakin bahwa pembatas lain untuk 59 tidak ada (itu akan berakhir 58 menit sebelumnya).
 
+
+
 ### Leaderboards
 
 ### Data Deduplication
