@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-figure'
   gem 'jekyll-toc'
+  gem 'rexml'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
