@@ -8,6 +8,7 @@ categories: software development
 tags: redis data-store
 related_post: related-posts.html
 language: id
+toc: true
 excerpt: "Redis adalah penyimpanan data open-source yang berfokus pada kinerja tinggi dan kemudahan penggunaan. Ia beroperasi dalam memori (in-memory) untuk menyediakan akses data yang sangat cepat, membuatnya ideal untuk aplikasi real-time dan yang membutuhkan performa tinggi. Redis dapat digunakan sebagai database, cache, message broker, dan struktur data, membuatnya serbaguna untuk berbagai macam kebutuhan."
 ---
 Redis adalah penyimpanan data open-source yang berfokus pada kinerja tinggi dan kemudahan penggunaan. Ia beroperasi dalam memori (in-memory) untuk menyediakan akses data yang sangat cepat, membuatnya ideal untuk aplikasi real-time dan yang membutuhkan performa tinggi. Redis dapat digunakan sebagai database, cache, message broker, dan struktur data, membuatnya serbaguna untuk berbagai macam kebutuhan.
@@ -41,10 +42,14 @@ Redis adalah penyimpanan data open-source yang berfokus pada kinerja tinggi dan 
 Redis adalah pilihan yang tepat untuk aplikasi yang membutuhkan kinerja tinggi, skalabilitas, dan kesederhanaan. Dengan berbagai fiturnya, Redis dapat digunakan untuk berbagai macam kebutuhan dan membantu meningkatkan performa dan skalabilitas aplikasi Anda.
 
 #### Sumber Daya Tambahan:
-- Situs web resmi Redis: https://redis.io/
-- Dokumentasi Redis: https://redis.io/docs/
-- Tutorial Redis: [URL yang tidak valid dihapus]
-- Komunitas Redis: https://redis.io/community/
+- Situs web resmi Redis: [redis.io][redis-io]
+- Dokumentasi Redis: [redis.io/docs/][redis-doc]
+- Komunitas Redis: [redis.io/community/][redis-comm]
+
+[redis-io]: https://redis.io/
+[redis-doc]: https://redis.io/docs/
+[redis-comm]: https://redis.io/community/
+
 
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
