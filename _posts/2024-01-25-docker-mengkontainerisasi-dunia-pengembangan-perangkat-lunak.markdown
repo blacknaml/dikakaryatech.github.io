@@ -20,7 +20,9 @@ Hal ini dapat membuat proses deployment, manajemen, dan skalabilitas aplikasi me
 Container ini ringan, portable, dan dapat dijalankan di berbagai lingkungan, termasuk laptop, server cloud, dan perangkat mobile.
 
 {: .text-center }
+{% figure caption:"Docker container with an application and its dependencies" %}
 ![Docker container with an application and its dependencies](/assets/img/docker-image.webp "Docker container with an application and its dependencies"){: .img-thumbnail }
+{% endfigure %}
 
 ### Manfaat Docker:
 - **Portabilitas:** Container Docker dapat dijalankan di berbagai lingkungan, tanpa perlu memodifikasi aplikasi atau dependensinya.
@@ -32,7 +34,9 @@ Container ini ringan, portable, dan dapat dijalankan di berbagai lingkungan, ter
 ### Bagaimana Docker Bekerja?
 
 {: .text-center }
+{% figure caption:"Docker container with an application and its dependencies" %}
 ![Docker architecture with images, containers, and a Docker Engine](/assets/img/docker-architecture.webp "Docker architecture with images, containers, and a Docker Engine"){: .img-thumbnail }
+{% endfigure %}
 
 Docker bekerja dengan menggunakan tiga komponen utama:
 - **Images:** Image Docker adalah template yang berisi semua instruksi yang diperlukan untuk membuat container. Image Docker dapat disimpan di Docker Hub, registry publik untuk image Docker.
