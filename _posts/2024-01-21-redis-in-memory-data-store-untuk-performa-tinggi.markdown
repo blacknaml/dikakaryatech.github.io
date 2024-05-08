@@ -3,7 +3,7 @@ layout: post
 title: "Redis: In-Memory Data Store untuk Performa Tinggi"
 author: jill
 date: 2024-01-21 12:24:24 +0700
-image: /assets/img/enterprise-application-integration.webp
+image: /assets/img/cookies-on-the-table.webp
 categories: software development
 tags: redis data-store
 related_post: related-posts.html
