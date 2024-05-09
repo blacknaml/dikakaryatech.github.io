@@ -60,7 +60,6 @@ Linux, dengan arsitekturnya yang modular dan open-source, menawarkan fleksibilit
 
 Semoga informasi ini membantu Anda menjelajahi dunia Linux dengan lebih mendalam!
 
-
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
 {% endif %}
