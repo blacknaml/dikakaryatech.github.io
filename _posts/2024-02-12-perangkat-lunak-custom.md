@@ -1,6 +1,19 @@
-Perangkat lunak custom (custom software) adalah perangkat lunak yang dirancang dan dikembangkan khusus untuk memenuhi kebutuhan atau spesifikasi tertentu dari suatu organisasi atau pengguna.  
+---
+layout: post
+language: id
+toc: true
+title: "Perangkat Lunak Custom"
+author: debi
+date: 2024-02-12 09:43:03 +0700
+image: /assets/img/software-custom.webp
+categories: software development
+tags: software-custom development software-analysis 
+related_post: related-posts.html
+excerpt: "Perangkat lunak custom (software custom) adalah perangkat lunak yang dirancang dan dikembangkan khusus untuk memenuhi kebutuhan atau spesifikasi tertentu dari suatu organisasi atau pengguna. Berbeda dengan perangkat lunak siap pakai seperti Microsoft Office atau aplikasi editing foto yang tersedia luas, perangkat lunak custom dibuat dari awal atau dimodifikasi dari framework yang ada  agar sesuai dengan kebutuhan pengguna yang unik."
+---
+Perangkat lunak custom (software custom) adalah perangkat lunak yang dirancang dan dikembangkan khusus untuk memenuhi kebutuhan atau spesifikasi tertentu dari suatu organisasi atau pengguna.  
 
-**Berbeda dengan perangkat lunak siap pakai (COTS: Commercial Off-The-Shelf Software)** seperti Microsoft Office atau aplikasi editing foto yang tersedia luas, perangkat lunak custom dibuat dari awal atau dimodifikasi dari framework yang ada  agar sesuai dengan kebutuhan  pengguna yang unik. 
+**Berbeda dengan perangkat lunak siap pakai (COTS: Commercial Off-The-Shelf Software)** seperti Microsoft Office atau aplikasi editing foto yang tersedia luas, perangkat lunak custom dibuat dari awal atau dimodifikasi dari framework yang ada agar sesuai dengan kebutuhan pengguna yang unik. 
 
 **Mengapa menggunakan software custom?**
 
