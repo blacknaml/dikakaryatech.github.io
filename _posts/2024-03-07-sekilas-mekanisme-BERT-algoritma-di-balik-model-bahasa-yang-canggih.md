@@ -91,11 +91,6 @@ Di masa depan, BERT diharapkan akan terus berkembang dan disempurnakan. Para pen
 * [https://www.analyticsvidhya.com/blog/2022/11/comprehensive-guide-to-bert/](https://www.analyticsvidhya.com/blog/2022/11/comprehensive-guide-to-bert/)
 * [https://blog.research.google/2018/11/open-sourcing-bert-state-of-art-pre.html](https://blog.research.google/2018/11/open-sourcing-bert-state-of-art-pre.html)
 
-#### Catatan
-
-* BERT saat ini masih dalam tahap pengembangan dan belum tersedia untuk semua orang.
-* BERT hanya tersedia dalam bahasa Inggris Amerika, Jepang, dan Korea.
-
 Semoga informasi ini bermanfaat! Jika Anda memiliki pertanyaan lain tentang BERT, jangan ragu untuk bertanya.
 
 
