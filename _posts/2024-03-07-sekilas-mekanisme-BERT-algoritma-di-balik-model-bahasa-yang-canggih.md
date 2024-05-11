@@ -45,16 +45,19 @@ BERT bekerja dengan arsitektur Transformer yang canggih, memungkinkan model untu
 ### Proses pembelajaran BERT melibatkan dua tahap
 
 * **Pre-training:** BERT dilatih pada kumpulan data teks dan kode yang sangat besar, mempelajari pola dan hubungan dalam bahasa.
+
 {: .text-center }
 {% figure caption:"Proses Pre-training BERT" %}
 ![Proses Pre-training BERT](/assets/img/BERT-pretraining-process.webp "Proses Pre-training BERT"){: .img-thumbnail }
 {% endfigure %}
 
 * **Fine-tuning:** BERT disesuaikan dengan tugas spesifik, seperti menjawab pertanyaan atau meringkas teks.
+
 {: .text-center }
 {% figure caption:"Proses Fine Tuning BERT" %}
 ![Proses Fine Tuning BERT](/assets/img/BERT-fine-funing-process.webp "Proses Fine Tuning BERT"){: .img-thumbnail }
 {% endfigure %}
+
 
 ### Contoh Penggunaan BERT
 * **Pencarian Informasi:** BERT membantu mesin pencari memahami maksud pengguna dengan lebih baik, menghasilkan hasil pencarian yang lebih relevan dan akurat.
