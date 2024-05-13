@@ -63,3 +63,10 @@ Menguasai algoritma-algoritma fundamental ini merupakan landasan penting bagi pa
 
 * Daftar algoritma yang disebutkan dalam artikel ini tidak lengkap. Masih banyak algoritma penting lainnya yang perlu dipelajari oleh para insinyur perangkat lunak.
 * Tingkat pemahaman dan penguasaan algoritma yang dibutuhkan oleh insinyur perangkat lunak akan bervariasi tergantung pada bidang pekerjaan dan kompleksitas proyek yang mereka kerjakan.
+
+Semoga informasi ini bermanfaat! Jika Anda memiliki pertanyaan lain tentang Algoritma, jangan ragu untuk bertanya.
+
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}
