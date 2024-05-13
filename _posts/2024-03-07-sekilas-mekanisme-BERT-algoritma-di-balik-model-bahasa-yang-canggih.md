@@ -86,10 +86,6 @@ Di masa depan, BERT diharapkan akan terus berkembang dan disempurnakan. Para pen
 * **Google AI Blog:** [https://blog.google/technology/ai/bard-google-ai-search-updates/](https://blog.google/technology/ai/bard-google-ai-search-updates/)
 * **BERT Tutorial:** [https://m.youtube.com/watch?v=E9nGPt4iMM8](https://m.youtube.com/watch?v=E9nGPt4iMM8)
 * **BERT Github Repository:** [https://github.com/google-research/bert](https://github.com/google-research/bert)
-* [https://en.wikipedia.org/wiki/BERT_%28language_model%29](https://en.wikipedia.org/wiki/BERT_%28language_model%29)
-* [https://huggingface.co/docs/transformers/en/model_doc/bert](https://huggingface.co/docs/transformers/en/model_doc/bert)
-* [https://www.analyticsvidhya.com/blog/2022/11/comprehensive-guide-to-bert/](https://www.analyticsvidhya.com/blog/2022/11/comprehensive-guide-to-bert/)
-* [https://blog.research.google/2018/11/open-sourcing-bert-state-of-art-pre.html](https://blog.research.google/2018/11/open-sourcing-bert-state-of-art-pre.html)
 
 Semoga informasi ini bermanfaat! Jika Anda memiliki pertanyaan lain tentang BERT, jangan ragu untuk bertanya.
 
