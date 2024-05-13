@@ -68,7 +68,67 @@ Proses semantic search membutuhkan pemodelan yang dapat digunakan ulang. Bentuk 
 Beberapa metode-metode yang bisa digunakan untuk mengukur kemiripan dua kata, dua kalimat dan dua dokumen, antara lain.
 
 #### Language Based Matching (LBM)
+Language Based Matching (LBM), atau Pencocokan Berbasis Bahasa, adalah teknik yang digunakan untuk mengidentifikasi, mengelompokkan, dan menganalisis teks berdasarkan bahasa yang digunakan. Teknik ini memanfaatkan berbagai metode untuk menentukan bahasa teks, seperti:
+
+* **Analisis Statistik:** Teknik ini menganalisis frekuensi kemunculan huruf, bigram, dan trigram untuk mengidentifikasi pola yang khas untuk setiap bahasa.
+* **Morfologi:** Teknik ini menganalisis struktur kata, seperti prefiks, sufiks, dan akar kata, untuk mengidentifikasi bahasa teks.
+* **Semantik:** Teknik ini menganalisis makna kata dan frasa untuk mengidentifikasi bahasa teks.
+* **Syntax:** Teknik ini menganalisis struktur kalimat dan tata bahasa untuk mengidentifikasi bahasa teks.
+
+LBM memiliki berbagai aplikasi, termasuk:
+
+* **Klasifikasi Teks:** LBM digunakan untuk mengklasifikasikan teks ke dalam kategori bahasa tertentu, seperti bahasa Inggris, Prancis, Spanyol, dll.
+* **Pencocokan Teks:** LBM digunakan untuk mencocokkan teks dengan dokumen referensi atau database untuk mengidentifikasi kesamaan atau perbedaan bahasa.
+* **Terjemahan Mesin:** LBM digunakan untuk mengidentifikasi bahasa sumber teks sebelum menerjemahkannya ke bahasa lain.
+* **Penambangan Teks:** LBM digunakan untuk mengekstrak informasi dari teks dalam bahasa tertentu, seperti topik, entitas, dan sentimen.
+
+LBM merupakan alat yang ampuh untuk memproses dan menganalisis teks dalam berbagai bahasa. Dengan mengidentifikasi bahasa teks dengan tepat, LBM dapat membantu meningkatkan akurasi dan efisiensi berbagai aplikasi pengolahan bahasa alami (NLP).
+
+#### Beberapa contoh penerapan LBM
+
+* **Mesin pencari:** LBM digunakan untuk mengidentifikasi bahasa hasil pencarian dan menampilkan hasil yang relevan dengan bahasa pengguna.
+* **Perangkat lunak anti-spam:** LBM digunakan untuk mengidentifikasi email spam berdasarkan bahasa yang digunakan.
+* **Perangkat lunak chatbots:** LBM digunakan untuk mengidentifikasi bahasa pengguna dan memberikan respons yang sesuai dalam bahasa tersebut.
+* **Perangkat lunak koreksi teks:** LBM digunakan untuk mengidentifikasi kesalahan tata bahasa dan ejaan berdasarkan bahasa teks.
+
+Language Based Matching (LBM) adalah teknik yang penting untuk memproses dan menganalisis teks dalam berbagai bahasa. Dengan mengidentifikasi bahasa teks dengan tepat, LBM dapat membantu meningkatkan akurasi dan efisiensi berbagai aplikasi pengolahan bahasa alami.
+
 #### Vector Space Matching (SVM)
+
+Pencocokan Ruang Vektor (Vector Space Matching - VSM) adalah teknik yang digunakan untuk mengukur kemiripan antara dua atau lebih dokumen teks. Teknik ini didasarkan pada gagasan bahwa dokumen yang memiliki makna serupa akan direpresentasikan oleh vektor yang dekat dalam ruang vektor.
+
+#### Bagaimana VSM Bekerja
+
+1. **Representasi Dokumen:** Setiap dokumen diubah menjadi vektor numerik, di mana setiap elemen vektor mewakili kemunculan kata tertentu dalam dokumen. 
+2. **Perhitungan Kemiripan:** Kemiripan antara dua dokumen diukur dengan menghitung jarak antara vektor mereka. Ada beberapa metode untuk menghitung jarak, seperti cosine similarity dan Euclidean distance.
+3. **Interpretasi Hasil:** Semakin kecil jarak antara dua vektor, semakin tinggi kemiripan antara dokumen yang mereka representasikan. 
+
+#### Penerapan VSM
+
+VSM memiliki berbagai aplikasi, termasuk:
+
+* **Pencarian Informasi:** VSM digunakan dalam mesin pencari untuk menemukan dokumen yang relevan dengan kueri pengguna.
+* **Klasifikasi Teks:** VSM digunakan untuk mengklasifikasikan dokumen ke dalam kategori tertentu, seperti topik, genre, atau sentimen.
+* **Rekomendasi Sistem:** VSM digunakan untuk merekomendasikan item yang serupa dengan item yang disukai pengguna.
+* **Analisis Teks:** VSM digunakan untuk menganalisis pola dalam teks, seperti topik yang dominan atau sentimen keseluruhan.
+
+#### Keuntungan VSM
+
+* **Kesederhanaan:** VSM adalah teknik yang relatif sederhana untuk dipahami dan diimplementasikan.
+* **Efisiensi:** VSM dapat menghitung kemiripan antara banyak dokumen dengan cepat.
+* **Fleksibilitas:** VSM dapat digunakan dengan berbagai jenis teks, seperti artikel berita, postingan media sosial, dan email.
+
+#### Kekurangan VSM
+
+* **Ketergantungan pada Kata:** VSM hanya mempertimbangkan kemunculan kata dan tidak memperhitungkan makna kontekstual.
+* **Sensitivitas terhadap Noise:** VSM dapat sensitif terhadap noise dalam data, seperti kata-kata yang tidak relevan atau kesalahan ejaan.
+* **Dimensi Tinggi:** Ketika jumlah kata dalam kosakata besar, ruang vektor dapat menjadi sangat besar dan kompleks.
+
+Pencocokan Ruang Vektor adalah teknik yang ampuh untuk mengukur kemiripan antara dokumen teks. Teknik ini memiliki berbagai aplikasi, seperti pencarian informasi, klasifikasi teks, dan sistem rekomendasi. VSM adalah teknik yang sederhana, efisien, dan fleksibel, namun memiliki beberapa keterbatasan seperti ketergantungan pada kata, sensitivitas terhadap noise, dan dimensi tinggi.
+
+**Catatan:**
+* VSM adalah salah satu teknik untuk mengukur kemiripan teks. Ada teknik lain yang lebih canggih, seperti Latent Semantic Analysis (LSA) dan Topic Modeling.
+* VSM dapat dikombinasikan dengan teknik lain untuk meningkatkan performanya.
 
 
 {% if page.related_post %}

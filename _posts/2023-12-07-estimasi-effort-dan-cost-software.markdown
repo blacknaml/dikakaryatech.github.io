@@ -431,10 +431,179 @@ Perhitungan Estimasi Waktu High Risk dengan Month 6.2 bulan dan Person 11.03 ora
 
 ### Scrum Based Methods
 Ada empat metode yang termasuk kategori Scrum Based Methods:
-- Use Case Points (UCP)
-- Planning Poker (PP)
-- Points Per Story (PPS)
-- Velocity Calculations (VC)
+
+### Scrum Based Methods Use Case Points (UCP)
+
+Scrum Based Methods Use Case Points (SBUC) merupakan metode estimasi upaya pengembangan perangkat lunak yang didasarkan pada Use Case Points (UCP) dan prinsip-prinsip Scrum. UCP adalah metrik yang digunakan untuk mengukur kompleksitas fungsionalitas perangkat lunak, sedangkan Scrum adalah kerangka kerja pengembangan perangkat lunak yang berfokus pada iterasi dan kolaborasi.
+
+#### Prinsip-prinsip Scrum yang mendasari SBUC
+
+1. **Self-Organizing Teams:** Tim pengembangan bertanggung jawab atas estimasi dan pengelolaan pekerjaan mereka.
+2. **Product Backlog:** Backlog produk berisi daftar fitur dan fungsionalitas yang ingin diimplementasikan.
+3. **Sprints:** Pekerjaan dibagi menjadi sprint yang singkat, terfokus, dan berdurasi tetap.
+4. **Burndown Charts:** Burndown charts digunakan untuk melacak kemajuan sprint.
+
+#### Penerapan SBUC
+
+1. **Identifikasi Use Cases:** Definisikan semua Use Cases yang diperlukan untuk menyelesaikan fungsionalitas yang diinginkan.
+2. **Klasifikasi Use Cases:** Klasifikasikan Use Cases berdasarkan kompleksitasnya menjadi Small, Medium, atau Large.
+3. **Tentukan UCP:** Tetapkan nilai UCP untuk setiap Use Case berdasarkan klasifikasinya.
+4. **Hitung Total UCP:** Hitung total UCP untuk semua Use Cases dalam backlog produk.
+5. **Estimasi Velocitas Tim:** Hitung kecepatan tim dalam UCP per sprint berdasarkan sprint sebelumnya.
+6. **Estimasi Durasi Sprint:** Bagi total UCP dengan kecepatan tim untuk mendapatkan estimasi durasi sprint yang diperlukan untuk menyelesaikan semua Use Cases.
+
+#### Keuntungan SBUC
+
+* **Mudah dipahami dan digunakan:** SBUC menggunakan konsep yang mudah dipahami dan mudah diterapkan oleh tim pengembangan.
+* **Meningkatkan transparansi:** SBUC memungkinkan tim untuk secara transparan mengkomunikasikan estimasi dan kemajuan pekerjaan mereka kepada pemangku kepentingan.
+* **Meningkatkan fleksibilitas:** SBUC memungkinkan tim untuk dengan mudah menyesuaikan estimasi mereka berdasarkan perubahan pada backlog produk.
+* **Meningkatkan akuntabilitas:** SBUC membantu tim untuk tetap bertanggung jawab atas estimasi dan komitmen mereka.
+
+#### Kekurangan SBUC
+
+* **Subjektif:** Estimasi UCP dapat bervariasi tergantung pada interpretasi tim dan pengalaman mereka.
+* **Membutuhkan data historis:** Estimasi kecepatan tim yang akurat memerlukan data dari sprint sebelumnya.
+* **Tidak mempertimbangkan faktor non-fungsional:** SBUC tidak mempertimbangkan faktor non-fungsional seperti kinerja, keamanan, dan skalabilitas.
+
+
+SBUC adalah metode estimasi yang bermanfaat untuk proyek Scrum yang berfokus pada pengembangan fungsionalitas perangkat lunak. Metode ini mudah dipahami, transparan, dan fleksibel, tetapi perlu diingat bahwa estimasi UCP dapat bersifat subjektif dan memerlukan data historis. 
+
+**Catatan:**
+
+* SBUC hanyalah salah satu metode estimasi yang tersedia. Metode lain yang populer termasuk Story Points dan Planning Poker.
+* Penting untuk memilih metode estimasi yang sesuai dengan kebutuhan dan konteks proyek Anda.
+* Estimasi harus selalu dianggap sebagai perkiraan dan dapat berubah seiring dengan kemajuan proyek.
+
+**Sumber:**
+
+* [https://www.scrum.org/resources/blog/evidence-based-estimation](https://www.scrum.org/resources/blog/evidence-based-estimation)
+* [https://en.wikipedia.org/wiki/Use_case_points](https://en.wikipedia.org/wiki/Use_case_points)
+* [https://www.atlassian.com/whitepapers/data-center-workflow-and-efficiency/use-cases](https://www.atlassian.com/whitepapers/data-center-workflow-and-efficiency/use-cases)
+
+### Planning Poker (PP)
+**Planning Poker**, juga dikenal sebagai **Scrum Poker**, adalah teknik estimasi usaha yang digunakan dalam metodologi Scrum untuk memperkirakan waktu dan upaya yang dibutuhkan untuk menyelesaikan item backlog produk. Teknik ini melibatkan tim pengembang dan pemangku kepentingan lainnya dalam proses estimasi, dan bertujuan untuk mencapai konsensus tentang ukuran relatif dari setiap item.
+
+#### Bagaimana Cara Kerja Planning Poker
+
+1. **Persiapan:** Siapkan kartu Planning Poker dengan nilai-nilai yang mewakili estimasi usaha, seperti 0, 1, 2, 3, 5, 8, 13, 20, 40, dan 100. Nilai-nilai ini mewakili waktu dan upaya yang relatif, bukan waktu absolut.
+
+2. **Penjelasan Item Backlog:** Product Owner menjelaskan item backlog kepada tim, memastikan semua orang memahami apa yang perlu dilakukan.
+
+3. **Estimasi Awal:** Setiap orang dalam tim secara diam-diam memperkirakan usaha yang dibutuhkan untuk menyelesaikan item backlog menggunakan kartu Planning Poker.
+
+4. **Penyingkapan:** Semua orang secara bersamaan mengungkapkan kartu mereka. Jika semua orang memilih kartu dengan nilai yang sama, lanjutkan ke langkah 5. Jika tidak, lanjutkan ke langkah 6.
+
+5. **Diskusi:** Jika semua orang memilih kartu dengan nilai yang sama, diskusikan alasan di balik estimasi tersebut. Pastikan semua orang memahami bagaimana nilai-nilai tersebut diinterpretasikan.
+
+6. **Estimasi Ulang:** Jika estimasi awal tidak sama, setiap orang memiliki kesempatan untuk mempertimbangkan kembali estimasi mereka berdasarkan diskusi. Mereka kemudian memilih kartu baru dan mengungkapkan kartu mereka secara bersamaan. Ulangi langkah 6 dan 7 sampai tercapai konsensus.
+
+7. **Konsensus:** Konsensus tercapai ketika tim merasa nyaman dengan estimasi bersama mereka. Estimasi ini dicatat dan digunakan untuk merencanakan sprint berikutnya.
+
+#### Keuntungan Planning Poker
+
+* **Meningkatkan partisipasi tim:** Planning Poker melibatkan semua orang dalam proses estimasi, mendorong partisipasi dan rasa kepemilikan tim.
+* **Meminimalisir bias:** Teknik anonim ini membantu mengurangi bias individu dan mendorong estimasi yang lebih objektif.
+* **Memfasilitasi diskusi:** Diskusi yang terjadi selama Planning Poker membantu tim untuk lebih memahami kompleksitas item backlog.
+* **Meningkatkan akurasi estimasi:** Estimasi yang dihasilkan melalui Planning Poker umumnya lebih akurat daripada estimasi individu.
+* **Menyenangkan dan interaktif:** Planning Poker adalah cara yang menyenangkan dan interaktif untuk memperkirakan usaha, yang dapat meningkatkan motivasi dan engagement tim.
+
+**Planning Poker** adalah alat yang berharga untuk tim Scrum yang ingin meningkatkan akurasi estimasi mereka dan membangun konsensus di sekitar backlog produk. Teknik ini mudah dipelajari dan diterapkan, dan dapat memberikan manfaat yang signifikan bagi tim pengembangan perangkat lunak.
+
+**Catatan:**
+
+* Planning Poker hanyalah salah satu teknik estimasi yang dapat digunakan dalam Scrum. Ada teknik lain yang mungkin lebih cocok untuk tim atau proyek tertentu.
+* Penting untuk diingat bahwa estimasi usaha selalu tidak pasti. Planning Poker hanya membantu tim untuk mencapai estimasi yang lebih baik.
+* Estimasi yang dihasilkan melalui Planning Poker harus digunakan sebagai panduan, dan mungkin perlu diubah seiring berjalannya proyek.
+
+**Sumber:**
+* [https://www.scrum.org/forum/scrum-forum/17348/planning-poker](https://www.scrum.org/forum/scrum-forum/17348/planning-poker)
+* [https://marketplace.atlassian.com/apps/1212495/planning-poker](https://marketplace.atlassian.com/apps/1212495/planning-poker)
+* [https://appfire.com/resources/blog/planning-poker-vs-relative-methods](https://appfire.com/resources/blog/planning-poker-vs-relative-methods)
+
+### Points Per Story (PPS)
+Dalam metodologi Scrum, **Story Points** (poin cerita) merupakan unit pengukuran yang digunakan untuk memperkirakan usaha yang diperlukan untuk menyelesaikan sebuah **user story**. User story adalah deskripsi singkat tentang fungsionalitas atau fitur yang diinginkan oleh pengguna. 
+
+Story Points tidak mewakili waktu atau jam kerja, melainkan kompleksitas dan usaha yang dibutuhkan untuk menyelesaikan user story. Hal ini memungkinkan tim Scrum untuk fokus pada nilai dan prioritas user story, bukan hanya pada perkiraan waktu yang mungkin tidak akurat.
+
+#### Manfaat Menggunakan Story Points
+
+* **Mempermudah Perencanaan Sprint:** Story Points membantu tim Scrum untuk memprioritaskan user story dan merencanakan sprint yang realistis.
+* **Meningkatkan Komunikasi:** Story Points memfasilitasi komunikasi yang lebih baik antar anggota tim Scrum, mendorong diskusi dan perdebatan yang sehat tentang usaha yang dibutuhkan untuk menyelesaikan user story.
+* **Mempermudah Pengukuran Kemajuan:** Story Points membantu tim Scrum untuk melacak kemajuan sprint dan mengidentifikasi hambatan yang mungkin terjadi.
+* **Meningkatkan Fokus pada Nilai:** Story Points mendorong tim Scrum untuk fokus pada nilai dan prioritas user story, bukan hanya pada perkiraan waktu yang mungkin tidak akurat.
+
+#### Bagaimana Menetapkan Story Points
+
+Tidak ada aturan baku untuk menetapkan Story Points. Tim Scrum dapat menggunakan berbagai metode, seperti:
+
+* **Planning Poker:** Setiap anggota tim memperkirakan Story Points menggunakan kartu dengan nilai yang berbeda. Nilai tertinggi dipilih sebagai perkiraan tim.
+* **Relative Estimation:** Tim Scrum membandingkan user story dengan user story lain yang telah diselesaikan dan menetapkan Story Points berdasarkan kompleksitas relatif.
+* **T-Shirt Sizing:** Tim Scrum menggunakan ukuran kaos (S, M, L, XL, XXL) untuk merepresentasikan kompleksitas Story Points.
+
+**Catatan Penting:**
+* Story Points bukanlah angka absolut, melainkan relatif dan dapat berubah seiring dengan pemahaman tim Scrum yang lebih baik terhadap proyek.
+* Story Points tidak boleh digunakan untuk menekan tim Scrum untuk menyelesaikan user story lebih cepat dari yang seharusnya.
+* Story Points adalah alat yang membantu tim Scrum, bukan pengganti komunikasi dan kolaborasi yang efektif.
+
+Story Points adalah alat yang bermanfaat dalam metodologi Scrum untuk memperkirakan usaha yang diperlukan untuk menyelesaikan user story. Dengan menggunakan Story Points secara efektif, tim Scrum dapat meningkatkan perencanaan sprint, komunikasi, dan fokus pada nilai, ultimately leading to more successful projects.
+
+**Sumber:**
+
+* [https://www.atlassian.com/agile/project-management/estimation](https://www.atlassian.com/agile/project-management/estimation)
+* [https://www.scrum.org/resources/blog/myth-9-story-points-are-required-scrum](https://www.scrum.org/resources/blog/myth-9-story-points-are-required-scrum)
+* [https://www.wrike.com/blog/introducing-agile-project-management/](https://www.wrike.com/blog/introducing-agile-project-management/)
+
+### Velocity Calculations (VC)
+**Velocity** dalam Scrum adalah metrik yang digunakan untuk mengukur **kecepatan tim** dalam menyelesaikan pekerjaan selama sprint. Velocity dihitung dengan menjumlahkan **Story Point** yang diselesaikan dalam sprint yang telah selesai. 
+
+**Story Point** adalah unit estimasi yang digunakan untuk mengukur kompleksitas dan usaha yang diperlukan untuk menyelesaikan sebuah cerita (user story). Story Point tidak sama dengan unit waktu, melainkan refleksi dari kompleksitas dan usaha.
+
+#### Berikut adalah rumus untuk menghitung Velocity
+
+**Velocity = Total Story Point yang diselesaikan / Jumlah Sprint**
+
+**Contoh:**
+
+Misalkan dalam 3 sprint terakhir, tim Anda menyelesaikan 20, 25, dan 30 Story Point. Velocity tim Anda adalah:
+
+**Velocity = (20 + 25 + 30) / 3 = 25 Story Point**
+
+#### Interpretasi Velocity
+
+Velocity dapat digunakan untuk:
+
+* **Memprediksi jumlah Story Point yang dapat diselesaikan tim dalam sprint berikutnya.**
+* **Memonitor kemajuan tim terhadap backlog produk.**
+* **Menyesuaikan backlog produk berdasarkan Velocity tim.**
+* **Membandingkan Velocity tim dengan tim lain.**
+
+**Penting untuk dicatat bahwa Velocity hanyalah sebuah metrik dan tidak boleh menjadi satu-satunya faktor yang digunakan untuk menilai kinerja tim.** 
+
+Faktor lain yang perlu dipertimbangkan termasuk:
+
+* **Kualitas pekerjaan yang diselesaikan.**
+* **Tingkat kepuasan pemangku kepentingan.**
+* **Motivasi dan moral tim.**
+
+#### Tips untuk meningkatkan Velocity
+
+* **Pastikan tim memiliki pemahaman yang jelas tentang Story Point.**
+* **Pisahkan cerita yang kompleks menjadi cerita yang lebih kecil dan lebih mudah dikelola.**
+* **Fokus pada penyelesaian cerita one by one.**
+* **Gunakan teknik estimasi yang konsisten.**
+* **Hindari multitasking.**
+* **Lakukan refleksi dan retrospektif secara teratur.**
+
+**Kesimpulan**
+
+Velocity adalah metrik yang berguna untuk mengukur kecepatan tim Scrum dalam menyelesaikan pekerjaan. Velocity dapat digunakan untuk memprediksi kemajuan, menyesuaikan backlog produk, dan membandingkan tim. Namun, Velocity hanyalah sebuah metrik dan tidak boleh menjadi satu-satunya faktor yang digunakan untuk menilai kinerja tim.
+
+**Sumber:**
+
+* [https://www.scrum.org/resources/blog/velocity-revolutionary-way-measure-scrum](https://www.scrum.org/resources/blog/velocity-revolutionary-way-measure-scrum)
+* [https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/)
+* [https://deeprojectmanager.com/how-to-calculate-velocity-in-scrum/](https://deeprojectmanager.com/how-to-calculate-velocity-in-scrum/)
+
 
 {% if page.related_post %}
   {% include {{ page.related_post }} %}
