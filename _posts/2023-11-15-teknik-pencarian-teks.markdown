@@ -36,7 +36,7 @@ Hasil penelitian menunjukkan bahwa pencarian teks penuh memiliki kinerja *recall
 ### Metode Pencarian Berdasarkan Konten
 Pencarian berdasarkan konten bisa dibagi menjadi *string matching*, *metadata search*, dan *semantic search*.
 
-#### String Matching
+#### 1. String Matching
 String matching adalah proses pencarian semua kemunculan query yang kemudian disebut *pattern* kedalam string yang lebih panjang (teks). String Marching dibagi menjadi dua yaitu *exact matching* dan *heuristic* / *statistical matching*.
 
 ##### Exact Matching
@@ -48,10 +48,10 @@ Exact matching digunakan untuk menemukan pattern yang berasal dari suatu teks. C
 ##### Heuristic Matching
 Heuristic matching adalah teknik yang digunakan untuk menghubungkan dua data terpisah ketika exact matching tidak mampu mengatasi karena ada pembatasan pada data yang tersedia. Heuristic matching dapat dilakukan dengan perhitungan distance antara pattern dengan teks. Contoh heuristic matching berdasarkan distance adalah *string based technique*, *token-based distance*, dan *path-comparisson*. 
 
-#### Metadata Search
+#### 2. Metadata Search
 Metadata adalah data dari data. Metadata adalah sekumpulan kata yang terstruktut dan teroganisasi dengan logika AND dan OR. Pada metode ini operasi pembandingan kata sedikit dibandingkan pencarian full-text. Tiap-tiap artikel di-indeks dengan dibuat metadatanya. Pencarian dengan metadata adalah tipe pencarian artikel dengan menelusuri metadata suatu dokumen. Pada metode ini operasi pembandingan kata lebih sedikit dibandingkan pencarian teks penuh. Metadata berfungsi sebagai katalog dari sekumpulan dokumen. 
 
-#### Semantic Search
+#### 3. Semantic Search
 Semantic adalah ilmu tentang makna kata dan kalimat; pengetahuan mengenai seluk beluk dan pergeseran arti kata; bagian struktur bahasa yang berhubungan dengan makna ungkapan atau struktur makna suatu wicara. Semantic network adalah sebuah jaringan yang mewakili hubungan antar konsep. Semantic network biasa digunakan sebagai bentuk representasi pengetahuan. Semantic network berupa grafik berarah atau tidak yang terdiri dari simpul dan garis. Simpul mewakili konsep.
 
 Contoh semantic network adalah WordNet, yakni sebuah baris data leksikal Bahasa Inggris. WordNet mengelompokkan kata ke dalam kumpulan sinonim (synset). Hubungan semantik yang dibentuk dalam WordNet, yaitu meronim, hiponim, hipernim, antonim, dan sinonim.
@@ -67,7 +67,7 @@ Proses semantic search membutuhkan pemodelan yang dapat digunakan ulang. Bentuk 
 ### Pengukuran Kemiripan
 Beberapa metode-metode yang bisa digunakan untuk mengukur kemiripan dua kata, dua kalimat dan dua dokumen, antara lain.
 
-### Language Based Matching (LBM)
+#### 1. Language Based Matching (LBM)
 Language Based Matching (LBM), atau Pencocokan Berbasis Bahasa, adalah teknik yang digunakan untuk mengidentifikasi, mengelompokkan, dan menganalisis teks berdasarkan bahasa yang digunakan. Teknik ini memanfaatkan berbagai metode untuk menentukan bahasa teks, seperti:
 
 * **Analisis Statistik:** Teknik ini menganalisis frekuensi kemunculan huruf, bigram, dan trigram untuk mengidentifikasi pola yang khas untuk setiap bahasa.
@@ -84,7 +84,7 @@ LBM memiliki berbagai aplikasi, termasuk:
 
 LBM merupakan alat yang ampuh untuk memproses dan menganalisis teks dalam berbagai bahasa. Dengan mengidentifikasi bahasa teks dengan tepat, LBM dapat membantu meningkatkan akurasi dan efisiensi berbagai aplikasi pengolahan bahasa alami (NLP).
 
-#### Beberapa contoh penerapan LBM
+##### Beberapa contoh penerapan LBM
 
 * **Mesin pencari:** LBM digunakan untuk mengidentifikasi bahasa hasil pencarian dan menampilkan hasil yang relevan dengan bahasa pengguna.
 * **Perangkat lunak anti-spam:** LBM digunakan untuk mengidentifikasi email spam berdasarkan bahasa yang digunakan.
@@ -93,17 +93,17 @@ LBM merupakan alat yang ampuh untuk memproses dan menganalisis teks dalam berbag
 
 Language Based Matching (LBM) adalah teknik yang penting untuk memproses dan menganalisis teks dalam berbagai bahasa. Dengan mengidentifikasi bahasa teks dengan tepat, LBM dapat membantu meningkatkan akurasi dan efisiensi berbagai aplikasi pengolahan bahasa alami.
 
-### Vector Space Matching (SVM)
+#### 2. Vector Space Matching (SVM)
 
 Pencocokan Ruang Vektor (Vector Space Matching - VSM) adalah teknik yang digunakan untuk mengukur kemiripan antara dua atau lebih dokumen teks. Teknik ini didasarkan pada gagasan bahwa dokumen yang memiliki makna serupa akan direpresentasikan oleh vektor yang dekat dalam ruang vektor.
 
-#### Bagaimana VSM Bekerja
+##### Bagaimana VSM Bekerja
 
 1. **Representasi Dokumen:** Setiap dokumen diubah menjadi vektor numerik, di mana setiap elemen vektor mewakili kemunculan kata tertentu dalam dokumen. 
 2. **Perhitungan Kemiripan:** Kemiripan antara dua dokumen diukur dengan menghitung jarak antara vektor mereka. Ada beberapa metode untuk menghitung jarak, seperti cosine similarity dan Euclidean distance.
 3. **Interpretasi Hasil:** Semakin kecil jarak antara dua vektor, semakin tinggi kemiripan antara dokumen yang mereka representasikan. 
 
-#### Penerapan VSM
+##### Penerapan VSM
 
 VSM memiliki berbagai aplikasi, termasuk:
 
@@ -112,13 +112,13 @@ VSM memiliki berbagai aplikasi, termasuk:
 * **Rekomendasi Sistem:** VSM digunakan untuk merekomendasikan item yang serupa dengan item yang disukai pengguna.
 * **Analisis Teks:** VSM digunakan untuk menganalisis pola dalam teks, seperti topik yang dominan atau sentimen keseluruhan.
 
-#### Keuntungan VSM
+##### Keuntungan VSM
 
 * **Kesederhanaan:** VSM adalah teknik yang relatif sederhana untuk dipahami dan diimplementasikan.
 * **Efisiensi:** VSM dapat menghitung kemiripan antara banyak dokumen dengan cepat.
 * **Fleksibilitas:** VSM dapat digunakan dengan berbagai jenis teks, seperti artikel berita, postingan media sosial, dan email.
 
-#### Kekurangan VSM
+##### Kekurangan VSM
 
 * **Ketergantungan pada Kata:** VSM hanya mempertimbangkan kemunculan kata dan tidak memperhitungkan makna kontekstual.
 * **Sensitivitas terhadap Noise:** VSM dapat sensitif terhadap noise dalam data, seperti kata-kata yang tidak relevan atau kesalahan ejaan.
