@@ -51,7 +51,7 @@ Luangkan waktu di akhir minggu untuk mengevaluasi bagaimana kamu mengatur waktu 
 
 Banyak alat bantu yang tersedia untuk membantumu mengatur waktu, seperti aplikasi to-do list, kalender online, dan time tracker. Manfaatkan alat-alat ini untuk membantumu mencapai tujuanmu.
 
-#### Tips Tambahan:**
+#### Tips Tambahan:
 
 * **Tidur yang cukup:** Tidur yang cukup penting untuk menjaga kesehatan fisik dan mentalmu, yang pada akhirnya dapat meningkatkan produktivitasmu.
 * **Makan makanan yang sehat:** Makan makanan yang sehat dapat membantumu fokus dan berenergi sepanjang hari.
