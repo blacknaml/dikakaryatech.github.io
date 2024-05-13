@@ -30,7 +30,7 @@ Algoritma pengurutan memungkinkan data diatur dalam urutan tertentu, seperti uru
 * **Pengolahan data:** Algoritma seperti **Quicksort** dan **Merge Sort** digunakan untuk mengurutkan data sebelum dianalisis atau dimanipulasi.
 * **Algoritma kompresi data:** Algoritma seperti **Huffman Coding** dan **LZW Compression** menggunakan urutan data untuk mengompresinya dan mengurangi ukurannya.
 
-### Algoritma Struktur Data
+### 3. Algoritma Struktur Data
 
 Algoritma struktur data digunakan untuk memanipulasi dan mengelola struktur data seperti array, linked list, tree, dan graph. Algoritma ini sangat penting untuk:
 
