@@ -67,7 +67,7 @@ Proses semantic search membutuhkan pemodelan yang dapat digunakan ulang. Bentuk 
 ### Pengukuran Kemiripan
 Beberapa metode-metode yang bisa digunakan untuk mengukur kemiripan dua kata, dua kalimat dan dua dokumen, antara lain.
 
-#### Language Based Matching (LBM)
+### Language Based Matching (LBM)
 Language Based Matching (LBM), atau Pencocokan Berbasis Bahasa, adalah teknik yang digunakan untuk mengidentifikasi, mengelompokkan, dan menganalisis teks berdasarkan bahasa yang digunakan. Teknik ini memanfaatkan berbagai metode untuk menentukan bahasa teks, seperti:
 
 * **Analisis Statistik:** Teknik ini menganalisis frekuensi kemunculan huruf, bigram, dan trigram untuk mengidentifikasi pola yang khas untuk setiap bahasa.
@@ -93,7 +93,7 @@ LBM merupakan alat yang ampuh untuk memproses dan menganalisis teks dalam berbag
 
 Language Based Matching (LBM) adalah teknik yang penting untuk memproses dan menganalisis teks dalam berbagai bahasa. Dengan mengidentifikasi bahasa teks dengan tepat, LBM dapat membantu meningkatkan akurasi dan efisiensi berbagai aplikasi pengolahan bahasa alami.
 
-#### Vector Space Matching (SVM)
+### Vector Space Matching (SVM)
 
 Pencocokan Ruang Vektor (Vector Space Matching - VSM) adalah teknik yang digunakan untuk mengukur kemiripan antara dua atau lebih dokumen teks. Teknik ini didasarkan pada gagasan bahwa dokumen yang memiliki makna serupa akan direpresentasikan oleh vektor yang dekat dalam ruang vektor.
 
