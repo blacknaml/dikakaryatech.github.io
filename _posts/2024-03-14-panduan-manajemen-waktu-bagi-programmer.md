@@ -62,3 +62,7 @@ Banyak alat bantu yang tersedia untuk membantumu mengatur waktu, seperti aplikas
 Mengelola waktu dengan baik adalah kunci untuk menjadi programmer yang sukses. Dengan menerapkan strategi-strategi di atas, kamu dapat meningkatkan produktivitasmu, mencapai tujuanmu, dan memiliki keseimbangan antara kehidupan kerja dan pribadi yang lebih baik.
 
 **Ingatlah, kunci utama dalam manajemen waktu adalah disiplin dan konsistensi. Teruslah berlatih dan kamu akan melihat hasilnya.**
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}
