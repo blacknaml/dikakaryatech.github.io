@@ -20,7 +20,7 @@ Kecerdasan buatan (AI) telah berkembang pesat dalam beberapa tahun terakhir, dan
 
 Berikut adalah beberapa daftar model AI gratis yang populer:
 
-### 1. Chat GPT [https://chatgpt.com/](https://chatgpt.com/)
+### 1. Chat GPT : [https://chatgpt.com/](https://chatgpt.com/)
 
 **Chat GPT**, singkatan dari **Generative Pre-trained Transformer**, adalah chatbot model bahasa besar (LLM) yang dikembangkan oleh OpenAI. Diluncurkan pada November 2022, Chat GPT telah menarik perhatian luas karena kemampuannya untuk menghasilkan percakapan yang realistis dan koheren, bahkan dalam konteks yang kompleks dan menantang.
 
@@ -50,7 +50,7 @@ Chat GPT dilatih pada kumpulan data teks dan kode yang sangat besar, memungkinka
 
 Chat GPT adalah chatbot LLM yang canggih dengan kemampuan luar biasa untuk menghasilkan percakapan yang realistis dan informatif. Model ini memiliki banyak manfaat potensial, seperti meningkatkan kreativitas, produktivitas, dan pemahaman. Namun, penting untuk menyadari keterbatasan dan potensi penyalahgunaannya. Gunakan Chat GPT dengan bijak dan bertanggung jawab untuk memaksimalkan manfaatnya.
 
-### 2. Mistral AI [https://chat.mistral.ai/](https://chat.mistral.ai)
+### 2. Mistral AI : [https://chat.mistral.ai/](https://chat.mistral.ai)
 
 **Mistral AI** adalah perusahaan startup kecerdasan buatan (AI) asal Paris, Prancis. Didirikan pada April 2023 oleh mantan peneliti AI dari Meta Platforms dan Google DeepMind, Mistral AI langsung menjadi sorotan setelah meraih pendanaan jumbo Seri A sebesar €385 juta (sekitar Rp 5,8 triliun) pada Oktober 2023. Nilai valuasi mereka pun melampaui $2 miliar (sekitar Rp 30 triliun) pada Desember 2023. 
 
@@ -77,39 +77,39 @@ Mistral AI berfokus pada pengembangan **Model Bahasa Besar (LLM)**, yaitu model 
 
 Mistral AI adalah perusahaan yang perlu diwaspadai dalam perkembangan teknologi AI. Pendekatan open-source mereka dan kemampuan model LLM yang diklaim canggih berpotensi membawa perubahan besar dalam dunia AI. Meski demikian, Mistral AI juga perlu mengatasi tantangan terkait keamanan, bias, dan keberlanjutan bisnis mereka. 
 
-### 3. Claude AI [https://claude.ai/](https://claude.ai/)
+### 3. Claude AI : [https://claude.ai/](https://claude.ai/)
 
-Claude AI adalah platform kecerdasan buatan yang dirancang untuk menyediakan chatbot dan interaksi manusia-mesin yang canggih [ (Indonesian translation of "is a large language model chatbot platform designed to provide advanced chatbot solutions and human-machine interaction")].  Dikembangkan oleh Anthropic, sebuah perusahaan penelitian dan pengembangan kecerdasan buatan [ (Indonesian translation of "It is developed by Anthropic, a research and development company for artificial intelligence")]. 
+Claude AI adalah platform kecerdasan buatan yang dirancang untuk menyediakan chatbot dan interaksi manusia-mesin yang canggih. Dikembangkan oleh Anthropic, sebuah perusahaan penelitian dan pengembangan kecerdasan buatan. 
 
-Claude AI dirancang untuk memberikan respon cepat dan relevan kepada pengguna, dalam berbagai bidang seperti bisnis, pendidikan, dan kesehatan [ (Indonesian translation of "Claude AI is designed to provide fast and relevant responses to users, in various fields such as business, education, and healthcare")].  Beberapa keunggulan Claude AI termasuk kemampuannya untuk:
+Claude AI dirancang untuk memberikan respon cepat dan relevan kepada pengguna, dalam berbagai bidang seperti bisnis, pendidikan, dan kesehatan. Beberapa keunggulan Claude AI termasuk kemampuannya untuk:
 
 * Menjawab pertanyaan 
 * Mengikuti instruksi
 * Menganalisis dan meringkas dokumen yang diunggah pengguna [ (Indonesian translation of "analyze and summarize documents uploaded by users")]
 
-### 4. Cohere [https://coral.cohere.com/](https://coral.cohere.com/)
+### 4. Cohere : [https://coral.cohere.com/](https://coral.cohere.com/)
 
-Cohere adalah perusahaan teknologi multinasional asal Kanada yang berfokus pada kecerdasan buatan untuk perusahaan, khususnya dalam  large language model [ (Indonesian translation of "large language models")].  Intinya, Cohere membuat model bahasa yang canggih yang dapat diajari dan digunakan untuk berbagai keperluan bisnis. Didirikan pada tahun 2019, Cohere memiliki kantor pusat di Toronto dan San Francisco [ (Indonesian translation of "Cohere was founded in 2019 and has headquarters in Toronto and San Francisco")].
+Cohere adalah perusahaan teknologi multinasional asal Kanada yang berfokus pada kecerdasan buatan untuk perusahaan, khususnya dalam  large language model.  Intinya, Cohere membuat model bahasa yang canggih yang dapat diajari dan digunakan untuk berbagai keperluan bisnis. Didirikan pada tahun 2019, Cohere memiliki kantor pusat di Toronto dan San Francisco.
 
-Produk utama Cohere adalah model Generative AI [ (Indonesian translation of "Generative AI models")]. Model-model ini dilatih menggunakan sejumlah besar data teks, yang memungkinkan mereka untuk memahami dan menghasilkan teks dengan cara yang mirip manusia. Cohere menawarkan beberapa produk berbeda yang memanfaatkan kemampuan ini, diantaranya:
+Produk utama Cohere adalah model Generative AI. Model-model ini dilatih menggunakan sejumlah besar data teks, yang memungkinkan mereka untuk memahami dan menghasilkan teks dengan cara yang mirip manusia. Cohere menawarkan beberapa produk berbeda yang memanfaatkan kemampuan ini, diantaranya:
 
-* **Cohere Command:**  Membantu perusahaan membangun aplikasi bertenaga AI [ (Indonesian translation of "helps companies build AI-powered applications")].  Perusahaan dapat menggunakan model ini untuk berbagai tugas, seperti  seperti membuat chatbot,  menganalisis data,  dan  mengenerating teks [ (Indonesian translation of "building chatbots, analyzing data, and generating text")].
-* **Cohere Embed:**  Memfokus pada data internal perusahaan [ (Indonesian translation of "focuses on a company's internal data")].  Model ini dapat membantu perusahaan memahami dan mengekstrak informasi penting dari data tersebut. 
+* **Cohere Command:**  Membantu perusahaan membangun aplikasi bertenaga AI. Perusahaan dapat menggunakan model ini untuk berbagai tugas, seperti seperti membuat chatbot, menganalisis data, dan mengenerating teks.
+* **Cohere Embed:**  Memfokus pada data internal perusahaan. Model ini dapat membantu perusahaan memahami dan mengekstrak informasi penting dari data tersebut. 
 
-Selain itu, Cohere juga bekerja di bidang lain seperti kesehatan [ (Indonesian translation of "healthcare")].  Perusahaan yang bernama Cohere Health [ (Indonesian translation of "Cohere Health company")], misalnya, menawarkan platform yang dapat digunakan untuk pengelolaan perawatan kesehatan.
+Selain itu, Cohere juga bekerja di bidang lain seperti kesehatan. Perusahaan yang bernama Cohere Health, misalnya, menawarkan platform yang dapat digunakan untuk pengelolaan perawatan kesehatan.
 
 Secara keseluruhan, Cohere adalah perusahaan yang bergerak di bidang kecerdasan buatan yang sedang berkembang pesat.  Model bahasa mereka yang canggih memiliki potensi untuk mengubah berbagai aspek bisnis.
 
-### 5. Copilot [https://copilot.microsoft.com/](https://copilot.microsoft.com/)
+### 5. Copilot : [https://copilot.microsoft.com/](https://copilot.microsoft.com/)
 
-Microsoft Copilot adalah asisten AI yang dirancang untuk meningkatkan produktivitas Anda dalam rangkaian aplikasi Microsoft 365 [Search Microsoft Copilot: Your everyday AI companion].  Dengan kata lain, Copilot  bertujuan untuk membantu Anda menyelesaikan tugas lebih efisien  langsung di dalam program Microsoft yang biasa Anda gunakan. 
+Microsoft Copilot adalah asisten AI yang dirancang untuk meningkatkan produktivitas Anda dalam rangkaian aplikasi Microsoft 365. Dengan kata lain, Copilot  bertujuan untuk membantu Anda menyelesaikan tugas lebih efisien  langsung di dalam program Microsoft yang biasa Anda gunakan. 
 
 Saat ini, ada sedikit kebingungan tentang Microsoft Copilot karena dulunya memiliki beberapa nama berbeda tergantung pada fungsinya:
 
-* **Microsoft Copilot untuk Microsoft 365:** Ini adalah versi terbaru dan terintegrasi dengan program Microsoft 365 seperti Word, Excel, PowerPoint, dan Outlook [Search Microsoft Copilot: Your everyday AI companion].  Copilot dapat membantu Anda dengan berbagai hal, seperti  menyarankan konten saat Anda mengetik,  meringkas informasi,  dan  menerjemahkan bahasa [Microsoft Copilot untuk Microsoft 365—Fitur dan Paket].
-* **Microsoft Bing Chat (sebelumnya bernama Windows Copilot):**  Ini adalah asisten obrolan mandiri yang  pernah tersedia  secara terpisah [Wikipedia Microsoft Copilot].  Namun, fungsinya kini telah digabungkan ke dalam Microsoft Copilot untuk Microsoft 365.
+* **Microsoft Copilot untuk Microsoft 365:** Ini adalah versi terbaru dan terintegrasi dengan program Microsoft 365 seperti Word, Excel, PowerPoint, dan Outlook. Copilot dapat membantu Anda dengan berbagai hal, seperti  menyarankan konten saat Anda mengetik, meringkas informasi, dan menerjemahkan bahasa.
+* **Microsoft Bing Chat (sebelumnya bernama Windows Copilot):**  Ini adalah asisten obrolan mandiri yang  pernah tersedia secara terpisah. Namun, fungsinya kini telah digabungkan ke dalam Microsoft Copilot untuk Microsoft 365.
 
-Secara umum, Microsoft Copilot  berfokus pada peningkatan produktivitas dalam ekosistem Microsoft 365 Anda.  Berikut adalah beberapa hal yang dapat dilakukan Copilot:
+Secara umum, Microsoft Copilot berfokus pada peningkatan produktivitas dalam ekosistem Microsoft 365 Anda. Berikut adalah beberapa hal yang dapat dilakukan Copilot:
 
 * **Membantu Anda menyelesaikan kalimat dan paragraf:**  Saat Anda mengetik, Copilot dapat  menyarankan teks  sesuai dengan konteks, sehingga Anda dapat bekerja lebih cepat.
 * **Menyediakan informasi relevan:**  Copilot dapat  mencari  dan  menyematkan informasi  dari web langsung ke dalam dokumen Anda.
@@ -118,7 +118,7 @@ Secara umum, Microsoft Copilot  berfokus pada peningkatan produktivitas dalam ek
 
 Overall, Microsoft Copilot adalah alat yang ampuh untuk meningkatkan produktivitas Anda saat menggunakan program Microsoft 365.  Namun perlu dicatat bahwa Copilot  masih dalam tahap pengembangan,  dan kemampuannya mungkin terus ditingkatkan di masa mendatang.
 
-### 6. Perplexity AI [https://www.perplexity.ai/](https://www.perplexity.ai/)
+### 6. Perplexity AI : [https://www.perplexity.ai/](https://www.perplexity.ai/)
 
 Perplexity AI adalah mesin pencari dan chatbot yang memanfaatkan kecerdasan buatan (AI) [Perplexity AI].  Dibandingkan mesin pencari tradisional, Perplexity AI dirancang untuk memberikan pengalaman pencarian yang lebih mirip percakapan.  Berikut beberapa hal yang perlu diketahui tentang Perplexity AI:
 
@@ -142,7 +142,7 @@ Perplexity AI adalah mesin pencari dan chatbot yang memanfaatkan kecerdasan buat
 
 Singkatnya, Perplexity AI adalah mesin pencari generasi terbaru yang memanfaatkan kecerdasan buatan untuk memberikan pengalaman pencarian yang lebih natural, efisien, dan informatif.
 
-### 7. Inflection pi AI [https://pi.ai/](https://pi.ai/)
+### 7. Inflection pi AI : [https://pi.ai/](https://pi.ai/)
 
 Inflection pi (dibaca Pi) adalah asisten personal kecerdasan buatan yang dikembangkan oleh Inflection AI [inflection.ai].  Pi dirancang untuk menjadi teman yang baik dan suportif, menawarkan percakapan, saran yang ramah, dan informasi ringkas dalam gaya yang natural dan mengalir [inflection.ai press release].
 
@@ -165,7 +165,7 @@ Berikut beberapa hal menarik tentang Inflection pi:
 
 **Perlu dicatat bahwa Inflection pi masih dalam tahap pengembangan.**  Meskipun demikian, Pi berpotensi menjadi asisten personal yang bermanfaat untuk menemani keseharian Anda.
 
-### 8. BlackBox AI [https://www.blackbox.ai/](https://www.blackbox.ai/)
+### 8. BlackBox AI : [https://www.blackbox.ai/](https://www.blackbox.ai/)
 
 Blackbox.AI [https://www.blackbox.ai/](https://www.blackbox.ai/) adalah platform berbasis kecerdasan buatan yang dirancang khusus untuk membantu programmer [1].  Dengan kata lain, Blackbox.AI  berfungsi sebagai asisten programmer untuk meningkatkan produktivitas dan efisiensi dalam menulis kode. 
 
@@ -183,11 +183,11 @@ Berikut adalah beberapa kemampuan utama Blackbox.AI:
 * **Memperdalam Pemahaman Kode:**  Fitur penjelasan kode  membantu programmer  pemula maupun berpengalaman  untuk memahami kode yang kompleks.
 * **Interaksi Alami:**  Antarmuka chat interaktif  membuat proses belajar dan pemecahan masalah kode menjadi lebih efisien dan menyenangkan.
 
-**Blackbox.AI menawarkan beberapa paket berlangganan**, dengan fitur yang semakin lengkap pada versi premium.  Selain itu, Blackbox.AI juga menyediakan ekstensi untuk  Visual Studio Code [1],  sehingga Anda dapat mengakses fitur Blackbox.AI langsung dari  lingkungan pengembangan  yang biasa Anda gunakan.
+**Blackbox.AI menawarkan beberapa paket berlangganan**, dengan fitur yang semakin lengkap pada versi premium.  Selain itu, Blackbox.AI juga menyediakan ekstensi untuk Visual Studio Code,  sehingga Anda dapat mengakses fitur Blackbox.AI langsung dari  lingkungan pengembangan  yang biasa Anda gunakan.
 
 Secara keseluruhan, Blackbox.AI merupakan platform yang  cukup menarik  bagi programmer dari berbagai level.  Jika Anda ingin  meningkatkan produktivitas dan efisiensi  dalam menulis kode, Blackbox.AI patut untuk dicoba.
 
-### 9. Gemini [https://gemini.google.com/](https://gemini.google.com/)
+### 9. Gemini : [https://gemini.google.com/](https://gemini.google.com/)
 
 **Gemini AI** adalah platform kecerdasan buatan (AI) yang dikembangkan oleh Google, yang memungkinkan pengguna untuk berinteraksi dengan model bahasa besar (LLM) melalui teks atau suara. Gemini AI masih dalam tahap pengembangan, namun telah diluncurkan secara terbatas untuk beberapa pengguna. 
 
@@ -215,7 +215,7 @@ Gemini AI dilatih dengan menggunakan data teks dan kode yang sangat besar. Data 
 * Gemini AI tidak dapat memberikan bantuan untuk tugas-tugas pribadi atau profesional.
 * Penting untuk menggunakan Gemini AI dengan cara yang bertanggung jawab dan etis.
 
-### 10. Phind [https://www.phind.com/](https://www.phind.com/)
+### 10. Phind : [https://www.phind.com/](https://www.phind.com/)
 
 **Phind** merupakan mesin pencari cerdas yang dirancang khusus untuk memenuhi kebutuhan para pengembang perangkat lunak. Dibandingkan dengan mesin pencari tradisional, Phind menawarkan beberapa keunggulan signifikan yang dapat meningkatkan alur kerja pengembangan Anda secara menyeluruh.
 
