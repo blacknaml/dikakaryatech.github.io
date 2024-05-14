@@ -85,7 +85,7 @@ Claude AI dirancang untuk memberikan respon cepat dan relevan kepada pengguna, d
 
 * Menjawab pertanyaan 
 * Mengikuti instruksi
-* Menganalisis dan meringkas dokumen yang diunggah pengguna [ (Indonesian translation of "analyze and summarize documents uploaded by users")]
+* Menganalisis dan meringkas dokumen yang diunggah pengguna
 
 ### 4. Cohere : [https://coral.cohere.com/](https://coral.cohere.com/)
 
