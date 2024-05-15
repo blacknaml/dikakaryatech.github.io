@@ -53,7 +53,6 @@ Mesin pencari seperti Google menggunakan BFS secara ekstensif untuk menjelajahi 
 BFS merupakan algoritma penjelajahan struktur data yang fundamental dan efisien, menawarkan kesederhanaan, kelengkapan, dan jaminan solusi terpendek. Algoritma ini sangat cocok untuk berbagai aplikasi, seperti pencarian rute, analisis jaringan, dan pengindeksan.
 
 ### Contoh Source Code
-
 Berikut adalah contoh source code untuk Breadth-First Search (BFS) dalam bahasa Python:
 
 ```python
