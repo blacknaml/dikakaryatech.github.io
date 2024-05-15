@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Kutipan Inspiratif untuk Pengembang Software bagian-7"
+title: "Kutipan Inspiratif untuk Pengembang Software bagian-8"
 author: jill
-date: 2024-02-21 12:24:24 +0700
+date: 2024-04-21 12:24:24 +0700
 image: /assets/img/lamp-book-quotes.webp
 categories: software development
 tags: quotes
