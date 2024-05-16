@@ -2,7 +2,7 @@
 layout: post
 title: "Breadth-First Search (BFS) - Penjelajahan Struktur Data yang Efisien dan Mendalam"
 author: debi
-date: 2024-04-01 08:33:33 +0700
+date: 2024-05-01 09:39:37 +0700
 image: /assets/img/labirin.webp
 categories: software development
 tags: algorithm bfs
