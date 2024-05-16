@@ -119,3 +119,7 @@ print("Simpul yang dikunjungi (BFS):", visited_nodes)
 **Catatan:**
 * Code ini menggunakan dictionary untuk representasi graf. Key adalah simpul, dan value adalah list berisi tetangga dari simpul tersebut.
 * Anda dapat memodifikasi code ini untuk menggunakan representasi graf yang lain, seperti list of adjacency lists.
+
+{% if page.related_post %}
+  {% include {{ page.related_post }} %}
+{% endif %}
