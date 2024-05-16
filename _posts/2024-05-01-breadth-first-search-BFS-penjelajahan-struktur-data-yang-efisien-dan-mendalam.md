@@ -149,15 +149,14 @@ echo "\n";
     * Membuat antrian `queue` untuk menyimpan simpul yang akan dikunjungi.
     * Memasukkan simpul awal ke dalam antrian dan menandainya sebagai dikunjungi.
     * Melakukan loop selama antrian tidak kosong:
-        * Mengeluarkan simpul terdepan dari antrian dan mencetak nilainya.
-        * Memeriksa tetangga simpul yang belum dikunjungi:
-            * Memasukkan tetangga yang belum dikunjungi ke dalam antrian dan menandainya sebagai dikunjungi.
+    * Mengeluarkan simpul terdepan dari antrian dan mencetak nilainya.
+    * Memeriksa tetangga simpul yang belum dikunjungi:
+    * Memasukkan tetangga yang belum dikunjungi ke dalam antrian dan menandainya sebagai dikunjungi.
 * **Contoh Penggunaan:** 
     * Membuat objek graf dan menambahkan simpul A, B, C, D, E, dan F.
     * Menambahkan sisi (hubungan) antara simpul-simpul.
     * Mencetak graf.
     * Melakukan BFS dari simpul A dan mencetak simpul yang dikunjungi.
-
 **Catatan:**
 * Kode ini menggunakan struktur data antrian berbasis SplQueue dari PHP.
 * Anda dapat memodifikasi kode ini untuk menyesuaikan dengan kebutuhan Anda, seperti menambahkan bobot pada sisi atau menggunakan struktur data yang berbeda.
