@@ -52,7 +52,7 @@ Mesin pencari seperti Google menggunakan BFS secara ekstensif untuk menjelajahi 
 
 BFS merupakan algoritma penjelajahan struktur data yang fundamental dan efisien, menawarkan kesederhanaan, kelengkapan, dan jaminan solusi terpendek. Algoritma ini sangat cocok untuk berbagai aplikasi, seperti pencarian rute, analisis jaringan, dan pengindeksan.
 
-## Contoh Source Code dalam PHP
+### Contoh Source Code dalam PHP
 
 Berikut adalah contoh kode PHP untuk Breadth-First Search (BFS):
 
