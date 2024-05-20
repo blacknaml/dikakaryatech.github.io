@@ -44,8 +44,91 @@ SSE memiliki beberapa keterbatas berikut:
 > - Hanya dapat mengirim teks UTF-8. Jadi Anda hanya dapat mengirim data teks yang terdiri dari karakter UTF-8, karena content-type nya adalah text/event-stream.
 > - Tidak mendukung pengiriman data secara client-to-server. Setelah koneksi dibuat, klien tidak dapat mengirim data setelah itu, menggunakan koneksi yang sama.
 
-### Praktek dengan PHP
-### Praktek dengan GoLang
+**Manfaat SSE:**
+
+> - **Real-time:** Data dikirimkan ke klien secara real-time tanpa perlu klien melakukan polling.
+> - **Efisien:** SSE hanya menggunakan satu koneksi HTTP, sehingga lebih efisien daripada polling.
+> - **Skalabilitas:** SSE dapat digunakan untuk aplikasi dengan banyak klien.
+
+### Contoh Source Code SSE dengan PHP
+
+```php
+<?php
+
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$eventData = [
+    'message' => 'Hello from PHP!',
+    'time' => time()
+];
+
+echo "data: " . json_encode($eventData) . "\n\n";
+
+ob_flush();
+flush();
+
+sleep(5); // Simulasi penundaan 5 detik
+
+$eventData = [
+    'message' => 'Another message from PHP!',
+    'time' => time()
+];
+
+echo "data: " . json_encode($eventData) . "\n\n";
+
+ob_flush();
+flush();
+```
+
+### Contoh Source Code SSE dengan Golang
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "fmt"
+    "net/http"
+    "time"
+)
+
+func main() {
+    http.HandleFunc("/sse", func(w http.ResponseWriter, r *http.Request) {
+        w.Header().Set("Content-Type", "text/event-stream")
+        w.Header().Set("Cache-Control", "no-cache")
+
+        flusher := w.(http.Flusher)
+
+        eventData := map[string]interface{}{
+            "message": "Hello from Golang!",
+            "time":    time.Now().Unix(),
+        }
+
+        json.NewEncoder(w).Encode(eventData)
+        flusher.Flush()
+
+        time.Sleep(5 * time.Second) // Simulasi penundaan 5 detik
+
+        eventData = map[string]interface{}{
+            "message": "Another message from Golang!",
+            "time":    time.Now().Unix(),
+        }
+
+        json.NewEncoder(w).Encode(eventData)
+        flusher.Flush()
+    })
+
+    fmt.Println("Starting server on port 8080")
+    http.ListenAndServe(":8080", nil)
+}
+```
+
+**Catatan:**
+* Pastikan untuk menggunakan header HTTP yang benar saat mengirimkan SSE stream.
+* Gunakan format JSON atau XML untuk event data.
+* Flush event data ke klien secara berkala.
+* Gunakan teknik caching untuk meningkatkan performa.
 
 [sse]: https://html.spec.whatwg.org/multipage/server-sent-events.html
 
