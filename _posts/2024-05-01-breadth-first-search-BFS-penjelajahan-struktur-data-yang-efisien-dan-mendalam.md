@@ -19,6 +19,7 @@ excerpt: "Breadth-First Search (BFS), atau Pencarian Melebar Pertama, merupakan 
 1. **Inisialisasi:** Algoritma dimulai dengan memilih simpul awal (disebut **root**) dalam struktur data.
 2. **Antrian Simpul:** Sebuah struktur antrian ("queue") dibuat untuk menampung simpul-simpul yang akan dikunjungi.
 3. **Iterasi Penjelajahan:**
+
     a. **Ambil Simpul Berikut:** Simpul pertama dikeluarkan dari antrian ("dequeue").
     b. **Tandai Simpul:** Simpul yang diambil ditandai sebagai telah dikunjungi.
     c. **Eksplorasi Tetangga:** Semua simpul yang bertetangga dengan simpul yang diambil dieksplorasi.
