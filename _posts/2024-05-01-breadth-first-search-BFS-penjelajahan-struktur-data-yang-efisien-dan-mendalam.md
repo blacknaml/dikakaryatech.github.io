@@ -25,8 +25,8 @@ excerpt: "Breadth-First Search (BFS), atau Pencarian Melebar Pertama, merupakan 
     b. **Tandai Simpul:** Simpul yang diambil ditandai sebagai telah dikunjungi.
 
     c. **Eksplorasi Tetangga:** Semua simpul yang bertetangga dengan simpul yang diambil dieksplorasi.
-    
-        i. **Simpul Baru:** Jika simpul tetangga belum dikunjungi, simpul tersebut ditambahkan ke antrian ("enqueue").
+        
+        * **Simpul Baru:** Jika simpul tetangga belum dikunjungi, simpul tersebut ditambahkan ke antrian ("enqueue").
 
     d. **Ulangi:** Langkah 3a-3c diulangi sampai antrian kosong, menandakan semua simpul yang dapat dijangkau telah dikunjungi.
 
