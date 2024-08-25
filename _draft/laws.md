@@ -1,4 +1,4 @@
-Berikut adalah penjelasan mengenai 50 hukum dalam rekayasa perangkat lunak (software engineering) dalam bahasa Indonesia. Hukum-hukum ini membantu dalam memahami prinsip-prinsip dasar dan praktik terbaik dalam pengembangan perangkat lunak.
+Hukum-hukum ini membantu dalam memahami prinsip-prinsip dasar dan praktik terbaik dalam pengembangan perangkat lunak.
 
 1. **Hukum Moore**: Jumlah transistor pada sebuah chip akan berlipat ganda setiap dua tahun.
 2. **Hukum Brooks**: Menambah tenaga kerja pada proyek perangkat lunak yang terlambat hanya akan membuat proyek semakin terlambat.
