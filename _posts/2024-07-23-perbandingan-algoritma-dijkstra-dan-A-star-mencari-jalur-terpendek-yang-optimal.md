@@ -19,7 +19,7 @@ Dalam bidang ilmu komputer, khususnya pada permasalahan pencarian jalur terpende
 
 Algoritma Dijkstra merupakan algoritma pencarian jalur terpendek yang sangat populer. Algoritma ini bekerja dengan prinsip *greedy*, yaitu selalu memilih jalur dengan biaya terkecil pada setiap langkah. Dijkstra menjamin bahwa jalur yang ditemukan adalah jalur terpendek menuju semua simpul, namun membutuhkan waktu komputasi yang cukup lama terutama pada graf yang besar.
 
-**Cara Kerja Algoritma Dijkstra:**
+#### Cara Kerja Algoritma Dijkstra
 
 1. **Inisialisasi:** Semua simpul diberi label jarak tak hingga kecuali simpul awal yang diberi label 0.
 2. **Eksplorasi:** Pilih simpul dengan label jarak terkecil yang belum dikunjungi.
@@ -55,7 +55,7 @@ def dijkstra(graph, start):
 
 Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* adalah adanya heuristik, yaitu perkiraan biaya dari simpul saat ini ke simpul tujuan. Heuristik ini digunakan untuk memandu pencarian agar lebih efisien. Algoritma A* menjamin bahwa jalur yang ditemukan adalah jalur terpendek jika heuristik yang digunakan adalah *admissible* (tidak pernah overestimate) dan *consistent* (selalu underestimate).
 
-**Cara Kerja Algoritma A*:**
+#### Cara Kerja Algoritma A*
 
 1. **Inisialisasi:** Sama seperti Dijkstra.
 2. **Eksplorasi:** Pilih simpul dengan nilai f terkecil, di mana f = g + h (g adalah biaya dari simpul awal, h adalah heuristik).
