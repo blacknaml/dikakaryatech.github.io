@@ -3,7 +3,7 @@ layout: post
 title: "Perbandingan Algoritma Dijkstra dan A* (A Star): Mencari Jalur Terpendek yang Optimal"
 author: debi
 date: 2024-07-23 09:37:39 +0700
-image: /assets/img/labirin.webp
+image: /assets/img/shortest-path.webp
 categories: software development
 tags: algorithm djisktra a-star
 related_post: related-posts.html
