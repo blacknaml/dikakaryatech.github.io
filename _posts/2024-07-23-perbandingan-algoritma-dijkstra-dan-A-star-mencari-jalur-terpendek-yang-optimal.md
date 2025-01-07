@@ -5,7 +5,7 @@ author: debi
 date: 2024-07-23 09:37:39 +0700
 image: /assets/img/shortest-path.webp
 categories: software development
-tags: algorithm djisktra a-star
+tags: algorithm dijkstra a-star
 related_post: related-posts.html
 language: id
 toc: true
