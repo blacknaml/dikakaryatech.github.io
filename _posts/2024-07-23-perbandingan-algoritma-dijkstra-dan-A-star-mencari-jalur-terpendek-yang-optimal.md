@@ -115,7 +115,7 @@ def a_star(graph, start, goal, heuristic):
 **Faktor yang Mempengaruhi Kinerja:**
 
 * **Ukuran Graf:** Semakin besar graf, semakin lama waktu yang dibutuhkan oleh kedua algoritma.
-* **Kualitas Heuristik (untuk A*):** Heuristik yang baik dapat secara signifikan meningkatkan kinerja A*.
+* **Kualitas Heuristik (untuk A Star):** Heuristik yang baik dapat secara signifikan meningkatkan kinerja A*.
 * **Implementasi:** Implementasi yang efisien dari priority queue dan struktur data lainnya dapat memengaruhi kinerja algoritma.
 
 **Penting untuk diingat:** Kompleksitas waktu dan ruang di atas adalah batas atas. Dalam praktiknya, kinerja algoritma dapat bervariasi tergantung pada struktur graf dan input yang diberikan.
