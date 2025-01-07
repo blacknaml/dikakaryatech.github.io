@@ -80,6 +80,48 @@ def a_star(graph, start, goal, heuristic):
 {: .table .table-bordered }
 </div>
 
+Tentu, mari kita bahas kompleksitas waktu dan ruang dari algoritma Dijkstra dan A*.
+
+### Kompleksitas Algoritma Dijkstra
+
+#### Kompleksitas Waktu
+
+* **Kasus Terburuk:** O(V^2), di mana V adalah jumlah simpul dalam graf. Ini terjadi ketika setiap simpul terhubung ke semua simpul lainnya.
+* **Dengan Priority Queue:** Jika kita menggunakan priority queue (misalnya, binary heap) untuk menyimpan simpul yang belum dikunjungi, kompleksitas waktu dapat ditingkatkan menjadi O(E log V), di mana E adalah jumlah edge dalam graf. Ini karena operasi insert dan extract-min pada priority queue memiliki kompleksitas O(log V).
+
+#### Kompleksitas Ruang
+
+* **O(V)**. Ruang utama digunakan untuk menyimpan jarak ke setiap simpul dan struktur data untuk melacak simpul mana yang sudah dikunjungi.
+
+### Kompleksitas Algoritma A*
+
+#### Kompleksitas Waktu
+
+* **Kasus Terburuk:** Sama seperti Dijkstra, yaitu O(V^2) tanpa priority queue, dan O(E log V) dengan priority queue. Namun, dalam praktiknya, A* seringkali jauh lebih cepat daripada Dijkstra karena heuristik membantu mengurangi jumlah simpul yang perlu dijelajahi.
+* **Tergantung Heuristik:** Kompleksitas waktu sebenarnya dari A* sangat bergantung pada kualitas heuristik yang digunakan. Heuristik yang baik dapat secara signifikan mengurangi jumlah simpul yang perlu dijelajahi.
+
+##### Kompleksitas Ruang
+
+* **O(V)**. Sama seperti Dijkstra, A* juga membutuhkan ruang untuk menyimpan informasi tentang setiap simpul.
+
+### Perbandingan Kompleksitas
+<div class="table-responsive" markdown="1">
+| Fitur          | Dijkstra        | A*                 |
+|----------------|-----------------|-------------------|
+| Waktu (tanpa PQ)| O(V^2)          | O(V^2)            |
+| Waktu (dengan PQ)| O(E log V)      | O(E log V)        |
+| Ruang          | O(V)           | O(V)            |
+{: .table .table-bordered }
+</div>
+
+**Faktor yang Mempengaruhi Kinerja:**
+
+* **Ukuran Graf:** Semakin besar graf, semakin lama waktu yang dibutuhkan oleh kedua algoritma.
+* **Kualitas Heuristik (untuk A*):** Heuristik yang baik dapat secara signifikan meningkatkan kinerja A*.
+* **Implementasi:** Implementasi yang efisien dari priority queue dan struktur data lainnya dapat memengaruhi kinerja algoritma.
+
+**Penting untuk diingat:** Kompleksitas waktu dan ruang di atas adalah batas atas. Dalam praktiknya, kinerja algoritma dapat bervariasi tergantung pada struktur graf dan input yang diberikan.
+
 ### Kapan Menggunakan Algoritma Mana?
 
 * **Dijkstra:** Cocok digunakan ketika ingin menemukan jalur terpendek ke semua simpul atau ketika tidak ada informasi tambahan tentang tujuan.
@@ -96,6 +138,9 @@ Algoritma Dijkstra dan A* banyak digunakan dalam berbagai aplikasi, seperti:
 ### Kesimpulan
 
 Algoritma Dijkstra dan A* adalah dua algoritma pencarian jalur terpendek yang sangat berguna. Pilihan algoritma yang tepat tergantung pada permasalahan yang ingin dipecahkan dan informasi yang tersedia. Algoritma A* umumnya lebih efisien dibandingkan Dijkstra, terutama pada graf yang besar, namun membutuhkan desain heuristik yang baik.
+
+* **Dijkstra:** Memiliki kompleksitas waktu yang lebih buruk dibandingkan A* jika menggunakan priority queue, terutama pada graf yang jarang. Namun, Dijkstra menjamin menemukan jalur terpendek ke semua simpul.
+* **A*:** Potensial lebih cepat daripada Dijkstra karena heuristik membantu mengurangi jumlah simpul yang perlu dijelajahi. Namun, kompleksitas waktu sebenarnya tergantung pada kualitas heuristik yang digunakan.
 
 **Referensi:**
 
