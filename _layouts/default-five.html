@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+{%- assign snippets = site.data.snippets %}
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% feed_meta %}
+    {% seo %}
+
+    <!-- ========== Page Title ========== -->
+    <title>{{ page.title }}</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{{"assets/img/favicon.ico" | absolute_url}}" type="image/x-icon" />
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{{"assets/css/bootstrap.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/font-awesome.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/flaticon-set.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/magnific-popup.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/owl.carousel.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/owl.theme.default.min.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/animate.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/bootsnav.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/style.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/responsive.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/prism.css" | absolute_url }}" rel="stylesheet" />
+    <link href="{{"assets/css/lang-flags.css" | absolute_url}}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <style>
+        .lang-icon {
+            background-image: url({{"/assets/images/lang-flags.png"}});
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    {% if page.language == "en" %}
+    <header id="home">{% if page.url == "/" %} {% include en/navigation.html %} {% else %} {% include
+        en/navigation-other.html %} {% endif %}</header>
+    {% else %}
+    <header id="home">{% if page.url == "/" %} {% include id/navigation.html %} {% else %} {% include
+        id/navigation-other.html %} {% endif %}</header>
+    {% endif %}
+    <!-- End Header -->
+
+    <!-- Start Content
+    ============================================= -->
+    {{ content }}
+    <!-- End Content -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    {% if page.language == "en" %}
+    {% include en/footer.html %}
+    {% else %}
+    {% include id/footer.html %}
+    {% endif %}
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{{"assets/js/jquery-1.12.4.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/bootstrap.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/equal-height.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/jquery.appear.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/jquery.easing.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/jquery.magnific-popup.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/modernizr.custom.13711.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/owl.carousel.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/wow.min.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/count-to.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/bootsnav.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/prism.js" | absolute_url }}"></script>
+    <script src="{{"assets/js/main.js" | absolute_url }}"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-25Q5X0NN12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-25Q5X0NN12');
+    </script>
+
+</body>
+
+</html>
