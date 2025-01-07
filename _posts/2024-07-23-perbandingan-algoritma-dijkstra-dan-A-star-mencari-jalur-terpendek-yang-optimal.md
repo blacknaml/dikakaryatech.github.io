@@ -28,7 +28,7 @@ Algoritma Dijkstra merupakan algoritma pencarian jalur terpendek yang sangat pop
 3. **Relaksasi:** Update label jarak tetangga dari simpul yang dipilih jika ditemukan jalur yang lebih pendek.
 4. **Ulangi:** Langkah 2 dan 3 hingga semua simpul dikunjungi.
 
-**Contoh Implementasi dalam Python:**
+#### Contoh Implementasi dalam Python
 
 ```python
 import heapq
@@ -64,7 +64,7 @@ Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* 
 3. **Relaksasi:** Sama seperti Dijkstra.
 4. **Ulangi:** Langkah 2 dan 3 hingga simpul tujuan ditemukan.
 
-**Contoh Implementasi dalam Python:**
+#### Contoh Implementasi dalam Python
 
 ```python
 def a_star(graph, start, goal, heuristic):
@@ -72,13 +72,15 @@ def a_star(graph, start, goal, heuristic):
 ```
 
 ### Perbandingan
-
+<div class="table-responsive" markdown="1">
 | Fitur       | Algoritma Dijkstra | Algoritma A* |
 |-------------|--------------------|--------------|
 | Heuristik  | Tidak ada           | Ada           |
 | Efisiensi   | Kurang efisien      | Lebih efisien  |
 | Kelengkapan | Menemukan jalur terpendek ke semua simpul | Menemukan jalur terpendek ke tujuan |
 | Kompleksitas | O(V^2)             | Tergantung heuristik |
+{: .table .table-bordered }
+</div>
 
 ### Kapan Menggunakan Algoritma Mana?
 
@@ -108,19 +110,6 @@ Algoritma Dijkstra dan A* adalah dua algoritma pencarian jalur terpendek yang sa
 * Kode di atas adalah contoh sederhana dan dapat dioptimasi lebih lanjut.
 * Pemilihan heuristik yang tepat sangat penting untuk kinerja algoritma A*.
 * Terdapat banyak variasi dan pengembangan dari algoritma Dijkstra dan A*.
-
-Semoga artikel ini bermanfaat! Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk bertanya.
-
-**Tambahan:**
-
-Untuk artikel yang lebih lengkap dan mendalam, Anda dapat menambahkan:
-
-* **Analisis kompleksitas waktu dan ruang** dari kedua algoritma.
-* **Contoh penggunaan dalam dunia nyata** yang lebih spesifik.
-* **Perbandingan dengan algoritma pencarian jalur terpendek lainnya** seperti BFS, DFS, atau algoritma berbasis jaringan saraf tiruan.
-* **Implementasi dalam bahasa pemrograman lain** selain Python.
-
-**Disclaimer:**
 
 Artikel ini dibuat untuk tujuan pembelajaran dan pemahaman dasar mengenai algoritma Dijkstra dan A*. Implementasi sebenarnya dalam aplikasi nyata mungkin memerlukan pertimbangan dan optimasi yang lebih kompleks.
 
