@@ -80,8 +80,6 @@ def a_star(graph, start, goal, heuristic):
 {: .table .table-bordered }
 </div>
 
-Tentu, mari kita bahas kompleksitas waktu dan ruang dari algoritma Dijkstra dan A*.
-
 ### Kompleksitas Algoritma Dijkstra
 
 #### Kompleksitas Waktu
