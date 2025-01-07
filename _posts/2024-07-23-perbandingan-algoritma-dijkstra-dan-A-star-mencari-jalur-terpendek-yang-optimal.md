@@ -11,8 +11,6 @@ language: id
 toc: true
 excerpt: "Dalam bidang ilmu komputer, khususnya pada permasalahan pencarian jalur terpendek, algoritma Dijkstra dan A* seringkali menjadi pilihan utama. Keduanya memiliki tujuan yang sama, yaitu menemukan jalur terpendek dari satu titik ke titik lainnya pada sebuah graf. Namun, terdapat perbedaan mendasar dalam cara keduanya bekerja yang akan kita bahas secara detail."
 --- 
-## Perbandingan Algoritma Dijkstra dan A* (A Star): Mencari Jalur Terpendek yang Optimal
-
 ### Pendahuluan
 
 Dalam bidang ilmu komputer, khususnya pada permasalahan pencarian jalur terpendek, algoritma Dijkstra dan A* seringkali menjadi pilihan utama. Keduanya memiliki tujuan yang sama, yaitu menemukan jalur terpendek dari satu titik ke titik lainnya pada sebuah graf. Namun, terdapat perbedaan mendasar dalam cara keduanya bekerja yang akan kita bahas secara detail.
