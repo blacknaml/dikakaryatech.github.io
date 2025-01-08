@@ -54,11 +54,9 @@ def dijkstra(graph, start):
 ### Algoritma A*
 
 Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* adalah adanya heuristik, yaitu perkiraan biaya dari simpul saat ini ke simpul tujuan. Heuristik ini digunakan untuk memandu pencarian agar lebih efisien. Kombinasi antara biaya yang sudah dilalui dan *heuristic* ini menghasilkan fungsi *f(n)* yang digunakan untuk menentukan node mana yang akan dikunjungi selanjutnya. 
-
 * **f(n) = g(n) + h(n)**
   * g(n): Biaya aktual dari node awal ke node saat ini
   * h(n): Estimasi biaya dari node saat ini ke node tujuan (heuristic)
-
 Algoritma A* menjamin bahwa jalur yang ditemukan adalah jalur terpendek jika heuristik yang digunakan adalah *admissible* (tidak pernah overestimate) dan *consistent* (selalu underestimate).
 
 #### Cara Kerja Algoritma A*
