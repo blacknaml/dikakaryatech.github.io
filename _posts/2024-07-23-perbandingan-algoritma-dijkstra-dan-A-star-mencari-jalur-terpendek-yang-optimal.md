@@ -57,6 +57,7 @@ Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* 
 * **f(n) = g(n) + h(n)**
   * g(n): Biaya aktual dari node awal ke node saat ini
   * h(n): Estimasi biaya dari node saat ini ke node tujuan (heuristic)
+
 Algoritma A* menjamin bahwa jalur yang ditemukan adalah jalur terpendek jika heuristik yang digunakan adalah *admissible* (tidak pernah overestimate) dan *consistent* (selalu underestimate).
 
 #### Cara Kerja Algoritma A*
