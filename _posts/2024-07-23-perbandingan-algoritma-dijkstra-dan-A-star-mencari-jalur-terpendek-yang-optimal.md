@@ -53,7 +53,13 @@ def dijkstra(graph, start):
 
 ### Algoritma A*
 
-Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* adalah adanya heuristik, yaitu perkiraan biaya dari simpul saat ini ke simpul tujuan. Heuristik ini digunakan untuk memandu pencarian agar lebih efisien. Algoritma A* menjamin bahwa jalur yang ditemukan adalah jalur terpendek jika heuristik yang digunakan adalah *admissible* (tidak pernah overestimate) dan *consistent* (selalu underestimate).
+Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* adalah adanya heuristik, yaitu perkiraan biaya dari simpul saat ini ke simpul tujuan. Heuristik ini digunakan untuk memandu pencarian agar lebih efisien. Kombinasi antara biaya yang sudah dilalui dan *heuristic* ini menghasilkan fungsi *f(n)* yang digunakan untuk menentukan node mana yang akan dikunjungi selanjutnya. 
+
+* **f(n) = g(n) + h(n)**
+  * g(n): Biaya aktual dari node awal ke node saat ini
+  * h(n): Estimasi biaya dari node saat ini ke node tujuan (heuristic)
+
+Algoritma A* menjamin bahwa jalur yang ditemukan adalah jalur terpendek jika heuristik yang digunakan adalah *admissible* (tidak pernah overestimate) dan *consistent* (selalu underestimate).
 
 #### Cara Kerja Algoritma A*
 
@@ -65,9 +71,72 @@ Algoritma A* merupakan pengembangan dari algoritma Dijkstra. Perbedaan utama A* 
 #### Contoh Implementasi dalam Python
 
 ```python
-def a_star(graph, start, goal, heuristic):
-    # ... (implementasi serupa dengan Dijkstra, dengan tambahan perhitungan f)
+import heapq
+
+class Node:
+    def __init__(self, x, y, g, h, parent=None):
+        self.x = x
+        self.y = y
+        self.g = g  # Biaya aktual
+        self.h = h  # Heuristic
+        self.f = g + h
+        self.parent = parent
+
+    def __lt__(self, other):
+        return self.f < other.f
+
+def astar(start, goal, grid):
+    open_set = []
+    closed_set = set()
+
+    # Tambahkan node awal ke open_set
+    start_node = Node(start[0], start[1], 0, heuristic(start, goal))
+    heapq.heappush(open_set, start_node)
+
+    while open_set:
+        current = heapq.heappop(open_set)
+        closed_set.add(current)
+
+        if current.x == goal[0] and current.y == goal[1]:
+            path = []
+            while current is not None:
+                path.append((current.x, current.y))
+                current = current.parent
+            return path[::-1]
+
+        # Generate neighbors
+        neighbors = [(current.x-1, current.y), (current.x+1, current.y),
+                     (current.x, current.y-1), (current.x, current.y+1)]
+        for neighbor in neighbors:
+            if 0 <= neighbor[0] < len(grid) and 0 <= neighbor[1] < len(grid[0]) and grid[neighbor[0]][neighbor[1]] == 0:  # Pastikan dalam batas grid dan bisa dilewati
+                neighbor_node = Node(neighbor[0], neighbor[1], current.g + 1, heuristic(neighbor, goal), current)
+                if neighbor_node not in closed_set:
+                    if neighbor_node not in open_set or neighbor_node.f < open_set[open_set.index(neighbor_node)].f:
+                        heapq.heappush(open_set, neighbor_node)
+
+    return None  # Jika tidak ditemukan jalur
+
+def heuristic(a, b):
+    # Euclidean distance
+    return ((a[0] - b[0])**2 + (a[1] - b[1])**2)**0.5
+
+# Contoh penggunaan
+grid = [[0, 0, 0],
+        [0, 1, 0],
+        [0, 0, 0]]  # 1 adalah dinding, 0 adalah jalan
+start = (0, 0)
+goal = (2, 2)
+
+path = astar(start, goal, grid)
+print(path)
 ```
+
+**Peningkatan:**
+
+* **Heuristic:** Anda bisa menggunakan heuristic yang lebih baik seperti Manhattan distance atau diagonal distance tergantung pada jenis peta.
+* **Biaya:** Anda bisa menambahkan biaya yang berbeda untuk setiap gerakan (misalnya, bergerak diagonal lebih mahal).
+* **Peta:** Anda bisa menggunakan representasi peta yang lebih kompleks, seperti matriks biaya atau graf.
+* **Optimasi:** Anda bisa melakukan beberapa optimasi untuk meningkatkan performa algoritma.
 
 ### Perbandingan
 <div class="table-responsive" markdown="1">
