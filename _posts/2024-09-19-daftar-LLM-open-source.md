@@ -40,7 +40,7 @@ Berikut adalah tabel LLM open-source dari kami:
 <div class="table-responsive" markdown="1">
 | Model | Developer | Parameter | Context | Implementasi |
 | --- | :---: | :---: |  :---: |  :---: | 
-| Llama3 | Meta | 1B, 3B, 8B, 70B, 405B | 8k, 128k | GeneralGeneral text generation, Multilingual tasks, Code generation, Long-form content, Fine-tuning untuk domain spesifik |
+| [Llama3](#llama3) | Meta | 1B, 3B, 8B, 70B, 405B | 8k, 128k | GeneralGeneral text generation, Multilingual tasks, Code generation, Long-form content, Fine-tuning untuk domain spesifik |
 | Mistral | Mistral AI | 3B-124B | 32k-128k | High-complexity tasks, Multilingual processing, Code generation, Image understanding, Edge computing, On-device AI, Efficient large-scale processing |
 | Falcon 3 | TII | 1B, 3B, 7B, 10B | 8k-32k | General text generation, Code generation, Mathematical tasks, Scientific knowledge, Multilingual applications, Fine-tuning untuk domain spesifik |
 | Gemma 2 | Google | 2B, 9B, 27B | 8k | General text generation, Question answering, Summarization, Code generation, Fine-tuning untuk domain spesifik |
@@ -76,7 +76,7 @@ Terlepas dari kelebihannya, LLM open-source memiliki beberapa kelemahan potensia
 
 Mari kita bahas satu per satu LLM open-source dan lihat lebih dekat!
 
-#### Llama3
+#### Llama3 {#llama3}
 Paling cocok untuk: aplikasi umum dengan kebutuhan skalabilitas.
 
 Llama 3 adalah generasi terbaru dari model bahasa besar open-source Meta, yang menawarkan kinerja tinggi di berbagai tugas. Model Llama 3.3 70B terbaru menawarkan performa yang sebanding dengan model parameter 405B dengan biaya komputasi yang lebih murah, sehingga menjadi pilihan yang menarik bagi para pengembang dan peneliti.
@@ -89,7 +89,7 @@ Llama 3 adalah generasi terbaru dari model bahasa besar open-source Meta, yang m
 * Fine-tuning untuk domain atau tugas tertentu
 * Interaksi seperti asisten dalam chatbot dan aplikasi AI
 
-#### Mistral
+#### Mistral {#mistral}
 Paling cocok untuk: AI pada perangkat dengan pemanggilan fungsi.
 
 Mistral AI, sebuah perusahaan rintisan asal Prancis, dengan cepat menjadi pemain utama dalam bidang LLM open-source. Model Mistral dirancang untuk memenuhi berbagai macam aplikasi, mulai dari perangkat canggih hingga solusi perusahaan berskala besar. Perusahaan ini menawarkan model open-source di bawah lisensi Apache 2.0 dan model komersial dengan lisensi yang dapat dinegosiasikan. Model Ministral terbaru (3B dan 8B) sangat terkenal karena kinerjanya dalam skenario komputasi edge, mengungguli model-model berukuran serupa dari raksasa teknologi.
@@ -102,7 +102,7 @@ Mistral AI, sebuah perusahaan rintisan asal Prancis, dengan cepat menjadi pemain
 * AI pada perangkat untuk ponsel cerdas dan laptop
 * Pemrosesan skala besar yang efisien dengan model MoE
 
-#### Falcon 3
+#### Falcon 3 {#falcon3}
 Paling cocok untuk: lingkungan dengan sumber daya terbatas.
 
 Falcon 3 adalah iterasi terbaru dari model bahasa besar open-source yang dikembangkan oleh Technology Innovation Institute (TII) di Abu Dhabi. Rangkaian model ini menunjukkan kinerja yang mengesankan untuk LLM kecil sekaligus mendemokratisasi akses ke AI canggih dengan memungkinkan pengoperasian yang efisien pada infrastruktur ringan, termasuk laptop.
@@ -115,7 +115,7 @@ Falcon 3 adalah iterasi terbaru dari model bahasa besar open-source yang dikemba
 * Fine-tuning untuk domain atau tugas tertentu
 * Penerapan yang efisien di lingkungan dengan sumber daya terbatas
 
-#### Gemma 2
+#### Gemma 2 {#gemma2}
 Paling cocok untuk: pengembangan dan penerapan AI yang bertanggung jawab
 
 Gemma 2 adalah keluarga LLM open-source terbaru dari Google, yang dibangun di atas penelitian dan teknologi yang sama yang digunakan untuk membuat model Gemini. Menawarkan kinerja yang kuat untuk ukurannya, Gemma 2 dirancang dengan fokus pada pengembangan AI yang bertanggung jawab dan penerapan yang efisien.
@@ -128,7 +128,7 @@ Gemma 2 adalah keluarga LLM open-source terbaru dari Google, yang dibangun di at
 * Penelitian dan pengembangan AI yang bertanggung jawab
 * Aplikasi AI pada perangkat (terutama dengan model 2B)
 
-#### Phi 3.x / 4
+#### Phi 3.x / 4 {#phi3-4}
 Paling cocok untuk: solusi AI yang hemat biaya
 
 Phi-3.x / 4 adalah keluarga Small Language Model (SLM) Microsoft yang open-source, yang dirancang untuk menjadi sangat mumpuni dan hemat biaya. Pembaruan Phi-3.5 menghadirkan dukungan multi-bahasa yang disempurnakan, pemahaman gambar multi-bingkai yang lebih baik, dan arsitektur MoE yang baru. Phi-4, model terbaru, menekankan kualitas data daripada ukuran data. Ini dilatih pada data sintetis, konten publik yang disaring, dan sumber daya akademis. Model ini mencapai kinerja yang mengesankan pada berbagai tolok ukur hanya dengan parameter 16B.
@@ -141,7 +141,7 @@ Phi-3.x / 4 adalah keluarga Small Language Model (SLM) Microsoft yang open-sourc
 * Aplikasi yang sensitif terhadap latensi
 * Solusi AI yang hemat biaya untuk lingkungan dengan sumber daya terbatas
 
-#### Command R
+#### Command R {#commandr}
 Paling cocok untuk: conversational AI tingkat perusahan dan RAG
 
 Command R adalah rangkaian LLM andalan Cohere untuk aplikasi tingkat perusahaan dengan fokus pada interaksi percakapan dan tugas-tugas dengan konteks yang panjang. Rangkaian produk ini meliputi Command R, Command R+, dan Command R7B yang ringkas, masing-masing dioptimalkan untuk kasus penggunaan yang berbeda.
@@ -155,7 +155,7 @@ Command R adalah rangkaian LLM andalan Cohere untuk aplikasi tingkat perusahaan 
 * Analisis data keuangan dan numerik
 * Aplikasi pada perangkat (dengan Command R7B)
 
-#### StableLM
+#### StableLM {#stablelm}
 Paling cocok untuk: pembuatan prototipe dan eksperimen cepat
 
 StableLM adalah seri LLM open-source dari Stability AI, yang menawarkan kinerja kompetitif dalam ukuran yang ringkas. Rangkaian produk ini mencakup berbagai ukuran model dan spesialisasi. Model 1.6B, yang dilatih dengan sekitar 2 triliun token, mengungguli banyak model di bawah parameter 2B pada berbagai tolok ukur. Stability AI menyediakan versi dasar dan versi yang disetel dengan instruksi, bersama dengan pos pemeriksaan pra-pelatihan untuk memfasilitasi penyempurnaan lebih lanjut.
@@ -166,7 +166,7 @@ StableLM adalah seri LLM open-source dari Stability AI, yang menawarkan kinerja 
 * Fine-tuning untuk domain atau tugas tertentu
 * Aplikasi riset dan komersial
 
-#### Starcoder
+#### Starcoder {#starcoder}
 Paling cocok untuk: tugas-tugas terkait kode dan bahasa pemrograman
 
 StarCoder2 adalah generasi berikutnya dari model bahasa open-source yang dilatih secara transparan untuk source code, yang dikembangkan oleh proyek BigCode. Model ini menawarkan kinerja tinggi untuk tugas-tugas terkait kode di berbagai bahasa pemrograman. Model 15B, khususnya, menyamai kinerja model 33B+ yang jauh lebih besar pada banyak evaluasi, sedangkan model 3B menyamai kinerja model StarCoder 15B sebelumnya, yang menunjukkan peningkatan signifikan dalam efisiensi dan kemampuan.
@@ -178,7 +178,7 @@ StarCoder2 adalah generasi berikutnya dari model bahasa open-source yang dilatih
 * Membantu developer dalam berbagai skenario pengkodean
 * Penelitian dalam model bahasa kode dan AI untuk pemrograman
 
-#### Yi
+#### Yi {#yi}
 Paling cocok untuk: aplikasi dwibahasa (Inggris dan Mandarin)
 
 Yi adalah seri LLM open-source yang dikembangkan oleh 01.AI, yang menawarkan kinerja yang kuat dalam bahasa Inggris dan Mandarin di berbagai tugas. Seri Yi-1.5, versi upgrade dari model Yi yang asli, memberikan kemampuan yang lebih baik dalam pengkodean, matematika, penalaran, dan mengikuti instruksi.
@@ -191,7 +191,7 @@ Yi adalah seri LLM open-source yang dikembangkan oleh 01.AI, yang menawarkan kin
 * NLP di lingkungan akademis dan komersial
 * Membangun chatbot dan asisten AI
 
-#### Qwen2.5
+#### Qwen2.5 {#qwen2}
 Paling cocok untuk: tugas-tugas multibahasa dan khusus (koding dan matematika)
 
 Qwen2.5 adalah seri terbaru LLM open-source Alibaba dengan berbagai macam ukuran dan varian khusus untuk pengkodean dan matematika. Model-model ini mewakili kemajuan yang signifikan dalam kemampuan multibahasa dan kinerja khusus untuk tugas-tugas tertentu.
@@ -205,7 +205,7 @@ Qwen2.5 adalah seri terbaru LLM open-source Alibaba dengan berbagai macam ukuran
 * Pemrosesan data terstruktur dan pembuatan output JSON
 * Pengembangan chatbot dengan kemampuan bermain peran yang lebih baik
 
-#### Deepseek 2.x / 3
+#### Deepseek 2.x / 3 {#deepseek2-3}
 Paling coock untuk: pemrosesan bahasa berskala besar yang efisien
 
 DeepSeek adalah seri LLM open-source yang kuat yang dikembangkan oleh DeepSeek AI, yang menampilkan arsitektur inovatif untuk kesimpulan yang efisien dan pelatihan yang hemat biaya. Model DeepSeek-V2 dan V2.5 tersedia untuk digunakan dengan Ollama. Sementara DeepSeek-V3 yang baru saja dirilis menawarkan kemampuan yang lebih mengesankan dengan parameter 671B, namun belum tersedia di Ollama pada saat artikel ini ditulis.
