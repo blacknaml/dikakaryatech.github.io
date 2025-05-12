@@ -25,9 +25,10 @@ Kali ini kita akan menyelami dunia LLM open-source dan:
 * meninjau 11 LLM open-source terbaik yang ada di pasaran;
 * menunjukkan kepada Anda cara mengakses open-source model AI yang kuat ini dengan mudah;
 
-Baca terus untuk mengetahuinya!
+**Baca terus untuk mengetahuinya!**
 
 ### Apakah ada LLM open-source?
+
 Untuk artikel ini, kami telah memilih 11 open-source model LLM yang populer, dengan fokus pada model yang digunakan secara luas dan tersedia di Ollama.
 
 Ulasan kami mencakup berbagai model “dasar” yang sudah terlatih dan varian yang sudah disetel dengan baik. Model-model ini tersedia dalam berbagai ukuran, dan Anda bisa menggunakannya secara langsung atau memilih versi yang sudah disetel dengan baik dari pengembang asli atau sumber pihak ketiga.
@@ -214,7 +215,6 @@ DeepSeek adalah seri LLM open-source yang kuat yang dikembangkan oleh DeepSeek A
 * Fine-tuning untuk domain atau tugas tertentu
 * Interaksi seperti asisten dalam chatbot dan aplikasi AI
 * Pembuatan dan analisis konten panjang
-
 
 
 {% if page.related_post %}
