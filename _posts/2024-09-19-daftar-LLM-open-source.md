@@ -9,17 +9,17 @@ tags: machine-learning ai deep-learning nlp gen-ai
 related_post: related-posts.html
 language: id
 toc: true
-excerpt: "Open-sources model mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang."
+excerpt: "Model open-source mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang."
 ---
 
-Open-sources model mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang. Trennya jelas: sejak awal tahun 2023, rilis model open-source baru telah meningkat hampir dua kali lipat dibandingkan dengan model closed-source.
+Model open-source mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang. Trennya jelas: sejak awal tahun 2023, rilis model open-source baru telah meningkat hampir dua kali lipat dibandingkan dengan model closed-source.
 
 {: .text-center }
 {% figure caption:"Rilis LLM berdasarkan tahun: blue = pre-trained models, orange = instruction-tuned. Setengah bagian atas menunjukkan open-source model, setengah bagian bawah berisi closed-source model. Sumber: https://arxiv.org/abs/2307.06435" %}
 ![Rilis LLM berdasarkan tahun: blue = pre-trained models, orange = instruction-tuned. Setengah bagian atas menunjukkan open-source model, setengah bagian bawah berisi closed-source model. Sumber: https://arxiv.org/abs/2307.06435](/assets/img/LLM-trends.webp "Rilis LLM berdasarkan tahun: blue = pre-trained models, orange = instruction-tuned. Setengah bagian atas menunjukkan open-source model, setengah bagian bawah berisi closed-source model. Sumber: https://arxiv.org/abs/2307.06435"){: .img-thumbnail }
 {% endfigure %}
 
-Kali ini kita akan menyelami dunia LLM open-source dan:
+Kali ini kita akan menyelami dunia LLM open-source dan :
 * mendiskusikan alasan di balik lonjakan penerapan LLM open-source;
 * mengenali tantangan dan potensi kerugian;
 * meninjau 11 LLM open-source terbaik yang ada di pasaran;
@@ -58,6 +58,7 @@ Berikut adalah tabel LLM open-source dari kami:
 Untuk daftar LLM lebih lengkap yang tersedia di luar artikel ini, Anda dapat melihat repositori [Awesome-LLM GitHub](https://github.com/Hannibal046/Awesome-LLM), yang menyediakan katalog ekstensif model bahasa dan sumber daya terkait.
 
 ### Apa kelebihan dan kekurangan LLM open-source?
+
 Berikut beberapa kelebihan LLM open-source:
 * Kepemilikan penuh memastikan kontrol penuh atas model, data training, dan aplikasi.
 * Akurasi fine-tuning dengan menyesuaikan parameter model dan didukung oleh kontribusi komunitas.
@@ -71,7 +72,8 @@ Terlepas dari kelebihannya, LLM open-source memiliki beberapa kelemahan potensia
 * Persyaratan lisensi sangat bervariasi. Beberapa model menggunakan lisensi permisif (seperti Apache 2.0), yang lain memiliki batasan non-komersial, dan beberapa (seperti Meta Llama 3) menyertakan persyaratan khusus untuk penggunaan komersial.
 
 
-### Apa saja itu LLM open-source itu ?
+### Apa saja LLM open-source itu ?
+
 Mari kita bahas satu per satu LLM open-source dan lihat lebih dekat!
 
 #### Llama3
