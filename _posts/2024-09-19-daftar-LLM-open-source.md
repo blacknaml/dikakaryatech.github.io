@@ -15,7 +15,7 @@ excerpt: "Open-sources model mengubah lanskap LLM yang menjanjikan keamanan yang
 Open-sources model mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang. Trennya jelas: sejak awal tahun 2023, rilis model open-source baru telah meningkat hampir dua kali lipat dibandingkan dengan model closed-source.
 
 {: .text-center }
-{% figure caption:"Rilis LLM berdasarkan tahun" %}
+{% figure caption:"blue = pre-trained models, orange = instruction-tuned. Setengah bagian atas menunjukkan open-source model, setengah bagian bawah berisi closed-source model. Sumber: https://arxiv.org/abs/2307.06435" %}
 ![Rilis LLM berdasarkan tahun: blue = pre-trained models, orange = instruction-tuned. Setengah bagian atas menunjukkan open-source model, setengah bagian bawah berisi closed-source model. Sumber: https://arxiv.org/abs/2307.06435](/assets/img/LLM-trends.webp "Rilis LLM berdasarkan tahun: blue = pre-trained models, orange = instruction-tuned. Setengah bagian atas menunjukkan open-source model, setengah bagian bawah berisi closed-source model. Sumber: https://arxiv.org/abs/2307.06435"){: .img-thumbnail }
 {% endfigure %}
 
@@ -54,7 +54,7 @@ Berikut adalah tabel LLM open-source dari kami:
 {: .table .table-bordered }
 </div>
 
-Untuk daftar LLM lebih lengkap yang tersedia di luar artikel ini, Anda dapat melihat repositori [https://github.com/Hannibal046/Awesome-LLM?ref=blog.n8n.io](Awesome-LLM GitHub), yang menyediakan katalog ekstensif model bahasa dan sumber daya terkait.
+Untuk daftar LLM lebih lengkap yang tersedia di luar artikel ini, Anda dapat melihat repositori [Awesome-LLM GitHub](https://github.com/Hannibal046/Awesome-LLM), yang menyediakan katalog ekstensif model bahasa dan sumber daya terkait.
 
 ### Apa kelebihan dan kekurangan LLM open-source?
 Berikut beberapa kelebihan LLM open-source:
