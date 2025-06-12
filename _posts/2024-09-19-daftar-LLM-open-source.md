@@ -2,7 +2,7 @@
 layout: post
 title: "Daftar LLM Open Source"
 author: debi
-date: 2024-08-19 13:33:33 +0700
+date: 2024-09-19 13:33:33 +0700
 image: /assets/img/llm-robots.webp
 categories: software development
 tags: machine-learning ai deep-learning nlp gen-ai
