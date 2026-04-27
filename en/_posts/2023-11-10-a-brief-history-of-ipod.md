@@ -7,8 +7,11 @@ date: 2023-11-10 09:20:53 +0700
 image: /assets/img/ipod.webp
 categories: history
 tags: hardware iot
+locale: en_US
+toc: true
 ---
-iPod is a digital mp3 / mp4 player developed and marketed by Apple Inc., an American consumer electronics multinational corporation. During their research, Apple found that in comparison to available camcorders, digital cameras, and organizers; digital music players recorded poor sales, primarily due to their awful user interfaces. 
+
+iPod is a digital mp3 / mp4 player developed and marketed by Apple Inc., an American consumer electronics multinational corporation. During their research, Apple found that in comparison to available camcorders, digital cameras, and organizers; digital music players recorded poor sales, primarily due to their awful user interfaces.
 
 Apple wanted to do something about it and so Jon Rubinstein, Apple's hardware engineering chief brought together a team comprising of Tony Fadell (who dreamed of a hard disk based music player), Michael Dhuey (hardware engineer), Jonathan Ive (design engineer), and Stan Ng (marketing manager). In less than a year, they designed a hard disk based music player, that had a 5 GB hard drive and capable of storing 1000 songs.
 
@@ -22,8 +25,8 @@ To market this path-breaking mp3 / mp4 player, they needed a suitable futuristic
 
 To enable customers to access songs of their choice, Apple opened up an online media store The iTunes Store on 29 April 2003, where individual songs could be downloaded at prices less than a U.S. dollar per song. The purchased songs can be played only on iPods. Subsequent versions of this iPod (mp3 / mp4 player) also featured video capabilities, and thus iTunes Store started selling short videos from 12 October 2005. From 12 September 2006, full-length movies were also available at the iTunes Store.
 
-iPods have come a long way from their inception, and now the latest fifth generation iPods possess multimedia capabilities and are available in both Mac OS and Windows OS versions. Usually, if a new iPod is plugged into a Mac OS computer, then the hard disk of this mp3 / mp4 player is formatted as per the HFS+ file format, and if it plugged into a Windows OS computer, it is formatted as per the FAT32 file format. From being a digital music player, the iPod has now transformed into a digital media player. 
+iPods have come a long way from their inception, and now the latest fifth generation iPods possess multimedia capabilities and are available in both Mac OS and Windows OS versions. Usually, if a new iPod is plugged into a Mac OS computer, then the hard disk of this mp3 / mp4 player is formatted as per the HFS+ file format, and if it plugged into a Windows OS computer, it is formatted as per the FAT32 file format. From being a digital music player, the iPod has now transformed into a digital media player.
 
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}

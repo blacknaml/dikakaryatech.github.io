@@ -8,6 +8,7 @@ categories: software development
 tags: linux open-source operating-system sistem-operasi
 related_post: related-posts.html
 language: id
+locale: id_ID
 toc: true
 excerpt: "UNIX dan Linux, dua sistem operasi yang sangat berpengaruh dalam dunia teknologi, memiliki sejarah panjang dan saling terkait. Keduanya telah membentuk landasan bagi banyak sistem operasi modern yang kita gunakan saat ini. Mari kita telusuri sejarah kedua sistem operasi ini mulai dari akarnya hingga perkembangannya yang pesat."
 ---
@@ -28,26 +29,26 @@ Salah satu inovasi paling penting dalam UNIX adalah penggunaan bahasa pemrograma
 
 Sepanjang tahun 1970-an dan 1980-an, UNIX semakin populer di kalangan akademisi dan komunitas riset. Banyak universitas dan lembaga penelitian menggunakan UNIX sebagai platform utama untuk pengembangan perangkat lunak. Popularitas UNIX juga mendorong munculnya berbagai varian UNIX, seperti BSD (Berkeley Software Distribution) dan System V.
 
-* **System V:** Dikembangkan oleh AT&T Bell Labs, System V dirancang untuk menjadi sistem operasi komersial yang stabil dan handal. Varian ini menjadi standar de facto untuk sistem operasi Unix di lingkungan perusahaan.
-* **BSD:** Berasal dari University of California, Berkeley (BSD), sistem operasi ini lebih fokus pada pengembangan akademis dan komunitas. BSD dikenal karena inovasinya, terutama dalam bidang jaringan.
+- **System V:** Dikembangkan oleh AT&T Bell Labs, System V dirancang untuk menjadi sistem operasi komersial yang stabil dan handal. Varian ini menjadi standar de facto untuk sistem operasi Unix di lingkungan perusahaan.
+- **BSD:** Berasal dari University of California, Berkeley (BSD), sistem operasi ini lebih fokus pada pengembangan akademis dan komunitas. BSD dikenal karena inovasinya, terutama dalam bidang jaringan.
 
 Berikut beberapa perbedaan utama BSD dan System V:
 
-* **Lisensi:**
-    * **System V:** Awalnya bersifat proprietary, namun kemudian banyak varian yang dirilis dengan lisensi yang lebih terbuka.
-    * **BSD:** Selalu memiliki lisensi yang sangat permisif, memungkinkan penggunaan dan modifikasi yang luas.
-* **Fokus Pengembangan:**
-    * **System V:** Lebih berfokus pada stabilitas, kinerja, dan fitur yang dibutuhkan oleh lingkungan perusahaan.
-    * **BSD:** Lebih berfokus pada inovasi, eksperimen, dan komunitas pengembang.
-* **Komunitas:**
-    * **System V:** Komunitasnya lebih terpusat pada vendor komersial.
-    * **BSD:** Memiliki komunitas yang sangat aktif dan beragam, dengan banyak proyek open source yang dibangun di atas BSD.
-* **Fitur:**
-    * **System V:** Menawarkan fitur yang lebih stabil dan matang, dengan fokus pada kompatibilitas.
-    * **BSD:** Sering kali menjadi tempat lahirnya fitur-fitur baru yang kemudian diadopsi oleh sistem operasi lain, seperti TCP/IP networking.
-* **Implementasi:**
-    * **System V:** Implementasinya cenderung lebih konservatif dan mengikuti standar yang ada.
-    * **BSD:** Implementasinya sering kali lebih eksperimental dan inovatif.
+- **Lisensi:**
+  - **System V:** Awalnya bersifat proprietary, namun kemudian banyak varian yang dirilis dengan lisensi yang lebih terbuka.
+  - **BSD:** Selalu memiliki lisensi yang sangat permisif, memungkinkan penggunaan dan modifikasi yang luas.
+- **Fokus Pengembangan:**
+  - **System V:** Lebih berfokus pada stabilitas, kinerja, dan fitur yang dibutuhkan oleh lingkungan perusahaan.
+  - **BSD:** Lebih berfokus pada inovasi, eksperimen, dan komunitas pengembang.
+- **Komunitas:**
+  - **System V:** Komunitasnya lebih terpusat pada vendor komersial.
+  - **BSD:** Memiliki komunitas yang sangat aktif dan beragam, dengan banyak proyek open source yang dibangun di atas BSD.
+- **Fitur:**
+  - **System V:** Menawarkan fitur yang lebih stabil dan matang, dengan fokus pada kompatibilitas.
+  - **BSD:** Sering kali menjadi tempat lahirnya fitur-fitur baru yang kemudian diadopsi oleh sistem operasi lain, seperti TCP/IP networking.
+- **Implementasi:**
+  - **System V:** Implementasinya cenderung lebih konservatif dan mengikuti standar yang ada.
+  - **BSD:** Implementasinya sering kali lebih eksperimental dan inovatif.
 
 <div class="table-responsive" markdown="1">
 | Fitur | System V | BSD |
@@ -71,21 +72,21 @@ Salah satu faktor kunci keberhasilan Linux adalah model pengembangannya yang ter
 
 Meskipun memiliki sejarah yang berbeda, UNIX dan Linux memiliki banyak kesamaan. Keduanya adalah sistem operasi yang kuat, stabil, dan efisien. Namun, ada beberapa perbedaan utama antara keduanya:
 
-* **Lisensi:** UNIX umumnya bersifat komersial, sedangkan Linux adalah open source.
-* **Kernel:** Kernel Linux adalah pengembangan lebih lanjut dari konsep kernel UNIX, tetapi dengan implementasi dan fitur yang berbeda.
-* **Distribusi:** Linux memiliki banyak distribusi yang berbeda-beda, seperti Ubuntu, Fedora, Debian, dan CentOS, masing-masing dengan fokus dan tujuan yang berbeda.
+- **Lisensi:** UNIX umumnya bersifat komersial, sedangkan Linux adalah open source.
+- **Kernel:** Kernel Linux adalah pengembangan lebih lanjut dari konsep kernel UNIX, tetapi dengan implementasi dan fitur yang berbeda.
+- **Distribusi:** Linux memiliki banyak distribusi yang berbeda-beda, seperti Ubuntu, Fedora, Debian, dan CentOS, masing-masing dengan fokus dan tujuan yang berbeda.
 
 ### Dampak UNIX dan Linux
 
 UNIX dan Linux telah memiliki dampak yang sangat besar pada dunia teknologi. Beberapa dampak penting dari kedua sistem operasi ini antara lain:
 
-* **Pengembangan perangkat lunak:** UNIX dan Linux telah menjadi platform utama untuk pengembangan perangkat lunak, terutama untuk server dan sistem embedded.
-* **Internet:** Banyak server web dan aplikasi internet lainnya berjalan di atas sistem operasi berbasis UNIX atau Linux.
-* **Smartphone:** Android, salah satu sistem operasi mobile paling populer, berbasis pada kernel Linux.
-* **Komputasi awan:** Banyak layanan komputasi awan menggunakan teknologi yang berasal dari UNIX dan Linux.
+- **Pengembangan perangkat lunak:** UNIX dan Linux telah menjadi platform utama untuk pengembangan perangkat lunak, terutama untuk server dan sistem embedded.
+- **Internet:** Banyak server web dan aplikasi internet lainnya berjalan di atas sistem operasi berbasis UNIX atau Linux.
+- **Smartphone:** Android, salah satu sistem operasi mobile paling populer, berbasis pada kernel Linux.
+- **Komputasi awan:** Banyak layanan komputasi awan menggunakan teknologi yang berasal dari UNIX dan Linux.
 
 Semoga informasi ini membantu Anda menjelajahi dunia Linux dengan lebih mendalam!
 
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}

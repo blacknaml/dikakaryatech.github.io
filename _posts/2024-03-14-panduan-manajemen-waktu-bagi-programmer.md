@@ -8,13 +8,14 @@ categories: soft skills
 tags: pomodoro time-management manajemen-waktu
 related_post: related-posts.html
 language: id
+locale: id_ID
 toc: true
 excerpt: "Sebagai programmer, kamu dituntut untuk menyelesaikan tugas-tugas kompleks dalam waktu yang singkat. Ditambah lagi, kamu juga perlu mengikuti perkembangan teknologi yang pesat. Tak heran, banyak programmer yang merasa kesulitan mengatur waktu mereka. "
 ---
 
 ### Atur Waktumu, Tingkatkan Produktivitasmu: Panduan Manajemen Waktu Bagi Programmer
 
-Sebagai programmer, kamu dituntut untuk menyelesaikan tugas-tugas kompleks dalam waktu yang singkat. Ditambah lagi, kamu juga perlu mengikuti perkembangan teknologi yang pesat. Tak heran, banyak programmer yang merasa kesulitan mengatur waktu mereka. 
+Sebagai programmer, kamu dituntut untuk menyelesaikan tugas-tugas kompleks dalam waktu yang singkat. Ditambah lagi, kamu juga perlu mengikuti perkembangan teknologi yang pesat. Tak heran, banyak programmer yang merasa kesulitan mengatur waktu mereka.
 
 Namun, jangan khawatir! Dengan menerapkan strategi manajemen waktu yang tepat, kamu dapat meningkatkan produktivitas dan mencapai tujuanmu. Berikut beberapa panduan yang bisa kamu ikuti:
 
@@ -26,10 +27,10 @@ Langkah pertama adalah membuat daftar semua tugas yang harus kamu selesaikan. Ha
 
 Teknik Eisenhower Matrix dapat membantumu memprioritaskan tugas berdasarkan urgensinya dan tingkat pentingnya. Bagi tugas-tugasmu ke dalam empat kategori:
 
-* **Penting dan Mendesak:** Segera selesaikan tugas ini.
-* **Penting tapi Tidak Mendesak:** Jadwalkan waktu untuk menyelesaikan tugas ini.
-* **Mendesak tapi Tidak Penting:** Delegasikan tugas ini kepada orang lain.
-* **Tidak Mendesak dan Tidak Penting:** Pertimbangkan untuk menunda atau menghilangkan tugas ini.
+- **Penting dan Mendesak:** Segera selesaikan tugas ini.
+- **Penting tapi Tidak Mendesak:** Jadwalkan waktu untuk menyelesaikan tugas ini.
+- **Mendesak tapi Tidak Penting:** Delegasikan tugas ini kepada orang lain.
+- **Tidak Mendesak dan Tidak Penting:** Pertimbangkan untuk menunda atau menghilangkan tugas ini.
 
 ### 3. Manfaatkan Teknik Pomodoro
 
@@ -53,16 +54,16 @@ Banyak alat bantu yang tersedia untuk membantumu mengatur waktu, seperti aplikas
 
 #### Tips Tambahan:
 
-* **Tidur yang cukup:** Tidur yang cukup penting untuk menjaga kesehatan fisik dan mentalmu, yang pada akhirnya dapat meningkatkan produktivitasmu.
-* **Makan makanan yang sehat:** Makan makanan yang sehat dapat membantumu fokus dan berenergi sepanjang hari.
-* **Olahraga secara teratur:** Olahraga dapat membantumu mengurangi stres dan meningkatkan fokusmu.
-* **Delegasikan tugas:** Jika memungkinkan, delegasikan tugas kepada orang lain agar kamu dapat fokus pada tugas yang lebih penting.
-* **Katakan tidak:** Belajarlah untuk mengatakan tidak pada tugas atau permintaan yang tidak penting.
+- **Tidur yang cukup:** Tidur yang cukup penting untuk menjaga kesehatan fisik dan mentalmu, yang pada akhirnya dapat meningkatkan produktivitasmu.
+- **Makan makanan yang sehat:** Makan makanan yang sehat dapat membantumu fokus dan berenergi sepanjang hari.
+- **Olahraga secara teratur:** Olahraga dapat membantumu mengurangi stres dan meningkatkan fokusmu.
+- **Delegasikan tugas:** Jika memungkinkan, delegasikan tugas kepada orang lain agar kamu dapat fokus pada tugas yang lebih penting.
+- **Katakan tidak:** Belajarlah untuk mengatakan tidak pada tugas atau permintaan yang tidak penting.
 
 Mengelola waktu dengan baik adalah kunci untuk menjadi programmer yang sukses. Dengan menerapkan strategi-strategi di atas, kamu dapat meningkatkan produktivitasmu, mencapai tujuanmu, dan memiliki keseimbangan antara kehidupan kerja dan pribadi yang lebih baik.
 
 **Ingatlah, kunci utama dalam manajemen waktu adalah disiplin dan konsistensi. Teruslah berlatih dan kamu akan melihat hasilnya.**
 
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}

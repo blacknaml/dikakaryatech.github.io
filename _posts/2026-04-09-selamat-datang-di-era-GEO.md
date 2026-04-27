@@ -8,6 +8,7 @@ categories: web development
 tags: seo geo web-development optimasi-website
 related_post: related-posts.html
 language: id
+locale: id_ID
 toc: true
 excerpt: "Pernahkah Anda menyadari bahwa banyak orang kini tidak lagi mengklik link di Google, melainkan langsung bertanya ke Gemini, ChatGPT, atau Perplexity? Jika website Anda tidak muncul dalam jawaban AI tersebut, Anda kehilangan audiens masa depan. Inilah saatnya kita menerapkan Generative Engine Optimization (GEO)."
 ---

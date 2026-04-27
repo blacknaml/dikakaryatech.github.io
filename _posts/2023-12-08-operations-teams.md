@@ -8,15 +8,18 @@ image: /assets/img/the-office-building.webp
 related_post: related-posts.html
 categories: software development
 tags: ops server
+locale: id_ID
+toc: true
 ---
-*Operations Team* / Tim Ops sangat penting untuk menjaga sistem perangkat lunak berjalan dengan lancar. Meskipun beberapa aspek operasi dapat dan harus diotomatisasi, manusialah yang harus mengatur otomatisasi tersebut terlebih dahulu dan memastikannya berfungsi dengan benar. Telah disarankan bahwa, 
+
+_Operations Team_ / Tim Ops sangat penting untuk menjaga sistem perangkat lunak berjalan dengan lancar. Meskipun beberapa aspek operasi dapat dan harus diotomatisasi, manusialah yang harus mengatur otomatisasi tersebut terlebih dahulu dan memastikannya berfungsi dengan benar. Telah disarankan bahwa,
 
 > Good operations can often work around the limitations of bad (or incomplete) software, but good software cannot run reliably with bad operations.
-> 
+>
 > Pengoperasian yang benar sering kali dapat mengatasi keterbatasan perangkat lunak yang buruk (atau tidak lengkap), namun perangkat lunak yang bagus tidak dapat berjalan dengan andal dengan pengoperasian yang buruk.
 
-
 Operations team yang baik biasanya bertanggung jawab untuk hal-hal berikut:
+
 - Memantau kesehatan sistem dan memulihkan layanan dengan cepat jika kondisinya buruk
 - Melacak penyebab masalah, seperti kegagalan sistem atau penurunan kinerja
 - Selalu memperbarui perangkat lunak dan platform, termasuk patch keamanan
@@ -28,19 +31,20 @@ Operations team yang baik biasanya bertanggung jawab untuk hal-hal berikut:
 - Mendefinisikan proses-proses yang membuat operasi bisa diprediksi dan membantu menjaga kestabilan production environment
 - Melakukan transfer pengetahuan tentang sistem, bahkan ketika individu tim datang dan pergi
 
-Pengoperasian yang bagus membuat tugas-tugas rutin menjadi lebih mudah, memungkinkan operations team fokus pada aktivitas yang bernilai tinggi. Maka perangkat lunak sistem-data harus bisa melakukan hal-hal yang mempermudah tugas rutin mereka, diantaranya: 
-- Memberikan visibilitas terhadap *runtime behavior* dan sistem internal, dengan monitoring yang bagus
+Pengoperasian yang bagus membuat tugas-tugas rutin menjadi lebih mudah, memungkinkan operations team fokus pada aktivitas yang bernilai tinggi. Maka perangkat lunak sistem-data harus bisa melakukan hal-hal yang mempermudah tugas rutin mereka, diantaranya:
+
+- Memberikan visibilitas terhadap _runtime behavior_ dan sistem internal, dengan monitoring yang bagus
 - Memberikan support untuk otomatisasi dan integrasi dengan alat yang standart
 - Menghindari ketergantungan pada masing-masing server/mesin (memungkinkan server/mesin dihentikan untuk pemeliharaan sementara sistem secara keseluruhan terus berjalan tanpa gangguan)
-- Menyediakan dokumentasi yang bagus dan *operational model* yang mudah dipahami
+- Menyediakan dokumentasi yang bagus dan _operational model_ yang mudah dipahami
 - Memberikan perilaku default yang baik, namun juga memberikan kebebasan kepada administrator untuk mengganti default bila diperlukan
-- Mampu memulikan diri-sendiri (*Self-Healing System*), namun juga memberi kontrol manual kepada administrator atas status sistem bila diperlukan
+- Mampu memulikan diri-sendiri (_Self-Healing System_), namun juga memberi kontrol manual kepada administrator atas status sistem bila diperlukan
 - Bisa menunjukkan perilaku yang dapat diprediksi, sehingga meminimalkan kejutan
 
-Sumber bacaan lebih lanjut [On Designing and Deploying Internet-Scale Services][hamilton]{:target="_blank"}.
+Sumber bacaan lebih lanjut [On Designing and Deploying Internet-Scale Services][hamilton]{:target="\_blank"}.
 
 [hamilton]: https://www.usenix.org/legacy/events/lisa07/tech/full_papers/hamilton/hamilton.pdf
- 
+
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}

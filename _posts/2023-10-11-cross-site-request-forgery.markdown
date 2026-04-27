@@ -8,6 +8,8 @@ categories: software development
 tags: protocol server
 related_post: related-posts.html
 language: id
+locale: id_ID
+toc: true
 ---
 
 _Cross-Site Request Forgery_ (CSRF) adalah salah satu tehnik hacking yang dilakukan dengan cara
@@ -25,11 +27,11 @@ request POST, token tersebut disisipkan sebagai header, form data atau query str
 Lebih detailnya silakan merujuk ke [CSRF docs][crsf-docs]
 
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}
 
 [crsf-docs]: https://en.wikipedia.org/wiki/Cross-site_request_forgery
 
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}

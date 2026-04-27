@@ -8,6 +8,7 @@ categories: web development
 tags: front-end style web-design
 related_post: related-posts.html
 language: id
+locale: id_ID
 toc: true
 excerpt: "Memilih rumah untuk website itu gampang-gampang susah. Ada yang gratis tapi lambat, ada yang canggih tapi konfigurasinya bikin pusing. Khusus untuk kamu yang pakai Tailwind CSS, kecepatan dan kemudahan deployment adalah kunci."
 ---

@@ -27,50 +27,54 @@ domain: "dikakaryatech.com"
 url: "https://dikakaryatech.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  blacknaml
 
-default_language: 'en'
+#default_language: 'en'
 fallback_page: 'stories'
 #permalink: none
 
 # Pagination
-paginate: 6
-paginate_path: "/blog/page:num/"
+#paginate: 6
+#paginate_path: "/blog/page:num/"
+
+pagination:
+  enabled: true
+  debug: true
+  per_page: 6
+  legacy_support: false
+  #title_suffix: " - page :num"
+  #index_page_name: "index.html"  
 
 collections:
   authors:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
+      path: ""
+    values:
+      layout: "default"  
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values: 
+      layout: "post"      
+      lang: id
+      permalink: /:categories/:year/:month/:day/:title.html  
+  - scope:
+      path: "en/_posts"
+      type: "posts"
+    values: 
+      layout: "post"      
+      lang: en
+      permalink: /:categories/:year/:month/:day/:title.html  
+  - scope:
       path: ""
       type: "authors"
     values:
       layout: "author"
-  -
-    scope:
-      path: "_posts/en"
-      type: "posts"
-    values: 
-      layout: "post"
-      permalink: "en/:title"
-      language: en
-  -
-    scope:
-      path: "_posts/id"
-      type: "posts"
-    values: 
-      layout: "post"
-      permalink: "id/:title"
-      language: id
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
 
 # Build settings
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag

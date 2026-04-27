@@ -8,25 +8,29 @@ categories: software development
 tags: secure rfc
 related_post: related-posts.html
 language: id
+locale: id_ID
+toc: true
 ---
-*HTTP Basic Auth* adalah salah satu tehnik otentikasi http request. Metode ini membutuhkan informasi 
-username dan password untuk disisipkan kedalam header request (dengan format tertentu), jadi cukup 
+
+_HTTP Basic Auth_ adalah salah satu tehnik otentikasi http request. Metode ini membutuhkan informasi
+username dan password untuk disisipkan kedalam header request (dengan format tertentu), jadi cukup
 sederhana, tidak memerlukan cookies atau session. Lebih jelasnya silakan membaca [RFC-7617][rfc7617].
 
 ![HTTP Basic Authentication](https://dikakaryatech.com/assets/img/http-auth-sequence-diagram.png "HTTP Basic Authentication")
 
-Informasi username dan password tidak serta merta disisipkan dalam header, informasi tersebut harus 
-diencode terlebih dahulu kedalam format yang sudah ditentukan sesuai spesifikasi, sebelum dimasukan 
+Informasi username dan password tidak serta merta disisipkan dalam header, informasi tersebut harus
+diencode terlebih dahulu kedalam format yang sudah ditentukan sesuai spesifikasi, sebelum dimasukan
 ke header.
 
 Berikut adalah contoh penulisan basic auth:
+
 ```
 //Request header
 Authorization: Basic c29tZXVzZXJuYW1lOnNvbWVwYXNzd29yZA==
 ```
 
-Informasi disisipkan kedalam request header dengan key **Authorization**, dan value adalah **Basic** 
-spasi hasil enkripsi dari data username dan password. Data username dan password digabungkan dengan 
+Informasi disisipkan kedalam request header dengan key **Authorization**, dan value adalah **Basic**
+spasi hasil enkripsi dari data username dan password. Data username dan password digabungkan dengan
 pemisah tanda titik dua (:), kemudian diencode kedalam format encoding Base 64.
 
 ```
@@ -38,5 +42,5 @@ base64encode("someusername:somepassword")
 [rfc7617]: https://tools.ietf.org/html/rfc7617
 
 {% if page.related_post %}
-  {% include {{ page.related_post }} %}
+{% include {{ page.related_post }} %}
 {% endif %}
