@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How We Use AI to Ship Laravel Projects Faster (Without Cutting Corners)"
-date: 2026-04-28 09:00:00 +0700
+date: 2026-04-23 09:00:00 +0700
 author: debi
 categories: [software, development]
 tags: [laravel, ai, workflow, software-engineering]
