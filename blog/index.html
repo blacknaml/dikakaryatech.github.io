@@ -4,9 +4,12 @@ title: Dika Karya Tech - Blog
 tagline: Dika Karya Tech share knowledge and experience.
 description: Temukan informasi, dan artikel terbaru seputar teknologi, software engineering, software development dan software deployment di blog Dika Karya Tech.
 language: id
+permalink: /blog/
 pagination: 
   enabled: true  
   collection: posts  
+  index_path: /blog/
+  permalink: "/blog/page/:num/"
   sort_field: 'date'
   sort_reverse: true
   locale: id_ID
@@ -18,7 +21,7 @@ pagination:
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>Blog Kami</h1>
+        <h1>{{ page.title }}</h1>
         <ul class="breadcrumb">
           <li><a href="{{ "" | absolute_url }}">Beranda</a></li>
           <li class="active">Blog</li>
