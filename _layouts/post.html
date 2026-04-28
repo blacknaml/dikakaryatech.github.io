@@ -75,8 +75,21 @@
         <div class="col-md-12">
           <h1>{{ page.title }}</h1>
           <ul class="breadcrumb">
-            <li><a href="{{ page.lang | absolute_url }}">Home</a></li>
-            <li><a href="{{ page.lang | prepend: "/" | append: "/blog/" | absolute_url }}">Blog</a></li>
+            <li>
+              {% if page.language == "en" %}
+                <a href="{{ page.language | absolute_url }}">Home</a>
+              {% else %}
+                <a href="{{ "/" | absolute_url }}">Home</a>
+              {% endif %}            
+            </li>
+            <li>
+              {% if page.language == "en" %}
+                <a href="{{ page.language | prepend: "/" | append: "/blog/" | absolute_url }}">Blog</a>
+              {% else %}
+                <a href="{{ "/blog/" | absolute_url }}">Blog</a>
+              {% endif %}
+              
+            </li>
             <li class="active">Post</li>
           </ul>
         </div>
