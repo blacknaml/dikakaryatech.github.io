@@ -78,17 +78,17 @@ pagination:
           <nav aria-label="navigation">
             <ul class="pagination">
               {% if paginator.previous_page %}
-              <li class="active"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+              <li class="active"><a href="{{ paginator.previous_page_path }}">Sebelumnya</a></li>
               {% else %}
-              <li><a href="#">Previous</a></li>
+              <li><a href="#">Sebelumnya</a></li>
               {% endif %}
               <li>
-                <a href="#">Page: {{ paginator.page }} of {{ paginator.total_pages }}</a>
+                <a href="#">Halaman ke: {{ paginator.page }} dari {{ paginator.total_pages }}</a>
               </li>
               {% if paginator.next_page %}
-              <li class="active"><a href="{{ paginator.next_page_path }}">Next</a></li>
+              <li class="active"><a href="{{ paginator.next_page_path }}">Selanjutnya</a></li>
               {% else %}
-              <li><a href="#">Next</a></li>
+              <li><a href="#">Selanjutnya</a></li>
               {% endif %}
             </ul>
           </nav>
