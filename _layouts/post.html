@@ -140,12 +140,33 @@
                   <a href="#">{{ tag }}</a>
                   {% endfor %}
                 </div>
+
+                {% assign current_lang = page.language | default: page.lang %}
+                
+                {% assign prev_post = nil %}
+                {% for p in site.posts %}
+                  {% if p.date < page.date and p.language == current_lang %}
+                    {% assign prev_post = p %}
+                    {% break %} {% comment %} Ambil yang terdekat lalu berhenti {% endcomment %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% assign next_post = nil %}
+                {% comment %} Kita harus membalik urutan untuk mencari post yang lebih baru dari sekarang {% endcomment %}
+                {% assign posts_reversed = site.posts | reverse %}
+                {% for p in posts_reversed %}
+                  {% if p.date > page.date and p.language == current_lang %}
+                    {% assign next_post = p %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+
                 <div class="post-pagi-area">
                   {% if page.previous.url %}
-                  <a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> Previous Post</a>
+                  <a href="{{ prev_post.url | relative_url }}"><i class="fas fa-arrow-left"></i> Previous Post</a>
                   {% endif %}
                   {% if page.next.url %}
-                  <a href="{{page.next.url}}">Next Post <i class="fas fa-arrow-right"></i></a>
+                  <a href="{{ next_post.url | relative_url }}">Next Post <i class="fas fa-arrow-right"></i></a>
                   {% endif %}
                 </div>
               </div>
