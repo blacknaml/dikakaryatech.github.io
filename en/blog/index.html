@@ -1,8 +1,11 @@
 ---
 layout: blog
-title: Dika Karya Tech - English Blog
+title: English Blog
 tagline: Dika Karya Tech share knowledge and experience.
 description: Blog of Dika Karya Tech. We share knowledge about experience in software engineering, development and deployment.
+prev: Previous
+next: Next
+home: Home
 language: en
 permalink: /en/blog/
 pagination: 
@@ -23,13 +26,13 @@ pagination:
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>Our Blog</h1>
+        <h1>{{ page.title }}</h1>
         <ul class="breadcrumb">
           <li>
             {% if page.language == "en" %}
-              <a href="{{ page.language | absolute_url }}">Home</a>
+              <a href="{{ page.language | absolute_url }}">{{ page.home }}</a>
             {% else %}
-              <a href="{{ "" | absolute_url }}">Home</a>
+              <a href="{{ "" | absolute_url }}">{{ page.home }}</a>
             {% endif %}
           </li>
           <li class="active">Blog</li>
@@ -94,17 +97,17 @@ pagination:
           <nav aria-label="navigation">
             <ul class="pagination">
               {% if paginator.previous_page %}
-              <li class="active"><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+              <li class="active"><a href="{{ paginator.previous_page_path }}">{{ page.prev }}</a></li>
               {% else %}
-              <li><a href="#">Previous</a></li>
+              <li><a href="#">{{ page.prev }}</a></li>
               {% endif %}
               <li>
                 <a href="#">Page: {{ paginator.page }} of {{ paginator.total_pages }}</a>
               </li>
               {% if paginator.next_page %}
-              <li class="active"><a href="{{ paginator.next_page_path }}">Next</a></li>
+              <li class="active"><a href="{{ paginator.next_page_path }}">{{ page.next }}</a></li>
               {% else %}
-              <li><a href="#">Next</a></li>
+              <li><a href="#">{{ page.next }}</a></li>
               {% endif %}
             </ul>
           </nav>

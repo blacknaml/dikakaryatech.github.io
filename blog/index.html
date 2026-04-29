@@ -1,8 +1,11 @@
 ---
 layout: blog
-title: Dika Karya Tech - Blog Kami
+title: Blog Kami
 tagline: Dika Karya Tech share knowledge and experience.
 description: Temukan informasi, dan artikel terbaru seputar teknologi, software engineering, software development dan software deployment di blog Dika Karya Tech.
+prev: Sebelumnya
+next: Selanjutnya
+home: Beranda
 language: id
 permalink: /blog/
 pagination: 
@@ -22,7 +25,7 @@ pagination:
       <div class="col-md-12">
         <h1>{{ page.title }}</h1>
         <ul class="breadcrumb">
-          <li><a href="{{ "" | absolute_url }}">Beranda</a></li>
+          <li><a href="{{ "" | absolute_url }}">{{ page.home }}</a></li>
           <li class="active">Blog</li>
         </ul>
       </div>
@@ -80,17 +83,17 @@ pagination:
           <nav aria-label="navigation">
             <ul class="pagination">
               {% if paginator.previous_page %}
-              <li class="active"><a href="{{ paginator.previous_page_path }}">Sebelumnya</a></li>
+              <li class="active"><a href="{{ paginator.previous_page_path }}">{{ page.prev }}</a></li>
               {% else %}
-              <li><a href="#">Sebelumnya</a></li>
+              <li><a href="#">{{ page.prev }}</a></li>
               {% endif %}
               <li>
                 <a href="#">Halaman ke: {{ paginator.page }} dari {{ paginator.total_pages }}</a>
               </li>
               {% if paginator.next_page %}
-              <li class="active"><a href="{{ paginator.next_page_path }}">Selanjutnya</a></li>
+              <li class="active"><a href="{{ paginator.next_page_path }}">{{ page.next }}</a></li>
               {% else %}
-              <li><a href="#">Selanjutnya</a></li>
+              <li><a href="#">{{ page.next }}</a></li>
               {% endif %}
             </ul>
           </nav>
