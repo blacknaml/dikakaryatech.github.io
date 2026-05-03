@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Menjadi programmer handal membutuhkan dedikasi, latihan, dan strategi yang tepat. Berikut beberapa tips yang bisa membantumu meningkatkan kemampuan pemrogramanmu. Sebelum beralih ke konsep yang lebih rumit, pastikan kamu memahami dengan baik konsep dasar pemrograman seperti variabel, tipe data, operator, struktur kontrol, dan algoritma. Pelajari bahasa pemrograman yang ingin kamu kuasai secara mendalam, termasuk syntax, library, dan best practices."
+description: "Menjadi programmer handal membutuhkan dedikasi, latihan, dan strategi yang tepat. Berikut beberapa tips yang bisa membantumu meningkatkan kemampuan pemrogramanmu. Sebelum beralih ke konsep yang lebih rumit, pastikan kamu memahami dengan baik konsep dasar pemrograman seperti variabel, tipe data, operator, struktur kontrol, dan algoritma. Pelajari bahasa pemrograman yang ingin kamu kuasai secara mendalam, termasuk syntax, library, dan best practices."
 ---
 
 ### Tips Jitu untuk Meningkatkan Kemampuan Pemrogramanmu

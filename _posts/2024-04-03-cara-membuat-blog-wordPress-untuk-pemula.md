@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Cara Membuat Blog WordPress untuk Pemula. Membuat blog adalah cara yang bagus untuk berbagi ide, pemikiran, dan pengalaman Anda dengan dunia. WordPress adalah platform blogging yang populer dan mudah digunakan, menjadikannya pilihan yang tepat untuk pemula."
+description: "Cara Membuat Blog WordPress untuk Pemula. Membuat blog adalah cara yang bagus untuk berbagi ide, pemikiran, dan pengalaman Anda dengan dunia. WordPress adalah platform blogging yang populer dan mudah digunakan, menjadikannya pilihan yang tepat untuk pemula."
 ---
 
 Membuat blog adalah cara yang bagus untuk berbagi ide, pemikiran, dan pengalaman Anda dengan dunia. WordPress adalah platform blogging yang populer dan mudah digunakan, menjadikannya pilihan yang tepat untuk pemula.

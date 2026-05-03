@@ -11,6 +11,7 @@ language: en
 locale: en_US
 lang: en
 toc: true
+description: "An _environment variable_ is a variable located in the operating system’s _runtime_ layer. Since _env var_ or _environment variables_ are variables like any others, we can perform operations such as changing their values or retrieving their values."
 ---
 
 An _environment variable_ is a variable located in the operating system’s _runtime_ layer.

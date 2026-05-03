@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Pada bagian-6 ini akan diambil dari: Larry Bernstein, Larry Bossidy, Larry Constantine, Larry Flon, Larry Wall, Larry Tesler, Laurence J. Peter, Linus Torvalds, Lisa Crispin, Louis Srygley, Marc Donner, Mario Fusco, Mark Berry, Mark Fewster, Martin Fowler, Mary Poppendieck, Max Kanat-Alexander, Melinda Varian, Mich Ravera, Michael Feathers, Michael Hartung, Michael A. Jackson, Michael Lopp, Michael Nygard, Mike Cohn, Mike Krieger, Mikko Hypponen, Milt Bryce, Neal Ford, Nicole Forsgren, Nicoll Hunt, Niklaus Wirth, Nitin Borwankar, Norm Schryer, Norman Ralph Augustine, Oscar Godson."
+description: "Pada bagian-6 ini akan diambil dari: Larry Bernstein, Larry Bossidy, Larry Constantine, Larry Flon, Larry Wall, Larry Tesler, Laurence J. Peter, Linus Torvalds, Lisa Crispin, Louis Srygley, Marc Donner, Mario Fusco, Mark Berry, Mark Fewster, Martin Fowler, Mary Poppendieck, Max Kanat-Alexander, Melinda Varian, Mich Ravera, Michael Feathers, Michael Hartung, Michael A. Jackson, Michael Lopp, Michael Nygard, Mike Cohn, Mike Krieger, Mikko Hypponen, Milt Bryce, Neal Ford, Nicole Forsgren, Nicoll Hunt, Niklaus Wirth, Nitin Borwankar, Norm Schryer, Norman Ralph Augustine, Oscar Godson."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan diterima di berbagai bidang industri software.

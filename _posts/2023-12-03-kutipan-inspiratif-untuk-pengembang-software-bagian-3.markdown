@@ -10,6 +10,7 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+description: "Pada bagian-3 ini akan diambil dari: Cem Kaner – James Bach – Bret Pettichord, Chad Fowler, Charles H. Ferguson, Chris Pine, Chris Sacca, Chris Wenham, Christopher Baus, Cyrille Martraire, Dan Bricklin, Daniel T. Barry, Daniel M. Berry, Daniel Hillis, Danny Thorpe, Dave Parnas, Dave Thomas, David Heinemeier Hansson, David Wheeler, Dennis Ritchie, Donald Knuth, Donald Norman, Donald G. Reinertsen, Doug Linder, Douglas Adams, Douglas Crockford"
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap

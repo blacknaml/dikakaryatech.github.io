@@ -11,6 +11,7 @@ tags: software-custom development software-analysis
 locale: id_ID
 related_post: related-posts.html
 excerpt: "Perangkat lunak custom (software custom) adalah perangkat lunak yang dirancang dan dikembangkan khusus untuk memenuhi kebutuhan atau spesifikasi tertentu dari suatu organisasi atau pengguna. Berbeda dengan perangkat lunak siap pakai seperti Microsoft Office atau aplikasi editing foto yang tersedia luas, perangkat lunak custom dibuat dari awal atau dimodifikasi dari framework yang ada  agar sesuai dengan kebutuhan pengguna yang unik."
+description: "Perangkat lunak custom (software custom) adalah perangkat lunak yang dirancang dan dikembangkan khusus untuk memenuhi kebutuhan atau spesifikasi tertentu dari suatu organisasi atau pengguna. Berbeda dengan perangkat lunak siap pakai seperti Microsoft Office atau aplikasi editing foto yang tersedia luas, perangkat lunak custom dibuat dari awal atau dimodifikasi dari framework yang ada  agar sesuai dengan kebutuhan pengguna yang unik."
 ---
 
 Perangkat lunak custom (software custom) adalah perangkat lunak yang dirancang dan dikembangkan khusus untuk memenuhi kebutuhan atau spesifikasi tertentu dari suatu organisasi atau pengguna.

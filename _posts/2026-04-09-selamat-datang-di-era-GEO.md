@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Pernahkah Anda menyadari bahwa banyak orang kini tidak lagi mengklik link di Google, melainkan langsung bertanya ke Gemini, ChatGPT, atau Perplexity? Jika website Anda tidak muncul dalam jawaban AI tersebut, Anda kehilangan audiens masa depan. Inilah saatnya kita menerapkan Generative Engine Optimization (GEO)."
+description: "Pernahkah Anda menyadari bahwa banyak orang kini tidak lagi mengklik link di Google, melainkan langsung bertanya ke Gemini, ChatGPT, atau Perplexity? Jika website Anda tidak muncul dalam jawaban AI tersebut, Anda kehilangan audiens masa depan. Inilah saatnya kita menerapkan Generative Engine Optimization (GEO)."
 ---
 
 Sebagai developer, kita terbiasa mengoptimasi website agar disukai oleh _Google Crawler_. Kita bicara soal _Core Web Vitals_, kecepatan _loading_, dan kata kunci. Namun, di tahun 2026 ini, peta permainan telah berubah.

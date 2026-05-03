@@ -10,6 +10,8 @@ tags: protocol software-development backend
 related_post: related-posts.html
 locale: id_ID
 toc: true
+excerpt: "SSE, Server Sent Events digunakan untuk mengimplementasikan komunikasi real-time, dimana server mengirimkan data ke klien. Untuk menerima data dari server ke klien biasanya kami membuat koneksi HTTP. Dalam kasus update berkala, kami dalam beberapa kasus sebelumnya menggunakan Polling atau Long Polling melalui HTTP request."
+description: "SSE, Server Sent Events digunakan untuk mengimplementasikan komunikasi real-time, dimana server mengirimkan data ke klien. Untuk menerima data dari server ke klien biasanya kami membuat koneksi HTTP. Dalam kasus update berkala, kami dalam beberapa kasus sebelumnya menggunakan Polling atau Long Polling melalui HTTP request."
 ---
 
 _SSE, Server Sent Events_ digunakan untuk mengimplementasikan komunikasi real-time, dimana server mengirimkan data ke klien.

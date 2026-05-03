@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Pada bagian-7 ini akan diambil dari: Pamela Zave, Patrick Collison, Patrick McKenzie, Paul Butcher, Paul Graham, Pearl Zhu, Peter Roizen, Radia Perlman, Ralph Johnson, Rasmus Lerdorf, Ray Ozzie, Rebecca Parsons, Richard Dalton, Richard Kenneth Eng, Richard Monson-Haefel, Richard E. Pattis, Richard Stallman, Rick Lemons, Rob Pike, Robert C. Martin, Robert D. Schneider, Robert X. Cringely, Roedy Green, Ron Jeffries, Sam Altman, Sandro Mancuso, Sidney Markowitz, Stephen Hawking, Steve Jobs, Steve McConnell, Steve Swartz."
+description: "Pada bagian-7 ini akan diambil dari: Pamela Zave, Patrick Collison, Patrick McKenzie, Paul Butcher, Paul Graham, Pearl Zhu, Peter Roizen, Radia Perlman, Ralph Johnson, Rasmus Lerdorf, Ray Ozzie, Rebecca Parsons, Richard Dalton, Richard Kenneth Eng, Richard Monson-Haefel, Richard E. Pattis, Richard Stallman, Rick Lemons, Rob Pike, Robert C. Martin, Robert D. Schneider, Robert X. Cringely, Roedy Green, Ron Jeffries, Sam Altman, Sandro Mancuso, Sidney Markowitz, Stephen Hawking, Steve Jobs, Steve McConnell, Steve Swartz."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan diterima di berbagai bidang industri software.

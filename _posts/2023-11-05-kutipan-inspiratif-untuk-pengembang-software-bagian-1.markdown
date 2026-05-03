@@ -10,6 +10,8 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+excerpt: "Pada bagian-1 ini akan diambil dari: Aaron Levie, Akshat Paul, Alan Cooper, Alan Kay, Alan Perlis, Alan Turing, Albert Einstein, Alex Engelberg, Aldous Huxley, Alistair Cockburn, Amir Ghahrai, Andrew Clark, Andrew Singer, Andy Hunt, Achibald Putt, Arthur C. Clarke, Atli Bjorgvin Oddson."
+description: "Pada bagian-1 ini akan diambil dari: Aaron Levie, Akshat Paul, Alan Cooper, Alan Kay, Alan Perlis, Alan Turing, Albert Einstein, Alex Engelberg, Aldous Huxley, Alistair Cockburn, Amir Ghahrai, Andrew Clark, Andrew Singer, Andy Hunt, Achibald Putt, Arthur C. Clarke, Atli Bjorgvin Oddson."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap

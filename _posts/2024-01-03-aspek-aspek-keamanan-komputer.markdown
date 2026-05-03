@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Inti dari keamanan komputer adalah melindungi komputer dan jaringannya dengan tujuan mengamankan informasi yang berada di dalamnya. Keamanan komputer sendiri meliputi beberapa aspek, yaitu privacy, integrity, authentication, availability, dan confidentiality."
+description: "Inti dari keamanan komputer adalah melindungi komputer dan jaringannya dengan tujuan mengamankan informasi yang berada di dalamnya. Keamanan komputer sendiri meliputi beberapa aspek, yaitu privacy, integrity, authentication, availability, dan confidentiality."
 ---
 
 Inti dari keamanan komputer adalah melindungi komputer dan jaringannya dengan tujuan mengamankan informasi yang berada di dalamnya. Keamanan komputer sendiri meliputi beberapa aspek, yaitu privacy, integrity, authentication, availability, dan confidentiality.

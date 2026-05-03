@@ -12,6 +12,17 @@ locale: en_US
 lang: en
 toc: true
 excerpt: "Choosing a hosting provider for your website is a mixed bag. Some are free but slow, while others are feature-rich but a headache to set up. Especially for those of you using Tailwind CSS, speed and ease of deployment are key."
+description: "Choosing a hosting provider for your website is a mixed bag. Some are free but slow, while others are feature-rich but a headache to set up. Especially for those of you using Tailwind CSS, speed and ease of deployment are key."
+item_type: "Service"
+list_items:
+  - name: "Vercel"
+    desc: "The Quickest."
+  - name: "Netlify"
+    desc: "The Quickest."
+  - name: "Cloudflare Pages"
+    desc: "The King of Speed"
+  - name: "GitHub Pages"
+    desc: "Free & Integrated."
 ---
 
 Hey developers! Finished styling your website with Tailwind CSS but not sure where to host it?

@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Pada bagian-5 ini akan diambil dari: Hans Hofmann, Henry Petroski, H. W. Kenton, Hyrum Wright, Ilan Goldstein, James Gosling, James Whittaker, Jef Raskin, Jeff Atwood, Jeff Bezos, Jeff Sutherland, Jeff Weiner, Jeremy Keith, Jessica Gaston, Jessica Kerr, Jez Humble, Jim Highsmith, Jim McCarthy, Joel Goldberg, Joel Spolsky, John Backus, John Carmack, John Cutler, John Johnson, John Maeda, John Ousterhout, John Romero, John Warnock, John F. Woods, Joshua Bloch, Kathryn Barrett, Karolina Szczur, Kelsey Hightower, Kent Beck."
+description: "Pada bagian-5 ini akan diambil dari: Hans Hofmann, Henry Petroski, H. W. Kenton, Hyrum Wright, Ilan Goldstein, James Gosling, James Whittaker, Jef Raskin, Jeff Atwood, Jeff Bezos, Jeff Sutherland, Jeff Weiner, Jeremy Keith, Jessica Gaston, Jessica Kerr, Jez Humble, Jim Highsmith, Jim McCarthy, Joel Goldberg, Joel Spolsky, John Backus, John Carmack, John Cutler, John Johnson, John Maeda, John Ousterhout, John Romero, John Warnock, John F. Woods, Joshua Bloch, Kathryn Barrett, Karolina Szczur, Kelsey Hightower, Kent Beck."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan diterima di berbagai bidang industri software.

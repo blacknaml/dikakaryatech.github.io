@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Sebagai programmer, kamu dituntut untuk menyelesaikan tugas-tugas kompleks dalam waktu yang singkat. Ditambah lagi, kamu juga perlu mengikuti perkembangan teknologi yang pesat. Tak heran, banyak programmer yang merasa kesulitan mengatur waktu mereka. "
+description: "Sebagai programmer, kamu dituntut untuk menyelesaikan tugas-tugas kompleks dalam waktu yang singkat. Ditambah lagi, kamu juga perlu mengikuti perkembangan teknologi yang pesat. Tak heran, banyak programmer yang merasa kesulitan mengatur waktu mereka. "
 ---
 
 ### Atur Waktumu, Tingkatkan Produktivitasmu: Panduan Manajemen Waktu Bagi Programmer

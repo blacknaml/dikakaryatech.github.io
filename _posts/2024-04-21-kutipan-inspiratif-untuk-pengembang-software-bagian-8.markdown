@@ -10,6 +10,7 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 excerpt: "Pada bagian-8 ini akan diambil dari: Tim Berner-Lee, Thomas C. Gale, Tom Cargill, Tom DeMarco, Tom Gilb, Tom Love, Tom Van Vleck, Tommy Collison, Tony Hoare, Vaughn Vernon, W. Edwards Deming, Ward Cunningham, Wietse Venema, Yegor Bugayenko, Anonymous – Boston Computer Museum."
+description: "Pada bagian-8 ini akan diambil dari: Tim Berner-Lee, Thomas C. Gale, Tom Cargill, Tom DeMarco, Tom Gilb, Tom Love, Tom Van Vleck, Tommy Collison, Tony Hoare, Vaughn Vernon, W. Edwards Deming, Ward Cunningham, Wietse Venema, Yegor Bugayenko, Anonymous – Boston Computer Museum."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan diterima di berbagai bidang industri software.

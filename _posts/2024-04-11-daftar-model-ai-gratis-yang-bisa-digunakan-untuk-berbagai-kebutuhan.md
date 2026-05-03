@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Kecerdasan buatan (AI) telah berkembang pesat dalam beberapa tahun terakhir, dan kini tersedia berbagai model AI gratis yang dapat digunakan untuk berbagai kebutuhan. Model-model ini dapat membantu Anda dalam berbagai tugas, seperti: Pemrosesan Bahasa Alami (NLP), Penglihatan Komputer, dan Pembelajaran Mesin."
+description: "Kecerdasan buatan (AI) telah berkembang pesat dalam beberapa tahun terakhir, dan kini tersedia berbagai model AI gratis yang dapat digunakan untuk berbagai kebutuhan. Model-model ini dapat membantu Anda dalam berbagai tugas, seperti: Pemrosesan Bahasa Alami (NLP), Penglihatan Komputer, dan Pembelajaran Mesin."
 ---
 
 Kecerdasan buatan (AI) telah berkembang pesat dalam beberapa tahun terakhir, dan kini tersedia berbagai model AI gratis yang dapat digunakan untuk berbagai kebutuhan. Model-model ini dapat membantu Anda dalam berbagai tugas, seperti:

@@ -10,6 +10,8 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+excerpt: "HTTP Compression adalah teknik kompresi data pada HTTP response, agar ukuran/size output menjadi lebih kecil adan response time lebih cepat."
+description: "HTTP Compression adalah teknik kompresi data pada HTTP response, agar ukuran/size output menjadi lebih kecil adan response time lebih cepat."
 ---
 
 _HTTP Compression_ adalah teknik kompresi data pada HTTP response, agar

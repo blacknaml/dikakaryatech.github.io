@@ -10,6 +10,7 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+description: "Pada bagian-2 ini akan diambil dari: Betsy Beyer, Bill Gates, Bram Cohen, Brian Foote, Brian P. Hogan, Bruce Schneier, Bjarne Stroustrup, Bob Frankston, Boris Beizer, Butler Lampson."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap

@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Di dunia pemrograman yang kompleks dan dinamis, algoritma bagaikan kompas bagi para insinyur perangkat lunak. Memahami dan menguasai algoritma yang tepat memungkinkan mereka untuk merancang solusi yang efisien, skalabel, dan andal. Artikel ini akan mengupas beberapa algoritma fundamental yang wajib dikuasai oleh para insinyur perangkat lunak, beserta penjelasan detail dan contoh penerapannya."
+description: "Di dunia pemrograman yang kompleks dan dinamis, algoritma bagaikan kompas bagi para insinyur perangkat lunak. Memahami dan menguasai algoritma yang tepat memungkinkan mereka untuk merancang solusi yang efisien, skalabel, dan andal. Artikel ini akan mengupas beberapa algoritma fundamental yang wajib dikuasai oleh para insinyur perangkat lunak, beserta penjelasan detail dan contoh penerapannya."
 ---
 
 Di dunia pemrograman yang kompleks dan dinamis, algoritma bagaikan kompas bagi para insinyur perangkat lunak. Memahami dan menguasai algoritma yang tepat memungkinkan mereka untuk merancang solusi yang efisien, skalabel, dan andal.

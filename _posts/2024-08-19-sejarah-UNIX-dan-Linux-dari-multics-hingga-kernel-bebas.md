@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "UNIX dan Linux, dua sistem operasi yang sangat berpengaruh dalam dunia teknologi, memiliki sejarah panjang dan saling terkait. Keduanya telah membentuk landasan bagi banyak sistem operasi modern yang kita gunakan saat ini. Mari kita telusuri sejarah kedua sistem operasi ini mulai dari akarnya hingga perkembangannya yang pesat."
+description: "UNIX dan Linux, dua sistem operasi yang sangat berpengaruh dalam dunia teknologi, memiliki sejarah panjang dan saling terkait. Keduanya telah membentuk landasan bagi banyak sistem operasi modern yang kita gunakan saat ini. Mari kita telusuri sejarah kedua sistem operasi ini mulai dari akarnya hingga perkembangannya yang pesat."
 ---
 
 UNIX dan Linux, dua sistem operasi yang sangat berpengaruh dalam dunia teknologi, memiliki sejarah panjang dan saling terkait. Keduanya telah membentuk landasan bagi banyak sistem operasi modern yang kita gunakan saat ini. Mari kita telusuri sejarah kedua sistem operasi ini mulai dari akarnya hingga perkembangannya yang pesat.

@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "SSL, Secure Sockets Layer adalah standar untuk pengamanan komunikasi melalui internet. Data atau informasi yang sedang dikomunikasikan dari sebuah system ke system lain akan diproteksi dengan cara mengacak informasi tersebut menggunakan algoritma enkripsi."
+description: "SSL, Secure Sockets Layer adalah standar untuk pengamanan komunikasi melalui internet. Data atau informasi yang sedang dikomunikasikan dari sebuah system ke system lain akan diproteksi dengan cara mengacak informasi tersebut menggunakan algoritma enkripsi."
 ---
 
 ### SSL

@@ -9,6 +9,7 @@ categories: history
 tags: hardware iot
 locale: en_US
 toc: true
+description: "iPod is a digital mp3 / mp4 player developed and marketed by Apple Inc., an American consumer electronics multinational corporation. During their research, Apple found that in comparison to available camcorders, digital cameras, and organizers; digital music players recorded poor sales, primarily due to their awful user interfaces."
 ---
 
 iPod is a digital mp3 / mp4 player developed and marketed by Apple Inc., an American consumer electronics multinational corporation. During their research, Apple found that in comparison to available camcorders, digital cameras, and organizers; digital music players recorded poor sales, primarily due to their awful user interfaces.

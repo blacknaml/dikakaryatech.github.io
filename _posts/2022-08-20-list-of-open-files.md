@@ -9,6 +9,7 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+description: "lsof adalah perintah untuk mengetahui program/software yang sedang mengakses file tertentu."
 ---
 
 <em>lsof</em> adalah perintah untuk mengetahui program/software yang sedang mengakses file tertentu.

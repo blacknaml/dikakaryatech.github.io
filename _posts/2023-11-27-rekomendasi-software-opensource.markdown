@@ -11,6 +11,7 @@ related_post: related-posts.html
 locale: id_ID
 toc: true
 excerpt: "Open Source Software atau Perangkat lunak sumber terbuka adalah jenis perangkat lunak yang kode sumber-nya terbuka untuk dipelajari, diubah, ditingkatkan dan disebarluaskan."
+description: "Open Source Software atau Perangkat lunak sumber terbuka adalah jenis perangkat lunak yang kode sumber-nya terbuka untuk dipelajari, diubah, ditingkatkan dan disebarluaskan."
 ---
 
 _Open Source Software_ atau Perangkat lunak sumber terbuka adalah jenis perangkat lunak yang kode sumber-nya terbuka untuk dipelajari,

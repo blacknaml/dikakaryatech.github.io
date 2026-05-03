@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Pada bagian-4 ini akan diambil dari: Edsger W. Dijkstra, Elisabeth Hendrickson, Elizabeth Zwicky, Elon Musk, Eric Evans, Eric S. Raymond, Federico Toledo, Felix von Leitner, Filipe Fortes, Fred Brooks, Fred Heath, Glenford J. Myers, Grace Hopper, Grady Booch, Greg McKeown, Guido Van Rossum, Gordon Bell."
+description: "Pada bagian-4 ini akan diambil dari: Edsger W. Dijkstra, Elisabeth Hendrickson, Elizabeth Zwicky, Elon Musk, Eric Evans, Eric S. Raymond, Federico Toledo, Felix von Leitner, Filipe Fortes, Fred Brooks, Fred Heath, Glenford J. Myers, Grace Hopper, Grady Booch, Greg McKeown, Guido Van Rossum, Gordon Bell."
 ---
 
 Di blog ini, kami mengumpulkan kata-kata inspiratif dalam bahasa Inggris yang kami anggap bijaksana dan masih dapat diterapkan. Kutipan kata-kata ini dari orang-orang yang terkenal dan diterima di berbagai bidang industri software.

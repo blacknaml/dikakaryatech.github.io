@@ -11,6 +11,7 @@ tags: software-architect
 related_post: related-posts.html
 locale: id_ID
 excerpt: "Suatu perusahaan memiliki banyak aplikasi di berbagai departemen, domain bisnis, tim, dan proyek. Dari sisi teknis, aplikasi dibangun secara independen, dengan bahasa dan platform berbeda. Terlebih lagi, aplikasi ini bisa berasal dari waktu pengembangan perangkat lunak yang berbeda."
+description: "Suatu perusahaan memiliki banyak aplikasi di berbagai departemen, domain bisnis, tim, dan proyek. Dari sisi teknis, aplikasi dibangun secara independen, dengan bahasa dan platform berbeda. Terlebih lagi, aplikasi ini bisa berasal dari waktu pengembangan perangkat lunak yang berbeda."
 ---
 
 Suatu perusahaan memiliki banyak aplikasi di berbagai departemen, domain bisnis, tim, dan proyek. Dari sisi teknis, aplikasi dibangun secara independen, dengan bahasa dan platform berbeda. Terlebih lagi, aplikasi ini bisa berasal dari waktu pengembangan perangkat lunak yang berbeda.

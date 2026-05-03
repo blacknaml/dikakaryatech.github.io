@@ -10,6 +10,7 @@ categories: software development
 tags: ops server
 locale: id_ID
 toc: true
+description: "Operations Team / Tim Ops sangat penting untuk menjaga sistem perangkat lunak berjalan dengan lancar. Meskipun beberapa aspek operasi dapat dan harus diotomatisasi, manusialah yang harus mengatur otomatisasi tersebut terlebih dahulu dan memastikannya berfungsi dengan benar. Telah disarankan bahwa,"
 ---
 
 _Operations Team_ / Tim Ops sangat penting untuk menjaga sistem perangkat lunak berjalan dengan lancar. Meskipun beberapa aspek operasi dapat dan harus diotomatisasi, manusialah yang harus mengatur otomatisasi tersebut terlebih dahulu dan memastikannya berfungsi dengan benar. Telah disarankan bahwa,

@@ -11,6 +11,17 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Memilih rumah untuk website itu gampang-gampang susah. Ada yang gratis tapi lambat, ada yang canggih tapi konfigurasinya bikin pusing. Khusus untuk kamu yang pakai Tailwind CSS, kecepatan dan kemudahan deployment adalah kunci."
+description: "Memilih rumah untuk website itu gampang-gampang susah. Ada yang gratis tapi lambat, ada yang canggih tapi konfigurasinya bikin pusing. Khusus untuk kamu yang pakai Tailwind CSS, kecepatan dan kemudahan deployment adalah kunci."
+item_type: "Service"
+list_items:
+  - name: "Vercel"
+    desc: "Optimasi terbaik untuk Next.js."
+  - name: "Netlify"
+    desc: "Deployment statis simpel."
+  - name: "Cloudflare Pages"
+    desc: "Deployment statis cepat."
+  - name: "GitHub Pages"
+    desc: "Deployment statis gratis."
 ---
 
 Halo sobat developer! Sudah beres styling website pakai Tailwind CSS tapi bingung mau dipajang di mana?

@@ -9,6 +9,8 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+excerpt: "Salah satu perbedaan pendapat tentang proses pengembangan adalah antara waterfall dan iteratif. Kedua istilah tersebut sering disalah artikan, khususnya karena iteratif sering dipandang lebih modern daripada proses waterfall. Hasilnya adalah banyak proyek yang mengaku menggunakan iteratif padahal sebenarnya menggunakan waterfall."
+description: "Salah satu perbedaan pendapat tentang proses pengembangan adalah antara waterfall dan iteratif. Kedua istilah tersebut sering disalah artikan, khususnya karena iteratif sering dipandang lebih modern daripada proses waterfall. Hasilnya adalah banyak proyek yang mengaku menggunakan iteratif padahal sebenarnya menggunakan waterfall."
 ---
 
 Salah satu perbedaan pendapat tentang proses pengembangan adalah antara waterfall dan iteratif. Kedua istilah tersebut sering disalah

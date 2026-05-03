@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Model open-source mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang."
+description: "Model open-source mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang."
 ---
 
 Model open-source mengubah lanskap LLM yang menjanjikan keamanan yang lebih baik, efisiensi biaya, dan penyesuaian untuk penerapan AI. Meskipun ChatGPT memiliki lebih dari 180 juta pengguna, solusi on-premises telah menguasai lebih dari separuh pasar LLM, dengan proyeksi yang mengindikasikan pertumbuhan yang berkelanjutan di tahun-tahun mendatang. Trennya jelas: sejak awal tahun 2023, rilis model open-source baru telah meningkat hampir dua kali lipat dibandingkan dengan model closed-source.

@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Dalam ekosistem SEO modern, kita sedang menyaksikan pergeseran paradigma yang cukup drastis. Jika dulu indikator kesuksesan sebuah konten diukur dari seberapa banyak klik yang masuk ke website, kini tantangannya jauh lebih kompleks. Kehadiran AI Overviews (SGE), Featured Snippets, dan *Knowledge Panels* melahirkan fenomena yang kita sebut sebagai Zero-Click Search."
+description: "Dalam ekosistem SEO modern, kita sedang menyaksikan pergeseran paradigma yang cukup drastis. Jika dulu indikator kesuksesan sebuah konten diukur dari seberapa banyak klik yang masuk ke website, kini tantangannya jauh lebih kompleks. Kehadiran AI Overviews (SGE), Featured Snippets, dan *Knowledge Panels* melahirkan fenomena yang kita sebut sebagai Zero-Click Search."
 ---
 
 Dalam ekosistem SEO modern, kita sedang menyaksikan pergeseran paradigma yang cukup drastis. Jika dulu indikator kesuksesan sebuah konten diukur dari seberapa banyak klik yang masuk ke website, kini tantangannya jauh lebih kompleks. Kehadiran _AI Overviews_ (SGE), _Featured Snippets_, dan _Knowledge Panels_ melahirkan fenomena yang kita sebut sebagai **Zero-Click Search**.

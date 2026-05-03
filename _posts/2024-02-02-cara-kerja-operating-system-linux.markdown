@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Linux, sering disebut sebagai alternatif yang kuat dan fleksibel untuk Windows dan macOS, telah menjadi pilihan utama bagi para pengguna komputer yang melek teknologi. Namun, bagi pemula, dunia Linux mungkin terlihat rumit dan asing. Artikel ini bertujuan untuk membuka tabir dan menjelaskan cara kerja operating system Linux secara gamblang."
+description: "Linux, sering disebut sebagai alternatif yang kuat dan fleksibel untuk Windows dan macOS, telah menjadi pilihan utama bagi para pengguna komputer yang melek teknologi. Namun, bagi pemula, dunia Linux mungkin terlihat rumit dan asing. Artikel ini bertujuan untuk membuka tabir dan menjelaskan cara kerja operating system Linux secara gamblang."
 ---
 
 Linux, sering disebut sebagai alternatif yang kuat dan fleksibel untuk Windows dan macOS, telah menjadi pilihan utama bagi para pengguna komputer yang melek teknologi. Namun, bagi pemula, dunia Linux mungkin terlihat rumit dan asing. Artikel ini bertujuan untuk membuka tabir dan menjelaskan cara kerja operating system Linux secara gamblang.

@@ -11,6 +11,7 @@ tags: software-development estimation
 related_post: related-posts.html
 locale: id_ID
 excerpt: "Pada proyek perangkat lunak, estimasi biaya dan usaha proyek mempunyai kesulitan tersendiri karena karakteristik-karakteristik perangkat lunak yang berbeda dengan proyek fisik. Kesulitan-kesulitan yang sering dihadapi dalam estimasi sangat berkaitan dengan sifat alami perangkat lunak, khususnya kompleksitas dan keabstrakan. Selain itu pengembangan perangkat lunak merupakan kegiatan yang lebih banyak dilakukan secara intensif oleh manusia."
+description: "Pada proyek perangkat lunak, estimasi biaya dan usaha proyek mempunyai kesulitan tersendiri karena karakteristik-karakteristik perangkat lunak yang berbeda dengan proyek fisik. Kesulitan-kesulitan yang sering dihadapi dalam estimasi sangat berkaitan dengan sifat alami perangkat lunak, khususnya kompleksitas dan keabstrakan. Selain itu pengembangan perangkat lunak merupakan kegiatan yang lebih banyak dilakukan secara intensif oleh manusia."
 ---
 
 Pengukuran memungkinkan kita mendapatkan informasi tentang proses dan proyek dengan suatu mekanisme evaluasi obyektif. Lord Kevin pernah mengatakan,

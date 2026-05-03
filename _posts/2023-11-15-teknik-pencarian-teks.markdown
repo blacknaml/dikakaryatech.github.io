@@ -10,6 +10,7 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+description: "Pencarian teks penuh merupakan salah satu metode pencarian dokumen berbasis teks dengan mencocokkan kata kunci pencarian tiap dokumen yang selanjutnya akan ditelusuri ke seluruh isi dokumen pencarian. Cara kerja metode ini adalah dengan mencari dokumen yang mengandung kata kunci yang diberikan oleh pengguna. Hasil dari pencarian kemudian diurutkan sesuai frekuensi kemunculan kata dalam dokumen. Semakin banyak kata kunci ditemukan di dalam dokumen, semakin tinggi peringkat dokumen tersebut, yang berarti semakin tinggi kemungkinan dokumen tersebut merupakan dokumen yang dicari."
 ---
 
 Beberapa teknik pencarian telah dikembangkan, antara lain pencarian teks penuh, pencarian dengan metadata, dan pencarian dengan jaringan semantik.

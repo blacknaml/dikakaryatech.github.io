@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Breadth-First Search (BFS), atau Pencarian Melebar Pertama, merupakan algoritma fundamental dalam ilmu komputer untuk menjelajahi struktur data berbasis graf atau pohon secara sistematis. Algoritma ini bekerja dengan cara mengunjungi semua simpul pada level (kedalaman) yang sama terlebih dahulu sebelum berpindah ke level berikutnya, menghasilkan eksplorasi menyeluruh dan terstruktur."
+description: "Breadth-First Search (BFS), atau Pencarian Melebar Pertama, merupakan algoritma fundamental dalam ilmu komputer untuk menjelajahi struktur data berbasis graf atau pohon secara sistematis. Algoritma ini bekerja dengan cara mengunjungi semua simpul pada level (kedalaman) yang sama terlebih dahulu sebelum berpindah ke level berikutnya, menghasilkan eksplorasi menyeluruh dan terstruktur."
 ---
 
 **Breadth-First Search (BFS)**, atau Pencarian Melebar Pertama, merupakan algoritma fundamental dalam ilmu komputer untuk menjelajahi struktur data berbasis graf atau pohon secara sistematis. Algoritma ini bekerja dengan cara mengunjungi semua simpul pada level (kedalaman) yang sama terlebih dahulu sebelum berpindah ke level berikutnya, menghasilkan eksplorasi menyeluruh dan terstruktur.

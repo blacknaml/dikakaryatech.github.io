@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Di era digital ini, komunikasi menjadi kunci utama dalam kelancaran dan kemajuan bisnis. Pelanggan, mitra, dan karyawan Anda membutuhkan cara yang mudah dan efisien untuk terhubung dan berkolaborasi. Di sinilah IPPBX (Integrated Private Branch Exchange) hadir sebagai solusi komunikasi terpadu yang mumpuni untuk bisnis Anda."
+description: "Di era digital ini, komunikasi menjadi kunci utama dalam kelancaran dan kemajuan bisnis. Pelanggan, mitra, dan karyawan Anda membutuhkan cara yang mudah dan efisien untuk terhubung dan berkolaborasi. Di sinilah IPPBX (Integrated Private Branch Exchange) hadir sebagai solusi komunikasi terpadu yang mumpuni untuk bisnis Anda."
 ---
 
 ### Memasuki Era Digital dengan Komunikasi yang Lebih Efektif

@@ -11,6 +11,7 @@ language: en
 locale: en_US
 toc: true
 lang: en
+description: "Voice over Internet Protocol is a new way to talk on your phone through your broadband internet connection. A VoIP router is needed to help you use the same phone you have been using before your VoIP connection. If you have voice over internet protocol available to you, you'll need a router to sort of make it all happen. It's a small device that will take a little time to get used to, but once you've used it just a couple times you'll be able to use the whole system without a second thought."
 ---
 
 Voice over Internet Protocol [VoIP][voip-ref] is a new way to talk on your phone through your broadband internet connection. A VoIP router is needed to help you use the same phone you have been using before your VoIP connection. If you have voice over internet protocol available to you, you'll need a router to sort of make it all happen. It's a small device that will take a little time to get used to, but once you've used it just a couple times you'll be able to use the whole system without a second thought.

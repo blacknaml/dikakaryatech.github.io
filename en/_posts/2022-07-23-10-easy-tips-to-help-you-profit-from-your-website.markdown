@@ -11,6 +11,7 @@ language: en
 locale: en_US
 toc: true
 lang: en
+description: "Hundreds of thousands of webmasters across the world make money online with their websites. Why not you? Here are 10 easy tips that you can use on your website to make it profitable. As with any good website however, you first need quality original content!"
 ---
 
 Hundreds of thousands of webmasters across the world make money online with their websites. Why not you? Here are 10 easy tips that you can use on your website to make it profitable. As with any good website however, you first need quality original content!

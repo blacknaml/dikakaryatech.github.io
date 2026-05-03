@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "BERT, singkatan dari Bidirectional Encoder Representations from Transformers, merupakan model bahasa revolusioner yang dikembangkan Google AI pada tahun 2018. Kemampuannya dalam memahami dan memproses bahasa alami telah membuka gerbang baru dalam berbagai bidang, seperti pemrosesan bahasa alami (NLP), pencarian informasi, dan kecerdasan buatan (AI)."
+description: "BERT, singkatan dari Bidirectional Encoder Representations from Transformers, merupakan model bahasa revolusioner yang dikembangkan Google AI pada tahun 2018. Kemampuannya dalam memahami dan memproses bahasa alami telah membuka gerbang baru dalam berbagai bidang, seperti pemrosesan bahasa alami (NLP), pencarian informasi, dan kecerdasan buatan (AI)."
 ---
 
 **BERT**, singkatan dari **Bidirectional Encoder Representations from Transformers**, merupakan model bahasa revolusioner yang dikembangkan Google AI pada tahun 2018. Kemampuannya dalam memahami dan memproses bahasa alami telah membuka gerbang baru dalam berbagai bidang, seperti pemrosesan bahasa alami (NLP), pencarian informasi, dan kecerdasan buatan (AI).

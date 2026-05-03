@@ -10,6 +10,8 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+excerpt: "Environment variable merupakan variabel yang berada di lapisan runtime sistem operasi. Karena env var atau environment variable merupakan variabel seperti pada umumnya, maka kita bisa melakukan operasi seperti mengubah nilainya atau mengamblin nilainya."
+description: "Environment variable merupakan variabel yang berada di lapisan runtime sistem operasi. Karena env var atau environment variable merupakan variabel seperti pada umumnya, maka kita bisa melakukan operasi seperti mengubah nilainya atau mengamblin nilainya."
 ---
 
 _Environment variable_ merupakan variabel yang berada di lapisan _runtime_ sistem operasi.

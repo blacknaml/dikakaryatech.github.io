@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Redis adalah penyimpanan data open-source yang berfokus pada kinerja tinggi dan kemudahan penggunaan. Ia beroperasi dalam memori (in-memory) untuk menyediakan akses data yang sangat cepat, membuatnya ideal untuk aplikasi real-time dan yang membutuhkan performa tinggi. Redis dapat digunakan sebagai database, cache, message broker, dan struktur data, membuatnya serbaguna untuk berbagai macam kebutuhan."
+description: "Redis adalah penyimpanan data open-source yang berfokus pada kinerja tinggi dan kemudahan penggunaan. Ia beroperasi dalam memori (in-memory) untuk menyediakan akses data yang sangat cepat, membuatnya ideal untuk aplikasi real-time dan yang membutuhkan performa tinggi. Redis dapat digunakan sebagai database, cache, message broker, dan struktur data, membuatnya serbaguna untuk berbagai macam kebutuhan."
 ---
 
 Redis adalah penyimpanan data open-source yang berfokus pada kinerja tinggi dan kemudahan penggunaan. Ia beroperasi dalam memori (in-memory) untuk menyediakan akses data yang sangat cepat, membuatnya ideal untuk aplikasi real-time dan yang membutuhkan performa tinggi. Redis dapat digunakan sebagai database, cache, message broker, dan struktur data, membuatnya serbaguna untuk berbagai macam kebutuhan.

@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Di era modern, pengembangan perangkat lunak telah menjadi semakin kompleks dan terdistribusi. Aplikasi modern sering kali terdiri dari banyak microservice yang berjalan di berbagai server dan container. Hal ini dapat membuat proses deployment, manajemen, dan skalabilitas aplikasi menjadi rumit dan memakan waktu. Di sinilah Docker hadir untuk membantu."
+description: "Di era modern, pengembangan perangkat lunak telah menjadi semakin kompleks dan terdistribusi. Aplikasi modern sering kali terdiri dari banyak microservice yang berjalan di berbagai server dan container. Hal ini dapat membuat proses deployment, manajemen, dan skalabilitas aplikasi menjadi rumit dan memakan waktu. Di sinilah Docker hadir untuk membantu."
 ---
 
 Di era modern, pengembangan perangkat lunak telah menjadi semakin kompleks dan terdistribusi.

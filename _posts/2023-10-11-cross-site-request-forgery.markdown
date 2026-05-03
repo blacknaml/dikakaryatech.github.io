@@ -10,6 +10,8 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+excerpt: "Cross-Site Request Forgery (CSRF) adalah salah satu tehnik hacking yang dilakukan dengan cara mengeksekusi perintah yang seharusnya tidak diizinkan, tetapi output yang dihasilkan sesuai dengan yang seharusnya. Contoh serangan jenis ini adalah mencoba untuk login lewat media selain web browser, seperti menggunakna CURL, menembak langusng endpoint login, dan banyak contoh lainnya."
+description: "Cross-Site Request Forgery (CSRF) adalah salah satu tehnik hacking yang dilakukan dengan cara mengeksekusi perintah yang seharusnya tidak diizinkan, tetapi output yang dihasilkan sesuai dengan yang seharusnya. Contoh serangan jenis ini adalah mencoba untuk login lewat media selain web browser, seperti menggunakna CURL, menembak langusng endpoint login, dan banyak contoh lainnya."
 ---
 
 _Cross-Site Request Forgery_ (CSRF) adalah salah satu tehnik hacking yang dilakukan dengan cara

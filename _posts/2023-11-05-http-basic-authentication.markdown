@@ -10,6 +10,8 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
+excerpt: "HTTP Basic Auth adalah salah satu tehnik otentikasi http request. Metode ini membutuhkan informasi username dan password untuk disisipkan kedalam header request (dengan format tertentu), jadi cukup sederhana, tidak memerlukan cookies atau session."
+description: "HTTP Basic Auth adalah salah satu tehnik otentikasi http request. Metode ini membutuhkan informasi username dan password untuk disisipkan kedalam header request (dengan format tertentu), jadi cukup sederhana, tidak memerlukan cookies atau session."
 ---
 
 _HTTP Basic Auth_ adalah salah satu tehnik otentikasi http request. Metode ini membutuhkan informasi

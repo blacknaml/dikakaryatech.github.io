@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Di dunia software engineer yang penuh tantangan dan tuntutan, fokus dan kejernihan pikiran menjadi kunci utama. Berjam-jam di depan layar, deadline yang ketat, dan kompleksitas kode dapat menguras energi dan fokus. Di sinilah berlari hadir sebagai solusi yang tak terduga."
+description: "Di dunia software engineer yang penuh tantangan dan tuntutan, fokus dan kejernihan pikiran menjadi kunci utama. Berjam-jam di depan layar, deadline yang ketat, dan kompleksitas kode dapat menguras energi dan fokus. Di sinilah berlari hadir sebagai solusi yang tak terduga."
 ---
 
 Di dunia software engineer yang penuh tantangan dan tuntutan, fokus dan kejernihan pikiran menjadi kunci utama. Berjam-jam di depan layar, deadline yang ketat, dan kompleksitas kode dapat menguras energi dan fokus. Di sinilah berlari hadir sebagai solusi yang tak terduga.

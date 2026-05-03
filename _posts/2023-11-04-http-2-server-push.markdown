@@ -11,6 +11,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "HTTP/2 adalah versi terbaru protokol HTTP, dikembangkan dari protokol SPDY yang diinisiasi oleh Google. Protokol ini sekarang sudah kompatibel dengan banyak web browser diantaranya: Chrome, Opera, Firefox 9, IE 11, Safari, Silk, dan Edge."
+description: "HTTP/2 adalah versi terbaru protokol HTTP, dikembangkan dari protokol SPDY yang diinisiasi oleh Google. Protokol ini sekarang sudah kompatibel dengan banyak web browser diantaranya: Chrome, Opera, Firefox 9, IE 11, Safari, Silk, dan Edge."
 ---
 
 ### HTTP/2
