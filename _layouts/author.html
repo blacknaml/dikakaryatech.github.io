@@ -33,7 +33,11 @@ language: id
       </div>
       <div class="col-md-7 default info">
         <h4>{{ page.position }}</h4>
-        <h2>{{ page.name }}</h2>
+        {% if page.website %}
+          <h2><a href="{{ page.website }}" target="_blank">{{ page.name }}</a></h2>
+        {% else %}
+          <h2>{{ page.name }}</h2>
+        {% endif %}
         <p>
           {{ content }}
         </p>
