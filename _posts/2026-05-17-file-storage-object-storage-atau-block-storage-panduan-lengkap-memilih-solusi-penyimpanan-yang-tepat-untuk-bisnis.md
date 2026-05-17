@@ -134,7 +134,7 @@ Setelah memahami cara kerja masing-masing, inilah perbandingan langsung berdasar
 {: .table .table-bordered }
 </div>
 
-### Penjelasan Dimensi Kritis
+### Tiga Hal yang Wajib Diperhatikan
 
 **Performa vs Biaya** adalah trade-off utama. Block Storage memberikan performa terbaik tetapi dengan harga tertinggi. Object Storage menawarkan biaya terendah tetapi tidak cocok untuk workload yang butuh latensi rendah. File Storage berada di tengah-tengah.
 
