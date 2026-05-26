@@ -8,20 +8,11 @@ categories: [cloud, infrastructure, storage]
 tags: [cloud-storage, it-infrastructure, cloud-architecture, it-decision-making]
 related_post: related-posts.html
 language: en
-locale: en_EN
+locale: en_US
 lang: en
 toc: true
 excerpt: "Imagine this scenario: Your team has just finished migrating hundred of terabytes of data to the cloud. The budget has been approved, infrastructure up and running, and then,three months later, you realize the database is running slowly, the cloud bill has doubled compared to estimates, and the develeper team is complaining that file access does not meet their application needs."
 description: "A practical guide for IT Manager and Decision Maker on choosing between File Sotrage, Object Storage, an Block Storage. Includes comparison, real-world use cases, and decission-making checklist."
-reading_time: 12
-item_type: "Storage Solution"
-list_items:
-  - name: "File Storage"
-    desc: "Digital Filling Cabinet"
-  - name: "Object Storage"
-    desc: "Warehouse with Barcode System"
-  - name: "Block Storage"
-    desc: "High Performance Virtual Hard Disk"
 ---
 
 Imagine this scenario: Your team has just finished migrating hundred of terabytes of data to the cloud. The budget has been approved, infrastructure up and running, and then,three months later, you realize the database is running slowly, the cloud bill has doubled compared to estimates, and the develeper team is complaining that file access does not meet their application needs.
