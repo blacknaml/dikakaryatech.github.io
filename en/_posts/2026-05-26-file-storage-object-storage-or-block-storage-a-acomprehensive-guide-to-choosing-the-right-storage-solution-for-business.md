@@ -204,22 +204,22 @@ The good news is: you don’t have to choose just one. **Most modern enterprises
 
 ### Reference Architecture: Mid-Scale E-Commerce Platform
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    E-COMMERCE APPLICATION               │
-├─────────────────┬───────────────────┬───────────────────┤
-│  BLOCK STORAGE  │   OBJECT STORAGE  │   FILE STORAGE    │
-│                 │                   │                   │
-│ • Database      │ • Product photos  │ • Shared documents     │
-│   MySQL/Postgres│ • Video reviews    │   internal team    │
-│ • Server OS disk│ • Database backup       │ • Templates        │
-│ • Swap & cache  │ • Application logs    │   invoices/reports │
-│                 │ • Transaction archives │                   │
-│                 │                   │                   │
-│ Priority:      │ Priority:        │ Priority:        │
-│ PERFORMANCE        │ COST & SCALE     │ EASE OF ACCESS   │
-└─────────────────┴───────────────────┴───────────────────┘
-```
+<div class="table-responsive" markdown="1">
+│                    E-COMMERCE APPLICATION                  │
+|:---------------------------------------------------------: |
+│  BLOCK STORAGE  │   OBJECT STORAGE  │   FILE STORAGE       │
+│                 │                   │                      │
+│ • Database      │ • Product photos  │ • Shared documents   │
+│   MySQL/Postgres│ • Video reviews   │   internal team      │
+│ • Server OS disk│ • Database backup │ • Templates          │
+│ • Swap & cache  │ • Application logs│   invoices/reports   │
+│                 │ • Transaction archives │                 │
+│                 │                   │                      │
+│ Priority:       │ Priority:         │ Priority:            │
+│ PERFORMANCE     │ COST & SCALE      │ EASE OF ACCESS       │
+| :--------------:| :--------------:  |  :--------------:    |
+{: .table .table-bordered }
+</div>
 
 ### Tiering Principles: Hot, Warm, and Cold Storage
 
