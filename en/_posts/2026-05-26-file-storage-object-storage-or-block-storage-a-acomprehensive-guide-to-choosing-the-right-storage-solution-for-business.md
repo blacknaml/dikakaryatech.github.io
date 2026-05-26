@@ -205,19 +205,12 @@ The good news is: you don’t have to choose just one. **Most modern enterprises
 ### Reference Architecture: Mid-Scale E-Commerce Platform
 
 <div class="table-responsive" markdown="1">
-│                    E-COMMERCE APPLICATION                  │
-|:---------------------------------------------------------: |
-│  BLOCK STORAGE  │   OBJECT STORAGE  │   FILE STORAGE       │
-│                 │                   │                      │
-│ • Database      │ • Product photos  │ • Shared documents   │
-│   MySQL/Postgres│ • Video reviews   │   internal team      │
-│ • Server OS disk│ • Database backup │ • Templates          │
-│ • Swap & cache  │ • Application logs│   invoices/reports   │
-│                 │ • Transaction archives │                 │
-│                 │                   │                      │
-│ Priority:       │ Priority:         │ Priority:            │
-│ PERFORMANCE     │ COST & SCALE      │ EASE OF ACCESS       │
-| :--------------:| :--------------:  |  :--------------:    |
+| E-COMMERCE APPLICATION |  |  |
+|:---:|:---:|:---:|
+| **BLOCK STORAGE** | **OBJECT STORAGE** | **FILE STORAGE** |
+| Database (MySQL/Postgres)<br>Server OS disk<br>Swap & cache | Product photos<br>Video reviews<br>Database backups<br>Application logs<br>Transaction archives | Shared internal documents<br>Team collaboration files<br>Templates<br>Invoices / reports |
+| **Priority:** PERFORMANCE | **Priority:** COST & SCALE | **Priority:** EASE OF ACCESS |
+|:---:|:---:|:---:|
 {: .table .table-bordered }
 </div>
 
