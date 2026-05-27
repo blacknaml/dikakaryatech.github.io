@@ -6,7 +6,7 @@ author: debi
 categories: [software, development]
 tags: [laravel, react, inertia, saas, web-development]
 image: /assets/img/laravel-react-inertia.webp # add a cover image
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en

@@ -6,7 +6,7 @@ date: 2022-07-23 12:20:53 +0700
 image: /assets/img/growth.webp
 categories: other
 tags: business english
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 toc: true

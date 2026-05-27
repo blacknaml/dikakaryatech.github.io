@@ -6,7 +6,7 @@ author: debi
 categories: [software, development]
 tags: [laravel, ai, workflow, software-engineering]
 image: /assets/img/laravel-ai-workflow.webp
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en

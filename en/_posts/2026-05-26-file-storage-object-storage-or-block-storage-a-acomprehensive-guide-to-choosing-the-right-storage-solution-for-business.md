@@ -6,7 +6,7 @@ date: 2026-05-26 09:00:00 +0700
 image: /assets/img/storage-comparison-banner.webp
 categories: [cloud, infrastructure, storage]
 tags: [cloud-storage, it-infrastructure, cloud-architecture, it-decision-making]
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en

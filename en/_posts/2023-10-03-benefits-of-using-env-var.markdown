@@ -6,7 +6,7 @@ date: 2023-10-03 03:23:53 +0700
 image: /assets/img/system-developers-analyzing-code-1500x800.webp
 categories: software development
 tags: programming development
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en

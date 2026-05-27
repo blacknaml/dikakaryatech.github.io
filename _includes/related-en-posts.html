@@ -1,0 +1,10 @@
+{% assign related_posts = site.posts | where: "lang", "en" | where_exp: "post",
+"post.url != page.url" %} {% if related_posts.size >= 1 %}
+<h5>Related Posts</h5>
+<ul>
+  {% assign count = 0 %} {% for related_post in related_posts %} {% if count < 5
+  %}
+  <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+  {% assign count = count | plus: 1 %} {% endif %} {% endfor %}
+</ul>
+{% endif %}

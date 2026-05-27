@@ -6,7 +6,7 @@ date: 2022-08-03 09:20:53 +0700
 image: /assets/img/laptop-computer-1500x1000.webp
 categories: jekyll
 tags: voip server english
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 toc: true

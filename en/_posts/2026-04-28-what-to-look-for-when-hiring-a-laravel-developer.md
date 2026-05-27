@@ -6,7 +6,7 @@ author: debi
 categories: [business, hiring]
 tags: [laravel, hiring, web-development, freelance, business]
 image: /assets/img/hiring-developer.webp
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en

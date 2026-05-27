@@ -6,7 +6,7 @@ date: 2026-05-27 09:49:39 +0700
 image: /assets/img/event-laptop.webp
 categories: software development
 tags: protocol software-development backend
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en

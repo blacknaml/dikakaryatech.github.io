@@ -6,6 +6,7 @@ author: roberto
 date: 2023-11-10 09:20:53 +0700
 image: /assets/img/ipod.webp
 categories: history
+related_post: related-en-posts.html
 tags: hardware iot
 locale: en_US
 toc: true

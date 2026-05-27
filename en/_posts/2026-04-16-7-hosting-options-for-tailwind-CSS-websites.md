@@ -6,7 +6,7 @@ date: 2026-04-16 13:13:13 +0700
 image: /assets/img/tailwind.webp
 categories: web development
 tags: front-end style web-design
-related_post: related-posts.html
+related_post: related-en-posts.html
 language: en
 locale: en_US
 lang: en
