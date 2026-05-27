@@ -3,7 +3,7 @@ layout: post
 title: "Mengapa e-Logbook Wajib Ada di SIM Diklat Rumah Sakit Anda?"
 author: debi
 date: 2026-05-27 09:00:00 +0700
-image: /assets/img/e-logbook-infographis.webp
+image: /assets/img/e-logbook-horizontal.webp
 categories: [diklat, software, sim, software development]
 tags: [sim-diklat, software-development, software-custom]
 related_post: related-posts.html
