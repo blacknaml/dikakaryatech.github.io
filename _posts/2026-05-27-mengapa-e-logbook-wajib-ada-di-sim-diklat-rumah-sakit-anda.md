@@ -5,7 +5,14 @@ author: debi
 date: 2026-05-27 09:00:00 +0700
 image: /assets/img/e-logbook-horizontal.webp
 categories: [diklat, software, sim, software development]
-tags: [sim-diklat, software-development, software-custom]
+tags:
+  [
+    SIM Diklat,
+    SIM Kordik,
+    Aplikasi Rumah Sakit,
+    Manajemen Rumah Sakit Pendidikan,
+    Akreditasi RS,
+  ]
 related_post: related-posts.html
 language: id
 locale: id_ID
