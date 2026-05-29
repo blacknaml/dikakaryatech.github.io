@@ -17,7 +17,7 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
-excerpt: "Menjadi Rumah Sakit Pendidikan (_Teaching Hospital_) atau fasilitas kesehatan yang menerima ribuan peserta didik—mulai dari dokter residen (PPDS), dokter muda (Koas), hingga mahasiswa keperawatan—adalah sebuah pencapaian prestisius. Namun, di balik status tersebut, ada beban administratif raksasa yang sering kali tidak terlihat oleh pasien."
+excerpt: "Menjadi Rumah Sakit Pendidikan (Teaching Hospital) atau fasilitas kesehatan yang menerima ribuan peserta didik—mulai dari dokter residen (PPDS), dokter muda (Koas), hingga mahasiswa keperawatan—adalah sebuah pencapaian prestisius. Namun, di balik status tersebut, ada beban administratif raksasa yang sering kali tidak terlihat oleh pasien."
 description: "Tinggalkan penjadwalan manual. Ketahui bagaimana SIM Diklat dan Kordik mengotomatisasi rotasi klinis, e-logbook, dan akreditasi Rumah Sakit Pendidikan Anda."
 ---
 
