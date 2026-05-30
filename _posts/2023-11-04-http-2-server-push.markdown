@@ -10,40 +10,34 @@ related_post: related-posts.html
 language: id
 locale: id_ID
 toc: true
-excerpt: "HTTP/2 adalah versi terbaru protokol HTTP, dikembangkan dari protokol SPDY yang diinisiasi oleh Google. Protokol ini sekarang sudah kompatibel dengan banyak web browser diantaranya: Chrome, Opera, Firefox 9, IE 11, Safari, Silk, dan Edge."
-description: "HTTP/2 adalah versi terbaru protokol HTTP, dikembangkan dari protokol SPDY yang diinisiasi oleh Google. Protokol ini sekarang sudah kompatibel dengan banyak web browser diantaranya: Chrome, Opera, Firefox 9, IE 11, Safari, Silk, dan Edge."
+excerpt: "HTTP/2 adalah iterasi utama dari protokol HTTP yang dikembangkan dari [SPDY][spdy], sebuah protokol inisiasi Google. Saat ini, HTTP/2 telah didukung penuh oleh standar web dan kompatibel dengan hampir semua web browser modern seperti Chrome, Firefox, Safari, Opera, dan Edge."
+description: "HTTP/2 adalah iterasi utama dari protokol HTTP yang dikembangkan dari [SPDY][spdy], sebuah protokol inisiasi Google. Saat ini, HTTP/2 telah didukung penuh oleh standar web dan kompatibel dengan hampir semua web browser modern seperti Chrome, Firefox, Safari, Opera, dan Edge."
 ---
 
 ### HTTP/2
 
-_HTTP/2_ adalah versi terbaru protokol HTTP, dikembangkan dari protokol [SPDY][spdy] yang
-diinisiasi oleh Google. Protokol ini sekarang sudah kompatibel dengan banyak web browser
-diantaranya: Chrome, Opera, Firefox 9, IE 11, Safari, Silk, dan Edge.
+_HTTP/2_ adalah iterasi utama dari protokol HTTP yang dikembangkan dari [SPDY][spdy], sebuah protokol inisiasi Google. Saat ini, HTTP/2 telah didukung penuh oleh standar web dan kompatibel dengan hampir semua web browser modern seperti Chrome, Firefox, Safari, Opera, dan Edge.
 
 ![HTTP/2 Connection](https://dikakaryatech.com/assets/img/http2-connection.png "HTTP/2 Connection")
 
-Kelebihan HTTP/2 dibandingkan dengan HTTP 1.1 (protokol yang umum digunakan) sebagian besar
-adalah pada performa dan keamanan. Berikut merupakan beberapa poin yang menjadi kelebihan dari
-protokol baru ini:
+Kelebihan utama HTTP/2 dibandingkan dengan pendahulunya (HTTP/1.1) terletak pada peningkatan performa dan keamanan. Berikut ini adalah beberapa poin yang menjadi keunggulan dari protokol ini:
 
-- Backward compatible dengan HTTP 1.1
-- Kompresi data pada HTTP Headers
+- Backward compatible (kompatibel ke belakang) dengan HTTP/1.1
+- Kompresi data pada HTTP Headers (menggunakan algoritma HPACK)
 - Multiplexing banyak request (dalam satu koneksi TCP)
 - HTTP/2 Server Push
 
 ### HTTP/2 Server Push
 
-_HTTP/2 Server Push_ adalah salah satu fitur pada HTTP/2, yang berguna untuk mempercepat respon dari
-request, yaitu dengan cara data yang akan direspon dikirim terlebih dahulu oleh server. Fitur ini
-cocok digunakan untuk push data aset, seperti css, gambar, js, dan file aset lainnya.
+_HTTP/2 Server Push_ adalah salah satu fitur inovatif pada HTTP/2 yang dirancang untuk mempercepat waktu muat halaman (load time) dari sebuah request. Cara kerjanya adalah server mengirimkan resource secara proaktif sebelum browser klien memintanya. Fitur ini sangat ideal digunakan untuk melakukan push pada data aset statis, seperti file CSS, JavaScript, gambar, dan aset web lainnya.
 
-![HTTP/2 Connection](https://dikakaryatech.com/assets/img/http2-server-push.png "HTTP/2 Connection")
+![HTTP/2 Server Push](https://dikakaryatech.com/assets/img/http2-server-push.png "HTTP/2 Server Push")
 
-Lalu apakah server push ini bisa dimanfaatkan untuk push data JSON, XML, atau sejenisnya ? Sebenarnya
-bisa, hanya saja ini akan menyalahi tujuan dari pembuatan server push sendiri dan hasilnya tidak akan
-optimal, karena sebenarnya server push ini tidak murni bidirectional, masih perlu adanya request ke
-server untuk mendapatkan data yang sudah dipush oleh server itu sendiri. HTTP/2 Server Push bukanlah
-pengganti dari websocket. Websocket digunakan untuk komunikasi bidirectional antara server dan klien.
+Lalu, apakah Server Push ini bisa dimanfaatkan untuk mendorong (push) data dinamis seperti JSON, XML, atau sejenisnya? Sebenarnya bisa, tetapi hal ini menyalahi tujuan utama dari pembuatan Server Push itu sendiri dan hasilnya tidak akan optimal.
+
+Hal ini dikarenakan HTTP/2 Server Push tidak murni bersifat bidirectional (dua arah). Data yang di-push oleh server sebenarnya disalurkan ke dalam cache browser, sehingga klien tetap perlu melakukan request (yang kemudian langsung diambil dari cache tersebut) untuk mendapatkan data yang sudah di-push oleh server.
+
+Oleh karena itu, HTTP/2 Server Push bukanlah pengganti dari WebSockets. WebSockets tetap merupakan solusi yang tepat dan digunakan untuk komunikasi bidirectional yang intensif antara server dan klien.
 
 [spdy]: https://tools.ietf.org/html/draft-mbelshe-httpbis-spdy-00
 
