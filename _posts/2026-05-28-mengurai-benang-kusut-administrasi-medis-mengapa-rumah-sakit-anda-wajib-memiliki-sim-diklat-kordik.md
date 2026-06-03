@@ -84,3 +84,7 @@ Melalui **[SIDIK (Sistem Informasi Manajemen Diklat)](/produk)**, Dika Karya Tec
 Mari diskusikan tantangan spesifik Rumah Sakit Anda bersama konsultan kami.
 
 **[Jadwalkan Sesi Konsultasi & Demo SIDIK Gratis Sekarang](/index.html#contact)**
+
+{% if page.related_post %}
+{% include {{ page.related_post }} %}
+{% endif %}

@@ -77,3 +77,7 @@ Melalui **[SIDIK Corporate](/produk)**, Dika Karya Tech membantu berbagai korpor
 Mari diskusikan tantangan pengelolaan SDM di perusahaan Anda bersama konsultan ahli kami.
 
 **[Jadwalkan Sesi Konsultasi & Demo SIDIK Gratis Sekarang](/index.html#contact)**
+
+{% if page.related_post %}
+{% include {{ page.related_post }} %}
+{% endif %}
