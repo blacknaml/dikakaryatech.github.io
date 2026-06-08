@@ -78,7 +78,7 @@ Sistem _custom_ dirancang untuk beradaptasi dengan budaya kerja, hierarki perset
 
 Jangan biarkan energi dokter spesialis dan staf ahli Anda terkuras untuk mengurus kerumitan kertas kerja. Waktu mereka terlalu berharga untuk sekadar menyusun jadwal di Excel.
 
-Melalui **[SIDIK (Sistem Informasi Manajemen Diklat)](/produk)**, Dika Karya Tech menghadirkan ekosistem digital cerdas yang dirancang khusus untuk membebaskan Rumah Sakit dari beban administrasi pendidikan. Dengan pengalaman kami menangani proyek instansi pelayanan publik berskala besar, SIDIK dibangun dengan standar keamanan data tingkat korporat dan fleksibilitas tak terbatas.
+Melalui **[SIDIK (Sistem Informasi Manajemen Diklat)](https://sidik.web.id)**, Dika Karya Tech menghadirkan ekosistem digital cerdas yang dirancang khusus untuk membebaskan Rumah Sakit dari beban administrasi pendidikan. Dengan pengalaman kami menangani proyek instansi pelayanan publik berskala besar, SIDIK dibangun dengan standar keamanan data tingkat korporat dan fleksibilitas tak terbatas.
 
 **Siap melihat bagaimana SIDIK merapikan data Diklat & Kordik Anda dalam hitungan hari?**  
 Mari diskusikan tantangan spesifik Rumah Sakit Anda bersama konsultan kami.

@@ -71,7 +71,7 @@ Sebaliknya, **Sistem Custom** dirancang untuk melebur dengan sempurna ke dalam D
 
 Karyawan Anda berhak mendapatkan pengembangan karir yang terstruktur, dan manajemen berhak mendapatkan transparansi anggaran pelatihan.
 
-Melalui **[SIDIK Corporate](/produk)**, Dika Karya Tech membantu berbagai korporasi dan BUMD merancang ekosistem pelatihan yang cerdas, efisien, dan berbasis data. Kami tidak sekadar menjual _software_; tim _Business Analyst_ kami akan membedah alur kerja Diklat Anda dan membangun sistem yang 100% menyesuaikan dengan kebutuhan bisnis Anda.
+Melalui **[SIDIK Corporate](https://sidik.web.id)**, Dika Karya Tech membantu berbagai korporasi dan BUMD merancang ekosistem pelatihan yang cerdas, efisien, dan berbasis data. Kami tidak sekadar menjual _software_; tim _Business Analyst_ kami akan membedah alur kerja Diklat Anda dan membangun sistem yang 100% menyesuaikan dengan kebutuhan bisnis Anda.
 
 **Jangan biarkan operasional HRD Anda tertinggal di era digital.**  
 Mari diskusikan tantangan pengelolaan SDM di perusahaan Anda bersama konsultan ahli kami.
