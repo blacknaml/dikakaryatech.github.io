@@ -1,22 +1,2113 @@
----
-layout: single
-title: Aplikasi Web Sistem Informasi Manajemen Proyek SIMAPRO
-tagline: Dika Karya Tech adalah perusahaan Software Developer di Sidoarjo.
-description: Aplikasi Web Sistem Informasi Manajemen Proyek SIMAPRO
-language: en
----
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<section id="intro" class="default-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="item">
-          <div class="heading">
-            <h1>Intro</h1>
+    <!-- SEO Meta Tags -->
+    <title>
+      SIMAPRO - Modern B2B SaaS Project Management Information System
+    </title>
+    <meta
+      name="description"
+      content="SIMAPRO (Project Management Information System) - An integrated solution to plan, manage, and supervise projects to complete on time with multi-level approval systems and PIECES analysis."
+    />
+    <meta
+      name="keywords"
+      content="SIMAPRO, project management, B2B SaaS, multi-level approval, PIECES analysis, sipATE, project proposal"
+    />
+    <meta name="author" content="SIMAPRO Team" />
+
+    <!-- OpenGraph Card -->
+    <meta
+      property="og:title"
+      content="SIMAPRO - Maximize Your Project Efficiency"
+    />
+    <meta
+      property="og:description"
+      content="An integrated solution to manage projects from initiation to closing with complete budget control."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/simapro/img/og-image.webp" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled Tailwind Styles -->
+    <link rel="stylesheet" href="/assets/simapro/css/main.css" />
+
+    <!-- Custom Dot Grid Style for Hero Section -->
+    <style>
+      .dot-pattern {
+        background-image: radial-gradient(#1b75bb1a 1.5px, transparent 1.5px);
+        background-size: 24px 24px;
+      }
+      .shadow-premium {
+        box-shadow:
+          0 10px 30px -5px rgba(27, 117, 187, 0.08),
+          0 4px 6px -2px rgba(27, 117, 187, 0.03);
+      }
+      .shadow-soft {
+        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800 font-sans antialiased">
+    <!-- A. HEADER (Sticky Navigation) -->
+    <header
+      id="header"
+      class="sticky top-0 z-50 w-full transition-all duration-300 border-b border-slate-200/50 bg-white/90 backdrop-blur-md"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-3 focus:outline-none">
+            <img
+              src="/assets/simapro/img/logo.svg"
+              alt="SIMAPRO Logo"
+              class="w-10 h-10 shadow-md shadow-steel-blue/20 rounded-xl"
+            />
+            <span
+              class="text-2xl font-extrabold tracking-tight font-sans text-steel-blue-900"
+            >
+              SIMA<span class="text-steel-blue-600">PRO</span>
+            </span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8 lg:space-x-10">
+            <a
+              href="#fitur"
+              class="text-base font-medium text-slate-600 hover:text-steel-blue transition duration-150"
+              >Features</a
+            >
+            <a
+              href="#alur-kerja"
+              class="text-base font-medium text-slate-600 hover:text-steel-blue transition duration-150"
+              >Approval Workflow</a
+            >
+            <a
+              href="#pieces"
+              class="text-base font-medium text-slate-600 hover:text-steel-blue transition duration-150"
+              >PIECES Analysis</a
+            >
+          </nav>
+
+          <!-- CTA Buttons -->
+          <div class="hidden sm:flex items-center space-x-4">
+            <a
+              href="#login"
+              class="text-base font-semibold text-steel-blue hover:text-steel-blue-700 transition duration-150"
+            >
+              Sign In
+            </a>
+            <a
+              href="#demo"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-hijau-badge hover:bg-hijau-badge-dark transition duration-150 shadow-md hover:shadow-lg shadow-hijau-badge/10"
+            >
+              View Demo
+            </a>
           </div>
-          <p></p>
+
+          <!-- Mobile Menu Button -->
+          <div class="flex md:hidden">
+            <button
+              id="mobile-menu-btn"
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+
+      <!-- Mobile Menu -->
+      <div
+        class="hidden md:hidden bg-white border-b border-slate-200"
+        id="mobile-menu"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#fitur"
+            class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-steel-blue"
+            >Features</a
+          >
+          <a
+            href="#alur-kerja"
+            class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-steel-blue"
+            >Approval Workflow</a
+          >
+          <a
+            href="#pieces"
+            class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-steel-blue"
+            >PIECES Analysis</a
+          >
+          <div
+            class="border-t border-slate-100 my-2 pt-2 flex flex-col space-y-2 px-3"
+          >
+            <a
+              href="#login"
+              class="text-center py-2 text-base font-semibold text-steel-blue"
+            >
+              Sign In
+            </a>
+            <a
+              href="#demo"
+              class="text-center py-2.5 rounded-lg text-base font-semibold text-white bg-hijau-badge"
+            >
+              View Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- B. HERO SECTION (Kesan Pertama & Proposisi Nilai) -->
+    <section
+      class="relative overflow-hidden bg-abu-muda dot-pattern pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-32 lg:pb-36 border-b border-slate-100"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center"
+        >
+          <!-- Text Content (Kiri) -->
+          <div class="lg:col-span-5 text-center lg:text-left">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-steel-blue-50 border border-steel-blue-100 text-steel-blue-700 text-xs font-semibold tracking-wider uppercase mb-6"
+            >
+              <span class="flex h-2 w-2 relative">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-steel-blue-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-steel-blue-600"
+                ></span>
+              </span>
+              <span>SIMAPRO v2.1 Released</span>
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-steel-blue-900 font-sans leading-none"
+            >
+              Maximize Project Efficiency with
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-steel-blue-600 to-steel-blue-800"
+                >Complete Control</span
+              >
+            </h1>
+
+            <p
+              class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-light"
+            >
+              An integrated solution to plan proposals, manage procurement,
+              control budgets, and monitor projects to completion on time with
+              integrated approval workflows.
+            </p>
+
+            <div class="mt-10 sm:flex sm:justify-center lg:justify-start gap-4">
+              <a
+                href="#demo"
+                class="flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-white bg-hijau-badge hover:bg-hijau-badge-dark transition duration-150 shadow-lg shadow-hijau-badge/20"
+              >
+                Request Free Demo
+              </a>
+              <a
+                href="#alur-kerja"
+                class="mt-3 sm:mt-0 flex items-center justify-center px-8 py-4 border border-slate-200 text-base font-semibold rounded-xl text-slate-700 bg-white hover:bg-slate-50 hover:border-slate-300 transition duration-150 shadow-sm"
+              >
+                Learn the Workflow
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div
+              class="mt-12 pt-8 border-t border-slate-200/60 max-w-md mx-auto lg:mx-0"
+            >
+              <p
+                class="text-xs font-semibold tracking-wider text-slate-400 uppercase"
+              >
+                Trusted by various operational divisions
+              </p>
+              <div
+                class="mt-4 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-3 opacity-60"
+              >
+                <span class="font-bold text-slate-600">Engineering</span>
+                <span class="font-bold text-slate-600">Logistics</span>
+                <span class="font-bold text-slate-600">Procurement</span>
+                <span class="font-bold text-slate-600">Accounting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Mockup (Kanan) -->
+          <div class="lg:col-span-7 relative">
+            <!-- Floating badge 1: Deal -->
+            <div
+              class="hidden sm:flex absolute -top-4 -left-6 z-20 animate-bounce duration-5000"
+            >
+              <div
+                class="bg-white p-4 rounded-2xl shadow-premium border border-slate-100 flex items-center space-x-3"
+              >
+                <div
+                  class="h-10 w-10 rounded-full bg-hijau-badge/10 flex items-center justify-center text-hijau-badge"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-400 font-medium">
+                    Proposal Status
+                  </p>
+                  <p class="text-sm font-bold text-slate-800">
+                    DEAL / APPROVED
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating badge 2: Budgeting process -->
+            <div
+              class="hidden sm:flex absolute bottom-6 -right-6 z-20 animate-pulse"
+            >
+              <div
+                class="bg-white p-4 rounded-2xl shadow-premium border border-slate-100 flex items-center space-x-3"
+              >
+                <div
+                  class="h-10 w-10 rounded-full bg-oranye-badge/10 flex items-center justify-center text-oranye-badge"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-400 font-medium">
+                    Procurement Status
+                  </p>
+                  <p class="text-sm font-bold text-slate-800">
+                    Budgeting Approved
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Image Screenshot -->
+            <div
+              class="block md:hidden relative w-full rounded-2xl bg-white shadow-2xl border border-slate-200 overflow-hidden shadow-steel-blue/10"
+            >
+              <!-- Window Control Bar -->
+              <div
+                class="bg-slate-100 px-4 py-2.5 border-b border-slate-200/80 flex items-center justify-between"
+              >
+                <div class="flex space-x-1.5">
+                  <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                </div>
+                <div
+                  class="bg-white px-4 py-0.5 rounded text-[9px] text-slate-400 font-medium border border-slate-200/50 w-7/12 text-center select-none truncate"
+                >
+                  simapro.corp/project/dashboard
+                </div>
+                <div class="w-6"></div>
+              </div>
+              <!-- Screenshot Image -->
+              <img
+                src="/assets/simapro/img/project-dashboard-mockup.png"
+                alt="SIMAPRO Project Detail Dashboard"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+
+            <!-- Browser Container Mockup (Abstracted UI - Desktop Only) -->
+            <div
+              class="hidden md:block relative w-full rounded-2xl bg-white shadow-2xl border border-slate-200 overflow-hidden shadow-steel-blue/10"
+            >
+              <!-- Window Control Bar -->
+              <div
+                class="bg-slate-100 px-4 py-3 border-b border-slate-200/80 flex items-center justify-between"
+              >
+                <div class="flex space-x-2">
+                  <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                </div>
+                <div
+                  class="bg-white px-8 py-1 rounded-md text-[11px] text-slate-400 font-medium border border-slate-200/50 w-7/12 text-center select-none truncate"
+                >
+                  simapro.corp/project/proposal/IT0003
+                </div>
+                <div class="w-8"></div>
+              </div>
+
+              <!-- App Header (sipATE Mockup based on screenshots) -->
+              <div
+                class="bg-gradient-to-r from-steel-blue-700 to-steel-blue-600 text-white px-4 py-3 flex items-center justify-between"
+              >
+                <div class="flex items-center space-x-4">
+                  <div class="flex items-center space-x-1.5">
+                    <svg
+                      class="w-4 h-4 text-blue-200"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                      ></path>
+                    </svg>
+                    <span class="text-sm font-bold tracking-tight">sipATE</span>
+                  </div>
+                  <div class="hidden sm:flex space-x-3 text-xs text-blue-100">
+                    <span class="hover:text-white cursor-pointer transition"
+                      >Master</span
+                    >
+                    <span
+                      class="text-white border-b-2 border-white pb-0.5 font-medium"
+                      >Proposal</span
+                    >
+                    <span class="hover:text-white cursor-pointer transition"
+                      >Project</span
+                    >
+                    <span class="hover:text-white cursor-pointer transition"
+                      >Purchase</span
+                    >
+                    <span class="hover:text-white cursor-pointer transition"
+                      >HRD & User</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center space-x-2 text-xs">
+                  <span class="font-semibold text-blue-100"
+                    >Debi Prahara Dika</span
+                  >
+                  <svg
+                    class="w-3.5 h-3.5 text-blue-300"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- App Breadcrumbs -->
+              <div
+                class="bg-slate-50 border-b border-slate-200/60 px-5 py-2 flex items-center justify-between text-[11px] text-slate-500"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    class="w-3 h-3 text-slate-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                    ></path>
+                  </svg>
+                  <span>/</span>
+                  <span class="text-steel-blue font-medium">Project</span>
+                  <span>/</span>
+                  <span>Project Proposal</span>
+                </div>
+                <div class="flex space-x-2">
+                  <span
+                    class="px-2 py-0.5 rounded bg-slate-200 text-slate-600 font-semibold cursor-pointer"
+                    >Proposal List</span
+                  >
+                  <span
+                    class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-800 font-semibold flex items-center space-x-1 cursor-pointer"
+                  >
+                    <span>Edit Proposal Data</span>
+                    <span class="text-red-500">×</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- App Content Area (Proposal Details Screen mockup) -->
+              <div class="p-5 max-h-[360px] overflow-y-auto">
+                <!-- Proposal Title Header -->
+                <div class="border-b border-slate-100 pb-3 mb-4">
+                  <h3 class="text-md font-bold text-slate-800 text-left">
+                    Asterisk VoIP Network Installation Proposal
+                  </h3>
+                  <p class="text-xs text-slate-500 mt-1 text-left">
+                    Division: IT & Infrastructure
+                  </p>
+                </div>
+
+                <!-- General Info Block -->
+                <div
+                  class="bg-slate-50 rounded-xl p-3 border border-slate-200/50 grid grid-cols-2 sm:grid-cols-4 gap-3 text-left"
+                >
+                  <div>
+                    <span
+                      class="block text-[10px] text-slate-400 font-semibold uppercase"
+                      >Proposal Code</span
+                    >
+                    <span class="text-xs font-bold text-slate-800">IT0003</span>
+                  </div>
+                  <div>
+                    <span
+                      class="block text-[10px] text-slate-400 font-semibold uppercase"
+                      >Client</span
+                    >
+                    <span class="text-xs font-bold text-slate-800"
+                      >PT. PAL</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="block text-[10px] text-slate-400 font-semibold uppercase"
+                      >Duration</span
+                    >
+                    <span class="text-xs font-bold text-slate-800"
+                      >12/01/2026 to 01/31/2027</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="block text-[10px] text-slate-400 font-semibold uppercase"
+                      >Total Value</span
+                    >
+                    <span class="text-xs font-bold text-steel-blue"
+                      >Rp 47.230.000</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Budget Summary Table -->
+                <div class="mt-5 text-left">
+                  <h4
+                    class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+                  >
+                    Budget Breakdown
+                  </h4>
+                  <div
+                    class="border border-slate-200 rounded-lg overflow-hidden"
+                  >
+                    <table class="min-w-full divide-y divide-slate-200 text-xs">
+                      <thead class="bg-slate-50">
+                        <tr>
+                          <th
+                            class="px-3 py-2 text-left font-bold text-slate-500 uppercase"
+                          >
+                            Category
+                          </th>
+                          <th
+                            class="px-3 py-2 text-right font-bold text-slate-500 uppercase"
+                          >
+                            Material Cost
+                          </th>
+                          <th
+                            class="px-3 py-2 text-right font-bold text-slate-500 uppercase"
+                          >
+                            Service Cost
+                          </th>
+                          <th
+                            class="px-3 py-2 text-right font-bold text-slate-800 uppercase"
+                          >
+                            Grand Total
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-slate-100 bg-white">
+                        <tr>
+                          <td class="px-3 py-1.5 font-medium text-slate-900">
+                            Cost of Goods Sold (COGS)
+                          </td>
+                          <td class="px-3 py-1.5 text-right text-slate-500">
+                            44.020.000
+                          </td>
+                          <td class="px-3 py-1.5 text-right text-slate-500">
+                            3.210.000
+                          </td>
+                          <td
+                            class="px-3 py-1.5 text-right font-semibold text-slate-700"
+                          >
+                            47.230.000
+                          </td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                          <td class="px-3 py-1.5 font-medium text-slate-900">
+                            Selling Price
+                          </td>
+                          <td class="px-3 py-1.5 text-right text-slate-500">
+                            68.231.000
+                          </td>
+                          <td class="px-3 py-1.5 text-right text-slate-500">
+                            4.975.500
+                          </td>
+                          <td
+                            class="px-3 py-1.5 text-right font-bold text-slate-800"
+                          >
+                            73.206.500
+                          </td>
+                        </tr>
+                        <tr class="text-hijau-badge">
+                          <td class="px-3 py-1.5 font-bold">Gross Profit</td>
+                          <td class="px-3 py-1.5 text-right font-bold">
+                            11.005.000
+                          </td>
+                          <td class="px-3 py-1.5 text-right font-bold">
+                            802.500
+                          </td>
+                          <td
+                            class="px-3 py-1.5 text-right font-extrabold bg-hijau-badge/5"
+                          >
+                            11.807.500
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. MULTI-USER WORKFLOW SECTION (Sistem Approval Bertingkat & Diagram) -->
+    <section id="alur-kerja" class="py-20 sm:py-28 bg-white scroll-mt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto">
+          <h2
+            class="text-base font-bold text-oranye-badge uppercase tracking-wider"
+          >
+            Approval System & Workflows
+          </h2>
+          <p
+            class="mt-2 text-3xl sm:text-4xl font-extrabold text-steel-blue-900 font-sans tracking-tight"
+          >
+            Collaborative Workflows for 5 User Roles
+          </p>
+          <p class="mt-4 text-lg text-slate-600">
+            Say goodbye to slow manual bureaucracy. SIMAPRO connects all key
+            project actors in a single transparent and fast digital approval
+            workflow.
+          </p>
+        </div>
+
+        <!-- Diagram Navigation Tabs -->
+        <div class="mt-12 flex justify-center">
+          <div
+            class="inline-flex p-1.5 bg-slate-100 rounded-xl border border-slate-200/50"
+          >
+            <button
+              onclick="switchTab('tab-workflow')"
+              id="btn-tab-workflow"
+              class="tab-btn px-4 py-2 text-sm font-bold rounded-lg transition duration-150 bg-white text-steel-blue shadow-sm"
+            >
+              1. Collaborative Workflows
+            </button>
+            <button
+              onclick="switchTab('tab-flowchart')"
+              id="btn-tab-flowchart"
+              class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg transition duration-150 text-slate-600 hover:text-steel-blue"
+            >
+              2. Process Diagram (Flowchart)
+            </button>
+            <button
+              onclick="switchTab('tab-usecase')"
+              id="btn-tab-usecase"
+              class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg transition duration-150 text-slate-600 hover:text-steel-blue"
+            >
+              3. Permissions Matrix (Use Case)
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="mt-12">
+          <!-- Tab 1: Workflow Grid (Aktor & Peran) -->
+          <div id="tab-workflow" class="tab-content block">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+              <!-- Connector Line Background (Desktop) -->
+              <div
+                class="hidden md:block absolute top-1/2 left-4 right-4 h-1 border-t-2 border-dashed border-oranye-badge/40 -translate-y-1/2 -z-10"
+              ></div>
+
+              <!-- User 1: PimPro -->
+              <div
+                class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft text-center relative flex flex-col items-center"
+              >
+                <div
+                  class="w-16 h-16 rounded-full bg-steel-blue-100 flex items-center justify-center text-steel-blue mb-4"
+                >
+                  <svg
+                    class="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                </div>
+                <span
+                  class="absolute top-4 right-4 px-2 py-0.5 rounded-full text-[10px] font-bold bg-steel-blue-600 text-white"
+                  >Actor 1</span
+                >
+                <h3 class="text-base font-bold text-steel-blue-900">
+                  PM (PimPro)
+                </h3>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">
+                  Project Manager
+                </p>
+                <p
+                  class="text-xs text-slate-500 mt-3 text-center leading-relaxed"
+                >
+                  Initiates proposals, inputs bill of quantities (BoQ) / budget
+                  calculations, calendar schedules, and vendor data.
+                </p>
+                <div
+                  class="mt-4 w-full bg-white px-3 py-1.5 rounded-lg border border-slate-100 text-[11px] font-semibold text-slate-700"
+                >
+                  Submit Proposal
+                </div>
+              </div>
+
+              <!-- User 2: Purchasing -->
+              <div
+                class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft text-center relative flex flex-col items-center"
+              >
+                <div
+                  class="w-16 h-16 rounded-full bg-steel-blue-100 flex items-center justify-center text-steel-blue mb-4"
+                >
+                  <svg
+                    class="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                    ></path>
+                  </svg>
+                </div>
+                <span
+                  class="absolute top-4 right-4 px-2 py-0.5 rounded-full text-[10px] font-bold bg-steel-blue-600 text-white"
+                  >Actor 2</span
+                >
+                <h3 class="text-base font-bold text-steel-blue-900">
+                  Procurement
+                </h3>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">
+                  Purchasing Dept
+                </p>
+                <p
+                  class="text-xs text-slate-500 mt-3 text-center leading-relaxed"
+                >
+                  Validates selected vendors and prepares Purchase Orders (PO)
+                  based on item specifications and material values.
+                </p>
+                <div
+                  class="mt-4 w-full bg-white px-3 py-1.5 rounded-lg border border-slate-100 text-[11px] font-semibold text-oranye-badge"
+                >
+                  Generate PO (Purchasing)
+                </div>
+              </div>
+
+              <!-- User 3: Accounting -->
+              <div
+                class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft text-center relative flex flex-col items-center"
+              >
+                <div
+                  class="w-16 h-16 rounded-full bg-steel-blue-100 flex items-center justify-center text-steel-blue mb-4"
+                >
+                  <svg
+                    class="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 11h.01M12 7h.01M9 10h.01M15 10h.01M15 14h.01M15 7h.01M12 14h.01M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+                    ></path>
+                  </svg>
+                </div>
+                <span
+                  class="absolute top-4 right-4 px-2 py-0.5 rounded-full text-[10px] font-bold bg-steel-blue-600 text-white"
+                  >Actor 3</span
+                >
+                <h3 class="text-base font-bold text-steel-blue-900">Finance</h3>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">
+                  Accounting & Tax
+                </p>
+                <p
+                  class="text-xs text-slate-500 mt-3 text-center leading-relaxed"
+                >
+                  Calculates withholding tax (WHT/PPH), validates payments,
+                  syncs with SAP, and delivers goods receipt notes (SPB).
+                </p>
+                <div
+                  class="mt-4 w-full bg-white px-3 py-1.5 rounded-lg border border-slate-100 text-[11px] font-semibold text-slate-700"
+                >
+                  WHT, Goods Receipt, & SAP Sync
+                </div>
+              </div>
+
+              <!-- User 4: Direksi -->
+              <div
+                class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft text-center relative flex flex-col items-center"
+              >
+                <div
+                  class="w-16 h-16 rounded-full bg-hijau-badge/10 flex items-center justify-center text-hijau-badge mb-4"
+                >
+                  <svg
+                    class="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <span
+                  class="absolute top-4 right-4 px-2 py-0.5 rounded-full text-[10px] font-bold bg-hijau-badge text-white"
+                  >Actor 4</span
+                >
+                <h3 class="text-base font-bold text-steel-blue-900">
+                  Directors
+                </h3>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">
+                  Board of Directors
+                </p>
+                <p
+                  class="text-xs text-slate-500 mt-3 text-center leading-relaxed"
+                >
+                  Reviews gross profit margins and provides final budget
+                  sign-off and project deals.
+                </p>
+                <div
+                  class="mt-4 w-full bg-hijau-badge/5 px-3 py-1.5 rounded-lg border border-hijau-badge/20 text-[11px] font-bold text-hijau-badge"
+                >
+                  Final Deal & Approval
+                </div>
+              </div>
+
+              <!-- User 5: Admin -->
+              <div
+                class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft text-center relative flex flex-col items-center"
+              >
+                <div
+                  class="w-16 h-16 rounded-full bg-steel-blue-100 flex items-center justify-center text-steel-blue mb-4"
+                >
+                  <svg
+                    class="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                    ></path>
+                  </svg>
+                </div>
+                <span
+                  class="absolute top-4 right-4 px-2 py-0.5 rounded-full text-[10px] font-bold bg-steel-blue-600 text-white"
+                  >Actor 5</span
+                >
+                <h3 class="text-base font-bold text-steel-blue-900">Admin</h3>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">
+                  System Supervisor
+                </p>
+                <p
+                  class="text-xs text-slate-500 mt-3 text-center leading-relaxed"
+                >
+                  Manages master lists (items, suppliers, customers), user
+                  roles, module permissions, and monitors activity logs.
+                </p>
+                <div
+                  class="mt-4 w-full bg-white px-3 py-1.5 rounded-lg border border-slate-100 text-[11px] font-semibold text-slate-700"
+                >
+                  Permissions & Master Data
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Flowchart SVG -->
+          <div id="tab-flowchart" class="tab-content hidden">
+            <div
+              class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 flex justify-center overflow-x-auto"
+            >
+              <svg
+                width="600"
+                height="960"
+                viewBox="0 0 600 960"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="max-w-full h-auto text-slate-800"
+              >
+                <!-- Definitions for Arrow Marker -->
+                <defs>
+                  <marker
+                    id="arrow"
+                    viewBox="0 0 10 10"
+                    refX="6"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1b75bb" />
+                  </marker>
+                  <marker
+                    id="arrow-orange"
+                    viewBox="0 0 10 10"
+                    refX="6"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#F59E0B" />
+                  </marker>
+                </defs>
+
+                <!-- Node 1: Start -->
+                <rect
+                  x="220"
+                  y="20"
+                  width="160"
+                  height="50"
+                  rx="25"
+                  fill="#1b75bb"
+                />
+                <text
+                  x="300"
+                  y="52"
+                  fill="#ffffff"
+                  font-family="Outfit"
+                  font-size="14"
+                  font-weight="700"
+                  text-anchor="middle"
+                >
+                  START
+                </text>
+                <path
+                  d="M 300 70 L 300 110"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- Node 2: Klien -->
+                <polygon
+                  points="200,120 380,120 360,170 180,170"
+                  fill="#EBF3FC"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+                <text
+                  x="280"
+                  y="152"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="14"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Client
+                </text>
+                <!-- Arrow to right -->
+                <path
+                  d="M 370 145 L 430 145 L 430 200"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- Node 3: Proyek Request -->
+                <rect
+                  x="330"
+                  y="200"
+                  width="200"
+                  height="50"
+                  rx="8"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+                <text
+                  x="430"
+                  y="231"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="13"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Project Request (PimPro)
+                </text>
+                <path
+                  d="M 430 250 L 430 290"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- Node 4: Proyek -->
+                <rect
+                  x="350"
+                  y="290"
+                  width="160"
+                  height="50"
+                  rx="8"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+                <text
+                  x="430"
+                  y="321"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="14"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Project Initiation
+                </text>
+                <path
+                  d="M 430 340 L 430 380"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- Node 5: Biaya Proyek -->
+                <rect
+                  x="330"
+                  y="380"
+                  width="200"
+                  height="55"
+                  rx="8"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+                <text
+                  x="430"
+                  y="413"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="13"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Budget Planning
+                </text>
+                <path
+                  d="M 430 435 L 430 470"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- Node 6: Biaya OK? (Decision Diamond) -->
+                <polygon
+                  points="430,470 510,510 430,550 350,510"
+                  fill="#FFFBEB"
+                  stroke="#F59E0B"
+                  stroke-width="2"
+                />
+                <text
+                  x="430"
+                  y="515"
+                  fill="#b45309"
+                  font-family="Outfit"
+                  font-size="12"
+                  font-weight="700"
+                  text-anchor="middle"
+                >
+                  BUDGET OK?
+                </text>
+
+                <!-- Tidak branch (loops back to Biaya Proyek) -->
+                <path
+                  d="M 350 510 L 290 510 L 290 408 L 330 408"
+                  stroke="#F59E0B"
+                  stroke-width="2"
+                  stroke-dasharray="4"
+                  marker-end="url(#arrow-orange)"
+                />
+                <text
+                  x="270"
+                  y="460"
+                  fill="#b45309"
+                  font-family="Inter"
+                  font-size="11"
+                  font-weight="600"
+                >
+                  No
+                </text>
+
+                <!-- Ya branch -->
+                <path
+                  d="M 430 550 L 430 580 L 300 580"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+                <text
+                  x="370"
+                  y="575"
+                  fill="#1b75bb"
+                  font-family="Inter"
+                  font-size="11"
+                  font-weight="600"
+                >
+                  Yes
+                </text>
+
+                <!-- Node 7: PPH -->
+                <rect
+                  x="140"
+                  y="555"
+                  width="160"
+                  height="50"
+                  rx="8"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+                <text
+                  x="220"
+                  y="586"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="14"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Tax Validation (WHT)
+                </text>
+                <path
+                  d="M 220 605 L 220 640"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- Node 8: Deal? -->
+                <polygon
+                  points="220,640 290,680 220,720 150,680"
+                  fill="#ECFDF5"
+                  stroke="#10B981"
+                  stroke-width="2"
+                />
+                <text
+                  x="220"
+                  y="685"
+                  fill="#047857"
+                  font-family="Outfit"
+                  font-size="13"
+                  font-weight="700"
+                  text-anchor="middle"
+                >
+                  DEAL?
+                </text>
+
+                <!-- Tidak -> Selesai -->
+                <path
+                  d="M 290 680 L 370 680"
+                  stroke="#10B981"
+                  stroke-width="2"
+                  marker-end="url(#arrow)"
+                />
+                <text
+                  x="320"
+                  y="672"
+                  fill="#047857"
+                  font-family="Inter"
+                  font-size="11"
+                  font-weight="600"
+                >
+                  No
+                </text>
+                <rect
+                  x="370"
+                  y="655"
+                  width="130"
+                  height="50"
+                  rx="8"
+                  fill="#F1F5F9"
+                  stroke="#94A3B8"
+                  stroke-width="2"
+                />
+                <text
+                  x="435"
+                  y="686"
+                  fill="#475569"
+                  font-family="Outfit"
+                  font-size="14"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Finished / Rejected
+                </text>
+
+                <!-- Ya -> Pembelian -->
+                <path
+                  d="M 220 720 L 220 760"
+                  stroke="#1b75bb"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+                <text
+                  x="230"
+                  y="742"
+                  fill="#1b75bb"
+                  font-family="Inter"
+                  font-size="11"
+                  font-weight="600"
+                >
+                  Yes
+                </text>
+
+                <!-- Node 9: Pembelian -->
+                <rect
+                  x="120"
+                  y="760"
+                  width="200"
+                  height="50"
+                  rx="8"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+                <text
+                  x="220"
+                  y="791"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="13"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Purchase / Procurement
+                </text>
+                <!-- Arrow to right to side branch -->
+                <path
+                  d="M 320 785 L 430 785 L 430 820"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+
+                <!-- Side nodes: PO -> SPB -> SAP -->
+                <!-- PO -->
+                <rect
+                  x="380"
+                  y="820"
+                  width="100"
+                  height="30"
+                  rx="4"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="430"
+                  y="840"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="11"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  PO (Purchasing)
+                </text>
+                <path
+                  d="M 430 850 L 430 870"
+                  stroke="#1b75bb"
+                  stroke-width="1.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- SPB -->
+                <rect
+                  x="380"
+                  y="870"
+                  width="100"
+                  height="30"
+                  rx="4"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="430"
+                  y="890"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="11"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  Goods Receipt (Acct)
+                </text>
+                <path
+                  d="M 430 900 L 430 920"
+                  stroke="#1b75bb"
+                  stroke-width="1.5"
+                  marker-end="url(#arrow)"
+                />
+
+                <!-- SAP -->
+                <rect
+                  x="380"
+                  y="920"
+                  width="100"
+                  height="30"
+                  rx="4"
+                  fill="#FFFFFF"
+                  stroke="#1b75bb"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="430"
+                  y="940"
+                  fill="#0d4b79"
+                  font-family="Outfit"
+                  font-size="11"
+                  font-weight="600"
+                  text-anchor="middle"
+                >
+                  SAP Validated
+                </text>
+
+                <!-- Connection from SAP back left to Pengerjaan Selesai decision -->
+                <path
+                  d="M 380 935 L 220 935 L 220 860"
+                  stroke="#1b75bb"
+                  stroke-width="2"
+                />
+
+                <!-- Node 10: Pengerjaan Selesai? -->
+                <polygon
+                  points="220,810 280,840 220,870 160,840"
+                  fill="#FFFBEB"
+                  stroke="#F59E0B"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="220"
+                  y="844"
+                  fill="#b45309"
+                  font-family="Outfit"
+                  font-size="10"
+                  font-weight="700"
+                  text-anchor="middle"
+                >
+                  COMPLETE?
+                </text>
+
+                <!-- Tidak -> loops back to Pembelian -->
+                <path
+                  d="M 160 840 L 90 840 L 90 785 L 120 785"
+                  stroke="#F59E0B"
+                  stroke-width="1.5"
+                  stroke-dasharray="3"
+                  marker-end="url(#arrow-orange)"
+                />
+                <text
+                  x="65"
+                  y="815"
+                  fill="#b45309"
+                  font-family="Inter"
+                  font-size="10"
+                  font-weight="600"
+                >
+                  No
+                </text>
+
+                <!-- Ya -> Closing -->
+                <path
+                  d="M 220 870 L 220 900"
+                  stroke="#10B981"
+                  stroke-width="2.5"
+                  marker-end="url(#arrow)"
+                />
+                <text
+                  x="230"
+                  y="888"
+                  fill="#047857"
+                  font-family="Inter"
+                  font-size="11"
+                  font-weight="600"
+                >
+                  Yes
+                </text>
+
+                <!-- Node 11: Closing -->
+                <rect
+                  x="140"
+                  y="900"
+                  width="160"
+                  height="50"
+                  rx="10"
+                  fill="#10B981"
+                />
+                <text
+                  x="220"
+                  y="931"
+                  fill="#ffffff"
+                  font-family="Outfit"
+                  font-size="14"
+                  font-weight="700"
+                  text-anchor="middle"
+                >
+                  PROJECT CLOSING
+                </text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Tab 3: Use Cases Grid -->
+          <div id="tab-usecase" class="tab-content hidden">
+            <div
+              class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80"
+            >
+              <h3
+                class="text-lg font-bold text-steel-blue-900 mb-6 text-center"
+              >
+                Permissions Matrix & Module Roles
+              </h3>
+              <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200 text-sm">
+                  <thead class="bg-white">
+                    <tr>
+                      <th
+                        class="px-4 py-3 text-left font-bold text-slate-500 uppercase"
+                      >
+                        SIMAPRO Modules / Features
+                      </th>
+                      <th
+                        class="px-3 py-3 text-center font-bold text-slate-600"
+                      >
+                        Admin
+                      </th>
+                      <th
+                        class="px-3 py-3 text-center font-bold text-slate-600"
+                      >
+                        Project Manager
+                      </th>
+                      <th
+                        class="px-3 py-3 text-center font-bold text-slate-600"
+                      >
+                        Procurement
+                      </th>
+                      <th
+                        class="px-3 py-3 text-center font-bold text-slate-600"
+                      >
+                        Finance
+                      </th>
+                      <th
+                        class="px-3 py-3 text-center font-bold text-slate-600"
+                      >
+                        Directors
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200 bg-white/70">
+                    <tr>
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Manage User Permissions & Module Groups
+                      </td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                    </tr>
+                    <tr class="bg-slate-50/50">
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Manage Master Items, Suppliers, Customers
+                      </td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Create Projects & Budget Plans
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                    </tr>
+                    <tr class="bg-slate-50/50">
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Prepare & Manage Purchase Orders (PO)
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Prepare & Approve Goods Receipt Notes (SPB)
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                    </tr>
+                    <tr class="bg-slate-50/50">
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Manage & Approve SAP Integration
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 font-semibold text-slate-900">
+                        Proposal Approval & Final Deal (FPP)
+                      </td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td class="px-3 py-3 text-center text-slate-300">-</td>
+                      <td
+                        class="px-3 py-3 text-center text-hijau-badge font-bold"
+                      >
+                        ✓
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-[11px] text-slate-400 mt-4 text-center">
+                Note: This matrix is simplified from the formal SIMAPRO Use Case
+                diagrams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. FITUR UTAMA & ANALISA PIECES (Grid Layout) -->
+    <section
+      id="fitur"
+      class="py-20 sm:py-28 bg-slate-50 border-t border-b border-slate-200/50 scroll-mt-16"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto">
+          <h2
+            class="text-base font-bold text-steel-blue uppercase tracking-wider"
+          >
+            Core Modules & Key Features
+          </h2>
+          <p
+            class="mt-2 text-3xl sm:text-4xl font-extrabold text-steel-blue-900 font-sans tracking-tight"
+          >
+            Engineered for Enterprise-Scale Needs
+          </p>
+          <p class="mt-4 text-lg text-slate-600">
+            SIMAPRO integrates proposal planning, procurement management, and
+            strict user access control to safeguard your project success.
+          </p>
+        </div>
+
+        <!-- Core Features Grid (3 Columns) -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="bg-white rounded-2xl p-8 border border-slate-200/60 shadow-premium hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-steel-blue-50 text-steel-blue flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-steel-blue-900 mb-3">
+              Proposal & Project
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Manage bid proposals centrally. Equipped with an interactive
+              calendar scheduling module to visually monitor project execution
+              day by day.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="bg-white rounded-2xl p-8 border border-slate-200/60 shadow-premium hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-steel-blue-50 text-steel-blue flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-steel-blue-900 mb-3">
+              Procurement & Budgeting
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Track project material and services expenditure. Features
+              integration of procurement data with finance modules for automatic
+              gross margin tracking.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="bg-white rounded-2xl p-8 border border-slate-200/60 shadow-premium hover:shadow-xl hover:-translate-y-1 transition duration-300 text-left"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-steel-blue-50 text-steel-blue flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-steel-blue-900 mb-3">
+              HRD & User Management
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Manage staff records and restrict module access. Enforce strict
+              permissions on who can edit budgets, approve invoices, or view
+              supplier data.
+            </p>
+          </div>
+        </div>
+
+        <!-- PIECES Framework Section -->
+        <div
+          id="pieces"
+          class="mt-28 border-t border-slate-200/80 pt-20 scroll-mt-16"
+        >
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h3
+              class="text-base font-bold text-oranye-badge uppercase tracking-wider"
+            >
+              PIECES Analysis Method
+            </h3>
+            <p
+              class="mt-2 text-3xl font-extrabold text-steel-blue-900 font-sans tracking-tight"
+            >
+              Solving Project Operational Challenges Scientifically
+            </p>
+            <p class="mt-4 text-slate-600">
+              SIMAPRO is engineered on the 6 pillars of the PIECES framework to
+              address operational limitations of legacy and manual systems.
+            </p>
+          </div>
+
+          <!-- PIECES 6 Grid Layout -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- P: Performance -->
+            <div
+              class="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-soft text-left"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-oranye-badge/10 text-oranye-badge flex items-center justify-center font-bold text-lg"
+                >
+                  P
+                </div>
+                <h4 class="text-lg font-bold text-steel-blue-900">
+                  Performance
+                </h4>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Instantly generate project proposals and compute budget
+                estimations with zero delay, accelerating organizational
+                response time.
+              </p>
+            </div>
+
+            <!-- I: Information -->
+            <div
+              class="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-soft text-left"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-oranye-badge/10 text-oranye-badge flex items-center justify-center font-bold text-lg"
+                >
+                  I
+                </div>
+                <h4 class="text-lg font-bold text-steel-blue-900">
+                  Information
+                </h4>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Deliver accurate, centralized, and real-time reports from
+                proposals and goods receipts to SAP sync logs.
+              </p>
+            </div>
+
+            <!-- E: Economy -->
+            <div
+              class="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-soft text-left"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-oranye-badge/10 text-oranye-badge flex items-center justify-center font-bold text-lg"
+                >
+                  E
+                </div>
+                <h4 class="text-lg font-bold text-steel-blue-900">Economy</h4>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Safeguard project profit margins through material cost tracking
+                and transparent multi-level director approval.
+              </p>
+            </div>
+
+            <!-- C: Control -->
+            <div
+              class="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-soft text-left"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-oranye-badge/10 text-oranye-badge flex items-center justify-center font-bold text-lg"
+                >
+                  C
+                </div>
+                <h4 class="text-lg font-bold text-steel-blue-900">Control</h4>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Enforce strict access control on master vendor data and secure
+                project sign-off workflows (FPP).
+              </p>
+            </div>
+
+            <!-- E: Efficiency -->
+            <div
+              class="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-soft text-left"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-oranye-badge/10 text-oranye-badge flex items-center justify-center font-bold text-lg"
+                >
+                  E
+                </div>
+                <h4 class="text-lg font-bold text-steel-blue-900">
+                  Efficiency
+                </h4>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Eliminate paper trails and data entry redundancies with
+                automated master data import and integration tools.
+              </p>
+            </div>
+
+            <!-- S: Service -->
+            <div
+              class="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-soft text-left"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <div
+                  class="w-10 h-10 rounded-lg bg-oranye-badge/10 text-oranye-badge flex items-center justify-center font-bold text-lg"
+                >
+                  S
+                </div>
+                <h4 class="text-lg font-bold text-steel-blue-900">Service</h4>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Provide a modern, intuitive, and highly responsive user
+                experience across desktop and mobile devices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. FINAL CTA SECTION (Konversi Akhir) -->
+    <section
+      id="demo"
+      class="bg-gradient-to-br from-steel-blue-900 to-steel-blue-800 text-white py-20 sm:py-24 relative overflow-hidden"
+    >
+      <!-- Decorative background elements -->
+      <div class="absolute inset-0 opacity-10 bg-grid-white dot-pattern"></div>
+      <div
+        class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-steel-blue-600 blur-3xl opacity-20"
+      ></div>
+      <div
+        class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-hijau-badge blur-3xl opacity-20"
+      ></div>
+
+      <div
+        class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"
+      >
+        <h2
+          class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight font-sans"
+        >
+          Boost Your Organization's Project Success Today
+        </h2>
+        <p
+          class="mt-6 text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto font-light"
+        >
+          Control proposals, procurement, budgeting, and SAP monitoring
+          digitally in a single integrated SIMAPRO dashboard.
+        </p>
+
+        <div
+          class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4"
+        >
+          <a
+            href="#hubungi-kami"
+            class="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-white bg-hijau-badge hover:bg-hijau-badge-dark transition duration-150 shadow-lg shadow-hijau-badge/30"
+          >
+            Start Free Trial Now
+          </a>
+          <a
+            href="#jadwalkan-pertemuan"
+            class="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-slate-500/80 text-base font-semibold rounded-xl text-white hover:bg-white/10 transition duration-150"
+          >
+            Contact Sales Team
+          </a>
+        </div>
+
+        <div class="mt-12 flex justify-center space-x-8 text-xs text-blue-200">
+          <span class="flex items-center"
+            ><svg
+              class="w-4 h-4 mr-1.5 text-hijau-badge"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            No Credit Card Required</span
+          >
+          <span class="flex items-center"
+            ><svg
+              class="w-4 h-4 mr-1.5 text-hijau-badge"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Instant Setup</span
+          >
+          <span class="flex items-center"
+            ><svg
+              class="w-4 h-4 mr-1.5 text-hijau-badge"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            24/7 Support</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- F. FOOTER -->
+    <footer
+      class="bg-slate-900 text-slate-400 py-12 sm:py-16 border-t border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Brand Info -->
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center space-x-3 mb-4">
+              <img
+                src="/assets/simapro/img/logo.svg"
+                alt="SIMAPRO Logo"
+                class="w-8 h-8 rounded-lg shadow-sm"
+              />
+              <span class="text-xl font-bold tracking-tight text-white"
+                >SIMAPRO</span
+              >
+            </div>
+            <p class="text-sm text-slate-500 max-w-sm leading-relaxed">
+              Integrated web-based Project Management Information System for
+              business efficiency, budget optimization, and real-time
+              monitoring.
+            </p>
+          </div>
+
+          <!-- Links Section -->
+          <div>
+            <h3
+              class="text-xs font-bold text-white uppercase tracking-wider mb-4"
+            >
+              Page Navigation
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#fitur" class="hover:text-white transition"
+                  >Core Features</a
+                >
+              </li>
+              <li>
+                <a href="#alur-kerja" class="hover:text-white transition"
+                  >Approval Workflow</a
+                >
+              </li>
+              <li>
+                <a href="#pieces" class="hover:text-white transition"
+                  >PIECES Analysis</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Section -->
+          <div>
+            <h3
+              class="text-xs font-bold text-white uppercase tracking-wider mb-4"
+            >
+              Contact Us
+            </h3>
+            <p class="text-sm text-slate-500 mb-2">
+              Have questions about the product or want a custom demo?
+            </p>
+            <a
+              href="mailto:support@simapro.corp"
+              class="text-sm font-semibold text-steel-blue-400 hover:text-steel-blue-300 transition"
+            >
+              support@simapro.corp
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-600 gap-4"
+        >
+          <p>&copy; 2026 SIMAPRO. All rights reserved.</p>
+          <div class="flex space-x-6">
+            <a href="#privacy" class="hover:text-slate-400 transition"
+              >Privacy Policy</a
+            >
+            <a href="#terms" class="hover:text-slate-400 transition"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/6282143186197?text=Hello%20SIMAPRO,%20I%20am%20interested%20in%20your%20project%20management%20services."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition duration-300 group focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
+      aria-label="Contact WhatsApp"
+    >
+      <!-- Pulse Effect -->
+      <span
+        class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-40 animate-ping"
+      ></span>
+      <!-- Tooltip -->
+      <span
+        class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition duration-300 select-none pointer-events-none"
+      >
+        Contact Us (WhatsApp)
+      </span>
+      <!-- WhatsApp Icon -->
+      <svg
+        class="w-7 h-7 relative z-10 fill-current"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.335 4.978L2 22l5.177-1.357a9.893 9.893 0 004.832 1.257c5.506 0 9.99-4.478 9.99-9.985A9.995 9.995 0 0012.012 2zm6.2 14.152c-.269.754-1.386 1.37-1.921 1.41-.482.036-.967.14-3.136-.71-2.775-1.088-4.528-3.92-4.666-4.11-.137-.19-1.11-1.48-1.11-2.825 0-1.345.701-2.006.949-2.27.248-.264.551-.33.738-.33.187 0 .376.002.538.01.177.007.414-.067.65.508.243.593.83 2.031.902 2.18.072.148.12.32.02.522-.1.202-.15.327-.298.502-.148.175-.313.39-.447.522-.148.148-.303.31-.13.607.172.297.764 1.258 1.64 2.038.13.114.223.162.336.256.113.094.18.074.282-.038.1-.115.433-.503.551-.678.118-.175.234-.148.397-.087.163.06 1.033.487 1.21.575.177.088.295.132.338.207.043.076.043.435-.226 1.189z"
+        />
+      </svg>
+    </a>
+
+    <!-- Page Interactivity JavaScript -->
+    <script>
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        const isExpanded =
+          mobileMenuBtn.getAttribute("aria-expanded") === "true";
+        mobileMenuBtn.setAttribute("aria-expanded", !isExpanded);
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // 2. Tab Switcher Logic for Diagrams
+      function switchTab(tabId) {
+        // Hide all tab contents
+        const tabContents = document.querySelectorAll(".tab-content");
+        tabContents.forEach((content) => {
+          content.classList.add("hidden");
+          content.classList.remove("block");
+        });
+
+        // Show target tab content
+        const activeTab = document.getElementById(tabId);
+        activeTab.classList.remove("hidden");
+        activeTab.classList.add("block");
+
+        // Update button classes to active/inactive styles
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        tabButtons.forEach((btn) => {
+          btn.classList.remove("bg-white", "text-steel-blue", "shadow-sm");
+          btn.classList.add("text-slate-600", "hover:text-steel-blue");
+        });
+
+        // Set current button to active style
+        const activeBtn = document.getElementById("btn-" + tabId);
+        activeBtn.classList.add("bg-white", "text-steel-blue", "shadow-sm");
+        activeBtn.classList.remove("text-slate-600", "hover:text-steel-blue");
+      }
+    </script>
+  </body>
+</html>
