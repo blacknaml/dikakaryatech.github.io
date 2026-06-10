@@ -1,0 +1,2099 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SISAN - Internship Document Management Information System</title>
+    <meta
+      name="description"
+      content="Sistem Informasi Pemberkasan (SISAN) - A modern, secure, and organized solution for managing administration files and internship schedules for students, supervisors, and admins."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS & Main JS via Vite -->
+    <script
+      type="module"
+      crossorigin
+      src="/assets/sisan/main-DcdBr9qP.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="/assets/sisan/main-DnGn8sJo.css" />
+  </head>
+  <body class="bg-slate-50/50 text-slate-800 antialiased font-sans">
+    <!-- Header Section (Sticky Nav) -->
+    <header
+      class="sticky top-0 z-40 w-full glass-nav transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-2.5 group">
+            <div
+              class="w-10 h-10 group-hover:scale-105 transition-transform duration-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                class="w-full h-full"
+              >
+                <defs>
+                  <linearGradient
+                    id="oriTealHeader"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#0f766e" />
+                    <stop offset="100%" stop-color="#0d9488" />
+                  </linearGradient>
+                  <linearGradient
+                    id="oriGreenHeader"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#10b981" />
+                    <stop offset="100%" stop-color="#059669" />
+                  </linearGradient>
+                </defs>
+                <!-- Origami Wing Left -->
+                <polygon
+                  points="50,50 15,35 45,25"
+                  fill="url(#oriTealHeader)"
+                  opacity="0.85"
+                />
+                <!-- Origami Wing Right -->
+                <polygon
+                  points="50,50 85,35 55,25"
+                  fill="url(#oriTealHeader)"
+                />
+                <!-- Body/Tail (Document Fold) -->
+                <polygon
+                  points="50,50 50,85 35,60"
+                  fill="url(#oriTealHeader)"
+                  opacity="0.7"
+                />
+                <polygon
+                  points="50,50 50,85 65,60"
+                  fill="url(#oriTealHeader)"
+                  opacity="0.9"
+                />
+                <!-- Head/Beak (Green Action Arrow) -->
+                <polygon
+                  points="50,50 50,15 62,25"
+                  fill="url(#oriGreenHeader)"
+                />
+              </svg>
+            </div>
+            <span
+              class="text-xl sm:text-2xl font-extrabold tracking-tight text-brand-teal-800"
+              >SISAN</span
+            >
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="#peran"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-teal-600 transition-colors"
+              >Roles</a
+            >
+            <a
+              href="#fitur"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-teal-600 transition-colors"
+              >Key Features</a
+            >
+            <a
+              href="#preview"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-teal-600 transition-colors"
+              >Workflow &amp; Demo</a
+            >
+            <a
+              href="#klien"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-teal-600 transition-colors"
+              >Partners</a
+            >
+          </nav>
+
+          <!-- CTA Action -->
+          <div class="hidden md:flex items-center gap-4">
+            <a
+              href="#preview"
+              class="text-sm font-medium text-slate-600 hover:text-brand-teal-600 transition-colors"
+              >System Demo</a
+            >
+            <a
+              href="#hubungi"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-brand-green-600 hover:bg-brand-green-700 active:scale-[0.98] shadow-md shadow-brand-green-600/10 hover:shadow-lg transition-all duration-200"
+            >
+              Contact Us
+            </a>
+          </div>
+
+          <!-- Mobile Menu Trigger -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 rounded-xl text-slate-500 hover:bg-slate-100 hover:text-brand-teal-600 transition-colors focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6.5 w-6.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute left-0 right-0 top-full bg-white/95 backdrop-blur-md shadow-xl border-t border-slate-100 px-4 py-6 flex flex-col gap-4"
+      >
+        <a
+          href="#peran"
+          class="text-base font-semibold text-slate-700 hover:text-brand-teal-600 py-2 border-b border-slate-50"
+          >User Roles</a
+        >
+        <a
+          href="#fitur"
+          class="text-base font-semibold text-slate-700 hover:text-brand-teal-600 py-2 border-b border-slate-50"
+          >Key Features</a
+        >
+        <a
+          href="#preview"
+          class="text-base font-semibold text-slate-700 hover:text-brand-teal-600 py-2 border-b border-slate-50"
+          >Workflow &amp; Demo</a
+        >
+        <a
+          href="#klien"
+          class="text-base font-semibold text-slate-700 hover:text-brand-teal-600 py-2 border-b border-slate-50"
+          >Partners</a
+        >
+        <a
+          href="#hubungi"
+          class="w-full inline-flex items-center justify-center py-3 rounded-xl text-base font-bold text-white bg-brand-green-600 hover:bg-brand-green-700 transition-all text-center"
+        >
+          Contact Us
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative pt-10 pb-20 sm:py-24 md:py-28 overflow-hidden bg-gradient-to-b from-brand-teal-50/30 via-slate-50/50 to-slate-50"
+      >
+        <!-- Background Decorative Grid -->
+        <div
+          class="absolute inset-0 -z-10 bg-[radial-gradient(#0f766e_0.5px,transparent_0.5px)] [background-size:16px_16px] opacity-15"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Headline & CTA -->
+            <div
+              class="lg:col-span-6 space-y-6 sm:space-y-8 text-center lg:text-left"
+            >
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-teal-100/60 text-brand-teal-800 border border-brand-teal-200/50"
+              >
+                <span
+                  class="flex h-1.5 w-1.5 rounded-full bg-brand-teal-500 animate-soft-pulse"
+                ></span>
+                Document Management Information System v2.0
+              </div>
+
+              <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-teal-900 leading-[1.15] sm:leading-[1.12]"
+              >
+                Manage Documents &amp; Internship Schedules
+                <span
+                  class="bg-gradient-to-r from-brand-teal-600 to-brand-teal-800 bg-clip-text text-transparent"
+                  >Hassle-Free.</span
+                >
+              </h1>
+
+              <p
+                class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0"
+              >
+                Sistem Informasi Pemberkasan (SISAN) connects Students,
+                Supervisors, and Admins in one integrated platform.
+                <span
+                  class="text-brand-red-500 font-bold bg-brand-red-50/50 px-2 py-0.5 rounded border border-brand-red-100/50 block sm:inline mt-2 sm:mt-0"
+                >
+                  Do not let your files get misplaced!
+                </span>
+              </p>
+
+              <div
+                class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="#preview"
+                  class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-white bg-brand-green-600 hover:bg-brand-green-700 active:scale-[0.98] shadow-lg shadow-brand-green-600/20 hover:shadow-xl transition-all duration-200 gap-2.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
+                    />
+                  </svg>
+                  Start Uploading Files
+                </a>
+                <a
+                  href="#fitur"
+                  class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 active:scale-[0.98] shadow-sm hover:shadow transition-all duration-200"
+                >
+                  Explore Features
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Hero Mockup (Browser Window) -->
+            <div class="lg:col-span-6 animate-fade-in-up">
+              <div
+                class="bg-white rounded-2xl shadow-2xl border border-slate-200/80 overflow-hidden card-shadow-hover transition-all duration-500"
+              >
+                <!-- Mockup Header -->
+                <div
+                  class="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-1.5">
+                    <span
+                      class="w-3 w-3 h-3 rounded-full bg-red-400 block"
+                    ></span>
+                    <span
+                      class="w-3 w-3 h-3 rounded-full bg-yellow-400 block"
+                    ></span>
+                    <span
+                      class="w-3 w-3 h-3 rounded-full bg-green-400 block"
+                    ></span>
+                  </div>
+                  <div
+                    class="bg-white px-8 py-1 rounded-md text-[10px] text-slate-400 font-mono shadow-inner border border-slate-100 flex items-center gap-1.5 w-60 sm:w-80 justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-slate-300"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span>app.sisan.id/view-berkas</span>
+                  </div>
+                  <div class="w-10"></div>
+                </div>
+
+                <!-- Mockup Content (PDF & Chat Mockup) -->
+                <div
+                  class="grid grid-cols-12 bg-slate-50 h-[320px] sm:h-[400px]"
+                >
+                  <!-- Left: Document Preview (PDF) -->
+                  <div
+                    class="col-span-8 p-4 border-r border-slate-200/80 overflow-y-auto flex flex-col h-full bg-slate-200/40"
+                  >
+                    <div
+                      class="bg-white rounded-lg p-5 shadow-sm border border-slate-200 flex-1 flex flex-col justify-between"
+                    >
+                      <div>
+                        <div
+                          class="flex justify-between items-start border-b border-slate-100 pb-3 mb-4"
+                        >
+                          <div>
+                            <h4 class="text-xs font-bold text-slate-800">
+                              ID Card Document
+                            </h4>
+                            <span class="text-[9px] text-slate-400"
+                              >PDF Document • 420 KB</span
+                            >
+                          </div>
+                          <span
+                            class="px-2 py-0.5 rounded text-[8px] font-bold bg-brand-green-50 text-brand-green-600 border border-brand-green-100"
+                            >VERIFIED</span
+                          >
+                        </div>
+
+                        <!-- Simulated Text Blocks -->
+                        <div class="space-y-2.5">
+                          <div class="h-3 bg-slate-100 rounded w-1/3"></div>
+                          <div class="h-2 bg-slate-100 rounded w-full"></div>
+                          <div class="h-2 bg-slate-100 rounded w-11/12"></div>
+                          <div class="h-2 bg-slate-100 rounded w-5/6"></div>
+
+                          <!-- Simulated Student Card Visual -->
+                          <div
+                            class="mt-4 p-3 border border-dashed border-slate-200 rounded-lg bg-slate-50/80 flex gap-3 items-center"
+                          >
+                            <div
+                              class="w-10 h-12 bg-slate-200 rounded flex items-center justify-center text-slate-400"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                            <div class="space-y-1">
+                              <div
+                                class="h-2.5 bg-slate-200 rounded w-24"
+                              ></div>
+                              <div class="h-2 bg-slate-200 rounded w-16"></div>
+                              <div
+                                class="h-1.5 bg-slate-200 rounded w-28"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex justify-between items-center border-t border-slate-100 pt-3 text-[9px] text-slate-400"
+                      >
+                        <span>Page 1 of 1</span>
+                        <div class="flex gap-1">
+                          <span
+                            class="px-1.5 py-0.5 rounded bg-slate-100 hover:bg-slate-200 cursor-pointer"
+                            >Prev</span
+                          >
+                          <span
+                            class="px-1.5 py-0.5 rounded bg-slate-100 hover:bg-slate-200 cursor-pointer"
+                            >Next</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right: Discussion Panel -->
+                  <div
+                    class="col-span-4 p-3 flex flex-col h-full bg-white justify-between"
+                  >
+                    <div>
+                      <h5
+                        class="text-[10px] font-bold text-slate-400 tracking-wider uppercase mb-3"
+                      >
+                        Document Discussion
+                      </h5>
+                      <div class="space-y-3">
+                        <!-- Message 1 -->
+                        <div class="flex flex-col items-start">
+                          <span class="text-[8px] text-slate-400 mb-0.5"
+                            >Dika (Student)</span
+                          >
+                          <div
+                            class="bg-slate-100 text-slate-700 px-2 py-1.5 rounded-lg rounded-tl-none text-[9px] max-w-full"
+                          >
+                            Please double-check my ID Card file, Doctor.
+                          </div>
+                        </div>
+
+                        <!-- Message 2 -->
+                        <div class="flex flex-col items-end">
+                          <span class="text-[8px] text-slate-400 mb-0.5"
+                            >Dr. Mery Sp.A (Supervisor)</span
+                          >
+                          <div
+                            class="bg-brand-teal-50 text-brand-teal-800 border border-brand-teal-100 px-2 py-1.5 rounded-lg rounded-tr-none text-[9px] max-w-full"
+                          >
+                            It is correct; the photo is clear and student ID
+                            data is valid.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="border-t border-slate-100 pt-2.5 flex gap-1">
+                      <input
+                        type="text"
+                        placeholder="Reply..."
+                        disabled
+                        class="bg-slate-50 border border-slate-200 rounded px-2 py-1 text-[9px] flex-1 focus:outline-none"
+                      />
+                      <button
+                        disabled
+                        class="bg-brand-green-500 text-white rounded px-2 text-[9px] font-bold"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Showcase (Mitra Kami) -->
+      <section id="klien" class="py-10 border-y border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10"
+          >
+            <div class="text-center md:text-left">
+              <h3
+                class="text-xs font-bold text-slate-400 uppercase tracking-widest"
+              >
+                Trusted &amp; Utilized By
+              </h3>
+              <p class="text-sm font-semibold text-slate-500 mt-1">
+                Healthcare institutions and national document platforms
+              </p>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-8 sm:gap-12"
+            >
+              <!-- Client 1: RSI A Yani Surabaya -->
+              <div
+                class="flex items-center gap-3 bg-slate-50 px-5 py-3.5 rounded-xl border border-slate-100 shadow-sm hover:border-brand-teal-300 hover:bg-brand-teal-50/10 transition-all duration-300"
+              >
+                <!-- Green Crescent/Cross Hospital Icon -->
+                <div
+                  class="w-9 h-9 rounded-lg bg-brand-green-100 flex items-center justify-center text-brand-green-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5.5 w-5.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 10.5V20a2 2 0 01-2 2H7a2 2 0 01-2-2v-9.5m14 0V9a2 2 0 00-2-2h-3.5M5 10.5V9a2 2 0 012-2h3.5m7.5 3.5H5m7-3.5V3a1 1 0 011-1h2a1 1 0 011 1v4m-5 0h5m-10 11.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm11 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span
+                    class="text-xs font-bold text-slate-400 uppercase tracking-wider block"
+                    >Official Client</span
+                  >
+                  <span class="text-sm font-extrabold text-slate-800"
+                    >RSI A Yani Surabaya</span
+                  >
+                </div>
+              </div>
+
+              <!-- Client 2: Unggahberkas.com -->
+              <a
+                href="https://unggahberkas.com"
+                target="_blank"
+                class="flex items-center gap-3 bg-slate-50 px-5 py-3.5 rounded-xl border border-slate-100 shadow-sm hover:border-brand-teal-300 hover:bg-brand-teal-50/10 transition-all duration-300"
+              >
+                <div
+                  class="w-9 h-9 rounded-lg bg-brand-teal-100 flex items-center justify-center text-brand-teal-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5.5 w-5.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span
+                    class="text-xs font-bold text-slate-400 uppercase tracking-wider block"
+                    >Platform Integration</span
+                  >
+                  <span class="text-sm font-extrabold text-slate-800"
+                    >Unggahberkas.com</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Roles Section (Role Highlight) -->
+      <section id="peran" class="py-16 sm:py-24 bg-slate-50/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <span
+              class="text-sm font-bold text-brand-teal-600 uppercase tracking-wider"
+              >Integrated Ecosystem</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-brand-teal-900 mt-2"
+            >
+              One System for All Needs
+            </h2>
+            <p class="text-slate-600 mt-4">
+              SISAN is designed to bridge coordination among the three main
+              pillars of internship programs for synergistic workflows.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Students -->
+            <article
+              class="bg-white rounded-2xl p-8 border border-slate-100 shadow-md shadow-slate-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div class="space-y-6">
+                <div
+                  class="w-12 h-12 rounded-xl bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center shadow-inner"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20"
+                    />
+                  </svg>
+                </div>
+
+                <div class="space-y-2">
+                  <h3 class="text-xl font-extrabold text-slate-800">
+                    Students
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Practical access for Group Leaders &amp; Members to complete
+                    administration. Simplifies uploading entry requirement
+                    documents and selecting internship schedules independently.
+                  </p>
+                </div>
+
+                <!-- Quick Feature Badges -->
+                <div class="space-y-3 pt-2">
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Upload ID Cards &amp; Requirements
+                  </div>
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Select Schedules &amp; Workspaces
+                  </div>
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Download Internship Certificates
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-slate-50">
+                <span
+                  class="text-xs font-bold text-brand-teal-600 hover:text-brand-teal-700 inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  Student Workflow &rarr;
+                </span>
+              </div>
+            </article>
+
+            <!-- Card 2: Supervisors -->
+            <article
+              class="bg-white rounded-2xl p-8 border border-slate-100 shadow-md shadow-slate-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div class="space-y-6">
+                <div
+                  class="w-12 h-12 rounded-xl bg-brand-green-50 text-brand-green-600 flex items-center justify-center shadow-inner"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="space-y-2">
+                  <h3 class="text-xl font-extrabold text-slate-800">
+                    Supervisors (DM &amp; Regular)
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Control hub for doctors/supervisors to monitor student
+                    progress. Electronically verify files and discuss required
+                    revisions in real-time.
+                  </p>
+                </div>
+
+                <!-- Quick Feature Badges -->
+                <div class="space-y-3 pt-2">
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-brand-green-50 text-brand-green-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Active Log Book Monitoring
+                  </div>
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-brand-green-50 text-brand-green-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    One-Click Verification System
+                  </div>
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-brand-green-50 text-brand-green-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Integrated Document Chat Assistant
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-slate-50">
+                <span
+                  class="text-xs font-bold text-brand-green-600 hover:text-brand-green-700 inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  Supervisor Workflow &rarr;
+                </span>
+              </div>
+            </article>
+
+            <!-- Card 3: Admins -->
+            <article
+              class="bg-white rounded-2xl p-8 border border-slate-100 shadow-md shadow-slate-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div class="space-y-6">
+                <div
+                  class="w-12 h-12 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center shadow-inner"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                    />
+                  </svg>
+                </div>
+
+                <div class="space-y-2">
+                  <h3 class="text-xl font-extrabold text-slate-800">
+                    Administrators
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Full authority for Training Admins &amp; System Admins to
+                    control the ecosystem. Configure educational institution
+                    criteria, department quotas, and validate final graduation.
+                  </p>
+                </div>
+
+                <!-- Quick Feature Badges -->
+                <div class="space-y-3 pt-2">
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Manage Institution &amp; Campus Master Data
+                  </div>
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Set Attendance &amp; Graduation Criteria
+                  </div>
+                  <div class="flex items-center gap-2.5 text-xs text-slate-600">
+                    <span
+                      class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold"
+                      >✓</span
+                    >
+                    Export Activity Reports in Excel/PDF
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-slate-50">
+                <span
+                  class="text-xs font-bold text-slate-600 hover:text-slate-700 inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  Admin Workflow &rarr;
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section (Grid Cards Layout) -->
+      <section id="fitur" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+            <span
+              class="text-sm font-bold text-brand-teal-600 uppercase tracking-wider"
+              >Core Application Features</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-brand-teal-900 mt-2"
+            >
+              Best Technology Support for Internship Administration
+            </h2>
+            <p class="text-slate-600 mt-4">
+              Documentation and internship scheduling are managed through an
+              integrated flow to ensure on-field effectiveness.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+          >
+            <!-- Feature 1: View In-Browser -->
+            <article
+              class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-md card-shadow hover:-translate-y-1 hover:shadow-premium-hover transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5.5 w-5.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 mb-2">
+                View In-Browser
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                View files directly in your browser without wasting time
+                downloading them. Supports a responsive and crisp PDF document
+                viewer.
+              </p>
+            </article>
+
+            <!-- Feature 2: Tiered Approval -->
+            <article
+              class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-md card-shadow hover:-translate-y-1 hover:shadow-premium-hover transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5.5 w-5.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2 text-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 mb-2">
+                Tiered Approval
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Automated, structured multi-tier verification system. Approval
+                flows from clinical instructors, training coordinators, to
+                system administrators.
+              </p>
+            </article>
+
+            <!-- Feature 3: Precise Schedule & Room -->
+            <article
+              class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-md card-shadow hover:-translate-y-1 hover:shadow-premium-hover transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5.5 w-5.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 mb-2">
+                Precise Schedule &amp; Room
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Students can set internship schedules and choose workspaces
+                directly through an interactive calendar to avoid quota
+                conflicts.
+              </p>
+            </article>
+
+            <!-- Feature 4: Interactive Discussion Room -->
+            <article
+              class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-md card-shadow hover:-translate-y-1 hover:shadow-premium-hover transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5.5 w-5.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 mb-2">
+                Interactive Discussion Room
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Direct chat feature between supervisors and students on each
+                document. Clarifications or revision instructions are
+                well-documented.
+              </p>
+            </article>
+
+            <!-- Feature 5: Automated Certificate Printing -->
+            <article
+              class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-md card-shadow hover:-translate-y-1 hover:shadow-premium-hover transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5.5 w-5.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 mb-2">
+                Automated Certificate Printing
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Internship certificates in PDF format are automatically
+                generated by the system once all document requirements and
+                grading are complete.
+              </p>
+            </article>
+
+            <!-- Feature 6: RESTful API Integration -->
+            <article
+              class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-md card-shadow hover:-translate-y-1 hover:shadow-premium-hover transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-brand-teal-50 text-brand-teal-600 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5.5 w-5.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 mb-2">
+                RESTful API Integration
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Connect securely and easily to university systems or external
+                partner portals via modern, documented REST API interfaces.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive App Preview & Demo Section -->
+      <section id="preview" class="py-16 sm:py-24 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+            <span
+              class="text-sm font-bold text-brand-teal-600 uppercase tracking-wider"
+              >App Interface Demo</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-brand-teal-900 mt-2"
+            >
+              Interactive SISAN Interface Preview
+            </h2>
+            <p class="text-slate-600 mt-4">
+              See how SISAN presents your administrative data in a clean and
+              responsive interface. Select a tab to start the simulation.
+            </p>
+          </div>
+
+          <!-- Interactive Tab Switcher -->
+          <div
+            class="flex flex-wrap justify-center gap-2 mb-10 max-w-4xl mx-auto bg-slate-100/80 p-1.5 rounded-2xl border border-slate-200/50"
+          >
+            <button
+              data-preview-tab="jadwal"
+              class="flex-1 min-w-[120px] px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white text-brand-teal-700 shadow-sm border border-brand-teal-100"
+            >
+              Internship Schedule
+            </button>
+            <button
+              data-preview-tab="berkas"
+              class="flex-1 min-w-[120px] px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-transparent text-slate-600 border border-transparent hover:text-brand-teal-600"
+            >
+              Required Documents
+            </button>
+            <button
+              data-preview-tab="pdf-view"
+              class="flex-1 min-w-[120px] px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-transparent text-slate-600 border border-transparent hover:text-brand-teal-600"
+            >
+              PDF &amp; Discussion Chat
+            </button>
+            <button
+              data-preview-tab="admin"
+              class="flex-1 min-w-[120px] px-4 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-transparent text-slate-600 border border-transparent hover:text-brand-teal-600"
+            >
+              Admin Document List
+            </button>
+          </div>
+
+          <!-- Mockup Display Windows -->
+          <div
+            class="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden"
+          >
+            <!-- Mockup Window Bar -->
+            <div
+              class="bg-slate-100 px-5 py-4 border-b border-slate-200 flex items-center justify-between"
+            >
+              <!-- Window Circles -->
+              <div class="flex items-center gap-1.5">
+                <span class="w-3.5 h-3.5 rounded-full bg-red-400"></span>
+                <span class="w-3.5 h-3.5 rounded-full bg-yellow-400"></span>
+                <span class="w-3.5 h-3.5 rounded-full bg-green-400"></span>
+              </div>
+
+              <!-- App Navigation Header (RSIS AYANI style) -->
+              <div
+                class="flex items-center gap-6 text-[11px] font-bold text-slate-500 hidden sm:flex"
+              >
+                <span class="text-brand-green-600 font-extrabold tracking-wider"
+                  >RSIS AYANI</span
+                >
+                <span
+                  class="text-slate-400 hover:text-brand-teal-600 cursor-pointer"
+                  >Home</span
+                >
+                <span
+                  class="text-slate-400 hover:text-brand-teal-600 cursor-pointer"
+                  >Schedule</span
+                >
+                <span
+                  class="text-slate-400 hover:text-brand-teal-600 cursor-pointer"
+                  >Documents</span
+                >
+                <span
+                  class="text-slate-400 hover:text-brand-teal-600 cursor-pointer"
+                  >Certificates</span
+                >
+                <span class="text-slate-300">|</span>
+                <span
+                  class="text-slate-400 hover:text-brand-teal-600 cursor-pointer"
+                  >Logout</span
+                >
+              </div>
+
+              <div
+                class="bg-white/80 px-6 py-1 rounded-md text-[9px] text-slate-400 font-mono shadow-inner border border-slate-200 flex items-center gap-1.5 w-48 justify-center"
+              >
+                <span>app.sisan.id/dashboard</span>
+              </div>
+            </div>
+
+            <!-- Tab Panels Container -->
+            <div class="p-4 sm:p-8 bg-slate-50/50 min-h-[500px]">
+              <!-- Panel 1: Jadwal Praktek (Simulating Image 1) -->
+              <div id="panel-jadwal" data-preview-panel class="space-y-6">
+                <div
+                  class="flex justify-between items-center border-b border-slate-200 pb-4"
+                >
+                  <div>
+                    <h3 class="text-xl font-bold text-slate-800">Schedule</h3>
+                    <p class="text-xs text-slate-400 mt-1">
+                      Manage your field internship program schedule
+                    </p>
+                  </div>
+                  <div class="text-xs text-slate-500 font-medium">
+                    Home / Schedule
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden"
+                >
+                  <div
+                    class="bg-white px-5 py-4 border-b border-slate-100 flex items-center justify-between"
+                  >
+                    <h4 class="text-sm font-extrabold text-slate-700">
+                      Add New Schedule
+                    </h4>
+                    <span
+                      class="text-[10px] px-2 py-0.5 rounded-full bg-brand-teal-50 text-brand-teal-600 font-bold border border-brand-teal-100"
+                      >Step 1 of 2</span
+                    >
+                  </div>
+
+                  <form id="mock-schedule-form" class="p-6 space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                      <div>
+                        <label
+                          class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                          >Internship Period</label
+                        >
+                        <div class="relative">
+                          <input
+                            type="text"
+                            value="10/08/2026 - 10/09/2026"
+                            required
+                            class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 text-xs focus:ring-1 focus:ring-brand-teal-500 focus:bg-white focus:outline-none"
+                          />
+                          <span class="absolute right-3 top-3.5 text-slate-400">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label
+                          class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                          >Work Unit / Room</label
+                        >
+                        <select
+                          required
+                          class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 text-xs focus:ring-1 focus:ring-brand-teal-500 focus:bg-white focus:outline-none"
+                        >
+                          <option value="">-- Select Work Unit --</option>
+                          <option value="anak" selected>
+                            Pediatrics (Child Health)
+                          </option>
+                          <option value="bedah">Surgery</option>
+                          <option value="obgyn">
+                            Obstetrics &amp; Gynecology
+                          </option>
+                          <option value="interna">Internal Medicine</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label
+                          class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                          >Group Leader</label
+                        >
+                        <select
+                          required
+                          class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 text-xs focus:ring-1 focus:ring-brand-teal-500 focus:bg-white focus:outline-none"
+                        >
+                          <option value="">-- Select Group Leader --</option>
+                          <option value="debi" selected>Dika Karya Tech</option>
+                          <option value="mery">Mery Susantri</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label
+                          class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2"
+                          >Additional Notes</label
+                        >
+                        <textarea
+                          placeholder="Write any notes if necessary..."
+                          rows="1"
+                          class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3.5 py-2.5 text-xs focus:ring-1 focus:ring-brand-teal-500 focus:bg-white focus:outline-none"
+                        >
+Internship batch 3 Pediatrics rotation RSIS A Yani</textarea
+                        >
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-3 pt-4 border-t border-slate-100"
+                    >
+                      <button
+                        type="submit"
+                        class="bg-brand-green-600 hover:bg-brand-green-700 text-white font-bold px-6 py-2.5 rounded-lg text-xs transition-all shadow-md shadow-brand-green-600/10"
+                      >
+                        Save Schedule
+                      </button>
+                      <button
+                        type="button"
+                        class="bg-slate-200 hover:bg-slate-300 text-slate-600 font-bold px-6 py-2.5 rounded-lg text-xs transition-all"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Panel 2: Daftar Berkas (Simulating Image 2) -->
+              <div
+                id="panel-berkas"
+                data-preview-panel
+                class="hidden space-y-6"
+              >
+                <div
+                  class="flex justify-between items-center border-b border-slate-200 pb-4"
+                >
+                  <div>
+                    <h3 class="text-xl font-bold text-slate-800">
+                      Student Document List
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-1">
+                      Completeness status of your administrative files
+                    </p>
+                  </div>
+                  <div class="text-xs text-slate-500 font-medium">
+                    Home / Documents
+                  </div>
+                </div>
+
+                <!-- Period Selector dropdown -->
+                <div
+                  class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
+                >
+                  <div class="w-full sm:w-80">
+                    <label
+                      class="block text-[10px] font-bold text-slate-400 uppercase mb-1.5"
+                      >Active Internship Period</label
+                    >
+                    <select
+                      class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs focus:outline-none"
+                    >
+                      <option>
+                        Training period 01/01/2026 - 08/01/2026 (Active)
+                      </option>
+                      <option>
+                        Training period 15/12/2025 - 22/12/2025 (Completed)
+                      </option>
+                    </select>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs text-slate-400"
+                      >Total Files Required:</span
+                    >
+                    <span
+                      class="text-sm font-extrabold text-brand-teal-700 ml-1"
+                      >4 Files</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Document Status Grid (Modern Card Layout) -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5"
+                >
+                  <!-- Card 1: ID Card -->
+                  <article
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow"
+                  >
+                    <div class="flex justify-between items-start mb-4">
+                      <div>
+                        <h4 class="text-sm font-bold text-slate-700">
+                          ID Card
+                        </h4>
+                        <p class="text-[10px] text-slate-400 mt-1">
+                          Format: PDF/JPG • Max 1MB
+                        </p>
+                      </div>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold rounded bg-brand-red-50 text-brand-red-500 border border-brand-red-100 uppercase"
+                        >Not Uploaded</span
+                      >
+                    </div>
+                    <div
+                      class="bg-slate-50 rounded-lg p-3 border border-slate-100 mb-5 text-[11px] text-slate-500"
+                    >
+                      <span
+                        class="text-brand-red-400 font-semibold block mb-0.5"
+                        >Verifier Notes:</span
+                      >
+                      This file has not been uploaded yet.
+                    </div>
+                    <button
+                      class="w-full bg-brand-teal-600 hover:bg-brand-teal-700 text-white text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4.5 w-4.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                        />
+                      </svg>
+                      Upload / Edit File
+                    </button>
+                  </article>
+
+                  <!-- Card 2: Internship Guidelines -->
+                  <article
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow"
+                  >
+                    <div class="flex justify-between items-start mb-4">
+                      <div>
+                        <h4 class="text-sm font-bold text-slate-700">
+                          Internship Guidelines
+                        </h4>
+                        <p class="text-[10px] text-slate-400 mt-1">
+                          Format: PDF • Max 2MB
+                        </p>
+                      </div>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold rounded bg-brand-red-50 text-brand-red-500 border border-brand-red-100 uppercase"
+                        >Not Uploaded</span
+                      >
+                    </div>
+                    <div
+                      class="bg-slate-50 rounded-lg p-3 border border-slate-100 mb-5 text-[11px] text-slate-500"
+                    >
+                      <span
+                        class="text-brand-red-400 font-semibold block mb-0.5"
+                        >Verifier Notes:</span
+                      >
+                      This file has not been uploaded yet.
+                    </div>
+                    <button
+                      class="w-full bg-brand-teal-600 hover:bg-brand-teal-700 text-white text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4.5 w-4.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                        />
+                      </svg>
+                      Upload / Edit File
+                    </button>
+                  </article>
+
+                  <!-- Card 3: Supervisor External Evaluation -->
+                  <article
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow"
+                  >
+                    <div class="flex justify-between items-start mb-4">
+                      <div>
+                        <h4
+                          class="text-sm font-bold text-slate-700 text-ellipsis overflow-hidden"
+                        >
+                          Supervisor External Evaluation
+                        </h4>
+                        <p class="text-[10px] text-slate-400 mt-1">
+                          Format: PDF • Max 3MB
+                        </p>
+                      </div>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold rounded bg-brand-red-50 text-brand-red-500 border border-brand-red-100 uppercase shrink-0"
+                        >Not Uploaded</span
+                      >
+                    </div>
+                    <div
+                      class="bg-slate-50 rounded-lg p-3 border border-slate-100 mb-5 text-[11px] text-slate-500"
+                    >
+                      <span
+                        class="text-brand-red-400 font-semibold block mb-0.5"
+                        >Verifier Notes:</span
+                      >
+                      This file has not been uploaded yet.
+                    </div>
+                    <button
+                      class="w-full bg-brand-teal-600 hover:bg-brand-teal-700 text-white text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4.5 w-4.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                        />
+                      </svg>
+                      Upload / Edit File
+                    </button>
+                  </article>
+
+                  <!-- Card 4: KOMKORDIK Log Book -->
+                  <article
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow"
+                  >
+                    <div class="flex justify-between items-start mb-4">
+                      <div>
+                        <h4 class="text-sm font-bold text-slate-700">
+                          KOMKORDIK Log Book
+                        </h4>
+                        <p class="text-[10px] text-slate-400 mt-1">
+                          Format: PDF • Max 5MB
+                        </p>
+                      </div>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold rounded bg-brand-red-50 text-brand-red-500 border border-brand-red-100 uppercase"
+                        >Not Uploaded</span
+                      >
+                    </div>
+                    <div
+                      class="bg-slate-50 rounded-lg p-3 border border-slate-100 mb-5 text-[11px] text-slate-500"
+                    >
+                      <span
+                        class="text-brand-red-400 font-semibold block mb-0.5"
+                        >Verifier Notes:</span
+                      >
+                      This file has not been uploaded yet.
+                    </div>
+                    <button
+                      class="w-full bg-brand-teal-600 hover:bg-brand-teal-700 text-white text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4.5 w-4.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                        />
+                      </svg>
+                      Upload / Edit File
+                    </button>
+                  </article>
+                </div>
+              </div>
+
+              <!-- Panel 3: PDF & Chat Diskusi (Simulating Image 4) -->
+              <div
+                id="panel-pdf-view"
+                data-preview-panel
+                class="hidden space-y-6"
+              >
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-slate-200 pb-4 gap-2"
+                >
+                  <div class="flex items-center gap-3">
+                    <button
+                      class="bg-brand-green-600 hover:bg-brand-green-700 text-white font-bold px-3 py-1.5 rounded-lg text-xs transition-colors flex items-center gap-1"
+                    >
+                      <span>&larr;</span> Back
+                    </button>
+                    <div>
+                      <h3 class="text-lg font-bold text-slate-800">
+                        Document Detail &amp; Verification
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="text-xs text-slate-500 font-medium">
+                    Home / View / ID Card
+                  </div>
+                </div>
+
+                <!-- Main Split Layout for PDF and Discussion Chat -->
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch"
+                >
+                  <!-- PDF Viewer (Col 7) -->
+                  <div
+                    class="lg:col-span-7 bg-slate-100 rounded-xl border border-slate-200 p-4 flex flex-col justify-between"
+                  >
+                    <div
+                      class="bg-white rounded-lg border border-slate-200/80 shadow-sm p-6 flex-1 flex flex-col justify-between min-h-[360px]"
+                    >
+                      <div>
+                        <!-- Document Header -->
+                        <div
+                          class="flex justify-between items-center border-b border-slate-100 pb-3.5 mb-5"
+                        >
+                          <div>
+                            <h4 class="text-sm font-bold text-slate-800">
+                              ID Card File - Dika Karya Tech.pdf
+                            </h4>
+                            <p
+                              class="text-[10px] text-slate-400 mt-0.5 font-mono"
+                            >
+                              MD5: e2c9497e68c13b2e5917
+                            </p>
+                          </div>
+                          <span
+                            class="px-2 py-0.5 text-[9px] font-extrabold rounded bg-slate-100 text-slate-500 border border-slate-200"
+                            >AWAITING APPROVAL</span
+                          >
+                        </div>
+
+                        <!-- Document Body Simulation (Cheat Sheet layout as in screenshot) -->
+                        <div
+                          class="border border-slate-200 rounded-lg p-4 bg-slate-50/50 space-y-3 font-mono text-[9px] text-slate-600 leading-normal max-h-56 overflow-y-auto"
+                        >
+                          <div
+                            class="text-center font-bold text-slate-800 border-b border-slate-200 pb-2 mb-2 text-[10px]"
+                          >
+                            SUBLIME TEXT 3 KEYBOARD SHORTCUTS
+                          </div>
+                          <div class="grid grid-cols-2 gap-4">
+                            <div>
+                              <span
+                                class="font-bold block text-slate-700 border-b border-slate-100 mb-1"
+                                >General</span
+                              >
+                              <div class="flex justify-between">
+                                <span>Command Palette</span
+                                ><span class="font-bold">CTRL+SHIFT+P</span>
+                              </div>
+                              <div class="flex justify-between">
+                                <span>Show/Hide Console</span
+                                ><span class="font-bold">CTRL+`</span>
+                              </div>
+                              <div class="flex justify-between">
+                                <span>Show/Hide Sidebar</span
+                                ><span class="font-bold">CTRL+K, B</span>
+                              </div>
+                            </div>
+                            <div>
+                              <span
+                                class="font-bold block text-slate-700 border-b border-slate-100 mb-1"
+                                >Editing</span
+                              >
+                              <div class="flex justify-between">
+                                <span>Delete Line</span
+                                ><span class="font-bold">CTRL+X</span>
+                              </div>
+                              <div class="flex justify-between">
+                                <span>Insert Line After</span
+                                ><span class="font-bold">CTRL+ENTER</span>
+                              </div>
+                              <div class="flex justify-between">
+                                <span>Duplicate Line</span
+                                ><span class="font-bold">CTRL+SHIFT+D</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="border-t border-slate-200 pt-2 text-center text-[8px] text-slate-400"
+                          >
+                            Page 1 of 2
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- PDF Controls -->
+                      <div
+                        class="flex justify-between items-center border-t border-slate-100 pt-4 mt-6"
+                      >
+                        <button
+                          class="bg-brand-teal-600 text-white px-3.5 py-1.5 rounded text-[10px] font-bold hover:bg-brand-teal-700 flex items-center gap-1 transition-colors"
+                        >
+                          &larr; Previous Page
+                        </button>
+                        <span class="text-xs font-semibold text-slate-500"
+                          >Page
+                          <span class="text-slate-800 font-bold">1</span> /
+                          2</span
+                        >
+                        <button
+                          class="bg-brand-teal-600 text-white px-3.5 py-1.5 rounded text-[10px] font-bold hover:bg-brand-teal-700 flex items-center gap-1 transition-colors"
+                        >
+                          Next Page &rarr;
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Discussion Chat Panel (Col 5) -->
+                  <div
+                    class="lg:col-span-5 bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between h-full"
+                  >
+                    <div
+                      class="bg-slate-50 px-4 py-3.5 border-b border-slate-200 flex items-center justify-between"
+                    >
+                      <h4
+                        class="text-xs font-bold text-slate-500 uppercase tracking-wider"
+                      >
+                        Discussion &amp; Revision Notes
+                      </h4>
+                      <span
+                        class="h-2 w-2 rounded-full bg-brand-green-500 animate-soft-pulse"
+                      ></span>
+                    </div>
+
+                    <!-- Messages area -->
+                    <div
+                      id="mock-chat-messages"
+                      class="p-4 flex-1 h-72 overflow-y-auto space-y-3 scroll-smooth"
+                    >
+                      <!-- Default message when empty -->
+                      <div class="flex flex-col items-start mb-3">
+                        <span class="text-[10px] text-slate-400 mb-1 px-1"
+                          >Dr. Mery Susantri, Sp.A (Supervisor) • 08:30</span
+                        >
+                        <div
+                          class="px-3.5 py-2 rounded-2xl max-w-[85%] text-xs bg-slate-100 text-slate-700 rounded-tl-none border border-slate-200 leading-relaxed"
+                        >
+                          Good morning, please attach your latest ID Card so I
+                          can verify it this morning.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Chat Form input -->
+                    <form
+                      id="mock-chat-form"
+                      class="p-3 border-t border-slate-100 bg-slate-50 flex gap-2"
+                    >
+                      <input
+                        type="text"
+                        id="mock-chat-input"
+                        placeholder="Type discussion message..."
+                        required
+                        autocomplete="off"
+                        class="flex-1 bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-brand-teal-500 focus:outline-none"
+                      />
+                      <button
+                        type="submit"
+                        class="bg-brand-green-600 hover:bg-brand-green-700 text-white font-bold px-4 rounded-lg text-xs transition-all shadow-md shadow-brand-green-600/10"
+                      >
+                        Send
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: Daftar Berkas Admin (Simulating Image 5) -->
+              <div id="panel-admin" data-preview-panel class="hidden space-y-6">
+                <div
+                  class="flex justify-between items-center border-b border-slate-200 pb-4"
+                >
+                  <div>
+                    <h3 class="text-xl font-bold text-slate-800">
+                      Admin Documents
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-1">
+                      List of student training supervision documents
+                    </p>
+                  </div>
+                  <div class="text-xs text-slate-500 font-medium">
+                    Home / Admin Documents
+                  </div>
+                </div>
+
+                <!-- Admin search filters container -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200">
+                  <h4
+                    class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3.5"
+                  >
+                    Filter Student Data
+                  </h4>
+
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    <select
+                      class="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-2 text-xs focus:outline-none"
+                    >
+                      <option>All Departments</option>
+                      <option selected>Pediatrics</option>
+                    </select>
+                    <select
+                      class="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-2 text-xs focus:outline-none"
+                    >
+                      <option>All Campuses</option>
+                      <option selected>NU University of Surabaya</option>
+                    </select>
+                    <input
+                      type="text"
+                      value="02/11/2026"
+                      class="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-2 text-xs text-center focus:outline-none"
+                    />
+                    <button
+                      class="bg-brand-teal-700 hover:bg-brand-teal-800 text-white font-bold rounded-lg text-xs py-2 transition-colors"
+                    >
+                      Search Data
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Department Dossier list mimicking the styled admin view -->
+                <div
+                  class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm"
+                >
+                  <div
+                    class="bg-brand-teal-700 px-5 py-3.5 text-white text-xs font-bold tracking-wide flex justify-between"
+                  >
+                    <span>SUPERVISOR DOCUMENT LIST</span>
+                    <span>Total Periods: 2 Rotation Periods</span>
+                  </div>
+
+                  <div class="divide-y divide-slate-100">
+                    <!-- Section Group 1: Pediatrics -->
+                    <div
+                      class="bg-slate-100/40 px-5 py-2.5 text-[10px] font-bold text-slate-500 tracking-wider"
+                    >
+                      DEPARTMENT: PEDIATRICS
+                    </div>
+
+                    <!-- Subgroup: NU University of Surabaya -->
+                    <div
+                      class="bg-brand-teal-50/20 px-6 py-2 text-[10px] font-bold text-brand-teal-700 border-b border-slate-100"
+                    >
+                      INSTITUTION: NU UNIVERSITY OF SURABAYA
+                    </div>
+
+                    <!-- Row 1 -->
+                    <div
+                      class="px-6 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:bg-slate-50/50 transition-colors"
+                    >
+                      <div>
+                        <span
+                          class="text-[9px] text-slate-400 font-semibold uppercase block"
+                          >Period: 07/11/2026 - 19/11/2026</span
+                        >
+                        <h5 class="text-sm font-bold text-slate-800 mt-1">
+                          dr. Mery Susantri, Sp. A
+                        </h5>
+                        <span class="text-xs text-slate-500 font-medium"
+                          >Email: merysusantri@gmail.com</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-5">
+                        <div class="text-right">
+                          <span class="text-xs text-slate-400 block"
+                            >Total Documents:</span
+                          >
+                          <span class="text-sm font-extrabold text-slate-800"
+                            >2 Documents Submitted</span
+                          >
+                        </div>
+                        <button
+                          class="bg-slate-800 hover:bg-slate-900 text-white rounded-lg p-2 flex items-center justify-center gap-1.5 shadow-sm text-xs font-bold transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4.5 w-4.5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                            />
+                          </svg>
+                          Detail
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div
+                      class="px-6 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:bg-slate-50/50 transition-colors"
+                    >
+                      <div>
+                        <span
+                          class="text-[9px] text-slate-400 font-semibold uppercase block"
+                          >Period: 14/11/2026 - 26/11/2026</span
+                        >
+                        <h5 class="text-sm font-bold text-slate-800 mt-1">
+                          dr. Mery Susantri, Sp. A
+                        </h5>
+                        <span class="text-xs text-slate-500 font-medium"
+                          >Email: merysusantri@gmail.com</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-5">
+                        <div class="text-right">
+                          <span class="text-xs text-slate-400 block"
+                            >Total Documents:</span
+                          >
+                          <span class="text-sm font-extrabold text-slate-800"
+                            >0 Documents Submitted</span
+                          >
+                        </div>
+                        <button
+                          class="bg-slate-800 hover:bg-slate-900 text-white rounded-lg p-2 flex items-center justify-center gap-1.5 shadow-sm text-xs font-bold transition-colors"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4.5 w-4.5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                            />
+                          </svg>
+                          Detail
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Call to Action -->
+      <section id="hubungi" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Large Rounded CTA Card -->
+          <article
+            class="bg-gradient-to-br from-brand-teal-700 to-brand-teal-950 rounded-[2.5rem] p-10 sm:p-16 text-center shadow-xl shadow-brand-teal-900/10 border border-brand-teal-600/30 relative overflow-hidden"
+          >
+            <!-- Decorative SVGs inside card -->
+            <div
+              class="absolute -top-16 -left-16 w-40 h-40 bg-white/5 rounded-full blur-2xl"
+            ></div>
+            <div
+              class="absolute -bottom-16 -right-16 w-40 h-40 bg-brand-green-500/10 rounded-full blur-2xl"
+            ></div>
+
+            <div class="relative z-10 space-y-6 sm:space-y-8 max-w-2xl mx-auto">
+              <h2
+                class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight"
+              >
+                Interested in Using SISAN at Your Institution?
+              </h2>
+              <p
+                class="text-brand-teal-100 text-sm sm:text-base leading-relaxed"
+              >
+                Contact the Dika Karya Tech team for consultation, a live system
+                demo, or a custom price quote tailored to your organization.
+              </p>
+              <div
+                class="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center"
+              >
+                <a
+                  href="https://dikakaryatech.com/product/sisan.html"
+                  target="_blank"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl text-sm sm:text-base font-extrabold text-white bg-brand-green-600 hover:bg-brand-green-700 active:scale-[0.98] shadow-lg shadow-brand-green-600/20 hover:shadow-xl transition-all duration-200"
+                >
+                  Contact Us Now
+                </a>
+                <a
+                  href="https://wa.me/6282143186197?text=Hello%20Dika%20Karya%20Tech%2C%20I'm%20interested%20in%20SISAN%20(Internship%20Document%20Management%20System)."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl text-sm sm:text-base font-extrabold text-white bg-[#25D366] hover:bg-[#20ba5a] active:scale-[0.98] shadow-lg shadow-emerald-500/10 hover:shadow-xl transition-all duration-200 gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 fill-current"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.472 14.382c-.022-.079-.085-.193-.27-.282-.19-.088-1.11-.55-1.28-.608-.168-.06-.29-.09-.41.09-.12.18-.46.58-.57.7-.1.11-.21.13-.39.04-1.808-.9-2.316-1.5-2.827-2.37-.11-.19-.01-.29.085-.38.09-.08.19-.22.288-.33.1-.11.13-.19.196-.32.066-.13.033-.24-.015-.33-.048-.09-.41-1.02-.56-1.38-.15-.36-.3-.31-.41-.32-.1-.01-.23-.01-.36-.01-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.63 0 .96.7 1.88.8 2.01.11.13 1.38 2.11 3.34 2.96.47.2 1.05.32 1.43.34.42.02.81-.02 1.11-.07.34-.05 1.11-.45 1.27-.9.16-.44.16-.83.11-.91zM12 2C6.477 2 2 6.477 2 12c0 2.01.59 3.88 1.61 5.46L2 22l4.7-.91C8.16 21.6 9.99 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.79 0-3.46-.51-4.89-1.4l-.35-.22-2.9.56.57-2.82-.24-.38C3.3 14.31 2.8 12.72 2.8 11c0-5.07 4.13-9.2 9.2-9.2s9.2 4.13 9.2 9.2-4.13 9.2-9.2 9.2z"
+                    />
+                  </svg>
+                  Contact via WhatsApp
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-8 border-b border-slate-800"
+        >
+          <!-- Left: Logo & description -->
+          <div class="md:col-span-5 space-y-4">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                  class="w-full h-full"
+                >
+                  <defs>
+                    <linearGradient
+                      id="oriTealFooter"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="#0f766e" />
+                      <stop offset="100%" stop-color="#0d9488" />
+                    </linearGradient>
+                    <linearGradient
+                      id="oriGreenFooter"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="#10b981" />
+                      <stop offset="100%" stop-color="#059669" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Origami Wing Left -->
+                  <polygon
+                    points="50,50 15,35 45,25"
+                    fill="url(#oriTealFooter)"
+                    opacity="0.85"
+                  />
+                  <!-- Origami Wing Right -->
+                  <polygon
+                    points="50,50 85,35 55,25"
+                    fill="url(#oriTealFooter)"
+                  />
+                  <!-- Body/Tail (Document Fold) -->
+                  <polygon
+                    points="50,50 50,85 35,60"
+                    fill="url(#oriTealFooter)"
+                    opacity="0.7"
+                  />
+                  <polygon
+                    points="50,50 50,85 65,60"
+                    fill="url(#oriTealFooter)"
+                    opacity="0.9"
+                  />
+                  <!-- Head/Beak (Green Action Arrow) -->
+                  <polygon
+                    points="50,50 50,15 62,25"
+                    fill="url(#oriGreenFooter)"
+                  />
+                </svg>
+              </div>
+              <span class="text-lg font-extrabold tracking-tight text-white"
+                >SISAN</span
+              >
+            </div>
+            <p class="text-xs leading-relaxed text-slate-500 max-w-sm">
+              Sistem Informasi Pemberkasan (SISAN) is a digital administration
+              platform to manage document requirements, log books, grading, and
+              field internship schedules.
+            </p>
+          </div>
+
+          <!-- Center Right: Quick Links -->
+          <div class="md:col-span-4 space-y-3">
+            <h4
+              class="text-xs font-bold text-slate-300 uppercase tracking-widest"
+            >
+              Page Navigation
+            </h4>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <a
+                href="#peran"
+                class="hover:text-brand-teal-400 transition-colors"
+                >System Roles</a
+              >
+              <a
+                href="#fitur"
+                class="hover:text-brand-teal-400 transition-colors"
+                >Key Features</a
+              >
+              <a
+                href="#preview"
+                class="hover:text-brand-teal-400 transition-colors"
+                >Demo Simulation</a
+              >
+              <a
+                href="#klien"
+                class="hover:text-brand-teal-400 transition-colors"
+                >Official Partners</a
+              >
+            </div>
+          </div>
+
+          <!-- Right: Partner Credits -->
+          <div class="md:col-span-3 space-y-3">
+            <h4
+              class="text-xs font-bold text-slate-300 uppercase tracking-widest"
+            >
+              Partnership
+            </h4>
+            <div class="space-y-1 text-xs text-slate-500">
+              <p>• RSI A Yani Surabaya</p>
+              <p>• Unggahberkas.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Copyright Bar -->
+        <div
+          class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500"
+        >
+          <p>
+            Copyright &copy; 2026
+            <a
+              href="https://dikakaryatech.com/product/sisan.html"
+              class="hover:text-brand-teal-400 underline"
+              >Sisan</a
+            >. All rights reserved.
+          </p>
+          <p>
+            Developed by
+            <span class="text-slate-400 font-medium">Dika Karya Tech</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/6282143186197?text=Hello%20Dika%20Karya%20Tech%2C%20I'm%20interested%20in%20SISAN%20(Internship%20Document%20Management%20System)."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 group flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white px-4 py-3 rounded-full shadow-2xl hover:shadow-emerald-500/20 active:scale-95 transition-all duration-300 border border-emerald-400/20"
+      aria-label="Contact via WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 fill-current"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17.472 14.382c-.022-.079-.085-.193-.27-.282-.19-.088-1.11-.55-1.28-.608-.168-.06-.29-.09-.41.09-.12.18-.46.58-.57.7-.1.11-.21.13-.39.04-1.808-.9-2.316-1.5-2.827-2.37-.11-.19-.01-.29.085-.38.09-.08.19-.22.288-.33.1-.11.13-.19.196-.32.066-.13.033-.24-.015-.33-.048-.09-.41-1.02-.56-1.38-.15-.36-.3-.31-.41-.32-.1-.01-.23-.01-.36-.01-.13 0-.34.05-.52.24-.18.19-.69.67-.69 1.63 0 .96.7 1.88.8 2.01.11.13 1.38 2.11 3.34 2.96.47.2 1.05.32 1.43.34.42.02.81-.02 1.11-.07.34-.05 1.11-.45 1.27-.9.16-.44.16-.83.11-.91zM12 2C6.477 2 2 6.477 2 12c0 2.01.59 3.88 1.61 5.46L2 22l4.7-.91C8.16 21.6 9.99 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.79 0-3.46-.51-4.89-1.4l-.35-.22-2.9.56.57-2.82-.24-.38C3.3 14.31 2.8 12.72 2.8 11c0-5.07 4.13-9.2 9.2-9.2s9.2 4.13 9.2 9.2-4.13 9.2-9.2 9.2z"
+        />
+      </svg>
+      <span
+        class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-out text-sm font-bold tracking-wide whitespace-nowrap opacity-0 group-hover:opacity-100"
+      >
+        Chat on WhatsApp
+      </span>
+    </a>
+  </body>
+</html>
