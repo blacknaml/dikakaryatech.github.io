@@ -98,7 +98,7 @@ Pertumbuhan bisnis adalah hal yang patut dirayakan, namun harus diimbangi dengan
 
 Evaluasi sistem manajemen dan alur kerja bisnis Anda secara mendalam. Temukan area inefisiensi yang bisa diselesaikan dengan digitalisasi yang tepat.
 
-👉 **[Audit sistem operasional bisnis Anda bersama konsultan kami. Gratis.](/index.html#contact)**
+**[Audit sistem operasional bisnis Anda bersama konsultan kami. Gratis.](/index.html#contact)**
 
 Diskusikan tantangan operasional bisnis Anda dengan tim ahli kami untuk merancang solusi software terbaik.
 
