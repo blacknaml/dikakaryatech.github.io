@@ -26,6 +26,8 @@ IPPBX adalah sistem telepon internal perusahaan yang mentransmisikan suara melal
 
 Dari sudut pandang keuangan, perubahan medium transmisi dari kabel fisik ke jaringan data (internet/intranet) yang sudah ada di kantor membawa dampak langsung: **eliminasi biaya sewa sirkuit telepon fisik berganda** dan penyederhanaan manajemen jaringan ke dalam satu pintu tata kelola.
 
+![Konsep Jaringan IPPBX Perusahaan](/assets/img/ippbx-network-concept.webp)
+
 ## 3 Pilar Utama Penghematan 40% Melalui Migrasi IPPBX
 
 Bagaimana angka penghematan hingga 40% tersebut dapat dicapai? Berikut adalah rincian pemangkasan biaya operasional (OpEx) pasca-migrasi:
@@ -49,6 +51,8 @@ Untuk membantu CFO memproyeksikan pengembalian investasi, berikut adalah pendeka
 ```text
 ROI = ((Total Penghematan Operasional 1 Tahun - Investasi Awal CapEx) / Investasi Awal CapEx) x 100%
 ```
+
+![Perbandingan Biaya Komunikasi Sebelum dan Sesudah Migrasi IPPBX](/assets/img/ippbx-cost-savings.webp)
 
 ### Contoh Skenario Studi Kasus:
 
@@ -75,6 +79,8 @@ Bagi CEO, manfaat IPPBX melampaui lembar akuntansi CFO. IPPBX menghadirkan kemam
 
 - **Mendukung Kerja Remote (WFH/WFA):** Ekstensi telepon kantor karyawan dapat aktif di _smartphone_ mereka melalui aplikasi khusus. Pelanggan tetap dapat menghubungi nomor kantor resmi, dan karyawan dapat menjawabnya di mana saja seolah-olah sedang duduk di meja kerja mereka.
 - **Integrasi Sistem Bisnis (CRM/ERP):** IPPBX dapat diintegrasikan dengan database pelanggan. Ketika klien menelepon, data profil dan riwayat transaksi mereka langsung muncul di layar komputer staf pelayanan (_pop-up screen_), mempercepat durasi penanganan panggilan.
+
+![Mobilitas dan Konektivitas Multi-Device IPPBX](/assets/img/ippbx-mobility.webp)
 
 ## Kesimpulan
 
