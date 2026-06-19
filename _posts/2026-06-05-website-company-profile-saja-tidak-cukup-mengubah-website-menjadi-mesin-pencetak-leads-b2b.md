@@ -8,8 +8,9 @@ categories: [software, website, bisnis]
 tags:
   [
     Website B2B,
+    Fungsi website perusahaan,
     Company Profile,
-    Lead Generation    
+    Lead Generation,
   ]
 related_post: related-posts.html
 language: id
