@@ -45,6 +45,8 @@ Aplikasi instan siap pakai seperti _off-the-shelf software_ atau SaaS sering kal
 - **Biaya Skalabilitas yang Membengkak:** SaaS biasanya mengenakan tarif per pengguna (_pay-per-user_). Seiring pertumbuhan jumlah karyawan Anda, biaya langganan bulanan akan melonjak tajam tanpa Anda pernah memiliki hak kepemilikan atas perangkat lunak tersebut.
 - **Keterbatasan Integrasi:** Menghubungkan aplikasi instan dengan sistem internal yang sudah ada sering kali menjadi mimpi buruk karena terbatasnya akses API.
 
+![Keterbatasan dan Hambatan Sistem Aplikasi Instan (SaaS)](/assets/img/saas-limitations.webp)
+
 ## Software Custom: Setelan Jas yang Pas dengan Karakter Bisnis Anda
 
 Software custom dikembangkan secara khusus dari nol untuk memenuhi kebutuhan operasional spesifik satu perusahaan.
@@ -59,6 +61,8 @@ Software custom dikembangkan secara khusus dari nol untuk memenuhi kebutuhan ope
 
 - **Waktu Pengembangan:** Pembuatan software kustom memerlukan waktu berkisar beberapa bulan untuk analisis kebutuhan, koding, dan pengujian.
 - **Investasi Awal Lebih Besar:** Membutuhkan alokasi anggaran belanja modal (CapEx) di awal proyek untuk biaya tim pengembang.
+
+![Transisi dari Sistem Manual/Kaku ke Software Custom](/assets/img/tanda-bisnis-butuh-software-custom.webp)
 
 ## Dilema ERP: Beli ERP Instan atau Buat Sendiri?
 
