@@ -17,7 +17,7 @@ language: id
 locale: id_ID
 toc: true
 excerpt: "Pelajari bagaimana sebuah perusahaan manufaktur kelas menengah berhasil menekan kebocoran biaya operasional hingga 30% melalui implementasi ERP custom dan integrasi sistem menyeluruh bersama Dika Karya Tech."
-description: "Studi kasus keberhasilan integrasi sistem perusahaan dan pembuatan ERP custom yang sukses memangkas kebocoran biaya operasional hingga 30%."
+description: "Studi kasus keberhasilan integrasi sistem perusahaan dan pembuatan ERP custom yang sukses memangkas kebocoran biaya operasional hingga 30%. Konsultan IT Surabaya Dika Karya Tech"
 ---
 
 Skalabilitas sering kali menjadi pedang bermata dua bagi perusahaan manufaktur kelas menengah. Ketika volume pesanan melonjak tajam, kelemahan pada infrastruktur operasional internal akan terekspos. Jika sistem administrasi tidak mampu mengimbangi laju produksi, perusahaan akan mengalami apa yang disebut sebagai **"Growth Paradox"** dimana omzet penjualan meningkat pesat, namun margin keuntungan justru tergerus oleh kebocoran operasional yang tidak disadari.
