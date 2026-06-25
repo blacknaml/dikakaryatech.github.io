@@ -72,11 +72,14 @@ Alih-alih merombak total kebiasaan karyawan, kami membangun sebuah sistem ERP ku
 
 Setelah masa implementasi dan adaptasi (uji coba _go-live_ paralel selama 4 minggu), transformasi digital ini membuahkan hasil empiris yang terukur secara finansial pada kuartal pertama:
 
+<div class="table-responsive" markdown="1">
 | Metrik Kinerja Operasional         | Sebelum Sistem Custom (Manual) | Sesudah Implementasi ERP Custom Dika Karya Tech                           |
 | :--------------------------------- | :----------------------------- | :------------------------------------------------------------------------ |
 | **Waktu Rekonsiliasi Akhir Bulan** | 3 hingga 5 Hari                | **Maksimal 2 Jam** (Laporan otomatis di-generate sistem)                  |
 | **Downtime Akibat Stok Kosong**    | Terjadi 4-5 kali dalam sebulan | **Turun 95%** (Notifikasi _restock_ terpicu otomatis sebelum stok kritis) |
 | **Akurasi Inventaris Gudang**      | ~ 72%                          | **99.8%** (Terlacak menggunakan validasi sistem _barcode_)                |
+| --- | --- | ---  | 
+{: .table .table-bordered }
 
 Secara keseluruhan agregat, manajemen Perusahaan X melaporkan bahwa sistem kustom ini berhasil **menekan kebocoran biaya operasional (OpEx) hingga 30%**. Investasi awal untuk pembuatan _software_ (CapEx) telah kembali (_Break-Even Point_) dalam waktu kurang dari 8 bulan.
 
