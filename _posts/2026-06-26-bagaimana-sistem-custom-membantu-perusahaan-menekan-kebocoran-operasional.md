@@ -26,8 +26,6 @@ Inilah krisis nyata yang dialami oleh **Perusahaan X** (nama disamarkan demi ker
 
 Artikel ini membedah studi kasus nyata tentang bagaimana **integrasi sistem perusahaan** dan pengembangan perangkat lunak kustom berhasil menyelamatkan margin profit mereka.
 
----
-
 ## Latar Belakang Masalah: Operasional dalam Silo
 
 Pada awal kerja sama, Perusahaan X sedang mengalami fase hiper-pertumbuhan. Pabrik mereka beroperasi 24 jam untuk memenuhi pesanan distributor. Namun, di balik sibuknya lini produksi, manajemen puncak menghadapi _blind spot_ yang kritis: data operasional sangat berantakan.
@@ -81,8 +79,6 @@ Setelah masa implementasi dan adaptasi (uji coba _go-live_ paralel selama 4 ming
 | **Akurasi Inventaris Gudang**      | ~ 72%                          | **99.8%** (Terlacak menggunakan validasi sistem _barcode_)                |
 
 Secara keseluruhan agregat, manajemen Perusahaan X melaporkan bahwa sistem kustom ini berhasil **menekan kebocoran biaya operasional (OpEx) hingga 30%**. Investasi awal untuk pembuatan _software_ (CapEx) telah kembali (_Break-Even Point_) dalam waktu kurang dari 8 bulan.
-
----
 
 ## Kesimpulan
 
