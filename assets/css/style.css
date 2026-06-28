@@ -3000,7 +3000,7 @@ blockquote {
 
 .more-btn {
   background: #ffffff none repeat scroll 0 0;
-  color: #ff5a6e;
+  color: #b61432;
   font-weight: 600;
   padding-left: 11px;
   text-transform: uppercase;
@@ -3059,7 +3059,7 @@ blockquote {
 }
 
 .blog-area .pagi-area .pagination li.active a {
-  background-color: #ff5a6e;
+  background-color: #b61432;
   color: #ffffff;
   border: 1px solid transparent;
 }
