@@ -3342,7 +3342,11 @@ blockquote {
 }
 
 .testimonial-items {
+  background-color: #ffffff;
   margin-bottom: -5px;
+  box-shadow: 0 0 10px #cccccc;
+  border-radius: 15px;
+  padding: 25px 15px;
 }
 
 .testimonials-area .testimonial-item .info .content {
