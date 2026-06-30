@@ -4303,6 +4303,7 @@ footer.color-yellow .footer-bottom p a {
 /* Methodology */
 .methodology {
   display: table;
+  margin-bottom: 15px;
 }
 
 .methodology .icon-box {
@@ -4339,9 +4340,8 @@ footer.color-yellow .footer-bottom p a {
 }
 
 .methodology .text-box .desc {
-  color: #888;
   margin: 0;
-
+  color: rgb(95 94 94 / 1);
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
