@@ -64,7 +64,7 @@ Membangun infrastruktur digital untuk korporasi B2B dan lembaga BUMD jauh berbed
 
 Jangan biarkan antarmuka _website_ yang usang merusak reputasi kredibilitas perusahaan daerah Anda. Dika Karya Tech memiliki rekam jejak yang solid dalam mengembangkan _software custom_ dan antarmuka _web_ profesional untuk klien korporat berskala besar.
 
-**[Lihat portofolio desain website B2B dan pemerintahan kami.](/portfolio.html)**
+**[Lihat portofolio desain website B2B dan pemerintahan kami.](/portofolio.html)**
 
 Jadwalkan sesi audit digital bersama _System Architect_ dan desainer UI/UX kami. Kami siap mengubah sistem _legacy_ institusi Anda menjadi platform pelayanan publik yang modern, aman, dan membanggakan.
 
