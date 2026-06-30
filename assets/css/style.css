@@ -4299,3 +4299,50 @@ footer.color-yellow .footer-bottom p a {
 #toc a:hover {
   color: #9d174d;
 }
+
+/* Methodology */
+.methodology {
+  display: table;
+}
+
+.methodology .icon-box {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.methodology .icon-box span {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #fbe2e2;
+  color: #9b1c2e;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.methodology .text-box {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 14px;
+}
+
+.methodology .text-box .title {
+  margin: 0;
+  color: rgb(26 28 28 / 1);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.methodology .text-box .desc {
+  color: #888;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
