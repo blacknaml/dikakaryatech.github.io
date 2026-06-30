@@ -4,13 +4,12 @@ title: "Dilema CTO: Memilih n8n (Self-Hosted) vs Zapier untuk Skalabilitas dan K
 author: debi
 date: 2026-06-26 09:00:00 +0700
 image: /assets/img/n8n-vs-zapier-header-flat-realistic.webp
-categories: [infrastruktur, keamanan-data, otomasi, enterprise]
+categories: [infrastruktur, keamanan-data, otomasi, sistem ingtegrator]
 tags:
   [
-    Keamanan n8n vs Zapier,
-    arsitektur integrasi enterprise,
+    n8n vs Zapier,
+    arsitektur integrasi,
     self-hosted n8n,
-    privasi data korporat,
     Otomasi Rumah Sakit,
   ]
 related_post: related-posts.html

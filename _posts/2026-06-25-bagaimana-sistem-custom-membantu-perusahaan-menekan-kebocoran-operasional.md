@@ -4,12 +4,11 @@ title: "Bagaimana Sistem Custom Membantu Perusahaan 'X' Menekan Kebocoran Operas
 author: debi
 date: 2026-06-25 09:00:00 +0700
 image: /assets/img/case-study-erp-swiss-minimalism.webp
-categories: [case-study, erp, manufaktur, bisnis]
+categories: [software custom, erp, manufaktur, bisnis]
 tags:
   [
-    Jasa pembuatan ERP custom,
+    Jasa ERP custom,
     Integrasi sistem perusahaan,
-    Efisiensi Operasional,
     Custom Software Development,
   ]
 related_post: related-posts.html
