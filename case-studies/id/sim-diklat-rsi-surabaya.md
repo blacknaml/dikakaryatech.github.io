@@ -1,5 +1,5 @@
 ---
-layout: case-study # Sesuaikan dengan nama layout single portfolio di theme Anda (misal: 'portfolio-single')
+layout: case-study
 title: "Studi Kasus: SIM Diklat RSI Surabaya Achmad Yani"
 meta_description: "Bagaimana Dika Karya Tech membantu RSI Surabaya Achmad Yani memangkas kerumitan administrasi pelatihan medis dengan Sistem Informasi Manajemen Diklat Custom."
 permalink: /portofolio/rsi-surabaya-sim-diklat.html
@@ -7,7 +7,7 @@ image: /assets/images/portfolio/rsisurabaya-showcase.webp
 client: "Rumah Sakit Islam Surabaya Achmad Yani"
 category: "Aplikasi Web Custom"
 tags: ["PHP", "MySQL", "Bootstrap", "Web Architecture"]
-year: "2024" # Sesuaikan dengan tahun pengerjaan
+year: "2024"
 cta_section: cta-whatsapp.html
 cta_title: "Rumah Sakit Anda Mengalami Kendala Operasional Serupa?"
 cta_description: "Tinggalkan pengelolaan data manual (Excel) yang berisiko pada akreditasi. Mari rancang arsitektur Sistem Informasi Diklat yang efisien bersama tim konsultan kami."

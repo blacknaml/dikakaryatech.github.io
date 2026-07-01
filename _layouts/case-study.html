@@ -27,10 +27,11 @@ layout: default
       <div class="blog-items">
         <div class="col-md-12">
           <div class="item">
-            
             <div class="info">
               <h2>{{ page.title }}</h2>
-              <div class="meta"></div>
+              <div class="meta">
+                {{ page.category }}
+              </div>
               {{ content }}
               <div class="post-tags">
                 <i class="fas fa-tags"></i>
