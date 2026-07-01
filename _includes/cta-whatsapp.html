@@ -1,0 +1,36 @@
+<div
+  class="alert alert-info text-center"
+  style="
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f8fcfd;
+    border: 1px solid #d1ecf1;
+  "
+>
+  <h3 style="margin-top: 0; color: #0c5460; font-size: 22px; font-weight: 600">
+    {{ page.cta_title | default: "Mari konsultasikan ide, dan kebutuhan Anda" }}
+  </h3>
+  <p style="color: #4a4a4a; font-size: 16px; margin-bottom: 20px">
+    {{ page.cta_description | default: "Ceritakan kebutuhan Anda kepada kami,
+    dan kami akan membantu menemukan solusi terbaik untuk bisnis Anda." }}
+  </p>
+  <a
+    href="https://api.whatsapp.com/send?phone=6282143186197&amp;text=Halo%20Tim%20Dika%20Karya%20Tech.%20Saya%20membaca%20artikel%20tentang%20{{ page.title | url_encode }}.%20Bisakah%20kita%20diskusi%20lebih%20lanjut?"
+    target="_blank"
+    class="btn circle btn-success btn-md"
+    style="
+      border: none;
+      text-transform: uppercase;
+      padding: 10px 25px;
+      display: inline-block;
+      white-space: nowrap;
+      word-break: break-word;
+      max-width: 100%;
+      box-sizing: border-box;
+    "
+  >
+    <i class="fab fa-whatsapp" style="margin-right: 4px; font-size: 16px"></i>
+    {{ page.cta_button_text | default: "Konsultasi Gratis Sekarang" }}
+  </a>
+</div>
