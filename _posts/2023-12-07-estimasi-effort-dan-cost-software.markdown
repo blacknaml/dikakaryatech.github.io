@@ -12,6 +12,10 @@ related_post: related-posts.html
 locale: id_ID
 excerpt: "Pada proyek perangkat lunak, estimasi biaya dan usaha proyek mempunyai kesulitan tersendiri karena karakteristik-karakteristik perangkat lunak yang berbeda dengan proyek fisik. Kesulitan-kesulitan yang sering dihadapi dalam estimasi sangat berkaitan dengan sifat alami perangkat lunak, khususnya kompleksitas dan keabstrakan. Selain itu pengembangan perangkat lunak merupakan kegiatan yang lebih banyak dilakukan secara intensif oleh manusia."
 description: "Pada proyek perangkat lunak, estimasi biaya dan usaha proyek mempunyai kesulitan tersendiri karena karakteristik-karakteristik perangkat lunak yang berbeda dengan proyek fisik. Kesulitan-kesulitan yang sering dihadapi dalam estimasi sangat berkaitan dengan sifat alami perangkat lunak, khususnya kompleksitas dan keabstrakan. Selain itu pengembangan perangkat lunak merupakan kegiatan yang lebih banyak dilakukan secara intensif oleh manusia."
+cta_section: cta-whatsapp.html
+cta_title: "Takut Proyek Perangkat Lunak Anda Over-Budget atau Molor?"
+cta_description: "Dika Karya Tech mengeliminasi spekulasi dengan metode hitung Use Case Points (UCP) dan lampiran BPMN yang presisi di setiap KAK & Proposal. Dapatkan transparansi penuh untuk rencana sistem Anda."
+cta_button_text: "Minta Estimasi Proyek Gratis"
 ---
 
 Pengukuran memungkinkan kita mendapatkan informasi tentang proses dan proyek dengan suatu mekanisme evaluasi obyektif. Lord Kevin pernah mengatakan,
@@ -641,6 +645,10 @@ Velocity adalah metrik yang berguna untuk mengukur kecepatan tim Scrum dalam men
 - [https://www.scrum.org/resources/blog/velocity-revolutionary-way-measure-scrum](https://www.scrum.org/resources/blog/velocity-revolutionary-way-measure-scrum)
 - [https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/)
 - [https://deeprojectmanager.com/how-to-calculate-velocity-in-scrum/](https://deeprojectmanager.com/how-to-calculate-velocity-in-scrum/)
+
+{% if page.cta_section %}
+{% include {{ page.cta_section }} %}
+{% endif %}
 
 {% if page.related_post %}
 {% include {{ page.related_post }} %}
