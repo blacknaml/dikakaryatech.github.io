@@ -66,8 +66,6 @@ Mengintegrasikan VoIP / IP-PBX ke dalam ekosistem perangkat lunak _enterprise_ (
 
 Jangan biarkan infrastruktur komunikasi Anda menjadi sistem yang terisolasi. Dika Karya Tech memiliki rekam jejak yang terbukti dalam menyediakan **jasa konfigurasi dan integrasi VoIP / IP-PBX enterprise**, mengintegrasikan arsitektur telepon IP canggih dengan sistem _backend_ RS, korporasi manufaktur, dan platform B2B.
 
-**[Jadwalkan Konsultasi Teknis Arsitektur VoIP Anda Bersama Kami.](/index.html#contact)**
-
 Insinyur jaringan kami siap mengaudit infrastruktur eksisting Anda dan merancang topologi integrasi yang akan mengubah sistem telepon Anda menjadi mesin analitik data yang tangguh.
 
 {% if page.cta_section %}

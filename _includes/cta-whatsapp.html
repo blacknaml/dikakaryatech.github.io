@@ -15,22 +15,44 @@
     {{ page.cta_description | default: "Ceritakan kebutuhan Anda kepada kami,
     dan kami akan membantu menemukan solusi terbaik untuk bisnis Anda." }}
   </p>
-  <a
-    href="https://api.whatsapp.com/send?phone=6282143186197&amp;text=Halo%20Tim%20Dika%20Karya%20Tech.%20Saya%20membaca%20artikel%20tentang%20{{ page.title | url_encode }}.%20Bisakah%20kita%20diskusi%20lebih%20lanjut?"
-    target="_blank"
-    class="btn circle btn-success btn-md"
-    style="
-      border: none;
-      text-transform: uppercase;
-      padding: 10px 25px;
-      display: inline-block;
-      white-space: nowrap;
-      word-break: break-word;
-      max-width: 100%;
-      box-sizing: border-box;
-    "
+  <div
+    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px"
   >
-    <i class="fab fa-whatsapp" style="margin-right: 4px; font-size: 16px"></i>
-    {{ page.cta_button_text | default: "Konsultasi Gratis Sekarang" }}
-  </a>
+    <a
+      href="https://api.whatsapp.com/send?phone=6282143186197&amp;text=Halo%20Tim%20Dika%20Karya%20Tech.%20Saya%20membaca%20artikel%20tentang%20{{ page.title | url_encode }}.%20Bisakah%20kita%20diskusi%20lebih%20lanjut?"
+      target="_blank"
+      class="btn circle btn-success btn-md"
+      style="
+        padding: 12px 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      "
+    >
+      <i class="fab fa-whatsapp" style="margin-right: 4px; font-size: 16px"></i>
+      {{ page.cta_button_text | default: "Konsultasi Gratis Sekarang" }}
+    </a>
+    <a
+      href="/index.html#contact"
+      class="btn circle btn-theme effect border btn-md"
+      style="
+        padding: 12px 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      "
+    >
+      <i
+        class="fas fa-envelope-open-text"
+        style="margin-right: 8px; font-size: 16px"
+      ></i>
+      Isi Form Konsultasi
+    </a>
+  </div>
 </div>
