@@ -15,7 +15,7 @@ description: "Pada proyek perangkat lunak, estimasi biaya dan usaha proyek mempu
 cta_section: cta-whatsapp.html
 cta_title: "Takut Proyek Perangkat Lunak Anda Over-Budget atau Molor?"
 cta_description: "Dika Karya Tech mengeliminasi spekulasi dengan metode hitung Use Case Points (UCP) dan lampiran BPMN yang presisi di setiap KAK & Proposal. Dapatkan transparansi penuh untuk rencana sistem Anda."
-cta_button_text: "Minta Estimasi Proyek Gratis"
+cta_button_text: "Minta Estimasi Gratis"
 ---
 
 Pengukuran memungkinkan kita mendapatkan informasi tentang proses dan proyek dengan suatu mekanisme evaluasi obyektif. Lord Kevin pernah mengatakan,
