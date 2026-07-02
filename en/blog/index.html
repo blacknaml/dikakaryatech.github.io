@@ -5,8 +5,10 @@ tagline: Dika Karya Tech share knowledge and experience.
 description: Blog of Dika Karya Tech. We share knowledge about experience in software engineering, development and deployment.
 prev: Previous
 next: Next
+read_more: Read More
 home: Home
 language: en
+locale: en_US
 permalink: /en/blog/
 pagination: 
   enabled: true
@@ -83,7 +85,7 @@ pagination:
                 <p>{{ post.excerpt }}</p>
                 <div class="read-more">
                   <a href="{{ post.url }}" class="more-btn"
-                    >Selengkapnya <i class="fas fa-angle-double-right"></i
+                    >{{page.read_more}} <i class="fas fa-angle-double-right"></i
                   ></a>
                 </div>
               </div>

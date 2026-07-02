@@ -163,11 +163,20 @@
                 {% endfor %}
 
                 <div class="post-pagi-area">
-                  {% if page.previous.url %}
-                  <a href="{{ prev_post.url | relative_url }}"><i class="fas fa-arrow-left"></i> Previous Post</a>
-                  {% endif %}
-                  {% if page.next.url %}
-                  <a href="{{ next_post.url | relative_url }}">Next Post <i class="fas fa-arrow-right"></i></a>
+                  {% if page.language == "id" %}
+                    {% if page.previous.url %}
+                    <a href="{{ prev_post.url | relative_url }}"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <a href="{{ next_post.url | relative_url }}">Lanjut <i class="fas fa-arrow-right"></i></a>
+                    {% endif %}
+                  {% else %}
+                    {% if page.previous.url %}
+                    <a href="{{ prev_post.url | relative_url }}"><i class="fas fa-arrow-left"></i> Previous</a>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <a href="{{ next_post.url | relative_url }}">Next <i class="fas fa-arrow-right"></i></a>
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>
