@@ -2,7 +2,7 @@
 layout: post
 title: "Menyelamatkan Legacy System Anda dengan Otomasi Cerdas"
 author: debi
-date: 2026-07-20 09:00:00 +0700
+date: 2026-07-17 09:00:00 +0700
 image: /assets/img/legacy-system-integration-header-flat.webp
 categories: [it-consultant, integrasi-sistem, software-house, artificial-intelligence]
 tags:

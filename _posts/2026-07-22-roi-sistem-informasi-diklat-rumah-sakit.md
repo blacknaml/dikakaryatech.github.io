@@ -2,7 +2,7 @@
 layout: post
 title: "Mencegah Denda Kepatuhan & Meningkatkan Utilisasi Residen dengan SIM Diklat"
 author: debi
-date: 2026-07-28 09:00:00 +0700
+date: 2026-07-22 09:00:00 +0700
 image: /assets/img/roi-sim-diklat-header-flat.webp
 categories: [manajemen, keuangan, sim-diklat, rumah-sakit]
 tags:
