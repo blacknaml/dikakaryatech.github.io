@@ -4,11 +4,11 @@ title: '"Vibe Coding" untuk Bisnis dan Mengapa Purwarupa Aplikasi AI Sering Cras
 author: debi
 date: 2026-07-13 09:00:00 +0700
 image: /assets/img/vibe-coding-vs-enterprise-header-flat.webp
-categories: [rekayasa-perangkat-lunak, software-custom, web-development]
+categories: [rekayasa-perangkat-lunak, software-custom, web-development, vibe-coding]
 tags:
   [   
     Kelemahan aplikasi no-code,
-    Aplikasi internal sering crash,
+    Vibe coding,
     Arsitektur enterprise,   
   ]
 related_post: related-posts.html
