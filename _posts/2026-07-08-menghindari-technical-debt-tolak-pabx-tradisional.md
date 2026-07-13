@@ -14,7 +14,7 @@ cta_button_text: "Konsultasi Modernisasi IPPBX"
 language: id
 locale: id_ID
 toc: true
-excerpt: "Bagi sebagian besar eksekutif (*CEO* dan *CTO*), mempertahankan PABX analog merupakan Technical Debt. Ketahui alasan finansial mengapa perusahaan harus bermigrasi ke IPPBX modern."
+excerpt: "Bagi sebagian besar eksekutif (CEO dan CTO), mempertahankan PABX analog merupakan Technical Debt. Ketahui alasan finansial mengapa perusahaan harus bermigrasi ke IPPBX modern."
 description: "Panduan modernisasi infrastruktur IT - Evaluasi biaya IPPBX vs PABX lama. Hindari Technical Debt akibat mempertahankan sistem telepon tradisional."
 permalink: /blog/migrasi-ippbx-menghentikan-technical-debt-pabx-tradisional.html
 ---
