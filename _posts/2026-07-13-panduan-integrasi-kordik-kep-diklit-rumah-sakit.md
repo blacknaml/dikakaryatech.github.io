@@ -2,7 +2,7 @@
 layout: post
 title: "Panduan Integrasi Data Kordik, KEP, dan Diklit dalam Satu Sistem Informasi Terpadu"
 author: debi
-date: 2026-07-13 09:00:00 +0700
+date: 2026-07-13 08:00:00 +0700
 image: /assets/img/kordik-kep-diklit-integration-header-flat.webp
 categories: [rumah-sakit, sim-diklat, kordik]
 tags: [Sistem informasi kordik, Manajemen KEP rumah sakit, SIM Diklat]
