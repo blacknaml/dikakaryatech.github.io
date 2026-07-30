@@ -25,8 +25,6 @@ Keputusan finansial antara membangun sistem mandiri (_Build Custom_) versus meny
 
 Kami di Dika Karya Tech secara rutin membantu korporasi memetakan arsitektur IT mereka. Artikel ini membedah secara matematis dan sistematis kapan strategi _Build_ lebih menguntungkan, dan kapan strategi _Buy_ adalah langkah yang tepat.
 
----
-
 ## Definisi Finansial: CapEx (_Build_) vs OpEx (_Buy_)
 
 Dalam akuisisi teknologi, metode pendanaan menentukan kepemilikan aset.
