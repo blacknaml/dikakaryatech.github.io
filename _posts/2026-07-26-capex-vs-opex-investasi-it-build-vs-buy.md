@@ -47,6 +47,7 @@ Mari asumsikan perusahaan manufaktur membutuhkan sistem ERP _Supply Chain_.
 - **Opsi Buy (SaaS):** Lisensi $50 per pengguna/bulan untuk 100 pengguna.
 - **Opsi Build (Custom):** Biaya _development_ awal $45,000 dari vendor _software house_.
 
+<div class="table-responsive" markdown="1">
 | Komponen Biaya (TCO 5 Tahun)      | Opsi _Buy_ (SaaS / OpEx)     | Opsi _Build_ (_Custom_ / CapEx) |
 | :-------------------------------- | :--------------------------- | :------------------------------ |
 | **Biaya Awal (_Year 1_)**         | $60,000 (Langganan 12 bulan) | $45,000 (_Full Development_)    |
@@ -54,6 +55,8 @@ Mari asumsikan perusahaan manufaktur membutuhkan sistem ERP _Supply Chain_.
 | **Biaya Langganan Tahun 2-5**     | $240,000 ($60k x 4 thn)      | $0 (Bebas biaya lisensi)        |
 | **Biaya Pemeliharaan / _Server_** | $0 (Ditanggung vendor SaaS)  | $15,000 (Rata-rata $3k/thn)     |
 | **Total TCO (5 Tahun)**           | **$315,000**                 | **$60,000**                     |
+{: .table .table-bordered }
+</div>
 
 Grafik di bawah memvisualisasikan bagaimana kurva pengeluaran CapEx akan merata (_flatline_) setelah tahun pertama, sementara kurva OpEx akan terus mendaki secara eksponensial.
 
