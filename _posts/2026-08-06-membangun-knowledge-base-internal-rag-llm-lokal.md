@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Membangun Knowledge Base Internal Perusahaan Menggunakan RAG (Retrieval-Augmented Generation) & LLM Lokal"
+title: "Membangun Knowledge Base Internal Perusahaan Menggunakan RAG & LLM Lokal"
 author: debi
 date: 2026-08-06 14:00:00 +0700
 image: /assets/img/rag-llm-lokal-flat.webp
-categories: [ai-enterprise, inovasi-it, keamanan-data]
-tags: [RAG, Local LLM, Knowledge Base Internal, ChatGPT Enterprise, Keamanan Data]
+categories: [ai-enterprise, artificial intelligence, keamanan-data]
+tags: [RAG, Local LLM, Knowledge Base Internal, Keamanan Data]
 related_post: related-posts.html
 cta_section: cta-whatsapp.html
 cta_title: "Implementasikan AI Privat untuk Data Sensitif Anda"
