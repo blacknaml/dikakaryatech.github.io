@@ -66,7 +66,7 @@ Kami merancang purwarupa RAG untuk menganalisis dokumen legal. Menggunakan model
 
 Lebih penting lagi, sistem dirancang untuk memberikan sitasi referensi yang presisi (contoh: *Sumber: Draft_Kontrak_Vendor_v3.pdf, Paragraf 4.1.2*). Ini menghilangkan risiko _hallucination_, memberikan verifikasi langsung bagi tim legal.
 
-## Kesimpulan
+## Kedaulatan Data Adalah Kewajiban Enterprise
 
 Bagi institusi *enterprise*, menjaga kedaulatan data bukanlah opsi, melainkan kewajiban. Implementasi RAG yang digabungkan dengan Local LLM menjamin bahwa AI tidak pernah berhalusinasi di luar konteks korporat Anda, dan seluruh _intellectual property_ tetap tersimpan aman di balik _firewall_ Anda.
 
