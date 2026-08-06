@@ -2,7 +2,7 @@
 layout: post
 title: "Membangun Call Center Mandiri Berbasis IPPBX Asterisk untuk Layanan Pelanggan 24/7 Tanpa Pihak Ketiga"
 author: debi
-date: 2026-08-07 11:00:00 +0700
+date: 2026-08-10 11:00:00 +0700
 image: /assets/img/ippbx-call-center-flat.webp
 categories: [infrastruktur-it, voip, crm, layanan-pelanggan]
 tags: [IPPBX, Asterisk, VoIP, CRM, Call Center, Customer Service]
