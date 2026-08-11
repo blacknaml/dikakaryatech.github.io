@@ -66,7 +66,7 @@ Infrastruktur berbasis Asterisk sudah dilengkapi dengan fitur-fitur yang biasany
 - **Ring Groups & Hunt Groups:** Strategi pengelompokan ekstensi departemen di mana panggilan masuk dapat diatur untuk berdering serentak di semua meja agen (*ring all*) atau berurutan melingkar (*round-robin*) hingga ada yang merespons.
 - **Conference Calling:** Memfasilitasi rapat internal atau eksternal melalui telepon dengan mudah, memungkinkan partisipan dari berbagai lokasi bergabung dalam satu sesi virtual.
 - **Multi-Tenant Support:** Kemampuan untuk melayani beberapa departemen atau bahkan beberapa cabang perusahaan dengan sistem yang terisolasi secara logis, meskipun berjalan di satu infrastruktur server yang sama.
-- **SIP Trunking & Gateways:** Integrasi mulus dengan jaringan telepon publik (PSTN) melalui operator telekomunikasi modern (Telkom atau operator VoIP lainnya) untuk mengelola panggilan keluar dan masuk dari jaringan telepon konvensional.
+- **SIP Trunking & Gateways:** Integrasi dengan jaringan telepon publik (PSTN) melalui operator telekomunikasi modern (Telkom atau operator VoIP lainnya) untuk mengelola panggilan keluar dan masuk dari jaringan telepon konvensional.
 
 ## Implementasi untuk Industri
 
