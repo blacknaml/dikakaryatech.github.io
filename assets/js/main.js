@@ -56,7 +56,7 @@
 
         $(".equal-height").equalHeights().find("img, iframe, object").on('load', function () {
             $(".equal-height").equalHeights();
-        });
+        });        
 
         /* ==================================================
             # Fun Factor Init
@@ -321,7 +321,7 @@
          ===============================================*/
         $(window).on('load', function () {
             // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");;
+            $(".se-pre-con").fadeOut("slow");            
         });
 
 
