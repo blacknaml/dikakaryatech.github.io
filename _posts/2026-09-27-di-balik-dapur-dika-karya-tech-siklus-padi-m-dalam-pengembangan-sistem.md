@@ -2,7 +2,7 @@
 layout: post
 title: "Mengapa Kami Setia Menggunakan Siklus PADI-M dalam Pengembangan Sistem"
 author: debi
-date: 2026-09-27 10:00:00 +0700
+date: 2026-09-27 09:00:00 +0700
 image: /assets/img/budaya-kerja-padi-m-dika-karya-tech.webp
 categories: [manajemen-proyek, software-engineering, system-analysis-design]
 tags: [Siklus PADI-M, SOP Software Development, Sistem IT Enterprise]
