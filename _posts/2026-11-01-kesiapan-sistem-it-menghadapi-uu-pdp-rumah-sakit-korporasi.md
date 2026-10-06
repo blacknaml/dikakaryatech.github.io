@@ -2,7 +2,7 @@
 layout: post
 title: "Kesiapan Sistem IT Rumah Sakit & Korporasi Menghadapi Implementasi Penuh UU Pelindungan Data Pribadi (PDP)"
 author: debi
-date: 2026-10-04 09:00:00 +0700
+date: 2026-11-01 09:00:00 +0700
 image: /assets/img/kepatuhan-uu-pdp-it-sistem.webp
 categories: [regulasi-it, keamanan-siber, sistem-informasi]
 tags: [UU PDP untuk sistem IT, Keamanan data pasien rumah sakit, Enkripsi database perusahaan, IT Compliance, SIM Diklat]

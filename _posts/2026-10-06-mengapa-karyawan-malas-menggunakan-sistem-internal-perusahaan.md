@@ -2,7 +2,7 @@
 layout: post
 title: "Mengapa Karyawan Malas Menggunakan Sistem Internal Perusahaan?"
 author: debi
-date: 2026-11-01 10:00:00 +0700
+date: 2026-10-06 10:00:00 +0700
 image: /assets/img/ui-ux-aplikasi-internal-perusahaan.webp
 categories: [software, software-development]
 tags: [Desain antarmuka software bisnis, User Adoption]
