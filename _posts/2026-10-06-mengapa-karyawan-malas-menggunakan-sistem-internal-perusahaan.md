@@ -19,16 +19,18 @@ description: "Membahas masalah user adoption pada aplikasi enterprise karena UI/
 permalink: /blog/mengapa-karyawan-malas-menggunakan-sistem-internal-perusahaan.html
 ---
 
-Skenario yang sering terjadi adalah perusahaan telah menginvestasikan budget yang cukup besar untuk membangun software bisnis internal, misalnya HRIS atau ERP internal, dengan harapan para karyawan memakainya dan perusahaan mengadopsi digitalisasi modern. Namun, setelah 2 bulan peluncuran, kita dapati fakta yang menyakitkan bahwasannya **karyawan diam-diam masih menggunakan Excel / Spreedsheet, mencata di buku, atau melaporkan progress pekerjaan via group WhatsApp.**. Mereka menolah menggunakan sistem baru dengan barbagai alasan, salah satunya *"Sistemnya ribet, Pak!"*, atau *"Menunya membingungkan Bu, saya takut salah input."*
+Skenario yang sering terjadi adalah perusahaan telah menginvestasikan budget yang cukup besar untuk membangun software bisnis internal, misalnya HRIS atau ERP internal, dengan harapan para karyawan memakainya dan perusahaan telah berhasil mengadopsi digitalisasi modern. 
 
-Biasanya Departemen IT atau Manajer SDM menyalahkan kedisiplinan karyawan. Namun kami melihat masalah ini terjadi karena **Software Bisnis Internal yang tidak ramah pengguna sehingga User Adoption menjadi rendah akibat dari UI/UX yang sangat buruk.**
+Namun, setelah 2 bulan peluncuran, kita dapati fakta yang menyakitkan bahwasannya **karyawan diam-diam masih menggunakan Excel / Spreadsheet, mencatat di buku, atau melaporkan progress pekerjaan via group WhatsApp.**. Mereka menolak menggunakan sistem baru dengan barbagai alasan, salah satunya *"Sistemnya ribet, Pak!"*, atau *"Menunya membingungkan Bu, saya takut salah input."*
 
-## "Asal Berfungsi Saja" di Aplikasi Enterprise / Software Bisnis Internal
+Biasanya Departemen IT atau Manajer SDM menyalahkan kedisiplinan karyawan. Namun kami melihat masalah ini terjadi karena **Software Bisnis Internal yang tidak ramah pengguna sehingga User Adoption menjadi rendah akibat dari UI/UX yang buruk.**
+
+## "Asal Berfungsi Saja" di Software Bisnis Internal
 
 Anggapan "Asal berfungsi saja" sudah sangat tidak relevan di era digitalisasi saat ini. Software bisnis internal perusahaan yang hanya fokus pada fungsi dan mengabaikan UI/UX tidak akan bertahan lama dipakai karena **UI/UX adalah tentang psikologi efisiensi kerja**. Jika karyawan sudah terbiasa dengan aplikasi modern seperti Gojek, Instagram atau Tokopedia di kesehariannya, maka wajar saja jika mereka akan merasa stres saat dipaksa menggunakan aplikasi kantor yang lambat, kaku, dan membingungkan selama 8 jam sehari.
 
 ![Transformasi UI/UX Aplikasi Internal Perusahaan](/assets/img/ui-ux-aplikasi-internal-perusahaan.webp)
-*Visualisasi transformasi UI/UX: Mengubah antarmuka legacy software bisnis internal yang membuat frustrasi karyawan menjadi dasbor modern yang intuitif, bersih, dan meningkatkan produktivitas.*
+*Visualisasi transformasi UI/UX: Mengubah antarmuka legacy software bisnis internal menjadi dashboard modern yang intuitif, bersih, dan meningkatkan produktivitas.*
 
 Aplikasi dengan antarmuka yang buruk tidak hanya membuat karyawan lelah, tetapi menambah biaya operasional perusahaan karena inefisiensi waktu kerja. Berikut kami berikan contoh perhitungan secara maya:
 
