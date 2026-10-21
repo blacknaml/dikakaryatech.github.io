@@ -2,7 +2,7 @@
 layout: post
 title: "Aplikasi Selesai Dibuat, Lalu Apa? Pentingnya SLA (Service Level Agreement) dalam Proyek IT Skala Menengah-Atas"
 author: debi
-date: 2026-10-18 10:00:00 +0700
+date: 2026-10-22 10:00:00 +0700
 image: /assets/img/sla-maintenance-proyek-it.webp
 categories: [manajemen-proyek, infrastruktur-it, bisnis]
 tags: [SLA proyek IT, Biaya maintenance software, Kontrak pemeliharaan sistem, Siklus PADI-M, Uptime Monitoring]
