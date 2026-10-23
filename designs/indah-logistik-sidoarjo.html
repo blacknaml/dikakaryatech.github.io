@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="id" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary": "#b90c17", "on-tertiary-container": "#d96f00", "on-background": "#191c1d", "on-primary": "#ffffff", "inverse-surface": "#2e3132", "on-tertiary-fixed-variant": "#713700", "primary": "#001026", "on-secondary-fixed-variant": "#93000d", "secondary-fixed": "#ffdad6", "on-primary-container": "#778db2", "inverse-on-surface": "#f0f1f2", "on-secondary": "#ffffff", "inverse-primary": "#b1c7f0", "secondary-container": "#de2e2c", "on-secondary-container": "#fffbff", "on-surface-variant": "#44474e", "surface-container-low": "#f3f4f5", "error": "#ba1a1a", "on-tertiary-fixed": "#301400", "primary-fixed": "#d5e3ff", "surface-container-highest": "#e1e3e4", "primary-container": "#0b2545", "surface-bright": "#f8f9fa", "background": "#f8f9fa", "tertiary-fixed-dim": "#ffb784", "error-container": "#ffdad6", "primary-fixed-dim": "#b1c7f0", "on-error-container": "#93000a", "outline-variant": "#c4c6cf", "secondary-fixed-dim": "#ffb4ab", "surface-tint": "#495f82", "surface": "#f8f9fa", "tertiary-container": "#3e1b00", "on-primary-fixed": "#001c3b", "tertiary-fixed": "#ffdcc6", "surface-variant": "#e1e3e4", "outline": "#74777f", "surface-container": "#edeeef", "surface-container-high": "#e7e8e9", "on-secondary-fixed": "#410002", "surface-container-lowest": "#ffffff", "tertiary": "#1e0a00", "on-surface": "#191c1d", "surface-dim": "#d9dadb", "on-primary-fixed-variant": "#314769", "on-error": "#ffffff", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "2rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "metric-tabular": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "label-md": ["Inter"], "title-md": ["Plus Jakarta Sans"] }, fontSize: { "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "headline-xl-mobile": ["2rem", { "lineHeight": "2.5rem", "fontWeight": "800" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "700" }], "metric-tabular": ["1.25rem", { "lineHeight": "1.5rem", "fontWeight": "700" }], "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "fontWeight": "700" }], "headline-xl": ["3rem", { "lineHeight": "3.5rem", "fontWeight": "800" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "700" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "600" }], "title-md": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50 w-full shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div
+      class="bg-primary text-on-primary py-space-xs px-margin-mobile lg:px-margin text-label-md font-label-md flex flex-wrap items-center justify-between gap-y-1">
+      <div class="flex items-center gap-space-lg flex-wrap">
+        <div class="flex items-center gap-space-xs"><span
+            class="material-symbols-outlined text-secondary-fixed text-[16px]">verified</span><span
+            class="tracking-wide">Cabang Resmi Sidoarjo, Jawa Timur</span></div>
+        <div class="hidden md:flex items-center gap-space-xs text-on-primary-container"><span
+            class="material-symbols-outlined text-[16px]">schedule</span><span class="">Senin - Sabtu: 08:00 - 18:00
+            WIB</span></div>
+      </div>
+      <div class="flex items-center gap-space-lg"><a
+          class="flex items-center gap-space-xs hover:text-primary-fixed-dim transition-colors"
+          href="tel:081200000000"><span class="material-symbols-outlined text-[16px]">call</span><span class="">Hotline
+            Sidoarjo: +62 813-5555-8998</span></a>
+        <div
+          class="hidden sm:flex items-center gap-space-xs bg-primary-container text-primary-fixed px-space-sm py-0.5 rounded">
+          <span class="material-symbols-outlined text-[14px]">support_agent</span><span class="">CS Siaga Drop-Off &amp;
+            Pickup</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="h-20 bg-surface-container-lowest/95 backdrop-blur-md px-margin-mobile lg:px-margin flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <div class="flex items-center gap-space-sm"><a href="#" class="flex items-center gap-space-sm"><img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5OH4XQCjOSHKIFU0DiSHS44INRdwRKp5SmbsOHq_09Mtrsio_snYfWhXjNDG7iD8gBIw4770zE062uBTWdnw-JY9gLUidwsOvWZj6Mq2dpD7Fh9rWZPMOtTzYGZdVI1Tzt4FoWLS0iOL0fWPRaU1ysNhyshHpbTwLmnkjNojj5JaW9nf3chCBSz038iwNvAZGwOxoc6-Ht9MlHuhPVpzJbj13NSaTuGvoZ1W9oH5QJeiZsP9lDVpGSOXC0bW7QuZVrA"
+              alt="Indah Logistik Cargo Cabang Sidoarjo" class="h-10 w-auto object-contain">
+            <div class="border-0 pl-1"><span
+                class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider block leading-tight">Cabang
+                Sidoarjo</span><span
+                class="font-body-sm text-body-sm text-outline text-[11px] block leading-none">Official Logistics
+                Hub</span></div>
+          </a></div>
+      </div>
+      <nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-secondary font-bold"><a
+          aria-current="page" class="transition-colors text-secondary font-bold" data-path="beranda"
+          href="#">Beranda</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="layanan-cargo" href="#">Layanan Cargo</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="keunggulan" href="#">Keunggulan</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="lokasi-peta" href="#">Lokasi &amp; Peta</a><a
+          class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="faq" href="#">FAQ</a></nav>
+      <div class="flex items-center gap-space-md"><a
+          class="flex items-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary px-space-md py-space-sm rounded-xl font-label-lg text-label-lg shadow-sm transition-all transform active:scale-95"
+          href="https://wa.me/6281355558998" target="_blank"><span
+            class="material-symbols-outlined text-[20px]">chat</span><span class="">Jemput Paket</span></a></div>
+    </div>
+  </header>
+  <main class="w-full pt-28 bg-background min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- HERO SECTION WITH LOGISTICS HUB BACKDROP & DUAL INTERACTIVE WIDGET -->
+      <section class="relative w-full overflow-hidden bg-primary text-on-primary">
+        <!-- Fleet Logistics Backdrop -->
+        <div
+          class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30 pointer-events-none transform scale-105 transition-transform duration-1000"
+          data-alt="Modern wide-angle industrial cargo distribution center in Sidoarjo East Java at dusk with rows of heavy transport container trucks, logistics personnel operating forklifts, loading bay doors, palletized shipments and twilight amber sky backdrop in sharp corporate focus"
+          style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBLync2nfeiW-oIzxwKihq2hMDLTv_0cqNSZWcBEPOD93hzJlaBtRVJok9uVWGHLH-wZZOy1M-aM4dQr6qcJRcU0KAZ6jw6qt5lz6MHTPn8TRTErKfVwpU2N5PAMlGTODyPnH5GXMSdMZOVxBVDycPUV5Bg7atBTG0k2bK2YaJQa3QV2ZUORZBAcYdtJrt6mREZielXBoWPiN6Aukrq39mse0W1Rv0LYTIioAwjnekpTSo8CyhndjIY&quot;);">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/85 to-primary/95 pointer-events-none">
+        </div>
+        <div
+          class="relative w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-xl lg:pt-space-xl lg:pb-28">
+          <!-- Top Identifier Badge & Branch Branding -->
+          <div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+            <div
+              class="inline-flex items-center gap-space-xs bg-secondary/90 backdrop-blur-md text-on-secondary px-space-md py-1.5 rounded-full shadow-md font-label-md text-label-md tracking-wide uppercase">
+              <span class="material-symbols-outlined text-[16px]">location_on</span>
+              <span class="">Cabang Resmi Sidoarjo &amp; Sekitarnya</span>
+            </div>
+            <div
+              class="flex items-center gap-space-sm bg-primary-container/80 backdrop-blur-md px-space-md py-1.5 rounded-xl border-0 shadow-sm">
+              <img alt="Indah Logistik Official Branch" class="h-6 w-auto object-contain brightness-110"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqQ0LMoZWT8oCMYxGwDWc4upfrLkyJmiaa9i8Fg1RDoYQ_PHljYHdmyyDz3j_eVlzymuaFxNBBjgCtmHWoZjaH4yaVsSeZC8Hd_m1CpcutObWkFQtAcRXhqWrMVHf3rIFoi5J04cbwy53eP7RMFoVaKZsv_ojh8mPs7v7ZrzdrNWwpAgYoXFI5IvFQ9mJiYQ3311oZVNl6fHNbOKhm4h2uhxaC3YsNzpkeR1jhmJKfTwThrun8QjlqiIU9X2otRoIfKw">
+              <span class="text-on-primary-container font-label-md text-label-md">Verified Hub Jawa Timur</span>
+            </div>
+          </div>
+          <!-- Hero Copy Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+            <div class="lg:col-span-7 space-y-space-md">
+              <h1 class="font-headline-xl text-headline-xl text-on-primary leading-tight tracking-tight">
+                Solusi Pengiriman Cargo Cepat, Murah, dan Terpercaya
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed">
+                Melayani pengiriman paket besar, kargo darat, laut, dan udara ke seluruh pelosok Indonesia dengan tarif
+                kompetitif, armada terawat, tim handling profesional, dan jaminan keamanan ekstra.
+              </p>
+              <!-- Value highlights badges -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+                <div
+                  class="bg-surface-container-lowest/10 backdrop-blur-md p-space-sm rounded-xl text-center shadow-sm">
+                  <span
+                    class="material-symbols-outlined text-secondary-fixed block text-[22px] mx-auto mb-1">electric_moped</span>
+                  <span class="font-label-md text-label-md text-on-primary font-bold">Gratis Jemput</span>
+                  <span class="font-body-sm text-body-sm text-on-primary-container block text-[11px]">Area
+                    Sidoarjo</span>
+                </div>
+                <div
+                  class="bg-surface-container-lowest/10 backdrop-blur-md p-space-sm rounded-xl text-center shadow-sm">
+                  <span
+                    class="material-symbols-outlined text-secondary-fixed block text-[22px] mx-auto mb-1">inventory_2</span>
+                  <span class="font-label-md text-label-md text-on-primary font-bold">Packing Kayu</span>
+                  <span class="font-body-sm text-body-sm text-on-primary-container block text-[11px]">Proteksi
+                    Ekstra</span>
+                </div>
+                <div
+                  class="bg-surface-container-lowest/10 backdrop-blur-md p-space-sm rounded-xl text-center shadow-sm">
+                  <span
+                    class="material-symbols-outlined text-secondary-fixed block text-[22px] mx-auto mb-1">scale</span>
+                  <span class="font-label-md text-label-md text-on-primary font-bold">Digital Presisi</span>
+                  <span class="font-body-sm text-body-sm text-on-primary-container block text-[11px]">Timbangan
+                    Jujur</span>
+                </div>
+                <div
+                  class="bg-surface-container-lowest/10 backdrop-blur-md p-space-sm rounded-xl text-center shadow-sm">
+                  <span
+                    class="material-symbols-outlined text-secondary-fixed block text-[22px] mx-auto mb-1">radar</span>
+                  <span class="font-label-md text-label-md text-on-primary font-bold">Live Tracking</span>
+                  <span class="font-body-sm text-body-sm text-on-primary-container block text-[11px]">Real-time
+                    24/7</span>
+                </div>
+              </div>
+              <!-- Fast contact dispatch hotline strip -->
+              <div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+                <a class="inline-flex items-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary px-space-lg py-3 rounded-xl font-headline-sm text-headline-sm shadow-md transition-all active:scale-95"
+                  href="https://wa.me/6281355558998" target="_blank">
+                  <span class="material-symbols-outlined text-[20px]">chat</span>
+                  <span class="">Pickup Cepat (WA CS)</span>
+                </a>
+                <div class="flex items-center gap-space-xs text-on-primary-container font-label-md text-label-md">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="">Warehouse Sidoarjo Aktif Melayani</span>
+                </div>
+              </div>
+            </div>
+            <!-- INTEGRATED DUAL-WIDGET CARD (Tab Tracking, Ongkir, Pickup) -->
+            <div class="lg:col-span-5 w-full relative group">
+              <div
+                class="relative rounded-xl overflow-hidden shadow-xl ring-2 ring-surface-container-high/20 bg-primary-container/40">
+                <img alt="Aktivitas Operasional &amp; Armada Indah Logistik Cargo Cabang Sidoarjo"
+                  class="w-full h-96 lg:h-[420px] object-cover object-center transform group-hover:scale-105 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XPGjTKvXNOzXEhtA76AI8QaWS_VkbeJkeY63GQvEKgrdEY2EBqpFYTTDGpoovdbTp1yvmzawoVupF3DUQUAXzKv_WVXNPPJ0ufCOjqznjyV2SCmmwzUxpkxuciC_d8vxlvfpDqRZSitjYjh9GU-Rdo9XmXqsXM4LDyfcOa1GnljnG0r2bVXWTuWwMKv2wTvHq7ZE7nWYgFMAY2NRdIkH2vtIzFKlqZHp__tkuiaz7mhC9hYKcJoVfDeSM">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/20 to-transparent pointer-events-none">
+                </div>
+                <div class="absolute top-3 left-3 sm:top-4 sm:left-4 z-10"></div>
+                <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OPERATIONAL STATS TICKER STRIP -->
+      <section class="w-full bg-primary-container text-on-primary py-space-md px-margin-mobile lg:px-margin shadow-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-space-md items-center">
+          <div class="flex items-center gap-space-sm">
+            <div
+              class="w-12 h-12 rounded-xl bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed">
+              <span class="material-symbols-outlined text-[26px]">local_shipping</span>
+            </div>
+            <div>
+              <span
+                class="font-headline-md text-headline-md font-metric-tabular block leading-tight text-on-primary">25+</span>
+              <span class="font-label-md text-label-md text-on-primary-container">Armada Siap Sidoarjo</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-sm">
+            <div
+              class="w-12 h-12 rounded-xl bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed">
+              <span class="material-symbols-outlined text-[26px]">public</span>
+            </div>
+            <div>
+              <span
+                class="font-headline-md text-headline-md font-metric-tabular block leading-tight text-on-primary">500+</span>
+              <span class="font-label-md text-label-md text-on-primary-container">Kota &amp; Kabupaten Terjangkau</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-sm">
+            <div
+              class="w-12 h-12 rounded-xl bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed">
+              <span class="material-symbols-outlined text-[26px]">warehouse</span>
+            </div>
+            <div>
+              <span
+                class="font-headline-md text-headline-md font-metric-tabular block leading-tight text-on-primary">1.200
+                m²</span>
+              <span class="font-label-md text-label-md text-on-primary-container">Kapasitas Hub Sidoarjo</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-sm">
+            <div
+              class="w-12 h-12 rounded-xl bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed">
+              <span class="material-symbols-outlined text-[26px]">verified</span>
+            </div>
+            <div>
+              <span
+                class="font-headline-md text-headline-md font-metric-tabular block leading-tight text-on-primary">99.4%</span>
+              <span class="font-label-md text-label-md text-on-primary-container">Tepat Waktu (SLA)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LAYANAN UTAMA (OUTBOUND SERVICES) DENGAN GRID & BENTO MODERN -->
+      <section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-surface">
+        <div class="max-w-7xl mx-auto space-y-space-xl">
+          <!-- Section Header -->
+          <div class="max-w-3xl space-y-space-xs">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold block">Pilihan
+              Ekspedisi Terintegrasi</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Layanan Ekspedisi &amp; Kargo Terlengkap Dari Sidoarjo
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              Pilihan moda pengiriman fleksibel disesuaikan dengan kebutuhan logistik industri pabrik, retail UMKM,
+              maupun pengiriman personal.
+            </p>
+          </div>
+          <!-- 6 Service Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+            <!-- 1. Kargo Darat -->
+            <div
+              class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">fire_truck</span>
+                  </div>
+
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+                    Kargo Darat (Trucking &amp; Kereta)
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Pengiriman fuso, CDD, dan kereta logistik antar pulau Jawa, Bali, dan Sumatera dengan biaya paling
+                    ekonomis, jadwal harian rutin, dan rute tol langsung.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface">Jawa, Bali, Lampung, Sumsel</span>
+                <a class="text-secondary font-label-md text-label-md font-bold flex items-center gap-1 hover:underline"
+                  href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo%20tanya%20Kargo%20Darat"
+                  target="_blank">
+                  <span class="">Konsultasi</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <!-- 2. Kargo Laut -->
+            <div
+              class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">directions_boat</span>
+                  </div>
+
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+                    Kargo Laut (Kapal RORO &amp; Kontainer)
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Solusi kirim muatan tonase besar ke Kalimantan, Sulawesi, Maluku, hingga Papua secara terjadwal
+                    dengan akses dekat Pelabuhan Tanjung Perak via Tol Sidoarjo.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface">Kapasitas hingga Puluhan Ton</span>
+                <a class="text-secondary font-label-md text-label-md font-bold flex items-center gap-1 hover:underline"
+                  href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo%20tanya%20Kargo%20Laut"
+                  target="_blank">
+                  <span class="">Konsultasi</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <!-- 3. Kargo Udara -->
+            <div
+              class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">flight_takeoff</span>
+                  </div>
+
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+                    Kargo Udara (Express Air Freight)
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Pengiriman prioritas kilat 1-2 hari sampai untuk dokumen penting, suku cadang mesin mendesak, dan
+                    komoditas perishable dengan koordinasi langsung Bandara Juanda.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface">Port-to-Door Cepat</span>
+                <a class="text-secondary font-label-md text-label-md font-bold flex items-center gap-1 hover:underline"
+                  href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo%20tanya%20Kargo%20Udara"
+                  target="_blank">
+                  <span class="">Konsultasi</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <!-- 4. City Courier & Sewa Truk -->
+            <div
+              class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">rv_hookup</span>
+                  </div>
+
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+                    City Courier &amp; Truk Sewa (SDA - SBY)
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Layanan sewa armada engkel box, blind van harian, atau ritase untuk kebutuhan distribusi pabrik
+                    kawasan Berbek, Waru, Tambak Sawah, hingga Rungkut Surabaya.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface">Kawasan Industri &amp; Pergudangan</span>
+                <a class="text-secondary font-label-md text-label-md font-bold flex items-center gap-1 hover:underline"
+                  href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo%20tanya%20Sewa%20Truk"
+                  target="_blank">
+                  <span class="">Konsultasi</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <!-- 5. Jasa Kirim Motor & Mobil -->
+            <div
+              class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">two_wheeler</span>
+                  </div>
+
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+                    Jasa Kirim Motor &amp; Mobil
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Ekspedisi kendaraan bermotor bebek, matic, sport, moge hingga mobil pribadi dengan pengemasan kardus
+                    tebal, buble wrap, proteksi baterai, dan asuransi penuh.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface">Antar Kota &amp; Antar Pulau</span>
+                <a class="text-secondary font-label-md text-label-md font-bold flex items-center gap-1 hover:underline"
+                  href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo%20tanya%20Kirim%20Motor"
+                  target="_blank">
+                  <span class="">Konsultasi</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <!-- 6. Jasa Pindahan Rumah & Kantor -->
+            <div
+              class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-space-md">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[26px]">apartment</span>
+                  </div>
+
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">
+                    Jasa Pindahan Rumah &amp; Kantor
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Solusi pindahan lengkap mencakup tenaga helper profesional, bongkar muat furniture, packing
+                    bubblewrap berlapis, dan armada truk tertutup yang higienis dan aman.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl flex items-center justify-between">
+                <span class="font-label-md text-label-md text-on-surface">Survey Lokasi Sidoarjo Gratis</span>
+                <a class="text-secondary font-label-md text-label-md font-bold flex items-center gap-1 hover:underline"
+                  href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo%20tanya%20Jasa%20Pindahan"
+                  target="_blank">
+                  <span class="">Konsultasi</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- KEUNGGULAN KANTOR CABANG SIDOARJO (4 PILAR UTAMA) -->
+      <section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-surface-container-low">
+        <div class="max-w-7xl mx-auto space-y-space-xl">
+          <div class="text-center max-w-3xl mx-auto space-y-space-xs">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Standar
+              Ekspedisi Nasional</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Mengapa Memilih Indah Logistik Cabang Sidoarjo?
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              Komitmen operasional terpercaya untuk mengamankan setiap kilogram muatan Anda mulai dari drop point hingga
+              penerima akhir.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Pilar 1 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="w-14 h-14 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[30px]">local_shipping</span>
+                </div>
+                <h3 class="font-title-md text-title-md text-primary font-bold">Bebas Biaya Jemput Paket</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Layanan Free Pick-Up tanpa minimum tonase untuk area industri maupun pemukiman di Waru, Sedati, Taman,
+                  Gedangan, hingga Porong.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-1 text-label-md font-label-md text-secondary font-bold">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span class="">Driver Siaga Harian</span>
+              </div>
+            </div>
+            <!-- Pilar 2 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[30px]">balance</span>
+                </div>
+                <h3 class="font-title-md text-title-md text-primary font-bold">Timbangan Digital Presisi</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Pengukuran berat dan volume kubikasi disaksikan langsung dengan timbangan tera kalibrasi resmi BMKG,
+                  bebas pungli &amp; transparan.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-1 text-label-md font-label-md text-primary font-bold">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span class="">Repacking Standar Peti Kayu</span>
+              </div>
+            </div>
+            <!-- Pilar 3 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[30px]">warehouse</span>
+                </div>
+                <h3 class="font-title-md text-title-md text-primary font-bold">Gudang Transit Strategis</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Area pergudangan transit luas, dekat gerbang tol Sidoarjo dan Bandara Juanda. Dilengkapi pengawasan
+                  CCTV 24 jam &amp; satpam siaga.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-1 text-label-md font-label-md text-primary font-bold">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span class="">Akses Mudah Truk Trailer</span>
+              </div>
+            </div>
+            <!-- Pilar 4 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="space-y-space-sm">
+                <div class="w-14 h-14 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[30px]">map</span>
+                </div>
+                <h3 class="font-title-md text-title-md text-primary font-bold">Jangkauan Se-Nusantara</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Koneksi jaringan lebih dari 500 kantor perwakilan Indah Cargo di Indonesia, memastikan paket sampai ke
+                  tingkat kecamatan terpencil.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-xs flex items-center gap-1 text-label-md font-label-md text-secondary font-bold">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span class="">Asuransi All-Risk Tersedia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEKSI FORMULIR REGISTRASI JEMPUT PAKET CEPAT (PICK-UP DIRECT) -->
+      <section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-primary text-on-primary">
+        <div
+          class="max-w-7xl mx-auto rounded-xl bg-gradient-to-br from-primary-container via-primary to-primary-container p-space-lg lg:p-space-xl shadow-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <!-- Callout Steps -->
+            <div class="lg:col-span-6 space-y-space-md">
+              <div
+                class="inline-flex items-center gap-space-xs bg-secondary px-space-md py-1 rounded-full text-label-md font-label-md uppercase font-bold text-on-secondary">
+                <span class="">Layanan Jemput Gratis</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-primary leading-tight">
+                Barang Anda Berat atau Jumlah Banyak? Biar Driver Kami yang Ambil!
+              </h2>
+              <p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+                Tidak perlu repot mengantar barang besar ke kantor cabang. Hubungi armada pickup Indah Logistik
+                Sidoarjo, tim kurir kami langsung meluncur ke gudang, toko, atau kediaman Anda.
+              </p>
+              <!-- 3 Steps -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+                <div class="bg-surface-container-lowest/10 p-space-sm rounded-xl">
+                  <span
+                    class="font-headline-sm text-headline-sm text-secondary-fixed block font-metric-tabular mb-1">01.</span>
+                  <p class="font-label-lg text-label-lg font-bold text-on-primary">Isi Data Jemput</p>
+                  <p class="font-body-sm text-body-sm text-on-primary-container text-[12px] mt-0.5">Kirim detail alamat
+                    &amp; estimasi koli</p>
+                </div>
+                <div class="bg-surface-container-lowest/10 p-space-sm rounded-xl">
+                  <span
+                    class="font-headline-sm text-headline-sm text-secondary-fixed block font-metric-tabular mb-1">02.</span>
+                  <p class="font-label-lg text-label-lg font-bold text-on-primary">Konfirmasi WA</p>
+                  <p class="font-body-sm text-body-sm text-on-primary-container text-[12px] mt-0.5">Admin dispatch
+                    menentukan jadwal</p>
+                </div>
+                <div class="bg-surface-container-lowest/10 p-space-sm rounded-xl">
+                  <span
+                    class="font-headline-sm text-headline-sm text-secondary-fixed block font-metric-tabular mb-1">03.</span>
+                  <p class="font-label-lg text-label-lg font-bold text-on-primary">Driver Meluncur</p>
+                  <p class="font-body-sm text-body-sm text-on-primary-container text-[12px] mt-0.5">Timbang di tempat
+                    &amp; terbitkan resi</p>
+                </div>
+              </div>
+            </div>
+            <!-- WhatsApp Quick Dispatch Card -->
+            <div
+              class="lg:col-span-6 bg-surface-container-lowest text-on-surface p-space-lg rounded-xl shadow-lg space-y-space-md">
+              <div class="flex items-center gap-space-sm">
+                <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow">
+                  <span class="material-symbols-outlined text-[28px]">chat</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Dispatcher Jemput Sidoarjo</h3>
+                  <p class="font-body-sm text-body-sm text-outline">Layanan Cepat Tanggap Area Kab. Sidoarjo</p>
+                </div>
+              </div>
+              <div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">done_all</span>
+                  <span class="">Cakupan: Waru, Sedati, Gedangan, Buduran, Candi, Krian, Taman, Balongbendo,
+                    Porong.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">done_all</span>
+                  <span class="">Armada tersedia: Pickup Blind Van, Engkel Box CDD, hingga Truk Fuso.</span>
+                </div>
+              </div>
+              <a class="w-full bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-headline-sm py-3.5 px-space-md rounded-xl shadow-md flex items-center justify-center gap-space-xs transition-transform active:scale-95 text-center"
+                href="https://wa.me/6281355558998?text=Halo%20Dispatcher%20Indah%20Cargo%20Sidoarjo,%20saya%20mau%20request%20jemput%20paket%20kargo.%20Berikut%20data%20saya..."
+                target="_blank">
+                <span class="material-symbols-outlined text-[22px]">phone_in_talk</span>
+                <span class="">Hubungi Dispatcher Jemput Paket&nbsp;</span>
+              </a>
+              <p class="font-label-md text-label-md text-center text-outline">
+                Operasional Pickup: Senin s/d Sabtu (Pukul 08.30 - 17.30 WIB)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LOKASI KANTOR, GUDANG, & PETA OPERASIONAL -->
+      <section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-surface">
+        <div class="max-w-7xl mx-auto space-y-space-xl">
+          <!-- Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+            <div class="space-y-space-xs">
+              <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Drop Point
+                &amp; Warehouse</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+                Kunjungi Kantor &amp; Gudang Drop Point Sidoarjo
+              </h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Lokasi strategis di jalan utama lingkar logistik Sidoarjo dengan manuver luas untuk kontainer 20ft/40ft
+                dan area parkir drop-off yang nyaman.
+              </p>
+            </div>
+            <div>
+              <a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-lg py-3 rounded-xl font-label-lg text-label-lg shadow-sm transition-all"
+                href="https://maps.app.goo.gl/gkUpbfGaBoVcku3o9" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-[20px]">directions</span>
+                <span class="">Buka Petunjuk Arah di Google Maps</span>
+              </a>
+            </div>
+          </div>
+          <!-- Map & Details Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+            <!-- Google Maps View Card -->
+            <div
+              class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
+              <div class="w-full h-80 lg:h-96 bg-cover bg-center"
+                data-location="Jl. Raya Sidoarjo, Sidoarjo, Jawa Timur, Indonesia"
+                style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAMbBSMJyGPv0etnCkzbqjpJnRJdXOuXEJyGUPJlKPuHW6Q5wzSt49tDelCHal-WMBi0FU3Dx89CMnT0PbGwj18VjK6P50MOwMAagsmCovdzMw2ADUNASvvBR_PmSmxmrpZUJ7VMDNNQejtXgF8p4dotHpLxvgAM9ddIUxuP_BZjAPWwFM2ACCfxH0L-s5eoy4a12oZTKNkQZ1fRK8hVDqtX6LCHU5PaN343inAD6lsgxp6g7ve4Vnr&quot;);">
+              </div>
+              <div class="p-space-md bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">near_me</span>
+                  <span class="font-label-md text-label-md text-on-surface font-bold">5 Menit dari Exit Tol Sidoarjo
+                    Kota</span>
+                </div>
+                <a class="text-secondary font-label-md text-label-md font-bold hover:underline flex items-center gap-1"
+                  href="https://maps.app.goo.gl/gkUpbfGaBoVcku3o9" rel="noopener noreferrer" target="_blank">
+                  <span class="">https://maps.app.goo.gl/gkUpbfGaBoVcku3o9</span>
+                  <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                </a>
+              </div>
+            </div>
+            <!-- Information Cards -->
+            <div class="lg:col-span-5 space-y-space-md flex flex-col justify-between">
+              <!-- Alamat Lengkap -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-xs">
+                <div class="flex items-center gap-space-xs text-secondary font-headline-sm text-headline-sm">
+                  <span class="material-symbols-outlined text-[22px]">store</span>
+                  <h3 class="">Alamat Gudang Sidoarjo</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface leading-relaxed"><strong>PT. Indah Logistik Cargo -
+                    Cabang Sidoarjo</strong><br>PERTOKOAN LETJEND SETOYO, No Jl. Letjend Sutoyo No.110, Bungur, Medaeng,
+                  Sidoarjo, Kabupaten Sidoarjo, Jawa Timur</p>
+              </div>
+              <!-- Jam Operasional -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+                <div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+                  <span class="material-symbols-outlined text-[22px]">schedule</span>
+                  <h3 class="">Jam Operasional Pelayanan</h3>
+                </div>
+                <div class="space-y-space-xs font-body-sm text-body-sm">
+                  <div class="flex justify-between items-center py-1 bg-surface-container-low px-space-sm rounded">
+                    <span class="font-bold text-on-surface">Senin - Jumat</span>
+                    <span class="text-primary font-metric-tabular">08.00 - 20.00 WIB</span>
+                  </div>
+                  <div class="flex justify-between items-center py-1 bg-surface-container-low px-space-sm rounded">
+                    <span class="font-bold text-on-surface">Sabtu</span>
+                    <span class="text-primary font-metric-tabular">08.00 - 18.00 WIB</span>
+                  </div>
+                  <div
+                    class="flex justify-between items-center py-1 bg-secondary-fixed/50 px-space-sm rounded text-secondary">
+                    <span class="font-bold">Minggu &amp; Libur Nasional</span>
+                    <span class="font-metric-tabular font-bold">09.00 - 16.00 WIB (Piket)</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Kontak Telepon & CS -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-center justify-between gap-space-sm">
+                <div>
+                  <span class="font-label-md text-label-md text-on-surface-variant block">Hotline &amp; Konsultasi
+                    Kargo</span>
+                  <span class="font-headline-sm text-headline-sm text-primary font-metric-tabular">+62
+                    813-5555-8998</span>
+
+                </div>
+                <a class="w-12 h-12 rounded-xl bg-secondary hover:bg-secondary-container text-on-secondary flex items-center justify-center shadow transition-all active:scale-95"
+                  href="https://wa.me/6281355558998" target="_blank" title="Chat WhatsApp CS Sidoarjo">
+                  <span class="material-symbols-outlined text-[24px]">chat</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ ACCORDION INTERAKTIF (PERTANYAAN UMUM PELANGGAN) -->
+      <section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-surface-container-low">
+        <div class="max-w-4xl mx-auto space-y-space-lg">
+          <div class="text-center space-y-space-xs">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Frequently Asked
+              Questions</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Pertanyaan Umum Seputar Pengiriman Kargo
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Informasi panduan penting sebelum Anda mengirimkan barang melalui Indah Logistik Cabang Sidoarjo.
+            </p>
+          </div>
+          <div class="space-y-space-sm" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+              <button
+                class="w-full text-left p-space-md lg:p-space-lg flex items-center justify-between gap-space-sm font-headline-sm text-headline-sm text-primary"
+                onclick="toggleFaq(1)" type="button">
+                <span class="">Berapa minimal berat pengiriman cargo di Indah Logistik Sidoarjo?</span>
+                <span class="material-symbols-outlined text-secondary transition-transform duration-200"
+                  id="faqIcon-1">expand_more</span>
+              </button>
+              <div
+                class="px-space-md pb-space-lg lg:px-space-lg font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                id="faqBody-1">
+                Minimal berat pengiriman cargo kami mulai dari <strong>5 kg hingga 10 kg</strong> tergantung rute
+                destinasi (darat, laut, atau udara). Paket dengan berat di bawah ketentuan minimum tetap dapat
+                dikirimkan dengan perhitungan tarif batas minimum tersebut, sehingga ongkos kirim per kilonya jauh lebih
+                hemat dibandingkan kurir reguler ritel.
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+              <button
+                class="w-full text-left p-space-md lg:p-space-lg flex items-center justify-between gap-space-sm font-headline-sm text-headline-sm text-primary"
+                onclick="toggleFaq(2)" type="button">
+                <span class="">Apakah ada biaya tambahan untuk layanan jemput barang di area Sidoarjo?</span>
+                <span class="material-symbols-outlined text-secondary transition-transform duration-200"
+                  id="faqIcon-2">expand_more</span>
+              </button>
+              <div
+                class="px-space-md pb-space-lg lg:px-space-lg font-body-sm text-body-sm text-on-surface-variant leading-relaxed hidden"
+                id="faqBody-2">
+                <strong>Tidak ada biaya tambahan (Gratis)</strong>. Layanan Free Pick-Up berlaku bagi seluruh wilayah
+                Sidoarjo kota hingga sentra industri kecamatan sekitar seperti Waru, Gedangan, Sedati, Buduran, Candi,
+                Porong, Krian, dan Taman. Anda cukup mengajukan permintaan jemput melalui form di web ini atau via
+                WhatsApp Hotline kami.
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+              <button
+                class="w-full text-left p-space-md lg:p-space-lg flex items-center justify-between gap-space-sm font-headline-sm text-headline-sm text-primary"
+                onclick="toggleFaq(3)" type="button">
+                <span class="">Bagaimana rumus perhitungan berat volume barang (volumetrik)?</span>
+                <span class="material-symbols-outlined text-secondary transition-transform duration-200"
+                  id="faqIcon-3">expand_more</span>
+              </button>
+              <div
+                class="px-space-md pb-space-lg lg:px-space-lg font-body-sm text-body-sm text-on-surface-variant leading-relaxed hidden"
+                id="faqBody-3">
+                Untuk barang yang berukuran besar tetapi ringan, berat dihitung berdasarkan kubikasi volume
+                internasional:
+                <ul class="list-disc pl-5 mt-2 space-y-1">
+                  <li class=""><strong>Moda Darat &amp; Kargo Laut:</strong> (Panjang x Lebar x Tinggi dalam cm) ÷
+                    <strong>4.000</strong> = Berat Volumetrik (Kg).
+                  </li>
+                  <li class=""><strong>Moda Kargo Udara:</strong> (Panjang x Lebar x Tinggi dalam cm) ÷
+                    <strong>6.000</strong> = Berat Volumetrik (Kg).
+                  </li>
+                </ul>
+                Biaya akhir diambil dari nilai terbesar antara berat timbangan aktual vs berat volumetrik.
+              </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+              <button
+                class="w-full text-left p-space-md lg:p-space-lg flex items-center justify-between gap-space-sm font-headline-sm text-headline-sm text-primary"
+                onclick="toggleFaq(4)" type="button">
+                <span class="">Apakah barang kiriman dijamin asuransi dan bisa di-packing kayu?</span>
+                <span class="material-symbols-outlined text-secondary transition-transform duration-200"
+                  id="faqIcon-4">expand_more</span>
+              </button>
+              <div
+                class="px-space-md pb-space-lg lg:px-space-lg font-body-sm text-body-sm text-on-surface-variant leading-relaxed hidden"
+                id="faqBody-4">
+                Ya, sangat bisa. Kami menyediakan fasilitas <strong>asuransi pengangkutan barang resmi
+                  (All-Risk)</strong> dengan premi sangat terjangkau untuk memitigasi risiko di perjalanan. Tim
+                packaging gudang kami juga siap melayani jasa peti kayu kokoh berlapis bubble wrap untuk barang
+                elektronik, mesin pabrik, keramik, furniture, maupun kendaraan bermotor.
+              </div>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+              <button
+                class="w-full text-left p-space-md lg:p-space-lg flex items-center justify-between gap-space-sm font-headline-sm text-headline-sm text-primary"
+                onclick="toggleFaq(5)" type="button">
+                <span class="">Bagaimana cara mengecek lokasi barang saya secara berkala?</span>
+                <span class="material-symbols-outlined text-secondary transition-transform duration-200"
+                  id="faqIcon-5">expand_more</span>
+              </button>
+              <div
+                class="px-space-md pb-space-lg lg:px-space-lg font-body-sm text-body-sm text-on-surface-variant leading-relaxed hidden"
+                id="faqBody-5">
+                Cukup masukkan nomor resi / AWB Anda pada widget <strong>Lacak Resi</strong> di bagian atas halaman web
+                ini secara mandiri 24 jam. Jika membutuhkan konfirmasi riwayat posisi manifes secara spesifik, Anda juga
+                dapat mengirimkan nomor resi ke nomor WhatsApp CS Hotline Sidoarjo (0812-3456-7890).
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA BANNER FINAL (SEBELUM FOOTER) -->
+      <section class="w-full py-space-xl px-margin-mobile lg:px-margin bg-surface">
+        <div
+          class="max-w-7xl mx-auto rounded-xl bg-gradient-to-r from-primary via-primary-container to-primary text-on-primary p-space-lg lg:p-space-xl relative overflow-hidden shadow-xl">
+          <!-- Decorative background wave overlay -->
+          <div
+            class="absolute -right-16 -bottom-16 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none">
+          </div>
+          <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+            <div class="space-y-space-xs text-center lg:text-left">
+
+              <h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+                Kirim Kargo Tanpa Ribet Hari Ini Bersama Indah Logistik Cabang Sidoarjo
+              </h2>
+              <p class="font-body-md text-body-md text-on-primary-container max-w-2xl">
+                Dapatkan penawaran tarif corporate khusus untuk pabrik, distributor grosir, dan seller e-commerce dengan
+                volume pengiriman rutin.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0 w-full lg:w-auto">
+              <a class="w-full sm:w-auto text-center bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-headline-sm px-space-lg py-3.5 rounded-xl shadow-md transition-all active:scale-95 flex items-center justify-center gap-2"
+                href="https://wa.me/6281355558998?text=Halo%20Indah%20Logistik%20Sidoarjo,%20saya%20ingin%20konsultasi%20tarif%20pengiriman%20kargo"
+                target="_blank">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="">Konsultasi Tarif Kargo via WA</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Hero Tab Switching
+      function switchTab(tabName) {
+        const tabs = ['resi', 'ongkir', 'jemput'];
+        tabs.forEach(tab => {
+          const content = document.getElementById('tabContent-' + tab);
+          const btn = document.getElementById('tabBtn-' + tab);
+          if (tab === tabName) {
+            content.classList.remove('hidden');
+            btn.classList.add('bg-surface-container-lowest', 'text-secondary', 'shadow-sm');
+            btn.classList.remove('text-on-surface-variant');
+          } else {
+            content.classList.add('hidden');
+            btn.classList.remove('bg-surface-container-lowest', 'text-secondary', 'shadow-sm');
+            btn.classList.add('text-on-surface-variant');
+          }
+        });
+      }
+
+      // Quick Tracking Resi Simulation
+      function handleTrackResi() {
+        const input = document.getElementById('input-resi');
+        const box = document.getElementById('resi-result-box');
+        const val = input.value.trim() || 'IDH-SDA9827361';
+
+        box.innerHTML = `
+      <div class="flex items-center justify-between font-label-md text-label-md animate-pulse">
+        <span class="text-on-surface-variant">Mencari Database Server Pusat...</span>
+        <span class="inline-flex items-center gap-1 bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold text-[11px]">Sedang Melacak</span>
+      </div>
+    `;
+
+        setTimeout(() => {
+          box.innerHTML = `
+        <div class="flex items-center justify-between font-label-md text-label-md">
+          <span class="text-on-surface-variant">AWB: <strong class="text-primary font-metric-tabular">${val.toUpperCase()}</strong></span>
+          <span class="inline-flex items-center gap-1 bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold text-[11px]">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-ping"></span>
+            On Transit
+          </span>
+        </div>
+        <div class="font-body-sm text-body-sm text-on-surface font-medium flex items-start gap-2 pt-1">
+          <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">local_shipping</span>
+          <div>
+            <p class="font-bold text-primary">Warehouse Sidoarjo &rarr; Transit Hub Surabaya (Keluar Gerbang Tol Waru)</p>
+            <p class="text-outline text-label-md font-label-md mt-0.5">Diproses Tim Logistik Cabang Sidoarjo - Est. Pengantaran On-Schedule</p>
+          </div>
+        </div>
+      `;
+        }, 400);
+      }
+
+      function pasteSimulation() {
+        document.getElementById('input-resi').value = 'IDH-SDA' + Math.floor(1000000 + Math.random() * 9000000);
+        handleTrackResi();
+      }
+
+      // Ongkir Rate Calculator Simulation
+      function hitungTarifSimulasi() {
+        const tujuan = document.getElementById('ongkir-tujuan').value;
+        const berat = parseFloat(document.getElementById('ongkir-berat').value) || 10;
+        const layanan = document.getElementById('ongkir-layanan').value;
+        const labelBox = document.getElementById('label-ongkir-value');
+
+        let baseRate = 3000;
+        if (tujuan === 'jakarta') baseRate = 2800;
+        if (tujuan === 'medan') baseRate = 6500;
+        if (tujuan === 'makassar') baseRate = 5800;
+        if (tujuan === 'denpasar') baseRate = 3200;
+        if (tujuan === 'balikpapan') baseRate = 6200;
+        if (tujuan === 'semarang') baseRate = 2500;
+
+        let multiplier = 1;
+        if (layanan === 'laut') multiplier = 0.85;
+        if (layanan === 'udara') multiplier = 3.5;
+
+        const total = Math.round(berat * baseRate * multiplier);
+        const formatted = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(total);
+        labelBox.textContent = `${formatted} (${berat} Kg)`;
+      }
+
+      // Jemput Paket WhatsApp Form Handler
+      function handleFormJemput(e) {
+        e.preventDefault();
+        const nama = document.getElementById('jp-nama').value;
+        const wa = document.getElementById('jp-wa').value;
+        const kec = document.getElementById('jp-kecamatan').value;
+        const alamat = document.getElementById('jp-alamat').value;
+        const barang = document.getElementById('jp-barang').value;
+        const berat = document.getElementById('jp-berat').value;
+
+        const text = `Halo Admin Indah Logistik Sidoarjo, mohon request Free Pick-Up:%0A%0A` +
+          `*Nama:* ${encodeURIComponent(nama)}%0A` +
+          `*No HP:* ${encodeURIComponent(wa)}%0A` +
+          `*Kecamatan:* ${encodeURIComponent(kec)}%0A` +
+          `*Alamat Jemput:* ${encodeURIComponent(alamat)}%0A` +
+          `*Jenis Barang:* ${encodeURIComponent(barang)}%0A` +
+          `*Est. Berat/Koli:* ${encodeURIComponent(berat)}%0A%0AMohon konfirmasi jadwal pickup. Terima kasih.`;
+
+        window.open(`https://wa.me/6281355558998?text=${text}`, '_blank');
+      }
+
+      // FAQ Accordion Toggle
+      function toggleFaq(id) {
+        const body = document.getElementById('faqBody-' + id);
+        const icon = document.getElementById('faqIcon-' + id);
+        if (body.classList.contains('hidden')) {
+          body.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        } else {
+          body.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+        }
+      }
+
+      // Quick Download simulation
+      function downloadTarifInfo() {
+        alert('Daftar tarif resmi per kecamatan dan kota se-Indonesia sedang disiapkan. Hubungi admin CS untuk file katalog PDF terbaru.');
+        window.open('https://wa.me/6281355558998?text=Halo%20Admin%20Indah%20Logistik%20Sidoarjo,%20mohon%20kirim%20file%20PDF%20Daftar%20Ongkir%20Terbaru', '_blank');
+      }
+    </script>
+  </main>
+  <footer class="w-full bg-primary text-on-primary">
+    <div class="w-full px-margin-mobile lg:px-margin py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl">
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm">
+            <div class="w-9 h-9 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[22px]">local_shipping</span>
+            </div>
+            <div><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight block leading-none">INDAH
+                CARGO</span><span class="font-label-md text-label-md text-secondary-fixed block mt-0.5">Cabang
+                Sidoarjo</span></div>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Penyedia solusi ekspedisi dan
+            kargo terintegrasi untuk kebutuhan personal, UMKM, dan korporat industri di wilayah Sidoarjo, Waru, Porong,
+            Krian, dan sekitarnya.</p>
+          <div
+            class="flex items-center gap-space-xs text-label-md font-label-md text-primary-fixed bg-primary-container px-space-sm py-1.5 rounded-lg w-fit">
+            <span class="material-symbols-outlined text-[18px]">verified_user</span><span class="">Resmi PT. Indah
+              Logistik Cargo</span>
+          </div>
+        </div>
+        <div class="space-y-space-md">
+          <h3 class="font-title-md text-title-md text-on-primary uppercase tracking-wider font-bold">Layanan Kargo</h3>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <li class="flex items-center gap-space-xs hover:text-on-primary transition-colors cursor-pointer"><span
+                class="material-symbols-outlined text-[16px]">chevron_right</span>Cargo Darat (Armada Trucking)</li>
+            <li class="flex items-center gap-space-xs hover:text-on-primary transition-colors cursor-pointer"><span
+                class="material-symbols-outlined text-[16px]">chevron_right</span>Cargo Laut (FCL &amp; LCL Kontainer)
+            </li>
+            <li class="flex items-center gap-space-xs hover:text-on-primary transition-colors cursor-pointer"><span
+                class="material-symbols-outlined text-[16px]">chevron_right</span>Cargo Udara (Express Port-to-Door)
+            </li>
+            <li class="flex items-center gap-space-xs hover:text-on-primary transition-colors cursor-pointer"><span
+                class="material-symbols-outlined text-[16px]">chevron_right</span>Charter Trucking CDD &amp; Fuso</li>
+            <li class="flex items-center gap-space-xs hover:text-on-primary transition-colors cursor-pointer"><span
+                class="material-symbols-outlined text-[16px]">chevron_right</span>Jasa Pindahan Rumah &amp; Kantor</li>
+          </ul>
+        </div>
+        <div class="space-y-space-md">
+          <h3 class="font-title-md text-title-md text-on-primary uppercase tracking-wider font-bold">Kantor Operasional
+          </h3>
+          <div class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container">
+            <div class="flex items-start gap-space-xs"><span
+                class="material-symbols-outlined text-[18px] text-secondary-fixed mt-0.5">location_on</span><span
+                class="">PERTOKOAN LETJEND SETOYO, No Jl. Letjend Sutoyo No.110, Bungur, Medaeng, Sidoarjo, Kabupaten
+                Sidoarjo, Jawa Timur</span></div>
+            <div class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[18px] text-secondary-fixed">schedule</span><span class="">Senin -
+                Sabtu: 08:00 - 18:00 WIB</span></div>
+            <div class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[18px] text-secondary-fixed">phone</span><span class="">Hotline:
+                +62 813-5555-8998</span></div>
+            <div class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[18px] text-secondary-fixed">mail</span><span
+                class="">sidoarjo@indahlogistik.co.id</span></div>
+          </div>
+        </div>
+        <div class="space-y-space-md">
+          <h3 class="font-title-md text-title-md text-on-primary uppercase tracking-wider font-bold">Keamanan &amp;
+            Jaminan</h3>
+          <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Seluruh kiriman cargo
+            dilengkapi proteksi asuransi pengangkutan, tracking resi real-time 24 jam, serta tim handling
+            bersertifikasi.</p>
+          <div class="flex flex-wrap gap-space-xs pt-space-xs"><span
+              class="inline-flex items-center gap-1 bg-surface-container-highest/10 text-on-primary px-space-sm py-1 rounded text-label-md font-label-md"><span
+                class="material-symbols-outlined text-[16px]">shield</span>Garansi Aman</span><span
+              class="inline-flex items-center gap-1 bg-surface-container-highest/10 text-on-primary px-space-sm py-1 rounded text-label-md font-label-md"><span
+                class="material-symbols-outlined text-[16px]">speed</span>Tepat Waktu</span><span
+              class="inline-flex items-center gap-1 bg-surface-container-highest/10 text-on-primary px-space-sm py-1 rounded text-label-md font-label-md"><span
+                class="material-symbols-outlined text-[16px]">all_inbox</span>Layanan Jemput</span></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full px-margin-mobile lg:px-margin py-space-md bg-tertiary-container/40 flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-primary-container">
+      <p class="">© 2024 PT. Indah Logistik Cargo Cabang Sidoarjo. Hak Cipta Dilindungi Undang-Undang.</p>
+      <div class="flex items-center gap-space-md"><a class="hover:text-on-primary transition-colors"
+          data-path="syarat-ketentuan" href="#">Syarat &amp; Ketentuan</a><span class="text-outline">•</span><a
+          class="hover:text-on-primary transition-colors" data-path="kebijakan-privasi" href="#">Kebijakan
+          Privasi</a><span class="text-outline">•</span><a class="hover:text-on-primary transition-colors"
+          data-path="panduan-packing" href="#">Panduan Packing</a></div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
