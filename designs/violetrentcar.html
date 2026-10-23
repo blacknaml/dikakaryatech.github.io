@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#783200", "on-primary-fixed": "#001e2d", "tertiary": "#006591", "inverse-on-surface": "#eef0fd", "on-primary-container": "#003e58", "on-background": "#181c24", "surface-container-lowest": "#ffffff", "outline-variant": "#bdc8d1", "on-primary-fixed-variant": "#004c6b", "surface-tint": "#00658d", "tertiary-container": "#25adf1", "outline": "#6e7881", "surface-dim": "#d7dae6", "primary-fixed-dim": "#82cfff", "inverse-primary": "#82cfff", "on-tertiary-fixed": "#001e2f", "primary": "#00658d", "surface": "#f9f9ff", "tertiary-fixed": "#c9e6ff", "secondary-fixed": "#ffdbca", "secondary-fixed-dim": "#ffb690", "primary-container": "#00aeef", "on-error-container": "#93000a", "surface-bright": "#f9f9ff", "background": "#f9f9ff", "error": "#ba1a1a", "surface-container": "#ebedfa", "on-secondary": "#ffffff", "surface-container-low": "#f1f3ff", "surface-container-high": "#e5e8f4", "inverse-surface": "#2c303a", "secondary-container": "#fd761a", "on-tertiary-fixed-variant": "#004c6e", "surface-container-highest": "#dfe2ef", "on-surface-variant": "#3e4850", "secondary": "#9d4300", "on-surface": "#181c24", "tertiary-fixed-dim": "#89ceff", "on-tertiary-container": "#003d5a", "surface-variant": "#dfe2ef", "on-primary": "#ffffff", "on-secondary-fixed": "#341100", "error-container": "#ffdad6", "on-secondary-container": "#5c2400", "primary-fixed": "#c6e7ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-xl-mobile": ["Outfit"], "headline-md": ["Outfit"], "body-sm": ["Inter"], "label-lg": ["Outfit"], "headline-xl": ["Outfit"], "headline-sm": ["Outfit"], "headline-lg-mobile": ["Outfit"], "headline-lg": ["Outfit"], "body-md": ["Inter"], "label-sm": ["Outfit"], "label-md": ["Outfit"], "body-lg": ["Inter"] }, "fontSize": { "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["48px", { "lineHeight": "56px", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }] } } } };</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <div class="bg-[#13161c] text-inverse-on-surface border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 h-10 flex items-center justify-between font-body-sm text-body-sm">
+        <div class="flex items-center gap-space-lg">
+          <div class="flex items-center gap-space-xs text-[#82cfff]"><span
+              class="material-symbols-outlined text-[18px]">support_agent</span><span
+              class="font-label-md text-label-md text-inverse-on-surface hidden sm:inline">24/7 Online:</span><a
+              class="font-label-md text-label-md text-inverse-on-surface hover:text-[#82cfff] transition-colors"
+              href="tel:+6285385532327">+62 853-8553-2327</a></div>
+        </div>
+        <div class="flex items-center gap-space-md"><a
+            class="flex items-center gap-space-xs text-inverse-on-surface hover:text-[#25adf1] transition-colors"
+            href="https://wa.me/6285385532327" target="_blank"><span
+              class="material-symbols-outlined text-[16px]">chat</span><span
+              class="font-label-sm text-label-sm hidden sm:inline">WhatsApp</span></a><span
+            class="text-outline text-body-sm">|</span><a
+            class="flex items-center gap-space-xs text-inverse-on-surface hover:text-[#25adf1] transition-colors"
+            href="tel:+6285385532327"><span class="material-symbols-outlined text-[16px]">call</span><span
+              class="font-label-sm text-label-sm hidden sm:inline">Telepon</span></a></div>
+      </div>
+    </div>
+    <div class="bg-[#1E222B]/95 backdrop-blur-md border-b border-white/10">
+      <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md">
+        <div class="flex items-center gap-space-md"><a class="flex items-center focus:outline-none gap-space-xs"
+            data-path="beranda" href="#"><img alt="Violetsrentcar" class="h-10 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1WubQDay6iSZem-4gY-uXSfMrYWA7GP5VoUlOioQ_M7dFdMfzcB-X-Pt3zyQOvWefbn2uGGSBubTDEjdf15nExdPM_9Dcy8ZFDvWjGoVxIau3MtOparHcRtGyBZGt34wiYFmJ4ZakxLuIHPwc_4sOoahe680VD35UkRm4uruuCSJoPN7W-rAepOk_IsQrmIKaxMOZMsRNuiiVCpOC0-XgnFt3BehsedbnoEU_-KMC6foNT3OdSBUfhN2dyEpdE_PZEtT_qQBQTT7A"><span
+              class="font-headline-md text-headline-md font-bold tracking-tight text-inverse-on-surface ml-2"><span
+                class="text-[#25adf1]">Violet</span><span class="text-secondary-container">RentCar</span></span></a>
+        </div>
+        <nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-[#25adf1] font-semibold"><a
+            class="font-label-lg text-label-lg text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors py-space-xs"
+            data-path="pilihan-mobil" href="#">Pilihan Mobil</a><a
+            class="font-label-lg text-label-lg text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors py-space-xs"
+            data-path="paket-layanan" href="#">Paket Layanan</a><a
+            class="font-label-lg text-label-lg text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors py-space-xs"
+            data-path="syarat-dan-ketentuan" href="#">Syarat &amp; Ketentuan</a><a
+            class="font-label-lg text-label-lg text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors py-space-xs"
+            data-path="lokasi-garasi" href="#">Lokasi Garasi</a><a
+            class="font-label-lg text-label-lg text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors py-space-xs"
+            data-path="faq" href="#">FAQ</a></nav>
+        <div class="flex items-center gap-space-md hidden sm:flex">
+          <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-lg text-label-lg shadow-[0_4px_16px_rgba(253,118,26,0.35)] hover:bg-[#e06312] transition-all transform hover:-translate-y-0.5"
+            href="https://wa.me/6285385532327" target="_blank"><span
+              class="material-symbols-outlined text-[20px]">chat</span><span class="">Hubungi Kami</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-[120px] bg-background min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- HERO COMMAND MODULE -->
+      <section
+        class="relative w-full bg-[#1E222B] text-inverse-on-surface overflow-hidden -mt-[120px] pt-[140px] pb-space-xl">
+        <!-- Atmospheric Underlay Image -->
+        <div class="absolute inset-0 z-0 opacity-25 mix-blend-luminosity">
+          <img alt="Violetsrentcar Showroom"
+            class="w-full h-full object-cover object-center scale-105 transform hover:scale-100 transition-transform duration-1000 ease-out"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6-NtjvmsOedLKxHHtIJxwEGwvfxBmxfwtCbW_5YmQxLXOW3KiOEYE3LLYSwg8uZmiePhJlv54qFknYqDC_paDM-G6ieh_9dmnUp_rxMrvvg_jujifVlAPKxa-9OqDSji88j2ilepbr9xmH_PtyhGs7OG4SOhlgLTU3c7FZ5_1GvjAHVCaFf3V9IbV2I3hqWlAIEn-z_N3_B8e7Xtjxk-6ivry7hFig2xFfUwPwgyFmKagTFTFTQF">
+        </div>
+        <!-- Ambient Depth Gradients -->
+        <div class="absolute inset-0 z-0 bg-gradient-to-t from-[#1E222B] via-[#1E222B]/85 to-transparent"></div>
+        <div
+          class="absolute -top-32 right-0 w-[520px] h-[520px] rounded-full bg-primary-container/10 blur-[130px] pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-10 left-10 w-[380px] h-[380px] rounded-full bg-secondary-container/10 blur-[100px] pointer-events-none">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center">
+          <!-- High-visibility Trust Pill -->
+
+          <!-- Core Value Proposition -->
+          <h1
+            class="font-headline-xl text-headline-xl text-center max-w-4xl text-inverse-on-surface tracking-tight leading-[1.15]">
+            Sewa Mobil Mudah, Cepat, dan Terpercaya Bersama <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary-fixed to-primary-container">Violetsrentcar</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-outline-variant text-center max-w-2xl mt-space-sm mb-space-xl">
+            Pilihan armada terlengkap dan terawat untuk kebutuhan liburan, bisnis, atau mobilitas VIP. Nikmati kebebasan
+            Lepas Kunci atau relaksasi penuh bersama Chauffeur profesional.
+          </p>
+          <!-- Command Booking Engine Widget -->
+          <div
+            class="w-full max-w-5xl rounded-xl bg-surface-container-lowest text-on-surface shadow-[0_20px_50px_-10px_rgba(0,0,0,0.45)] overflow-hidden">
+            <!-- Segmented Mode Bar -->
+
+            <!-- Search Parameters Form -->
+
+          </div>
+          <!-- Trust Telemetry Row -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg w-full max-w-4xl mt-space-xl pt-space-md">
+            <div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-white/5 backdrop-blur-sm shadow-sm">
+              <div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary-fixed-dim">
+                <span class="material-symbols-outlined text-[26px]">garage_home</span>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold">50+ Unit</div>
+                <div class="font-label-sm text-label-sm text-outline-variant">Armada Ready Stock</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-white/5 backdrop-blur-sm shadow-sm">
+              <div
+                class="w-12 h-12 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary-fixed">
+                <span class="material-symbols-outlined text-[26px]">groups</span>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold">15.000+</div>
+                <div class="font-label-sm text-label-sm text-outline-variant">Pelanggan Puas</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-white/5 backdrop-blur-sm shadow-sm">
+              <div
+                class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+                <span class="material-symbols-outlined text-[26px]">headset_mic</span>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold">24 Jam</div>
+                <div class="font-label-sm text-label-sm text-outline-variant">Dukungan Darurat</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-white/5 backdrop-blur-sm shadow-sm">
+              <div class="w-12 h-12 rounded-lg bg-amber-400/20 flex items-center justify-center text-amber-300">
+                <span class="material-symbols-outlined text-[26px]"
+                  style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold">4.9 / 5.0</div>
+                <div class="font-label-sm text-label-sm text-outline-variant">Ulasan Google Maps</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- VALUE PROPOSITION (Mengapa Memilih Violetsrentcar) -->
+      <section class="w-full bg-surface py-space-xl">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+            <div>
+              <div
+                class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+                <span class="w-6 h-0.5 bg-primary rounded-full"></span>
+                Keunggulan Kami
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                Mengapa Pelanggan Setia Memilih Kami?
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Kami menjamin setiap kilometer perjalanan Anda berlangsung nyaman, aman, bebas cemas, serta didukung unit
+              yang selalu higienis.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Feature 1 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div
+                  class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-space-md group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[30px]">car_repair</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Kondisi Unit Prima</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Armada selalu menjalani servis berkala di bengkel resmi APM, pengecekan tekanan ban, dan sterilisasi
+                  kabin sebelum diserahterimakan.
+                </p>
+              </div>
+              <div class="pt-space-md flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+                <span class="">Standar QC Ketat</span>
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+              </div>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div
+                  class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[30px]">key_vertical</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Lepas Kunci / Driver</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Bebas tentukan privasi berkendara sendiri atau menikmati perjalanan santai tanpa letih bersama staf
+                  driver ramah bersertifikasi.
+                </p>
+              </div>
+              <div class="pt-space-md flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+                <span class="">Opsi Fleksibel 24 Jam</span>
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+              </div>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div
+                  class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[30px]">badge</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Driver Profesional</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Sopan, berpenampilan rapi, tidak merokok dalam kabin, menguasai rute jalan alternatif Jabodetabek, dan
+                  mengutamakan keselamatan.
+                </p>
+              </div>
+              <div class="pt-space-md flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-semibold">
+                <span class="">Pengemudi Terverifikasi</span>
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+              </div>
+            </div>
+            <!-- Feature 4 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div
+                  class="w-14 h-14 rounded-xl bg-primary-fixed-dim/40 flex items-center justify-center text-primary mb-space-md group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[30px]">price_check</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Transparan &amp; Jujur</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Biaya sewa tercantum jelas tanpa tagihan siluman di akhir rute. Verifikasi persyaratan cepat dan anti
+                  ribet via WhatsApp.
+                </p>
+              </div>
+              <div class="pt-space-md flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+                <span class="">Tanpa Biaya Siluman</span>
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- INTERACTIVE FLEET CATALOG (Katalog Armada Pilihan) -->
+      <section class="w-full bg-surface-container-low py-space-xl" id="katalog-armada">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <!-- Section Header & Filter Controls -->
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+            <div>
+              <div
+                class="inline-flex items-center gap-2 text-secondary-container font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+                <span class="w-6 h-0.5 bg-secondary-container rounded-full"></span>
+                Pilihan Kendaraan Terawat
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                Pilihan Armada Terbaik Violetrentcar
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Temukan kendaraan yang ideal untuk perjalanan keluarga, ekspedisi bisnis, maupun tamu kehormatan.
+              </p>
+            </div>
+            <!-- Filter Pill Chips -->
+
+          </div>
+          <!-- Vehicle Card Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="fleet-container">
+            <!-- Card 1: Toyota Innova Zenix Hybrid -->
+            <div
+              class="fleet-card flex flex-col rounded-xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1.5"
+              data-cat="mpv">
+              <div
+                class="relative w-full h-56 bg-surface-container-high overflow-hidden flex items-center justify-center">
+                <img alt="Toyota Innova Zenix Hybrid"
+                  class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiJLkBBwCBK0dkeD6AtiLRj_zNy0mXiQ8v68L_twGXYkzJEQ7Rft2YEKlbqAcAkAMdA5KlCB5iBIlh79mRvlXk1vAEsYcodE8GR8Gg4kvNrT9J7YfpqOMhu-KXu4MN19A73uj1vlt4H3AmC2xBkg-varONZU_XSJiRslaXARRSzxNWr_lDO-mKcbMHEoKXQSHCDYr9rR3f-jK1e5x9UJ3A5lgos6DTMOitS4wEFuPD3xdfi1F8aX41">
+
+
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Premium
+                      MPV</span>
+                    <div class="flex items-center text-amber-500 text-label-sm font-label-sm">
+                      <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span> 4.9 (84)
+                    </div>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota Innova Zenix Hybrid</h3>
+                  <!-- Specs Array -->
+                  <div
+                    class="grid grid-cols-4 gap-2 my-space-md py-space-sm bg-surface-container-low rounded-lg px-2 text-center">
+                    <div class="flex flex-col items-center">
+                      <span
+                        class="material-symbols-outlined text-[20px] text-primary">airline_seat_recline_normal</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">7 Kursi</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">settings</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Matic</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">local_gas_station</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Hybrid 2.0</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">air</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Dual AC</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between border-t border-surface-container">
+                  <div>
+                    <span class="font-body-sm text-body-sm text-outline-variant block">Tarif Mulai</span>
+                    <span class="font-headline-md text-headline-md text-on-surface font-bold text-primary">Rp
+                      750.000</span>
+                    <span class="font-label-sm text-label-sm text-outline"> / hari</span>
+                  </div>
+                  <a class="px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-[#e06312] transition-colors flex items-center gap-1.5"
+                    href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20Innova%20Zenix%20Hybrid"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">Sewa Sekarang</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2: Toyota All New Avanza / Veloz -->
+            <div
+              class="fleet-card flex flex-col rounded-xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1.5"
+              data-cat="mpv">
+              <div
+                class="relative w-full h-56 bg-surface-container-high overflow-hidden flex items-center justify-center">
+                <img alt="Toyota All New Avanza Veloz"
+                  class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiJLkBBwCBK0dkeD6AtiLRj_zNy0mXiQ8v68L_twGXYkzJEQ7Rft2YEKlbqAcAkAMdA5KlCB5iBIlh79mRvlXk1vAEsYcodE8GR8Gg4kvNrT9J7YfpqOMhu-KXu4MN19A73uj1vlt4H3AmC2xBkg-varONZU_XSJiRslaXARRSzxNWr_lDO-mKcbMHEoKXQSHCDYr9rR3f-jK1e5x9UJ3A5lgos6DTMOitS4wEFuPD3xdfi1F8aX41">
+
+
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Standard
+                      MPV</span>
+                    <div class="flex items-center text-amber-500 text-label-sm font-label-sm">
+                      <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span> 4.9 (120)
+                    </div>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota Veloz / Avanza Baru</h3>
+                  <div
+                    class="grid grid-cols-4 gap-2 my-space-md py-space-sm bg-surface-container-low rounded-lg px-2 text-center">
+                    <div class="flex flex-col items-center">
+                      <span
+                        class="material-symbols-outlined text-[20px] text-primary">airline_seat_recline_normal</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">7 Kursi</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">settings</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">CVT / AT</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">local_gas_station</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">1500 cc</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">usb</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">CarPlay</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between border-t border-surface-container">
+                  <div>
+                    <span class="font-body-sm text-body-sm text-outline-variant block">Tarif Mulai</span>
+                    <span class="font-headline-md text-headline-md text-on-surface font-bold text-primary">Rp
+                      400.000</span>
+                    <span class="font-label-sm text-label-sm text-outline"> / hari</span>
+                  </div>
+                  <a class="px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-[#e06312] transition-colors flex items-center gap-1.5"
+                    href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20Avanza%20Veloz"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">Sewa Sekarang</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3: Toyota Yaris / Honda Brio (City Car) -->
+            <div
+              class="fleet-card flex flex-col rounded-xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1.5"
+              data-cat="city">
+              <div
+                class="relative w-full h-56 bg-surface-container-high overflow-hidden flex items-center justify-center">
+                <img alt="Toyota Yaris City Car"
+                  class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8Nfw1OptOpH0vhFVITE-ilFSAF8SNXf9oXCedfuojEhILB2C3nGFV-gLzKGT3JRuWnm-MdZV3f2WAQmnvtuAGJfMZQCFNGPjIEoI5lUWU2VfAzIbI2Qou9pCUHPFuJF_4LjgZhl3g1P-GPsD88G3J7zTn-SKpTwebd75oeBeezBcgcc2JycEozqYj7vYQRhz47y3Jurf8vk6pDBimgViEEbsfaPCrOPgHEw5YoDXJOIuKLYaMfg3z">
+
+
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">City Car
+                      Compact</span>
+                    <div class="flex items-center text-amber-500 text-label-sm font-label-sm">
+                      <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span> 4.8 (65)
+                    </div>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota Yaris / Brio RS</h3>
+                  <div
+                    class="grid grid-cols-4 gap-2 my-space-md py-space-sm bg-surface-container-low rounded-lg px-2 text-center">
+                    <div class="flex flex-col items-center">
+                      <span
+                        class="material-symbols-outlined text-[20px] text-primary">airline_seat_recline_normal</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">5 Kursi</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">settings</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Matic / AT</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">local_gas_station</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">1200-1500cc</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">bluetooth</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">BT Audio</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between border-t border-surface-container">
+                  <div>
+                    <span class="font-body-sm text-body-sm text-outline-variant block">Tarif Mulai</span>
+                    <span class="font-headline-md text-headline-md text-on-surface font-bold text-primary">Rp
+                      300.000</span>
+                    <span class="font-label-sm text-label-sm text-outline"> / hari</span>
+                  </div>
+                  <a class="px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-[#e06312] transition-colors flex items-center gap-1.5"
+                    href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20City%20Car"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">Sewa Sekarang</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4: Toyota HiAce Commuter / Premio -->
+            <div
+              class="fleet-card flex flex-col rounded-xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1.5"
+              data-cat="microbus">
+              <div
+                class="relative w-full h-56 bg-surface-container-high overflow-hidden flex items-center justify-center">
+                <img alt="Toyota HiAce Commuter Premio"
+                  class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuADzRrnlpJI-i_9S_dx2gb-8B39krL4ue-5rllbVKCJ7q1iZ4OmenVNQKZRRUD1vYhx9bAlolDFwY-jJSIt4OwywtGvE2DHHguiJezzJpkBoYPL2ZFt5HnIvaQJuhZfLk8H2B_ZA7TGwdHxUc5jYwuzUs5lZmDEzdI9_1H1GwLxQtyKvefoZdjj5gjE4DV0isZvKoZnzGCFtswG28SgnFBEEg6BMo8I3P3Wh3F2Xg_z8WNH-MKTXkTL">
+
+
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Microbus
+                      Wisata</span>
+                    <div class="flex items-center text-amber-500 text-label-sm font-label-sm">
+                      <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span> 4.9 (92)
+                    </div>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota HiAce Premio / Commuter</h3>
+                  <div
+                    class="grid grid-cols-4 gap-2 my-space-md py-space-sm bg-surface-container-low rounded-lg px-2 text-center">
+                    <div class="flex flex-col items-center">
+                      <span
+                        class="material-symbols-outlined text-[20px] text-primary">airline_seat_recline_normal</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">14-16 Seat</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">person</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">+ Supir</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">mic</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Karaoke</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">luggage</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Bagasi Luas</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between border-t border-surface-container">
+                  <div>
+                    <span class="font-body-sm text-body-sm text-outline-variant block">Tarif Mulai</span>
+                    <span class="font-headline-md text-headline-md text-on-surface font-bold text-primary">Rp
+                      1.100.000</span>
+                    <span class="font-label-sm text-label-sm text-outline"> / hari</span>
+                  </div>
+                  <a class="px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-[#e06312] transition-colors flex items-center gap-1.5"
+                    href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20HiAce%20Wisata"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">Sewa Sekarang</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5: Pajero Sport / Fortuner (SUV) -->
+            <div
+              class="fleet-card flex flex-col rounded-xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1.5"
+              data-cat="suv">
+              <div
+                class="relative w-full h-56 bg-surface-container-high overflow-hidden flex items-center justify-center">
+                <img alt="Mitsubishi Pajero Sport / Fortuner"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6-NtjvmsOedLKxHHtIJxwEGwvfxBmxfwtCbW_5YmQxLXOW3KiOEYE3LLYSwg8uZmiePhJlv54qFknYqDC_paDM-G6ieh_9dmnUp_rxMrvvg_jujifVlAPKxa-9OqDSji88j2ilepbr9xmH_PtyhGs7OG4SOhlgLTU3c7FZ5_1GvjAHVCaFf3V9IbV2I3hqWlAIEn-z_N3_B8e7Xtjxk-6ivry7hFig2xFfUwPwgyFmKagTFTFTQF">
+
+
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Big SUV
+                      4x2</span>
+                    <div class="flex items-center text-amber-500 text-label-sm font-label-sm">
+                      <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span> 4.9 (78)
+                    </div>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Mitsubishi Pajero / Fortuner GR</h3>
+                  <div
+                    class="grid grid-cols-4 gap-2 my-space-md py-space-sm bg-surface-container-low rounded-lg px-2 text-center">
+                    <div class="flex flex-col items-center">
+                      <span
+                        class="material-symbols-outlined text-[20px] text-primary">airline_seat_recline_normal</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">7 Kursi</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">settings</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Triptonic</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">oil_barrel</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Diesel Turbo</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span
+                        class="material-symbols-outlined text-[20px] text-primary">airline_seat_individual_suite</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Kulit Mewah</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between border-t border-surface-container">
+                  <div>
+                    <span class="font-body-sm text-body-sm text-outline-variant block">Tarif Mulai</span>
+                    <span class="font-headline-md text-headline-md text-on-surface font-bold text-primary">Rp
+                      850.000</span>
+                    <span class="font-label-sm text-label-sm text-outline"> / hari</span>
+                  </div>
+                  <a class="px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-[#e06312] transition-colors flex items-center gap-1.5"
+                    href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20SUV%20Pajero%20Fortuner"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">Sewa Sekarang</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6: Toyota Alphard Transformer (Luxury) -->
+            <div
+              class="fleet-card flex flex-col rounded-xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1.5"
+              data-cat="luxury">
+              <div
+                class="relative w-full h-56 bg-surface-container-high overflow-hidden flex items-center justify-center">
+                <img alt="Toyota Alphard Transformer Luxury"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6-NtjvmsOedLKxHHtIJxwEGwvfxBmxfwtCbW_5YmQxLXOW3KiOEYE3LLYSwg8uZmiePhJlv54qFknYqDC_paDM-G6ieh_9dmnUp_rxMrvvg_jujifVlAPKxa-9OqDSji88j2ilepbr9xmH_PtyhGs7OG4SOhlgLTU3c7FZ5_1GvjAHVCaFf3V9IbV2I3hqWlAIEn-z_N3_B8e7Xtjxk-6ivry7hFig2xFfUwPwgyFmKagTFTFTQF">
+
+
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Ultra
+                      Luxury MPV</span>
+                    <div class="flex items-center text-amber-500 text-label-sm font-label-sm">
+                      <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span> 5.0 (46)
+                    </div>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota Alphard / Vellfire</h3>
+                  <div
+                    class="grid grid-cols-4 gap-2 my-space-md py-space-sm bg-surface-container-low rounded-lg px-2 text-center">
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">chair</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Pilot Seat</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">wb_sunny</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Sunroof</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">person_celebrate</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">VIP Driver</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <span class="material-symbols-outlined text-[20px] text-primary">lock</span>
+                      <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Privacy</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between border-t border-surface-container">
+                  <div>
+                    <span class="font-body-sm text-body-sm text-outline-variant block">Tarif Mulai</span>
+                    <span class="font-headline-md text-headline-md text-on-surface font-bold text-primary">Rp
+                      2.200.000</span>
+                    <span class="font-label-sm text-label-sm text-outline"> / hari</span>
+                  </div>
+                  <a class="px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-[#e06312] transition-colors flex items-center gap-1.5"
+                    href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20Alphard%20VIP"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">Sewa Sekarang</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fleet Bottom Concierge Banner -->
+          <div
+            class="mt-space-xl p-space-lg rounded-xl bg-gradient-to-r from-[#1E222B] to-[#2c303a] text-inverse-on-surface flex flex-col md:flex-row items-center justify-between gap-space-md shadow-lg">
+            <div class="flex items-center gap-space-md">
+              <div
+                class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+                <span class="material-symbols-outlined text-[28px]">handshake</span>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-inverse-on-surface">Butuh Unit Khusus atau Kontrak
+                  Bulanan?</div>
+                <p class="font-body-sm text-body-sm text-outline-variant">Kami menyediakan paket sewa korporat jangka
+                  panjang dengan diskon eksklusif dan mobil pengganti.</p>
+              </div>
+            </div>
+            <a class="whitespace-nowrap px-space-lg py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all flex items-center gap-2"
+              href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20konsultasi%20sewa%20korporat%20atau%20unit%20khusus"
+              target="_blank">
+              <span class="">Hubungi CS Prioritas</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- SPECIAL SERVICE PACKAGES (Paket Layanan Khusus) -->
+      <section class="w-full bg-surface py-space-xl">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="text-center max-w-3xl mx-auto mb-space-xl">
+            <div
+              class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+              <span class="w-6 h-0.5 bg-primary rounded-full"></span>
+              Solusi Fleksibel &amp; Menyeluruh
+              <span class="w-6 h-0.5 bg-primary rounded-full"></span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Paket Layanan Mobilitas Terintegrasi
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Dari perjalanan harian santai hingga protokol eksekutif, kami siapkan armada terbaik sesuai kebutuhan
+              Anda.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Package 1 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-transparent hover:border-primary-container/20">
+              <div>
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary mb-space-md">
+                  <span class="material-symbols-outlined text-[28px]">calendar_today</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Sewa Harian &amp; Mingguan</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                  Solusi praktis untuk agenda liburan keluarga, perjalanan mendadak, atau kunjungan silaturahmi dengan
+                  opsi lepas kunci atau driver.
+                </p>
+              </div>
+              <ul class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-primary">check</span> Hitungan sewa per 24 Jam
+                </li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-primary">check</span> Bebas pilih tipe mobil</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-primary">check</span> Antar jemput alamat</li>
+              </ul>
+            </div>
+            <!-- Package 2 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-transparent hover:border-primary-container/20">
+              <div>
+                <div
+                  class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md">
+                  <span class="material-symbols-outlined text-[28px]">corporate_fare</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Sewa Korporat &amp; Bulanan</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                  Dukungan operasional perusahaan dengan invoice resmi perpajakan, free biaya maintenance rutin, dan
+                  jaminan mobil pengganti instan.
+                </p>
+              </div>
+              <ul class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-secondary">check</span> Faktur Pajak &amp;
+                  Legalitas Lengkap</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-secondary">check</span> Unit Pengganti 24 Jam</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-secondary">check</span> Perawatan Rutin Ditanggung
+                </li>
+              </ul>
+            </div>
+            <!-- Package 3 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-transparent hover:border-primary-container/20">
+              <div>
+                <div
+                  class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md">
+                  <span class="material-symbols-outlined text-[28px]">flight_takeoff</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Drop-Off &amp; Antar Bandara</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                  Penjemputan tepat waktu di Terminal Soekarno-Hatta (CGK) atau Halim (HLP) langsung menuju tujuan Anda
+                  tanpa antre taksi.
+                </p>
+              </div>
+              <ul class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary">check</span> Pantauan Jadwal Flight
+                  Realtime</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary">check</span> Nameboard Greeting
+                  Kedatangan</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary">check</span> All-In Tol &amp; Parkir
+                  Bandara</li>
+              </ul>
+            </div>
+            <!-- Package 4 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group border border-transparent hover:border-primary-container/20">
+              <div>
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary-fixed-dim/40 flex items-center justify-center text-primary mb-space-md">
+                  <span class="material-symbols-outlined text-[28px]">explore</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Paket Wisata &amp; Luar Kota</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                  Jelajahi Bandung, Puncak, Cirebon, Yogyakarta, atau Jawa Timur dengan supir ramah yang paham destinasi
+                  kuliner dan spot foto terbaik.
+                </p>
+              </div>
+              <ul class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-primary">check</span> Driver Berpengalaman Luar
+                  Kota</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-primary">check</span> Opsi Paket All-In BBM &amp;
+                  Tol</li>
+                <li class="flex items-center gap-2"><span
+                    class="material-symbols-outlined text-[16px] text-primary">check</span> Fleksibel Waktu Wisata</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- REQUIREMENTS & COMPARISON TAB SECTION (Syarat & Ketentuan) -->
+      <section class="w-full bg-surface-container-low py-space-xl" id="syarat-dan-ketentuan">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="max-w-3xl mb-space-xl">
+            <div
+              class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+              <span class="w-6 h-0.5 bg-primary-container rounded-full"></span>
+              Prosedur Transparan
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Syarat &amp; Ketentuan Penyewaan Unit
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Kami menyederhanakan proses verifikasi administrasi agar armada siap digunakan tanpa proses
+              berbelit-belit.
+            </p>
+          </div>
+          <!-- Dual Visual Card Comparison Layout -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+            <!-- Panel 1: Lepas Kunci -->
+            <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between pb-space-md border-b border-surface-container">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center">
+                      <span class="material-symbols-outlined text-[28px]">key</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface">Sewa Lepas Kunci (Self Drive)</h3>
+                      <span class="font-label-sm text-label-sm text-outline">Verifikasi Cepat 15 - 30 Menit</span>
+                    </div>
+                  </div>
+                  <span
+                    class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Privasi
+                    Maksimal</span>
+                </div>
+                <!-- Syarat WNI & WNA -->
+                <div class="mt-space-md space-y-space-md">
+                  <div class="bg-surface-container-low p-space-md rounded-lg">
+                    <div
+                      class="font-label-lg text-label-lg text-on-surface font-semibold mb-2 flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-[18px] text-primary">id_card</span>
+                      Persyaratan Warga Negara Indonesia (WNI):
+                    </div>
+                    <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+                        <span class="">Foto Asli e-KTP dan SIM A aktif yang masih berlaku.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+                        <span class="">Tautan akun media sosial aktif peminjam (Instagram / LinkedIn / Facebook).</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+                        <span class="">Bukti tempat tinggal domisili (PBB / Rek Listrik / ID Karyawan Kantor / Mutasi
+                          Bank).</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+                        <span class="">Deposit jaminan ringan (langsung dikembalikan 100% setelah unit kembali).</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-surface-container-low p-space-md rounded-lg">
+                    <div
+                      class="font-label-lg text-label-lg text-on-surface font-semibold mb-2 flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-[18px] text-primary">public</span>
+                      Persyaratan Warga Asing (Foreigner / WNA):
+                    </div>
+                    <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+                        <span class="">Passport Asli &amp; International Driving Permit (IDP) yang sah.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+                        <span class="">Bukti reservasi tiket pesawat kepulangan dan voucher hotel menginap.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+                <span class="font-label-sm text-label-sm text-outline">Kirim data mudah via WhatsApp</span>
+                <a class="px-space-md py-2 rounded-full bg-[#1E222B] text-inverse-on-surface hover:bg-black font-label-md text-label-md transition-all flex items-center gap-1"
+                  href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20mengajukan%20verifikasi%20sewa%20Lepas%20Kunci"
+                  target="_blank">
+                  <span class="">Ajukan Berkas</span>
+                  <span class="material-symbols-outlined text-[16px]">upload_file</span>
+                </a>
+              </div>
+            </div>
+            <!-- Panel 2: Dengan Driver -->
+            <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between pb-space-md border-b border-surface-container">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+                      <span class="material-symbols-outlined text-[28px]">sports_score</span>
+                    </div>
+                    <div>
+                      <h3 class="font-headline-sm text-headline-sm text-on-surface">Sewa Dengan Driver (Chauffeur)</h3>
+                      <span class="font-label-sm text-label-sm text-outline">Proses Instan Tanpa Syarat Rumit</span>
+                    </div>
+                  </div>
+                  <span
+                    class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">Bebas
+                    Resiko Lelah</span>
+                </div>
+                <div class="mt-space-md space-y-space-md">
+                  <div class="bg-surface-container-low p-space-md rounded-lg">
+                    <div
+                      class="font-label-lg text-label-lg text-on-surface font-semibold mb-2 flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+                      Kemudahan Tanpa Deposit:
+                    </div>
+                    <ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span>
+                        <span class=""><strong>Hanya Foto KTP:</strong> Cukup kirimkan identitas pemesan dan share-loc
+                          titik penjemputan via WhatsApp.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span>
+                        <span class=""><strong>Nol Tanggung Jawab Kerusakan:</strong> Seluruh resiko lalu lintas dan
+                          lecet kendaraan ditanggung penuh operasional kami.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span>
+                        <span class=""><strong>Ketepatan Waktu:</strong> Driver sudah standby di titik jemput minimal
+                          15-30 menit sebelum jadwal perjalanan.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span>
+                        <span class=""><strong>Fleksibilitas Paket:</strong> Tersedia paket 12 jam, Full Day, maupun
+                          paket All-in (Mobil + Supir + BBM + Tol).</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Helpful Note Card -->
+                  <div class="p-space-md rounded-lg bg-tertiary-fixed/30 border border-transparent">
+                    <div class="flex items-center gap-2 font-label-md text-label-md text-tertiary font-bold mb-1">
+                      <span class="material-symbols-outlined text-[18px]">info</span>
+                      Catatan Akomodasi Luar Kota
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Untuk perjalanan ke luar Jabodetabek yang mengharuskan menginap, biaya akomodasi supir disesuaikan
+                      secara terjangkau (Rp 150.000 - Rp 200.000/malam).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+                <span class="font-label-sm text-label-sm text-outline">Pesan langsung tanpa verifikasi rumit</span>
+                <a class="px-space-md py-2 rounded-full bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-all flex items-center gap-1 shadow-sm"
+                  href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20sewa%20mobil%20Dengan%20Driver"
+                  target="_blank">
+                  <span class="">Pesan Driver Sekarang</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GARAGE LOCATION & OPERATIONAL HQ (Lokasi Garasi & Peta Operasional) -->
+      <section class="w-full bg-surface py-space-xl" id="lokasi-garasi">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="max-w-3xl mb-space-xl">
+            <div
+              class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+              <span class="w-6 h-0.5 bg-primary rounded-full"></span>
+              Kunjungi Showroom &amp; Garasi
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Pusat Operasional Violetsrentcar
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Anda dapat mengunjungi garasi utama kami untuk cek unit secara langsung, melakukan test drive, ataupun
+              berkonsultasi mengenai kebutuhan sewa rombongan dan kantor.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+            <!-- Interactive Map Visual Container (7 Cols) -->
+            <div
+              class="lg:col-span-7 rounded-xl overflow-hidden shadow-lg relative min-h-[380px] bg-[#1E222B] flex flex-col justify-end p-space-lg">
+              <div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-80"
+                data-location="Jakarta, Indonesia"
+                style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC4rrLZSAVljLjMD1M3g-dZ9r-bIShkdAV65shhayOPGiPnXFrX4EWHli2W01QukhVcMZgKCBzUnZMFphElfN0yiD2lDYNvQDHIFHSHx_FhnTXctUcJZfoY0iyEulSUbDjrNYAV1bznjDMaApK7nWcSpsxNZhDLDYc-D9kKIb4utGng6EGUFho7hik5UTzUA8gyuNod12_F2wlQTv7-zvl0hZD0cI-QjJ_EoeYVy2y46ZHXGsqk5roF&quot;);">
+              </div>
+              <!-- Map Overlay Gradients -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1E222B] via-[#1E222B]/30 to-transparent"></div>
+              <!-- Floating Pin Marker Visual -->
+              <div
+                class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <div
+                  class="px-3 py-1.5 rounded-full bg-[#1E222B] text-inverse-on-surface text-label-sm font-label-sm shadow-xl border border-primary/40 flex items-center gap-1.5 mb-1 animate-bounce">
+                  <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  <span class="">Garasi Utama Violetsrentcar</span>
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center shadow-[0_0_20px_#fd761a]">
+                  <span class="material-symbols-outlined text-[24px]">directions_car</span>
+                </div>
+              </div>
+              <!-- Bottom Floating Badge on Map -->
+              <div
+                class="relative z-10 p-space-md rounded-xl bg-[#1E222B]/90 backdrop-blur-md text-inverse-on-surface shadow-md border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+                <div>
+                  <div class="font-headline-sm text-headline-sm text-inverse-on-surface">Area Antar-Jemput Gratis</div>
+                  <div class="font-body-sm text-body-sm text-outline-variant">Radius 5 km dari garasi, serta coverage ke
+                    seluruh Surabay.</div>
+                </div>
+                <a class="px-space-md py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all flex items-center gap-1.5 whitespace-nowrap"
+                  href="https://maps.app.goo.gl/aUVKDpe3dpH3dcEV9" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                  <span class="">Buka Google Maps</span>
+                </a>
+              </div>
+            </div>
+            <!-- Garage Info Card (5 Cols) -->
+            <div
+              class="lg:col-span-5 rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col justify-between">
+              <div>
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-500/10 text-green-700 font-label-sm text-label-sm font-semibold mb-space-md">
+                  <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                  <span class="">Buka Sekarang • Layanan 24 Jam Nonstop</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Garasi &amp; Kantor Pelayanan
+                </h3>
+                <p class="font-body-md text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">Jl. Wonorejo
+                  Timur No.18, Wonorejo, Kec. Rungkut, Surabaya, Jawa Timur 60296</p>
+                <div class="space-y-space-md font-body-sm text-body-sm text-on-surface">
+                  <div class="flex items-start gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[22px] mt-0.5">schedule</span>
+                    <div>
+                      <strong class="font-label-md text-label-md block">Jam Operasional:</strong>
+                      <span class="text-on-surface-variant">Buka Setiap Hari (Senin - Minggu) 24 Jam</span>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[22px] mt-0.5">call</span>
+                    <div>
+                      <strong class="font-label-md text-label-md block">Hotline &amp; Reservasi Cepat:</strong>
+                      <a class="text-primary hover:underline font-semibold block" href="tel:+6285385532327">+6
+                        853-8553-2327</a>
+
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-space-sm">
+                    <span
+                      class="material-symbols-outlined text-primary text-[22px] mt-0.5">local_convenience_store</span>
+                    <div>
+                      <strong class="font-label-md text-label-md block">Fasilitas Garasi:</strong>
+                      <span class="text-on-surface-variant">Customer Lounge ber-AC, Free WiFi, Free Softdrinks, Tempat
+                        Cek Fisik Unit &amp; Parkir Aman.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pt-space-lg mt-space-md border-t border-surface-container flex flex-col sm:flex-row gap-space-sm">
+                <a class="flex-1 py-3 px-space-md rounded-full bg-primary text-on-primary font-label-md text-label-md text-center shadow-sm hover:bg-on-primary-fixed-variant transition-colors flex items-center justify-center gap-1.5"
+                  href="https://maps.app.goo.gl/aUVKDpe3dpH3dcEV9" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[18px]">near_me</span>
+                  <span class="">Petunjuk Arah</span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CUSTOMER TESTIMONIALS & TRUST (Testimoni Pelanggan) -->
+      <section class="w-full bg-surface-container-low py-space-xl">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+            <div>
+              <div
+                class="inline-flex items-center gap-2 text-secondary-container font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+                <span class="w-6 h-0.5 bg-secondary-container rounded-full"></span>
+                Testimoni Autentik
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                Pengalaman Nyata Bersama Kami
+              </h2>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+              </div>
+              <span class="font-label-lg text-label-lg text-on-surface font-bold">4.9 / 5.0 dari 1.200+ Review
+                Google</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <!-- Review 1 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-space-sm">
+                  <div class="flex text-amber-500 text-[18px]">
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  </div>
+                  <span
+                    class="px-2.5 py-0.5 rounded bg-green-500/10 text-green-700 font-label-sm text-label-sm font-semibold">Verified
+                    Rental</span>
+                </div>
+                <p class="font-body-md text-body-sm text-on-surface-variant italic mb-space-md">
+                  “Sewa Innova Zenix Hybrid buat liburan keluarga ke Bandung 4 hari. Mobil benar-benar harum, AC super
+                  dingin, dan suspensi nyaman banget. Proses verifikasi lepas kunci juga cuma butuh 20 menit via WA.
+                  Pasti bakal sewa lagi di sini!”
+                </p>
+              </div>
+              <div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">
+                  HP
+                </div>
+                <div>
+                  <div class="font-label-md text-label-md text-on-surface font-semibold">Hendra Pratama</div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Liburan Keluarga • Innova Zenix</div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 2 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-space-sm">
+                  <div class="flex text-amber-500 text-[18px]">
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  </div>
+                  <span
+                    class="px-2.5 py-0.5 rounded bg-green-500/10 text-green-700 font-label-sm text-label-sm font-semibold">Verified
+                    Rental</span>
+                </div>
+                <p class="font-body-md text-body-sm text-on-surface-variant italic mb-space-md">
+                  “Layanan drop-off bandara Soekarno-Hatta sangat profesional. Begitu mendarat, driver Pak Budi sudah
+                  standby di lobi kedatangan membawa nameboard. Nyetirnya sangat santun dan hafal jalan tikus Jakarta.”
+                </p>
+              </div>
+              <div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary">
+                  SA
+                </div>
+                <div>
+                  <div class="font-label-md text-label-md text-on-surface font-semibold">Sarah Anindita</div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Perjalanan Bisnis • Drop-Off CGK</div>
+                </div>
+              </div>
+            </div>
+            <!-- Review 3 -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-space-sm">
+                  <div class="flex text-amber-500 text-[18px]">
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  </div>
+                  <span
+                    class="px-2.5 py-0.5 rounded bg-green-500/10 text-green-700 font-label-sm text-label-sm font-semibold">Corporate
+                    Client</span>
+                </div>
+                <p class="font-body-md text-body-sm text-on-surface-variant italic mb-space-md">
+                  “Perusahaan kami sudah kontrak 4 unit Avanza Veloz dan HiAce untuk operasional tamu ekspatriat selama
+                  6 bulan terakhir. Pelayanan after-sales cepat tanggap, jika jadwal servis rutin langsung disiapkan
+                  unit pengganti.”
+                </p>
+              </div>
+              <div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container">
+                <div
+                  class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-tertiary">
+                  PT
+                </div>
+                <div>
+                  <div class="font-label-md text-label-md text-on-surface font-semibold">PT Mitra Logistik Nusantara
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Kontrak Korporat • Armada HiAce &amp;
+                    Veloz</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ (Pertanyaan yang Sering Diajukan) -->
+      <section class="w-full bg-surface py-space-xl" id="faq">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+          <div class="text-center mb-space-xl">
+            <div
+              class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-bold tracking-widest uppercase mb-space-xs">
+              <span class="w-6 h-0.5 bg-primary rounded-full"></span>
+              Tanya Jawab Singkat
+              <span class="w-6 h-0.5 bg-primary rounded-full"></span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Pertanyaan yang Sering Diajukan
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Semua hal mendasar mengenai sewa mobil di Violetsrentcar kami rangkum untuk kenyamanan Anda.
+            </p>
+          </div>
+          <!-- Accordion Stack -->
+          <div class="space-y-space-sm" id="faq-accordion-group">
+            <!-- FAQ 1 -->
+            <div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+              <button
+                class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors"
+                onclick="toggleFaq(1)" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">timer</span>
+                  Berapa jam hitungan sewa per hari di Violetsrentcar?
+                </span>
+                <span class="material-symbols-outlined text-[24px] text-outline transition-transform duration-300"
+                  id="faq-icon-1">expand_more</span>
+              </button>
+              <div
+                class="hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-md text-body-sm leading-relaxed"
+                id="faq-ans-1">
+                Untuk layanan <strong>Sewa Lepas Kunci</strong> dihitung penuh 24 jam terhitung sejak serah-terima unit
+                dilakukan. Sedangkan untuk layanan <strong>Dengan Driver</strong>, hitungan harian adalah 12 jam per
+                hari kerja atau Full Day (sampai pukul 23:00 WIB pada hari yang sama).
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+              <button
+                class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors"
+                onclick="toggleFaq(2)" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">more_time</span>
+                  Bagaimana ketentuan jika terjadi overtime pemakaian?
+                </span>
+                <span class="material-symbols-outlined text-[24px] text-outline transition-transform duration-300"
+                  id="faq-icon-2">expand_more</span>
+              </button>
+              <div
+                class="hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-md text-body-sm leading-relaxed"
+                id="faq-ans-2">
+                Biaya overtime dikenakan sebesar 10% per jam dari total tarif sewa harian unit tersebut. Jika durasi
+                overtime melebihi toleransi wajar (di atas 4 jam), maka otomatis akan dihitung tarif perpanjangan sewa 1
+                hari penuh.
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+              <button
+                class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors"
+                onclick="toggleFaq(3)" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">local_shipping</span>
+                  Apakah armada bisa diantar langsung ke rumah atau bandara?
+                </span>
+                <span class="material-symbols-outlined text-[24px] text-outline transition-transform duration-300"
+                  id="faq-icon-3">expand_more</span>
+              </button>
+              <div
+                class="hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-md text-body-sm leading-relaxed"
+                id="faq-ans-3">
+                Tentu saja! Kami melayani fasilitas antar dan jemput unit langsung ke alamat rumah, kantor, stasiun,
+                maupun Bandara Soekarno-Hatta &amp; Halim Perdanakusuma di seluruh wilayah Jabodetabek.
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+              <button
+                class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors"
+                onclick="toggleFaq(4)" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">map</span>
+                  Apakah mobil Violetsrentcar boleh dibawa keluar kota?
+                </span>
+                <span class="material-symbols-outlined text-[24px] text-outline transition-transform duration-300"
+                  id="faq-icon-4">expand_more</span>
+              </button>
+              <div
+                class="hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-md text-body-sm leading-relaxed"
+                id="faq-ans-4">
+                Bisa. Seluruh armada kami dapat digunakan ke luar kota (seperti Jawa Barat, Jawa Tengah, Jawa Timur,
+                hingga Bali). Anda hanya perlu menginformasikan rute kota tujuan saat pemesanan awal untuk penyesuaian
+                kelengkapan administrasi GPS dan polis asuransi.
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+              <button
+                class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface hover:text-primary transition-colors"
+                onclick="toggleFaq(5)" type="button">
+                <span class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">payments</span>
+                  Bagaimana sistem pembayaran dan pengembalian deposit?
+                </span>
+                <span class="material-symbols-outlined text-[24px] text-outline transition-transform duration-300"
+                  id="faq-icon-5">expand_more</span>
+              </button>
+              <div
+                class="hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-md text-body-sm leading-relaxed"
+                id="faq-ans-5">
+                Pembayaran dapat dilakukan melalui transfer rekening bank resmi atas nama perusahaan (BCA, Mandiri,
+                BRI), QRIS, maupun Kartu Kredit. Untuk sewa Lepas Kunci, uang deposit jaminan dikembalikan 100% secara
+                instan sesaat setelah pengecekan fisik unit selesai.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BOTTOM HIGH CONVERSION BANNER (Call To Action) -->
+      <section class="w-full bg-[#1E222B] text-inverse-on-surface py-space-xl relative overflow-hidden">
+        <div
+          class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-[100px] pointer-events-none">
+        </div>
+        <div
+          class="absolute -left-20 -top-20 w-96 h-96 rounded-full bg-primary-container/20 blur-[100px] pointer-events-none">
+        </div>
+        <div class="max-w-5xl mx-auto px-6 lg:px-12 text-center relative z-10">
+          <div
+            class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-white/10 text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-space-md">
+            <span class="material-symbols-outlined text-[16px]">bolt</span> Respon Cepat Kurang dari 5 Menit
+          </div>
+          <h2
+            class="font-headline-xl text-headline-xl tracking-tight text-inverse-on-surface max-w-3xl mx-auto mb-space-sm">
+            Siap Memulai Perjalanan Anda Bersama Violetsrentcar?
+          </h2>
+          <p class="font-body-lg text-body-lg text-outline-variant max-w-2xl mx-auto mb-space-xl">
+            Konsultasikan rencana perjalanan Anda sekarang dan dapatkan rekomendasi armada terbaik dengan penawaran
+            harga paling terjangkau.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-space-md">
+            <a class="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-secondary-container text-on-secondary font-label-lg text-label-lg shadow-[0_6px_25px_rgba(253,118,26,0.45)] hover:bg-[#e06312] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
+              href="https://wa.me/6285385532327?text=Halo%20Violetsrentcar,%20saya%20ingin%20tanya%20ketersediaan%20armada"
+              target="_blank">
+              <span class="material-symbols-outlined text-[22px]">chat</span>
+              <span class="">Chat WhatsApp Sekarang</span>
+            </a>
+            <a class="w-full sm:w-auto px-space-lg py-3.5 rounded-full bg-white/10 text-inverse-on-surface hover:bg-white/20 font-label-lg text-label-lg transition-all flex items-center justify-center gap-2"
+              href="tel:+6285385532327">
+              <span class="material-symbols-outlined text-[20px]">call</span>
+              <span class="">Telepon Langsung 24 Jam</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- CLIENT-SIDE SCRIPT FOR INTERACTION -->
+      <script>
+        let currentServiceMode = 'self';
+
+        function setServiceMode(mode) {
+          currentServiceMode = mode;
+          const btnSelf = document.getElementById('btn-mode-self');
+          const btnDriver = document.getElementById('btn-mode-driver');
+
+          if (mode === 'self') {
+            btnSelf.className = 'px-space-lg py-2 rounded-full font-label-lg text-label-lg transition-all duration-300 bg-secondary-container text-on-secondary shadow-md flex items-center gap-2';
+            btnDriver.className = 'px-space-lg py-2 rounded-full font-label-lg text-label-lg transition-all duration-300 text-on-surface-variant hover:text-on-surface flex items-center gap-2';
+          } else {
+            btnDriver.className = 'px-space-lg py-2 rounded-full font-label-lg text-label-lg transition-all duration-300 bg-primary-container text-on-primary shadow-md flex items-center gap-2';
+            btnSelf.className = 'px-space-lg py-2 rounded-full font-label-lg text-label-lg transition-all duration-300 text-on-surface-variant hover:text-on-surface flex items-center gap-2';
+          }
+        }
+
+        function handleSearch(e) {
+          e.preventDefault();
+          const loc = document.getElementById('pickup-location').value;
+          const pickupDate = document.getElementById('pickup-date').value || 'Segera';
+          const returnDate = document.getElementById('return-date').value || '1 Hari';
+          const vehicle = document.getElementById('vehicle-type-select').value;
+          const modeText = currentServiceMode === 'self' ? 'Lepas Kunci' : 'Dengan Driver';
+
+          const message = `Halo Violetsrentcar, saya ingin cek unit armada:%0A%0A• Layanan: ${modeText}%0A• Lokasi: ${encodeURIComponent(loc)}%0A• Tgl Ambil: ${encodeURIComponent(pickupDate)}%0A• Tgl Kembali: ${encodeURIComponent(returnDate)}%0A• Tipe Mobil: ${encodeURIComponent(vehicle)}%0A%0AMohon infokan unit yang ready. Terima kasih.`;
+
+          window.open(`https://wa.me/6285385532327?text=${message}`, '_blank');
+        }
+
+        function filterFleet(category) {
+          const cards = document.querySelectorAll('.fleet-card');
+          const buttons = document.querySelectorAll('.fleet-filter-btn');
+
+          buttons.forEach(btn => {
+            if (btn.getAttribute('data-category') === category) {
+              btn.className = 'fleet-filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-[#1E222B] text-inverse-on-surface';
+            } else {
+              btn.className = 'fleet-filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:bg-surface-container';
+            }
+          });
+
+          cards.forEach(card => {
+            const cat = card.getAttribute('data-cat');
+            if (category === 'all' || cat === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+
+        function toggleFaq(id) {
+          const ans = document.getElementById(`faq-ans-${id}`);
+          const icon = document.getElementById(`faq-icon-${id}`);
+
+          if (ans.classList.contains('hidden')) {
+            ans.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+          } else {
+            ans.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+          }
+        }
+      </script>
+    </div>
+  </main>
+  <footer class="w-full bg-[#13161c] text-inverse-on-surface border-t border-white/10 pt-space-xl pb-space-lg">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-white/10">
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm"><img alt="VioletRentCar" class="h-9 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1WubQDay6iSZem-4gY-uXSfMrYWA7GP5VoUlOioQ_M7dFdMfzcB-X-Pt3zyQOvWefbn2uGGSBubTDEjdf15nExdPM_9Dcy8ZFDvWjGoVxIau3MtOparHcRtGyBZGt34wiYFmJ4ZakxLuIHPwc_4sOoahe680VD35UkRm4uruuCSJoPN7W-rAepOk_IsQrmIKaxMOZMsRNuiiVCpOC0-XgnFt3BehsedbnoEU_-KMC6foNT3OdSBUfhN2dyEpdE_PZEtT_qQBQTT7A"><span
+              class="font-headline-md text-headline-md font-bold tracking-tight text-inverse-on-surface"><span
+                class="text-[#25adf1]">Violet</span><span class="text-secondary-container">RentCar</span></span></div>
+          <p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">Jasa penyewaan mobil terpercaya,
+            armada prima, proses cepat &amp; fleksibel untuk kenyamanan mobilitas Anda di wilayah Jabodetabek dan
+            sekitarnya.</p>
+          <div class="flex items-center gap-space-sm pt-space-xs"><a
+              class="w-9 h-9 rounded-full bg-white/5 hover:bg-primary transition-colors flex items-center justify-center text-inverse-on-surface"
+              href="https://instagram.com" rel="noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[18px]">photo_camera</span></a><a
+              class="w-9 h-9 rounded-full bg-white/5 hover:bg-primary transition-colors flex items-center justify-center text-inverse-on-surface"
+              href="https://tiktok.com" rel="noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[18px]">play_circle</span></a><a
+              class="w-9 h-9 rounded-full bg-white/5 hover:bg-primary transition-colors flex items-center justify-center text-inverse-on-surface"
+              href="https://facebook.com" rel="noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[18px]">public</span></a><a
+              class="w-9 h-9 rounded-full bg-white/5 hover:bg-primary transition-colors flex items-center justify-center text-inverse-on-surface"
+              href="https://youtube.com" rel="noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[18px]">smart_display</span></a></div>
+        </div>
+        <div class="space-y-space-md">
+          <div class="font-headline-sm text-headline-sm text-inverse-on-surface">Navigasi Cepat</div>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-outline-variant">
+            <li data-active-classes="text-[#25adf1]" class=""><a
+                class="hover:text-inverse-on-surface transition-colors flex items-center gap-space-xs"
+                data-path="beranda" href="#"><span
+                  class="material-symbols-outlined text-[16px]">chevron_right</span>Beranda</a></li>
+            <li class=""><a class="hover:text-inverse-on-surface transition-colors flex items-center gap-space-xs"
+                data-path="pilihan-mobil" href="#"><span
+                  class="material-symbols-outlined text-[16px]">chevron_right</span>Pilihan Mobil</a></li>
+            <li class=""><a class="hover:text-inverse-on-surface transition-colors flex items-center gap-space-xs"
+                data-path="paket-layanan" href="#"><span
+                  class="material-symbols-outlined text-[16px]">chevron_right</span>Paket Layanan</a></li>
+            <li class=""><a class="hover:text-inverse-on-surface transition-colors flex items-center gap-space-xs"
+                data-path="syarat-dan-ketentuan" href="#"><span
+                  class="material-symbols-outlined text-[16px]">chevron_right</span>Syarat &amp; Ketentuan</a></li>
+            <li class=""><a class="hover:text-inverse-on-surface transition-colors flex items-center gap-space-xs"
+                data-path="lokasi-garasi" href="#"><span
+                  class="material-symbols-outlined text-[16px]">chevron_right</span>Lokasi Garasi</a></li>
+            <li class=""><a class="hover:text-inverse-on-surface transition-colors flex items-center gap-space-xs"
+                data-path="faq" href="#"><span class="material-symbols-outlined text-[16px]">chevron_right</span>Tanya
+                Jawab (FAQ)</a></li>
+          </ul>
+        </div>
+        <div class="space-y-space-md">
+          <div class="font-headline-sm text-headline-sm text-inverse-on-surface">Area Operasional</div>
+          <ul class="space-y-space-xs font-body-sm text-body-sm text-outline-variant">
+            <li class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[16px] text-tertiary-container">location_on</span>Jawa Timur</li>
+            <li class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[16px] text-tertiary-container">location_on</span>
+              <div class="">Jawa Tengah</div>
+            </li>
+            <li class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[16px] text-tertiary-container">location_on</span>Jawa Barat</li>
+            <li class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[16px] text-tertiary-container">location_on</span>Madura</li>
+            <li class="flex items-center gap-space-xs"><span
+                class="material-symbols-outlined text-[16px] text-tertiary-container">flight_takeoff</span>Bandara
+              Juanda</li>
+          </ul>
+        </div>
+        <div class="space-y-space-md">
+          <div class="font-headline-sm text-headline-sm text-inverse-on-surface">Metode Pembayaran</div>
+          <p class="font-body-sm text-body-sm text-outline-variant">Menerima transaksi aman via transfer bank dan kartu
+            kredit terkemuka:</p>
+          <div class="flex flex-wrap gap-space-xs pt-space-xs"><span
+              class="px-2.5 py-1 rounded bg-white/10 text-inverse-on-surface font-label-sm text-label-sm font-semibold tracking-wide border border-white/5">BCA</span><span
+              class="px-2.5 py-1 rounded bg-white/10 text-inverse-on-surface font-label-sm text-label-sm font-semibold tracking-wide border border-white/5">MANDIRI</span><span
+              class="px-2.5 py-1 rounded bg-white/10 text-inverse-on-surface font-label-sm text-label-sm font-semibold tracking-wide border border-white/5">BRI</span><span
+              class="px-2.5 py-1 rounded bg-white/10 text-inverse-on-surface font-label-sm text-label-sm font-semibold tracking-wide border border-white/5">QRIS</span><span
+              class="px-2.5 py-1 rounded bg-white/10 text-inverse-on-surface font-label-sm text-label-sm font-semibold tracking-wide border border-white/5">VISA
+              / MC</span></div>
+          <div class="p-space-sm rounded-lg bg-white/5 border border-white/5 mt-space-sm">
+            <div class="flex items-center gap-space-xs font-label-md text-label-md text-tertiary-fixed-dim"><span
+                class="material-symbols-outlined text-[18px]">verified_user</span><span class="">Garansi Tanpa Biaya
+                Tersembunyi</span></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-outline font-body-sm text-body-sm">
+        <p class="">© 2025 Violetsrentcar. All Rights Reserved.</p>
+        <div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a
+            class="hover:text-inverse-on-surface transition-colors" data-path="syarat-dan-ketentuan" href="#">Syarat
+            &amp; Ketentuan</a><a class="hover:text-inverse-on-surface transition-colors" data-path="kebijakan-privasi"
+            href="#">Kebijakan Privasi</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
