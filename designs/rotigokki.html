@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="id" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#a7c8ff", "surface-container-highest": "#e9e2d2", "on-error": "#ffffff", "outline": "#727782", "on-background": "#1e1c12", "surface-bright": "#fff9ec", "surface-dim": "#e0dac9", "error-container": "#ffdad6", "tertiary-fixed-dim": "#ffb4aa", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#004788", "on-tertiary-fixed": "#410001", "tertiary-container": "#b8000c", "error": "#ba1a1a", "tertiary": "#8b0007", "on-primary-container": "#bad3ff", "on-secondary-fixed-variant": "#454747", "inverse-primary": "#a7c8ff", "primary-fixed": "#d5e3ff", "inverse-surface": "#333025", "surface-container-low": "#faf3e2", "on-secondary-fixed": "#1a1c1c", "secondary": "#5d5f5f", "on-tertiary-container": "#ffc4bc", "on-primary": "#ffffff", "surface-variant": "#e9e2d2", "on-surface": "#1e1c12", "on-primary-fixed": "#001b3b", "surface-container-high": "#eee8d7", "on-error-container": "#93000a", "inverse-on-surface": "#f7f0df", "surface": "#fff9ec", "secondary-container": "#dfe0e0", "on-tertiary-fixed-variant": "#930007", "secondary-fixed": "#e2e2e2", "background": "#fff9ec", "on-tertiary": "#ffffff", "on-secondary-container": "#616363", "primary": "#004381", "outline-variant": "#c2c6d3", "surface-tint": "#165ead", "secondary-fixed-dim": "#c6c6c7", "primary-container": "#0b5aa8", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdad5", "on-surface-variant": "#424751", "surface-container": "#f4eddd" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "margin": "1rem", "margin-desktop": "2.5rem", "gutter-desktop": "1.5rem", "space-2xl": "3rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Nunito Sans"], "body-sm": ["Nunito Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Nunito Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "700" }], "display-lg": ["44px", { "lineHeight": "52px", "fontWeight": "800" }] } } } }</script>
+</head>
+
+<body
+  class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(11,90,168,0.08)]">
+    <div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md"><a class="flex items-center gap-3 group" data-path="beranda" href="#">
+          <div
+            class="w-11 h-11 rounded-full overflow-hidden bg-surface-container-high flex items-center justify-center shadow-sm">
+            <img alt="Logo Roti Gokki" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1UYBEojK3CbZJa9r2E-zc0v_3MmIP-cCejNx9xuSouuBarN8JbM2h_mKAzbOy4NIrccMFCTVSBc3gnN83zWaE9c8cwl6CzCINs-Xm4_vFz0kpYeWVwBcdJpJ1tnZGszBNQC9YN63QkMDWfgn64irgFP7v5QFGrOgT_Tw7riTFQCU7waZMKDGqiFP_iLew3q3BnREU6_cf7NAD3CD7W-5mqVNHR3nnpddwL8K9DVf3rN6vhXlrnfFrBhs_BYbSwyaTipruOx9-qagl4">
+          </div>
+          <div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Roti
+              Gokki</span><span
+              class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wider">Lembut &amp;
+              Creamy</span></div>
+        </a></div>
+      <nav class="hidden lg:flex items-center gap-space-xs p-1.5 bg-surface-container-low/70 rounded-full shadow-inner"
+        data-active-classes="bg-surface-container text-primary font-bold"><a aria-current="page"
+          class="px-space-md py-space-xs rounded-full transition-all bg-surface-container text-primary font-bold"
+          data-path="beranda" href="#">Beranda</a><a
+          class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
+          data-path="varian-menu" href="#">Varian Menu</a><a
+          class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
+          data-path="keunggulan" href="#">Keunggulan</a><a
+          class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
+          data-path="testimoni" href="#">Testimoni</a><a
+          class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
+          data-path="lokasi-kontak" href="#lokasi">Lokasi &amp; Kontak</a></nav>
+      <div class="flex items-center gap-space-md"><a
+          class="flex items-center gap-space-xs bg-tertiary-container text-on-tertiary font-label-lg text-label-lg px-space-lg py-space-sm rounded-full shadow-[0_6px_16px_rgba(184,0,12,0.3)] hover:brightness-110 active:scale-95 transition-all"
+          data-path="pesan-sekarang" href="https://wa.me/6281217275985"><span
+            class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="text-sm">Pesan
+            Sekarang</span></a>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+    <div class="flex flex-col w-full">
+      <!-- HERO SECTION -->
+      <section
+        class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface-bright py-space-xl lg:py-space-2xl">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+            <!-- Text & CTAs -->
+            <div class="lg:col-span-6 flex flex-col gap-space-lg text-left z-10">
+              <!-- Tag Pill -->
+              <div
+                class="inline-flex items-center gap-space-xs px-4 py-1.5 rounded-full bg-surface-container shadow-sm w-fit">
+                <span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+                <span class="font-label-sm text-label-sm text-primary tracking-wide uppercase">Fresh From The Oven
+                  Setiap Pukul 07.00 &amp; 14.00</span>
+              </div>
+              <!-- Main Hero Heading -->
+              <h1
+                class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight leading-tight">
+                Nikmati Sensasi Roti <span
+                  class="text-tertiary-container underline decoration-wavy decoration-tertiary-container/30">Super
+                  Lembut</span> dengan Isian Ekstra Creamy!
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Roti Gokki hadir menghadirkan kelembutan sempurna dan lelehan krim melimpah di setiap gigitan. Dibuat
+                dari butter artisan murni tanpa pengawet sintesis.
+              </p>
+              <!-- Dual CTAs -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs">
+                <a class="flex items-center justify-center gap-space-xs bg-tertiary-container text-on-tertiary font-label-lg text-label-lg px-space-xl py-4 rounded-full shadow-[0_8px_20px_rgba(184,0,12,0.35)] hover:brightness-110 active:scale-95 transition-all text-center"
+                  href="https://wa.me/6281217275985?text=Halo%20Roti%20Gokki,%20saya%20ingin%20pesan%20roti%20lembut%20dan%20creamy!"
+                  rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[22px]">chat</span>
+                  <span class="">Coba Sekarang</span>
+                </a>
+
+              </div>
+              <!-- Social Proof Micro Component -->
+              <div
+                class="pt-space-sm flex items-center gap-space-md bg-surface-container-lowest/80 p-3.5 rounded-2xl shadow-sm w-fit backdrop-blur-md">
+                <div class="flex -space-x-2.5 overflow-hidden">
+                  <div
+                    class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-primary-fixed flex items-center justify-center text-primary font-bold text-xs">
+                    SA</div>
+                  <div
+                    class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-tertiary-fixed flex items-center justify-center text-tertiary font-bold text-xs">
+                    DP</div>
+                  <div
+                    class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-xs">
+                    BR</div>
+                  <div
+                    class="inline-block h-9 w-9 rounded-full ring-2 ring-surface bg-primary text-on-primary flex items-center justify-center text-xs font-bold">
+                    +15k</div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-1 text-[#e5a00d]">
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                    <span class="font-label-md text-label-md text-on-surface ml-1">4.9/5</span>
+                  </div>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Dari 15.000+ Pecinta Roti
+                    di Seluruh Indonesia</span>
+                </div>
+              </div>
+            </div>
+            <!-- Hero Visual Showcase -->
+            <div class="lg:col-span-6 relative flex justify-center items-center">
+              <!-- Background Glow Elements -->
+              <div
+                class="absolute -top-10 -right-10 w-72 h-72 rounded-full bg-primary-fixed-dim/40 blur-3xl pointer-events-none">
+              </div>
+              <div
+                class="absolute -bottom-10 -left-10 w-80 h-80 rounded-full bg-tertiary-fixed/50 blur-3xl pointer-events-none">
+              </div>
+              <!-- Main Image Frame with Puffy Cards -->
+              <div
+                class="relative w-full max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-[0_16px_40px_rgba(11,90,168,0.12)] bg-surface-container-lowest p-3">
+                <div class="rounded-2xl overflow-hidden aspect-square relative group">
+                  <img alt="Roti Gokki Sobek Choco &amp; Cheese Lava Creamy"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXjwSXlvrNKmScJ_0IpewBeIgY5mHYG8cqfSK4gcGE9fZE39uqH42WJIrsjawdxwcKK0UvRKx_rIadGu22iHmGOPUslfAWr0PUbJWHAieOkdiMsBJQ0D7V0sFkfe7A14Fr54vd81Qn78B25uPbKq5KHQpunooJbp6rJGVqyBfEAOiymnamkppy1GMqMu525pOp_kVYg2oJXx8g2K1v8GPMS6sdgJtcUdI0gAQtT7JANenzhde7mWcZ-TN-rZu6HDS24m0">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60">
+                  </div>
+                  <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+                    <div>
+
+                      <p class="font-headline-sm text-headline-sm mt-1">Choco &amp; Cheese Melt Bun</p>
+                    </div>
+                    <div
+                      class="bg-surface-container-lowest/90 text-primary px-3 py-1.5 rounded-full font-label-md text-label-md shadow">
+                      Rp 16.000
+                    </div>
+                  </div>
+                </div>
+                <!-- Floating Puffy Badges -->
+
+                <div
+                  class="absolute bottom-6 -right-2 sm:right-2 bg-tertiary-container text-on-tertiary px-4 py-2.5 rounded-full shadow-[0_8px_20px_rgba(184,0,12,0.3)] flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[20px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span>
+                  <span class="font-label-md text-label-md">Krim Melimpah Lumer!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- VALUE PROPOSITION / KEUNGGULAN PRODUK -->
+      <section class="w-full py-space-2xl bg-surface" id="keunggulan">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-container bg-tertiary-fixed px-3 py-1 rounded-full font-bold">Rahasia
+              Kualitas Kami</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">Kenapa Roti Gokki Selalu Bikin
+              Ketagihan?</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Dibuat sepenuh hati dengan standar kelezatan dan kehigienisan tertinggi. Sekali coba, sensasi lembutnya
+              bikin susah lupa.
+            </p>
+          </div>
+          <!-- 4 Core Pillars Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Pillar 1 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-[0_8px_24px_-4px_rgba(11,90,168,0.06)] flex flex-col gap-space-sm group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]"
+                  style="font-variation-settings: &quot;FILL&quot; 1;">cookie</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Bahan Premium &amp; Mentega Pilihan</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Menggunakan butter import berkualitas tinggi untuk aroma harum semerbak alami dan rasa gurih yang kaya
+                di setiap kunyahan.
+              </p>
+            </div>
+            <!-- Pillar 2 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-[0_8px_24px_-4px_rgba(11,90,168,0.06)] flex flex-col gap-space-sm group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-surface-container-lowest text-tertiary-container flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]"
+                  style="font-variation-settings: &quot;FILL&quot; 1;">cloud</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Tekstur Roti Ultra Lembut</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Resep rahasia fermentasi ganda Jepang-Korea yang lembut empuk awet seharian, tanpa bahan pengawet
+                berbahaya.
+              </p>
+            </div>
+            <!-- Pillar 3 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-[0_8px_24px_-4px_rgba(11,90,168,0.06)] flex flex-col gap-space-sm group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-surface-container-lowest text-primary-container flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]"
+                  style="font-variation-settings: &quot;FILL&quot; 1;">water_drop</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Isian Krim Melimpah &amp; Lumer</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Filling melimpah ruah yang creamy lumer di lidah dengan tingkat manis pas seimbang, dijamin tidak bikin
+                enek.
+              </p>
+            </div>
+            <!-- Pillar 4 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-[0_8px_24px_-4px_rgba(11,90,168,0.06)] flex flex-col gap-space-sm group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-surface-container-lowest text-tertiary-container flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]"
+                  style="font-variation-settings: &quot;FILL&quot; 1;">microwave</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Freshly Baked Setiap Hari</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Selalu fresh from the oven langsung ke genggaman Anda dalam kemasan higienis berstandar food-grade
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT SHOWCASE / VARIAN FAVORIT -->
+      <section class="w-full py-space-2xl bg-surface-container-low" id="varian-menu">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop" id="menu-favorit">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+            <div class="flex flex-col max-w-xl">
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Koleksi Rasa
+                Terlaris</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">Varian Rasa Favorit Paling Dicari
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Dari lelehan cokelat lumer, gurihnya keju premium, hingga nostalgia roti sisir meses legendaris khas
+                Roti Gokki.
+              </p>
+            </div>
+            <!-- Quick filter chips -->
+
+          </div>
+          <!-- Menu Grid (4 Products) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-lg">
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="relative h-64 overflow-hidden bg-primary-container flex items-center justify-center">
+                <div class="w-full h-full overflow-hidden relative"><img alt="Go Choco"
+                    class="w-[200%] max-w-none absolute -top-[28%] -left-[2%] object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG9v25Q_-JA6ZAfA4ejTrikGzG-vOE7vIEwvq7uYWzJ3lZk4pZT44GZwux6Jpq5xE1pO_cYJt15Bl0_40gmZMksHmSsfVwX1nG062VXOtzKFfGBs-8v2qvTCTXsozMaVTKm34tlRCiu-DU1RokCQ-PVRuCvqHs_ggTjSvtHg03YRybgopmU4-tfDHOmQHUh6AY4pdsH3tJg5Jovqc9hsQ7jc9miMJ5IzEVhS6OCFjpy594AbxgnDPEq83C57xpMatbeQ">
+                </div><span
+                  class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm px-3 py-1 rounded-full shadow-sm">Rp
+                  14.000</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Go Choco</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roti bun empuk lembut bertekstur
+                    manis harum dengan taburan choco chips dan isian cokelat lumer.</p>
+                </div>
+                <div class="pt-space-xs flex items-center justify-between border-t-0"><button
+                    class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-sm"
+                    onclick="handleAddToCart('Go Choco', 14000)"><span
+                      class="material-symbols-outlined text-[18px]">add</span><span class="">Pesan</span></button></div>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="relative h-64 overflow-hidden bg-primary-container flex items-center justify-center">
+                <div class="w-full h-full overflow-hidden relative"><img alt="Go Coffee"
+                    class="w-[200%] max-w-none absolute -top-[28%] -left-[102%] object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG9v25Q_-JA6ZAfA4ejTrikGzG-vOE7vIEwvq7uYWzJ3lZk4pZT44GZwux6Jpq5xE1pO_cYJt15Bl0_40gmZMksHmSsfVwX1nG062VXOtzKFfGBs-8v2qvTCTXsozMaVTKm34tlRCiu-DU1RokCQ-PVRuCvqHs_ggTjSvtHg03YRybgopmU4-tfDHOmQHUh6AY4pdsH3tJg5Jovqc9hsQ7jc9miMJ5IzEVhS6OCFjpy594AbxgnDPEq83C57xpMatbeQ">
+                </div><span
+                  class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm px-3 py-1 rounded-full shadow-sm">Rp
+                  14.000</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Go Coffee</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roti bun beraroma kopi karamel harum
+                    menggoda dengan lelehan butter gurih di dalam dan crust renyah.</p>
+                </div>
+                <div class="pt-space-xs flex items-center justify-between border-t-0"><button
+                    class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-sm"
+                    onclick="handleAddToCart('Go Coffee', 14000)"><span
+                      class="material-symbols-outlined text-[18px]">add</span><span class="">Pesan</span></button></div>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="relative h-64 overflow-hidden bg-primary-container flex items-center justify-center">
+                <div class="w-full h-full overflow-hidden relative"><img alt="Go Butter Milk"
+                    class="w-[200%] max-w-none absolute -top-[82%] -left-[2%] object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG9v25Q_-JA6ZAfA4ejTrikGzG-vOE7vIEwvq7uYWzJ3lZk4pZT44GZwux6Jpq5xE1pO_cYJt15Bl0_40gmZMksHmSsfVwX1nG062VXOtzKFfGBs-8v2qvTCTXsozMaVTKm34tlRCiu-DU1RokCQ-PVRuCvqHs_ggTjSvtHg03YRybgopmU4-tfDHOmQHUh6AY4pdsH3tJg5Jovqc9hsQ7jc9miMJ5IzEVhS6OCFjpy594AbxgnDPEq83C57xpMatbeQ">
+                </div><span
+                  class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm px-3 py-1 rounded-full shadow-sm">Rp
+                  14.000</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Go Butter Milk</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roti bun lembut manis gurih dengan
+                    topping irisan almond renyah dan isian butter milk creamy.</p>
+                </div>
+                <div class="pt-space-xs flex items-center justify-between border-t-0"><button
+                    class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-sm"
+                    onclick="handleAddToCart('Go Butter Milk', 14000)"><span
+                      class="material-symbols-outlined text-[18px]">add</span><span class="">Pesan</span></button></div>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="relative h-64 overflow-hidden bg-primary-container flex items-center justify-center">
+                <div class="w-full h-full overflow-hidden relative"><img alt="Go Cheese"
+                    class="w-[200%] max-w-none absolute -top-[82%] -left-[102%] object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG9v25Q_-JA6ZAfA4ejTrikGzG-vOE7vIEwvq7uYWzJ3lZk4pZT44GZwux6Jpq5xE1pO_cYJt15Bl0_40gmZMksHmSsfVwX1nG062VXOtzKFfGBs-8v2qvTCTXsozMaVTKm34tlRCiu-DU1RokCQ-PVRuCvqHs_ggTjSvtHg03YRybgopmU4-tfDHOmQHUh6AY4pdsH3tJg5Jovqc9hsQ7jc9miMJ5IzEVhS6OCFjpy594AbxgnDPEq83C57xpMatbeQ">
+                </div><span
+                  class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm px-3 py-1 rounded-full shadow-sm">Rp
+                  15.000</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Go Cheese</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roti bun gurih empuk dengan parutan
+                    keju panggang keemasan dan lelehan keju creamy melimpah.</p>
+                </div>
+                <div class="pt-space-xs flex items-center justify-between border-t-0"><button
+                    class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-sm"
+                    onclick="handleAddToCart('Go Cheese', 15000)"><span
+                      class="material-symbols-outlined text-[18px]">add</span><span class="">Pesan</span></button></div>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="relative h-64 overflow-hidden bg-primary-container flex items-center justify-center">
+                <div class="w-full h-full overflow-hidden relative"><img alt="Pizza"
+                    class="w-[200%] max-w-none absolute -top-[138%] -left-[2%] object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG9v25Q_-JA6ZAfA4ejTrikGzG-vOE7vIEwvq7uYWzJ3lZk4pZT44GZwux6Jpq5xE1pO_cYJt15Bl0_40gmZMksHmSsfVwX1nG062VXOtzKFfGBs-8v2qvTCTXsozMaVTKm34tlRCiu-DU1RokCQ-PVRuCvqHs_ggTjSvtHg03YRybgopmU4-tfDHOmQHUh6AY4pdsH3tJg5Jovqc9hsQ7jc9miMJ5IzEVhS6OCFjpy594AbxgnDPEq83C57xpMatbeQ">
+                </div><span
+                  class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm px-3 py-1 rounded-full shadow-sm">Rp
+                  16.000</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Pizza</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roti bun savory bergaya pizza dengan
+                    topping sosis, jagung manis, rempah oregano, saus spesial dan melted cheese.</p>
+                </div>
+                <div class="pt-space-xs flex items-center justify-between border-t-0"><button
+                    class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-sm"
+                    onclick="handleAddToCart('Pizza', 16000)"><span
+                      class="material-symbols-outlined text-[18px]">add</span><span class="">Pesan</span></button></div>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="relative h-64 overflow-hidden bg-primary-container flex items-center justify-center">
+                <div class="w-full h-full overflow-hidden relative"><img alt="Sisir"
+                    class="w-[200%] max-w-none absolute -top-[138%] -left-[102%] object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG9v25Q_-JA6ZAfA4ejTrikGzG-vOE7vIEwvq7uYWzJ3lZk4pZT44GZwux6Jpq5xE1pO_cYJt15Bl0_40gmZMksHmSsfVwX1nG062VXOtzKFfGBs-8v2qvTCTXsozMaVTKm34tlRCiu-DU1RokCQ-PVRuCvqHs_ggTjSvtHg03YRybgopmU4-tfDHOmQHUh6AY4pdsH3tJg5Jovqc9hsQ7jc9miMJ5IzEVhS6OCFjpy594AbxgnDPEq83C57xpMatbeQ">
+                </div><span
+                  class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm px-3 py-1 rounded-full shadow-sm">Rp
+                  15.000</span>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Sisir</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roti sisir klasik legendaris ultra
+                    lembut berlapis butter manis gurih nostalgia yang legit.</p>
+                </div>
+                <div class="pt-space-xs flex items-center justify-between border-t-0"><button
+                    class="flex items-center gap-1.5 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-4 py-2 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-sm"
+                    onclick="handleAddToCart('Sisir', 15000)"><span
+                      class="material-symbols-outlined text-[18px]">add</span><span class="">Pesan</span></button></div>
+              </div>
+            </div>
+          </div>
+          <!-- INTERACTIVE MINI QUIZ SECTION: Kamu Tim Choco atau Cheese? -->
+          <div
+            class="mt-space-2xl bg-gradient-to-r from-primary to-primary-container rounded-3xl p-space-lg lg:p-space-xl text-on-primary shadow-xl overflow-hidden relative">
+            <div
+              class="absolute -right-16 -top-16 w-64 h-64 bg-surface-container-lowest/10 rounded-full blur-2xl pointer-events-none">
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+              <div class="lg:col-span-7 flex flex-col gap-space-sm">
+                <span
+                  class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary px-3 py-1 rounded-full w-fit uppercase font-bold tracking-wider">Mini
+                  Kuis Rasa Gokki</span>
+                <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold">Kamu Tim Choco Lumer
+                  atau Tim Cheese Gurih?</h3>
+                <p class="font-body-md text-body-md text-on-primary-container"><span class="">Beri tahu kami varian mana
+                    yang paling kamu sukai:</span><span></span></p>
+                <div class="flex flex-wrap items-center gap-space-sm pt-space-xs" id="quiz-buttons">
+                  <button
+                    class="px-5 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-2 ring-4 ring-surface-container-lowest"
+                    id="btn-choco" onclick="selectTeam('Choco')">
+                    <span class="">Tim Choco Lumer</span>
+
+                  </button>
+                  <button
+                    class="px-5 py-2.5 rounded-full bg-surface-container-lowest text-tertiary-container font-label-lg text-label-lg shadow-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+                    id="btn-cheese" onclick="selectTeam('Cheese')">
+                    <span class="">Tim Cheese Melt</span>
+
+                  </button>
+                </div>
+
+              </div>
+              <div class="lg:col-span-5 flex justify-center">
+                <div
+                  class="w-full max-w-xs bg-surface-container-lowest rounded-2xl p-space-md text-on-surface shadow-2xl flex flex-col items-center text-center">
+                  <span
+                    class="font-label-sm text-label-sm text-tertiary-container uppercase font-bold tracking-wider mb-1">Paket
+                    Best Value</span>
+                  <h4 class="font-headline-sm text-headline-sm text-primary">Gokki Party Box (Isi 6)</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Mix 3 Choco Lava + 3 Cheese Melt +
+                    Roti Sisir</p>
+                  <div class="flex items-baseline gap-2 my-space-sm">
+                    <span class="font-body-sm line-through text-outline">Rp 96.000</span>
+                    <span class="font-headline-md text-headline-md text-tertiary-container">Rp 79.000</span>
+                  </div>
+                  <a class="w-full py-2.5 rounded-full bg-tertiary-container text-on-tertiary font-label-md text-label-md text-center hover:brightness-110 active:scale-95 transition-all shadow-md"
+                    href="https://wa.me/6281217275985?text=Halo,%20saya%20mau%20ambil%20promo%20Gokki%20Party%20Box%20(Isi%206)%20Rp%2079.000!"
+                    rel="noopener noreferrer" target="_blank">
+                    Klaim Promo Box
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SOCIAL PROOF & TESTIMONI PELANGGAN -->
+      <section class="w-full py-space-2xl bg-surface" id="testimoni">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Cerita
+              Pelanggan</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">Kata Mereka yang Sudah Ketagihan Roti
+              Gokki</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Ribuan potong roti ludes setiap harinya. Simak kesan jujur dari para pecinta roti di seluruh Indonesia.
+            </p>
+          </div>
+          <!-- Testimonial Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <!-- Testi 1 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center gap-1 text-[#e5a00d]">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface italic">
+                  "Beneran kaget pas disobek krimnya tumpah-tumpah! Rotinya super empuk bahkan besok paginya masih
+                  selembut kapas. Jadi langganan buat sarapan kantor."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-space-xs border-t-0">
+                <div
+                  class="w-11 h-11 rounded-full bg-tertiary-fixed text-tertiary font-bold flex items-center justify-center text-sm shadow-sm">
+                  SA
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md text-primary">Sarah Amelia</span>
+                  <span class="font-body-sm text-[12px] text-outline">Kebayoran Baru, Jakarta Selatan</span>
+                </div>
+              </div>
+            </div>
+            <!-- Testi 2 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center gap-1 text-[#e5a00d]">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface italic">
+                  "Roti sisir mesesnya juara dunia! Butter cream-nya gurih wangi, mesesnya renyah melimpah. Tiap minggu
+                  wajib stok di rumah buat bekal anak sekolah."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-space-xs">
+                <div
+                  class="w-11 h-11 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-sm shadow-sm">
+                  DP
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md text-primary">Dimas Pratama</span>
+                  <span class="font-body-sm text-[12px] text-outline">Dago, Bandung</span>
+                </div>
+              </div>
+            </div>
+            <!-- Testi 3 -->
+            <div
+              class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center gap-1 text-[#e5a00d]">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface italic">
+                  "Nggak bikin enek sama sekali, manisnya pas banget. Anak-anak di rumah selalu rebutan yang varian
+                  Choco Cheese Lava. Teksturnya bener-bener creamy!"
+                </p>
+              </div>
+              <div class="flex items-center gap-3 pt-space-xs">
+                <div
+                  class="w-11 h-11 rounded-full bg-surface-container-high text-on-surface font-bold flex items-center justify-center text-sm shadow-sm">
+                  BR
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md text-primary">Bunda Ratna</span>
+                  <span class="font-body-sm text-[12px] text-outline">Gubeng, Surabaya</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Instagram Community Banner -->
+          <div
+            class="mt-space-xl p-space-lg rounded-2xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+            <div class="flex items-center gap-space-md text-center sm:text-left">
+              <div
+                class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow">
+                <span class="material-symbols-outlined text-[24px]">photo_camera</span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-primary">Gabung Komunitas @rotigokki di Instagram</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Mention @rotigokki di story kamu pas makan
+                  dan dapatkan voucher diskon 20%!</p>
+              </div>
+            </div>
+            <a class="px-space-lg py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-primary hover:text-on-primary transition-all whitespace-nowrap"
+              href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+              Follow @rotigokki
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ORDER STEPS / CARA PEMESANAN PRAKTIS -->
+      <section class="w-full py-space-2xl bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-container font-bold bg-tertiary-fixed px-3 py-1 rounded-full">Praktis
+              &amp; Cepat</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">Nikmati Roti Gokki dalam 3 Langkah
+              Mudah</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Tanpa perlu antre panjang, roti hangat favoritmu siap meluncur ke meja makan keluarga.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+            <!-- Step 1 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col items-center text-center gap-space-sm shadow-sm relative group hover:shadow-md transition-shadow">
+              <div
+                class="w-16 h-16 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-display-lg text-headline-md font-bold mb-space-xs group-hover:scale-110 transition-transform">
+                1
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Pilih Varian Favorit</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Tentukan roti pilihanmu dari menu favorit: bun lava creamy, roti sisir meses, atau bundling hemat
+                keluarga.
+              </p>
+            </div>
+            <!-- Step 2 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col items-center text-center gap-space-sm shadow-sm relative group hover:shadow-md transition-shadow">
+              <div
+                class="w-16 h-16 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center font-display-lg text-headline-md font-bold mb-space-xs group-hover:scale-110 transition-transform">
+                2
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Konfirmasi Pesanan</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Kirimkan pesanan via WhatsApp resmi kami atau langsung checkout praktis melalui aplikasi ShopeeFood /
+                GoFood.
+              </p>
+            </div>
+            <!-- Step 3 -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col items-center text-center gap-space-sm shadow-sm relative group hover:shadow-md transition-shadow">
+              <div
+                class="w-16 h-16 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-display-lg text-headline-md font-bold mb-space-xs group-hover:scale-110 transition-transform">
+                3
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Roti Segar Diantar Cepat</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Roti dipanggang segar, dikemas rapi, dan dikirim aman langsung ke depan pintu rumah Anda selagi masih
+                hangat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FINAL HIGH-CONVERSION CTA BANNER -->
+      <section class="w-full py-space-2xl bg-surface-container-low" id="lokasi">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl"><span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Kunjungi
+              Kami</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">Temukan Outlet Roti Gokki Terdekat
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Kunjungi outlet resmi kami di
+              Surabaya, Sidoarjo, dan Tulungagung untuk menikmati roti hangat langsung dari panggangan.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+            <div
+              class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-primary-container text-surface flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[24px]">storefront</span>
+                  </div><span
+                    class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full font-bold">Sidoarjo</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5"><span
+                      class="material-symbols-outlined text-tertiary-container text-[20px]">location_on</span>KAHURIPAN
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Jl. Kahuripan
+                    Nirwana, Sumput, Kec. Sidoarjo, Kab. Sidoarjo, Jawa Timur 61226</p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-sm border-t-0 flex items-center justify-between"><span
+                  class="font-label-sm text-[12px] text-primary font-medium flex items-center gap-1"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>07.00 -
+                  21.30</span><a
+                  class="flex items-center gap-1 bg-primary text-on-primary font-label-sm text-label-sm px-3.5 py-1.5 rounded-full hover:bg-tertiary-container transition-colors shadow-sm"
+                  href="https://maps.google.com/?q=Kahuripan+Nirwana+Sidoarjo" rel="noopener noreferrer"
+                  target="_blank"><span class="">Buka di Maps</span><span
+                    class="material-symbols-outlined text-[16px]">north_east</span></a></div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-primary-container text-surface flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[24px]">storefront</span>
+                  </div><span
+                    class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full font-bold">Surabaya</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5"><span
+                      class="material-symbols-outlined text-tertiary-container text-[20px]">location_on</span>ASEM ROWO
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Jl. Asem 5 No.2A,
+                    Asem Rowo, Kec. Asem Rowo, Surabaya, Jawa Timur 60182</p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-sm border-t-0 flex items-center justify-between"><span
+                  class="font-label-sm text-[12px] text-primary font-medium flex items-center gap-1"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>07.00 -
+                  21.30</span><a
+                  class="flex items-center gap-1 bg-primary text-on-primary font-label-sm text-label-sm px-3.5 py-1.5 rounded-full hover:bg-tertiary-container transition-colors shadow-sm"
+                  href="https://maps.google.com/?q=Asem+Rowo+Surabaya" rel="noopener noreferrer" target="_blank"><span
+                    class="">Buka di Maps</span><span
+                    class="material-symbols-outlined text-[16px]">north_east</span></a></div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-primary-container text-surface flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[24px]">storefront</span>
+                  </div><span
+                    class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full font-bold">Surabaya</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5"><span
+                      class="material-symbols-outlined text-tertiary-container text-[20px]">location_on</span>KUTISARI
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Jl. Kutisari Utara
+                    No.55, Kutisari, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur 60291</p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-sm border-t-0 flex items-center justify-between"><span
+                  class="font-label-sm text-[12px] text-primary font-medium flex items-center gap-1"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>07.00 -
+                  21.30</span><a
+                  class="flex items-center gap-1 bg-primary text-on-primary font-label-sm text-label-sm px-3.5 py-1.5 rounded-full hover:bg-tertiary-container transition-colors shadow-sm"
+                  href="https://maps.google.com/?q=Kutisari+Surabaya" rel="noopener noreferrer" target="_blank"><span
+                    class="">Buka di Maps</span><span
+                    class="material-symbols-outlined text-[16px]">north_east</span></a></div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-primary-container text-surface flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[24px]">storefront</span>
+                  </div><span
+                    class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full font-bold">Tulungagung</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5"><span
+                      class="material-symbols-outlined text-tertiary-container text-[20px]">location_on</span>KAUMAN
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Jl. KH Hasyim Asyari
+                    No.75, Kauman, Kec. Kauman, Kabupaten Tulungagung, Jawa Timur 66261</p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-sm border-t-0 flex items-center justify-between"><span
+                  class="font-label-sm text-[12px] text-primary font-medium flex items-center gap-1"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>07.00 -
+                  21.30</span><a
+                  class="flex items-center gap-1 bg-primary text-on-primary font-label-sm text-label-sm px-3.5 py-1.5 rounded-full hover:bg-tertiary-container transition-colors shadow-sm"
+                  href="https://maps.google.com/?q=Kauman+Tulungagung" rel="noopener noreferrer" target="_blank"><span
+                    class="">Buka di Maps</span><span
+                    class="material-symbols-outlined text-[16px]">north_east</span></a></div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_8px_24px_-4px_rgba(11,90,168,0.08)] flex flex-col justify-between group hover:-translate-y-1.5 transition-all duration-300">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-primary-container text-surface flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[24px]">storefront</span>
+                  </div><span
+                    class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full font-bold">Surabaya</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5"><span
+                      class="material-symbols-outlined text-tertiary-container text-[20px]">location_on</span>PANDUGO
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Jl. Raya Pandugo
+                    No.2, Penjaringan Sari, Kec. Rungkut, Surabaya, Jawa Timur 60297</p>
+                </div>
+              </div>
+              <div class="pt-space-md mt-space-sm border-t-0 flex items-center justify-between"><span
+                  class="font-label-sm text-[12px] text-primary font-medium flex items-center gap-1"><span
+                    class="material-symbols-outlined text-[16px] text-tertiary-container">schedule</span>07.00 -
+                  21.30</span><a
+                  class="flex items-center gap-1 bg-primary text-on-primary font-label-sm text-label-sm px-3.5 py-1.5 rounded-full hover:bg-tertiary-container transition-colors shadow-sm"
+                  href="https://maps.google.com/?q=Raya+Pandugo+Surabaya" rel="noopener noreferrer"
+                  target="_blank"><span class="">Buka di Maps</span><span
+                    class="material-symbols-outlined text-[16px]">north_east</span></a></div>
+            </div>
+            <div
+              class="bg-gradient-to-r from-primary to-primary-container rounded-3xl p-space-lg shadow-md flex flex-col justify-between text-on-primary">
+              <div class="flex flex-col gap-space-sm"><span
+                  class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary px-3 py-1 rounded-full w-fit uppercase font-bold tracking-wider">Layanan
+                  Delivery</span>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-surface">Ingin Dikirim Langsung ke Rumah?
+                </h3>
+                <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Pesan lewat WhatsApp atau
+                  aplikasi online food delivery untuk pengantaran cepat selagi roti masih hangat.</p>
+              </div>
+              <div class="pt-space-md"><a
+                  class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary font-label-md text-label-md px-5 py-2.5 rounded-full hover:brightness-110 active:scale-95 transition-all shadow-md"
+                  href="https://wa.me/6281217275985" rel="noopener noreferrer" target="_blank"><span
+                    class="material-symbols-outlined text-[20px]">chat</span><span class="">Hubungi WhatsApp</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-space-2xl bg-surface">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+          <div
+            class="bg-primary rounded-3xl p-space-xl md:p-space-2xl text-on-primary shadow-2xl relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-space-xl">
+            <!-- Ambient Shapes -->
+            <div
+              class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-primary-container blur-2xl pointer-events-none">
+            </div>
+            <div
+              class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-tertiary-container/30 blur-2xl pointer-events-none">
+            </div>
+            <div class="relative z-10 max-w-2xl flex flex-col gap-space-sm">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md w-fit mx-auto md:mx-0">
+                <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">celebration</span>
+                <span class="font-label-sm text-label-sm text-surface uppercase tracking-wider">Promo Khusus Hari
+                  Ini</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-surface">
+                Sudah Siap Merasakan Gigitan Paling Lembut Hari Ini?
+              </h2>
+              <p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed">
+                Dapatkan promo <strong class="text-surface underline">Gratis Ongkir</strong> &amp; <strong
+                  class="text-surface">Diskon Bundling Spesial</strong> untuk pemesanan hari ini sebelum kehabisan batch
+                sore!
+              </p>
+            </div>
+            <div
+              class="relative z-10 flex flex-col sm:flex-row md:flex-col lg:flex-row items-center gap-space-md w-full md:w-auto">
+              <a class="w-full sm:w-auto flex items-center justify-center gap-space-xs bg-tertiary-container text-on-tertiary font-label-lg text-label-lg px-space-xl py-4 rounded-full shadow-[0_8px_24px_rgba(184,0,12,0.4)] hover:brightness-110 active:scale-95 transition-all text-center"
+                href="https://wa.me/6281217275985?text=Halo%20Roti%20Gokki,%20saya%20mau%20order%20sekarang%20dan%20klaim%20promo%20gratis%20ongkir!"
+                rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-[22px]">chat</span>
+                <span class="">Order Sekarang&nbsp;</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FLOATING QUICK CART / ORDER SUMMARY PILL (Micro-interaction) -->
+      <aside class="fixed bottom-6 right-6 z-40 transform translate-y-32 transition-transform duration-300 ease-out"
+        id="floating-cart">
+        <a class="flex items-center gap-3 bg-tertiary-container text-on-tertiary px-5 py-3 rounded-full shadow-[0_10px_30px_rgba(184,0,12,0.45)] hover:brightness-110 active:scale-95 transition-all"
+          href="https://wa.me/6281217275985" rel="noopener noreferrer" target="_blank">
+          <div class="relative">
+            <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+            <span
+              class="absolute -top-2 -right-2 bg-surface text-primary font-bold text-[11px] w-4 h-4 rounded-full flex items-center justify-center"
+              id="cart-count">0</span>
+          </div>
+          <div class="flex flex-col text-left">
+            <span class="font-label-sm text-[12px] leading-tight opacity-90">Pesanan Dipilih</span>
+            <span class="font-label-md text-label-md font-bold leading-tight" id="cart-total">Rp 0</span>
+          </div>
+          <span class="material-symbols-outlined text-[18px] ml-1">chevron_right</span>
+        </a>
+      </aside>
+    </div>
+    <script>
+      let totalOrder = 0;
+      let cartItemsCount = 0;
+
+      function handleAddToCart(name, price) {
+        totalOrder += price;
+        cartItemsCount += 1;
+
+        const floatingCart = document.getElementById('floating-cart');
+        const cartCountEl = document.getElementById('cart-count');
+        const cartTotalEl = document.getElementById('cart-total');
+
+        if (floatingCart) {
+          floatingCart.classList.remove('translate-y-32');
+        }
+        if (cartCountEl) {
+          cartCountEl.textContent = cartItemsCount;
+        }
+        if (cartTotalEl) {
+          cartTotalEl.textContent = 'Rp ' + totalOrder.toLocaleString('id-ID');
+        }
+
+        // Mini toast notification
+        const btn = event.currentTarget;
+        if (btn) {
+          const origText = btn.innerHTML;
+          btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span> Ditambah!';
+          btn.classList.add('bg-primary');
+          setTimeout(() => {
+            btn.innerHTML = origText;
+            btn.classList.remove('bg-primary');
+          }, 1200);
+        }
+      }
+
+      function selectTeam(team) {
+        const feedback = document.getElementById('quiz-feedback');
+        const btnChoco = document.getElementById('btn-choco');
+        const btnCheese = document.getElementById('btn-cheese');
+
+        if (feedback) feedback.classList.remove('hidden');
+
+        if (team === 'Choco') {
+          if (btnChoco) btnChoco.classList.add('ring-4', 'ring-surface-container-lowest');
+          if (btnCheese) btnCheese.classList.remove('ring-4', 'ring-surface-container-lowest');
+        } else {
+          if (btnCheese) btnCheese.classList.add('ring-4', 'ring-surface-container-lowest');
+          if (btnChoco) btnChoco.classList.remove('ring-4', 'ring-surface-container-lowest');
+        }
+      }
+
+      // Filter chips mock toggle
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.category-btn').forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          });
+          this.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+          this.classList.add('bg-primary', 'text-on-primary');
+        });
+      });
+    </script>
+  </main>
+  <footer
+    class="relative z-10 w-full bg-primary-container text-on-primary py-space-2xl shadow-[0_-8px_24px_rgba(0,67,129,0.15)] block">
+    <div class="max-w-7xl mx-auto px-margin md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl">
+        <div class="lg:col-span-4 flex flex-col gap-space-md">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-14 h-14 rounded-2xl overflow-hidden bg-surface-container-lowest p-1 shadow-md flex items-center justify-center flex-shrink-0">
+              <img alt="Roti Gokki Logo" class="w-full h-full object-cover rounded-xl"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlr6Et9olibNZftMJheIxLr9k9EeTRA1ErCQL5s56JLNay2NeQ43hjKyFch6WGKXNjK76u6SWEnQbJFVM58FGJur9JqL4HYvpOq8NgJL_w4ZpQmbGf9xz9LJDxWJlsLGuutdh0ahPq29DWfmq5ChaZasijZrmeVJjsFdpxHKH7SonCMge17bFMM-4HD9tDTN-Cp3NVCOZFWk0t_9nFZMqnM7wnmPa6sKXBxPKU6htZZ04lif2kp4bly0YpBbhRtIXDR-Y">
+            </div>
+            <div class="flex flex-col"><span
+                class="font-headline-md text-headline-md text-surface font-bold leading-tight">Roti Gokki</span><span
+                class="font-label-sm text-label-sm text-tertiary-fixed font-bold uppercase tracking-wider">Lembut dan
+                Creamy</span></div>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm leading-relaxed">Roti fresh oven
+            berkualitas premium dengan kelembutan tiada tara dan isian krim lumer melimpah setiap hari.</p>
+          <div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram"
+              class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-tertiary-container hover:text-on-tertiary transition-all shadow-sm"
+              href="https://instagram.com/rotigokki" rel="noopener noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="TikTok"
+              class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-tertiary-container hover:text-on-tertiary transition-all shadow-sm"
+              href="#" rel="noopener noreferrer"><span
+                class="material-symbols-outlined text-[20px]">play_circle</span></a><a aria-label="WhatsApp"
+              class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-tertiary-container hover:text-on-tertiary transition-all shadow-sm"
+              href="https://wa.me/6281217275985" rel="noopener noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[20px]">chat</span></a><span
+              class="font-label-sm text-label-sm text-surface font-bold ml-space-xs">@rotigokki</span></div>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm text-surface font-bold mb-space-xs">Menu Navigasi</h3>
+          <ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-primary-container">
+            <li class=""><a class="hover:text-surface hover:underline transition-colors flex items-center gap-1.5"
+                href="#"><span class="material-symbols-outlined text-[16px]">chevron_right</span>Beranda</a></li>
+            <li class=""><a class="hover:text-surface hover:underline transition-colors flex items-center gap-1.5"
+                href="#varian-menu"><span class="material-symbols-outlined text-[16px]">chevron_right</span>Varian
+                Menu</a></li>
+            <li class=""><a class="hover:text-surface hover:underline transition-colors flex items-center gap-1.5"
+                href="#keunggulan"><span
+                  class="material-symbols-outlined text-[16px]">chevron_right</span>Keunggulan</a></li>
+            <li class=""><a class="hover:text-surface hover:underline transition-colors flex items-center gap-1.5"
+                href="#testimoni"><span class="material-symbols-outlined text-[16px]">chevron_right</span>Testimoni</a>
+            </li>
+            <li class=""><a class="hover:text-surface hover:underline transition-colors flex items-center gap-1.5"
+                href="#lokasi"><span class="material-symbols-outlined text-[16px]">chevron_right</span>Lokasi Outlet</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm text-surface font-bold mb-space-xs">Pesan Online</h3>
+          <div class="flex flex-col gap-2.5"><a
+              class="flex items-center gap-2.5 p-2 rounded-xl bg-primary text-surface hover:bg-surface hover:text-primary transition-all shadow-sm"
+              href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span
+                class="font-label-md text-label-md font-bold">GrabFood</span></a><a
+              class="flex items-center gap-2.5 p-2 rounded-xl bg-primary text-surface hover:bg-surface hover:text-primary transition-all shadow-sm"
+              href="#"><span class="material-symbols-outlined text-[20px]">moped</span><span
+                class="font-label-md text-label-md font-bold">GoFood</span></a><a
+              class="flex items-center gap-2.5 p-2 rounded-xl bg-primary text-surface hover:bg-surface hover:text-primary transition-all shadow-sm"
+              href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span
+                class="font-label-md text-label-md font-bold">ShopeeFood</span></a><a
+              class="flex items-center gap-2.5 p-2 rounded-xl bg-tertiary-container text-on-tertiary hover:brightness-110 transition-all shadow-sm"
+              href="https://wa.me/6281217275985" rel="noopener noreferrer" target="_blank"><span
+                class="material-symbols-outlined text-[20px]">chat</span>
+              <div class="flex flex-col text-left"><span
+                  class="font-label-sm text-[11px] leading-tight opacity-90">WhatsApp Order</span>
+              </div>
+            </a></div>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <h3 class="font-headline-sm text-headline-sm text-surface font-bold mb-space-xs">Jam &amp; Outlet</h3>
+          <div class="flex flex-col gap-3 font-body-sm text-body-sm text-on-primary-container">
+            <div class="flex items-start gap-2.5"><span
+                class="material-symbols-outlined text-tertiary-fixed mt-0.5 text-[20px]">schedule</span>
+              <div><strong class="font-bold text-surface block">Buka Setiap Hari:</strong><span class="">07.00 - 21.30
+                  WIB</span></div>
+            </div>
+            <div class="flex items-start gap-2.5"><span
+                class="material-symbols-outlined text-tertiary-fixed mt-0.5 text-[20px]">storefront</span>
+              <div><strong class="font-bold text-surface block">5 Cabang Outlet Resmi:</strong><span
+                  class="text-body-sm leading-relaxed block text-primary-fixed">Kahuripan (Sidoarjo) • Asem Rowo •
+                  Kutisari • Kauman (Tulungagung) • Pandugo</span></div>
+            </div>
+            <div class="flex items-start gap-2.5"><span
+                class="material-symbols-outlined text-tertiary-fixed mt-0.5 text-[20px]">call</span>
+              <div><strong class="font-bold text-surface block">Hotline &amp; Reservasi:</strong><a
+                  class="text-surface hover:underline" href="tel:+6281217275985">+62 812-1727-5985</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-center sm:text-left border-t-0">
+        <p class="font-body-sm text-body-sm text-on-primary-container">© 2025 Roti Gokki. Lembut dan Creamy. All rights
+          reserved.</p>
+        <div class="flex items-center gap-space-lg font-label-sm text-label-sm text-on-primary-container"><a
+            class="hover:text-surface transition-colors" href="#">Kebijakan Privasi</a><a
+            class="hover:text-surface transition-colors" href="#">Syarat &amp; Ketentuan</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
